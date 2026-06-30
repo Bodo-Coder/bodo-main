@@ -78,7 +78,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 /* FOOTER */
 footer{background:var(--blue);color:rgba(255,255,255,.78);padding:70px 0 38px}
 .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.22)}
-.foot-brand img{height:62px;width:auto;margin-bottom:22px;display:block}
+.foot-brand img{height:58px;width:auto;margin-left:-18px;margin-bottom:24px;display:block}
 .foot-brand p{font-size:.98rem;max-width:30em}
 .foot-col h5{color:var(--accent);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
 .foot-col a{display:block;color:rgba(255,255,255,.78);text-decoration:none;font-size:.98rem;margin-bottom:12px;transition:color .2s}
