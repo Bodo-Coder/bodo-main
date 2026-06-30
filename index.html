@@ -193,13 +193,13 @@
   .how{background:var(--blue);color:#fff}
   .how h2{color:#fff}
   .how .kicker{color:#dbe7f5}
-  .how-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
-  .how-steps{display:flex;flex-direction:column;gap:28px;margin-top:260px}
+  .how-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:end}
+  .how-steps{display:flex;flex-direction:column;gap:28px}
   .how-step{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
   .how-step .n{font-family:var(--serif);font-size:1.5rem;width:52px;height:52px;flex:none;border-radius:50%;border:1.5px solid rgba(255,255,255,.45);display:flex;align-items:center;justify-content:center}
   .how-step p{color:rgba(255,255,255,.88);font-size:1.05rem}
   .how-pull{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.5vw,2.05rem);line-height:1.32;border-left:3px solid var(--accent);padding-left:30px}
-  @media(max-width:880px){.how-grid{grid-template-columns:1fr;gap:44px}.how-steps{margin-top:0}}
+  @media(max-width:880px){.how-grid{grid-template-columns:1fr;gap:44px;align-items:start}}
 
   /* ABOUT */
   .about-solo{max-width:820px;margin:0 auto}
@@ -572,7 +572,7 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="kicker">Was Kunden sagen</span>
-      <h2>Stimmen aus über drei Jahrzehnten Zusammenarbeit.</h2>
+      <h2>Stimmen aus der Zusammenarbeit.</h2>
     </div>
     <div class="tcar">
       <div class="tcar-view">
@@ -610,7 +610,8 @@
     <div class="press-head-row">
       <div class="sec-head" style="margin-bottom:0">
         <span class="kicker">Presse &amp; Publikationen</span>
-        <h2>Stöbern Sie im Pressearchiv.</h2>
+        <h2>Sichtbar in Fach- und Wirtschaftsmedien.</h2>
+        <p>Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und den wirksamen Einsatz von Augmented Reality in der Marketingkommunikation.</p>
       </div>
       <div class="press-tools">
         <button id="shuffleBtn">Mischen</button>
@@ -772,7 +773,7 @@
       {yr:'2022 · Buchkapitel',outlet:'Springer-Vieweg',img:'images/presse-springer-vieweg-nachhaltige-gebaeude.jpg',desc:'Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.',url:'https://amzn.eu/d/08cUxO1x'},
       {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',url:'https://www.bdzv.de/service/presse/branchennachrichten/2025/kurswechsel-jetzt-der-bdzv-vermarktungsreport-2025-fuer-mehr-wachstum'}
     ];
-    var table=document.getElementById('table'),z=1,els=[];
+    var table=document.getElementById('table'),z=1,els=[],customLayout=false;
     articles.forEach(function(a){
       var c=document.createElement('div');c.className='clip';
       var html='';
@@ -782,7 +783,27 @@
       table.appendChild(c);els.push(c);makeDraggable(c);
     });
     function rnd(a,b){return a+Math.random()*(b-a)}
+    function setClip(c,x,y,rot,zi){
+      var maxX=table.clientWidth-c.offsetWidth+20;
+      var maxY=table.clientHeight-c.offsetHeight+10;
+      c.style.left=Math.max(-44,Math.min(maxX,x))+'px';
+      c.style.top=Math.max(8,Math.min(maxY,y))+'px';
+      c.style.transform='rotate('+rot+'deg)';
+      c.style.zIndex=zi;
+    }
+    function defaultLayout(){
+      var w=table.clientWidth;
+      if(w<760){tidy();return;}
+      var cw=els[0].offsetWidth;
+      setClip(els[1],-36,150,-2,1);           // HORIZONT 2022
+      setClip(els[0],w*.17,70,0,5);           // Handelsblatt
+      setClip(els[2],w*.43,168,1,2);          // HORIZONT 2018
+      setClip(els[4],w*.57,150,0,4);          // BDZV-Jahresreport
+      setClip(els[3],w-cw-28,92,0,6);         // Springer-Vieweg
+      z=6;
+    }
     function scatter(){
+      customLayout=true;
       var w=table.clientWidth,h=table.clientHeight;
       els.forEach(function(c){
         var cw=c.offsetWidth,ch=c.offsetHeight;
@@ -791,6 +812,7 @@
       });
     }
     function tidy(){
+      customLayout=true;
       var w=table.clientWidth,cw=els[0].offsetWidth;
       var cols=Math.max(1,Math.floor((w-24)/(cw+18)));
       var totalW=cols*cw+(cols-1)*18,startX=(w-totalW)/2;
@@ -804,6 +826,7 @@
     function makeDraggable(c){
       c.addEventListener('pointerdown',function(e){
         if(e.target.classList.contains('more'))return;
+        customLayout=true;
         c.classList.add('drag');c.style.zIndex=++z;
         var r=c.getBoundingClientRect();
         var ox=e.clientX-r.left,oy=e.clientY-r.top;
@@ -821,9 +844,9 @@
     }
     document.getElementById('shuffleBtn').addEventListener('click',scatter);
     document.getElementById('tidyBtn').addEventListener('click',tidy);
-    var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){setTimeout(scatter,60);pio.disconnect();}})},{threshold:.2});
+    var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){setTimeout(defaultLayout,60);pio.disconnect();}})},{threshold:.2});
     pio.observe(table);
-    var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(scatter,200);});
+    var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!customLayout)defaultLayout();},200);});
   })();
 </script>
 </body>
