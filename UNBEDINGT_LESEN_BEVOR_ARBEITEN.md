@@ -138,12 +138,12 @@ Alle in Vanilla-JS, ohne Abhängigkeiten. Bei Änderungen unbedingt im Browser t
 
 ## 8) BILDER & ASSETS
 
-- **Quelle:** Alle echten Bilder/Logos liegen auf Bodos Squarespace-CDN (`images.squarespace-cdn.com/.../6a32c6145ae9fb6c0acd608d/...`). Laden im Browser zuverlässig.
+- **Quelle:** Alle Website-Bilder und Logos liegen lokal im Ordner `images/`. Keine Squarespace-CDN-Bild-URLs verwenden.
 - **Bodo-Fotos:** Hero = Porträt auf Blau; Leistungen = Porträt (grau); Trust = Porträt; „Über mich" = textfokussiert (Bootsfoto folgt ggf.). **Reihenfolge/Slots nicht ohne Grund umwerfen.**
-- **Presse-Bilder:** echte Artikelbilder von Bodos CDN (Handelsblatt, Horizont 2022/2018, „Nachhaltige Gebäude", BDZV).
+- **Presse-Bilder:** echte Artikelbilder lokal aus `images/` verwenden (Handelsblatt, Horizont 2022/2018, „Nachhaltige Gebäude", BDZV).
 - **Neue Bilder:** KI-Bilder sind willkommen — am besten mit den Prompts aus `image-prompts.md` als Startpunkt (Modell: OpenAI Image 2; für Porträts Bodos Referenzfoto als Input, damit die Identität konsistent bleibt). Auf Qualität und einheitlichen Marken-Look achten.
 - **Alt-Texte** sind Pflicht und müssen beschreibend sein.
-- **Empfehlung/TODO:** Bilder, Logos und Fonts vor dem Go-Live **lokal hosten** (`/assets/`), um externe Abhängigkeiten & DSGVO-Aufrufe zu reduzieren.
+- **Hinweis:** Bilder und Logos sind lokal gehostet. Fonts sind aktuell noch über Google Fonts eingebunden.
 
 ---
 
