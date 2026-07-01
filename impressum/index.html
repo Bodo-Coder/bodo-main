@@ -31,7 +31,7 @@
       <a href="../#ueber-mich">Über mich</a>
       <a href="../#erfolge">Erfolge</a>
       <a href="../presse/">Presse</a>
-      <a href="#" data-book class="nav-cta">Jetzt Termin buchen</a>
+      <a href="mailto:bs@schiefer-online.eu" class="nav-cta">Jetzt Termin buchen</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
   </div>
@@ -98,7 +98,7 @@
       </div>
       <div class="foot-col">
         <h5>Kontakt &amp; Rechtliches</h5>
-        <a href="#" data-book>Termin buchen</a>
+        <a href="mailto:bs@schiefer-online.eu">Termin buchen</a>
         <a href="mailto:bs@schiefer-online.eu">bs@schiefer-online.eu</a>
         <a href="https://www.linkedin.com/in/bodoschiefer/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="../impressum/">Impressum</a>
@@ -113,8 +113,6 @@
 
 <script>
   document.getElementById('yr').textContent=new Date().getFullYear();
-  var CALENDLY="https://calendly.com/PLATZHALTER/erstgespraech";
-  document.querySelectorAll('[data-book]').forEach(function(a){a.href=CALENDLY;a.target="_blank";a.rel="noopener";});
   var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
   mb.addEventListener('click',function(){nl.classList.toggle('open')});
   nl.addEventListener('click',function(e){if(e.target.tagName==='A')nl.classList.remove('open')});

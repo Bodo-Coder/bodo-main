@@ -31,7 +31,7 @@
       <a href="../#ueber-mich">Über mich</a>
       <a href="../#erfolge">Erfolge</a>
       <a href="../presse/">Presse</a>
-      <a href="#" data-book class="nav-cta">Jetzt Termin buchen</a>
+      <a href="mailto:bs@schiefer-online.eu" class="nav-cta">Jetzt Termin buchen</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
   </div>
@@ -73,8 +73,8 @@
       <h2>5. Kontaktaufnahme per E-Mail</h2>
       <p>Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind.</p>
 
-      <h2>6. Terminbuchung über Calendly</h2>
-      <p>Für die Vereinbarung von Gesprächsterminen verlinken bzw. nutzen wir den Dienst Calendly (Calendly LLC, USA). Wenn Sie den „Termin buchen"-Button nutzen, werden Sie zu Calendly weitergeleitet; die dort von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse, Terminwunsch) werden von Calendly verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b und lit. f DSGVO. Einzelheiten finden Sie in der Datenschutzerklärung von Calendly: <a href="https://calendly.com/privacy" target="_blank" rel="noopener">calendly.com/privacy</a>.</p>
+      <h2>6. Terminanfrage per E-Mail</h2>
+      <p>Wenn Sie den „Termin buchen"-Button nutzen, öffnet sich Ihr E-Mail-Programm mit einer Nachricht an <a href="mailto:bs@schiefer-online.eu">bs@schiefer-online.eu</a>. Die dabei übermittelten Angaben werden zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.</p>
 
       <h2>7. Schriftarten (Google Fonts)</h2>
       <p>Diese Website nutzt zur einheitlichen Darstellung Schriftarten, die von Google Fonts (Google Ireland Limited) geladen werden. Beim Seitenaufruf wird Ihre IP-Adresse an Google übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. <em>Empfehlung für volle Kontrolle: Schriftarten lokal einbinden (Self-Hosting), um externe Aufrufe zu vermeiden.</em></p>
@@ -114,7 +114,7 @@
       </div>
       <div class="foot-col">
         <h5>Kontakt &amp; Rechtliches</h5>
-        <a href="#" data-book>Termin buchen</a>
+        <a href="mailto:bs@schiefer-online.eu">Termin buchen</a>
         <a href="mailto:bs@schiefer-online.eu">bs@schiefer-online.eu</a>
         <a href="https://www.linkedin.com/in/bodoschiefer/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="../impressum/">Impressum</a>
@@ -129,8 +129,6 @@
 
 <script>
   document.getElementById('yr').textContent=new Date().getFullYear();
-  var CALENDLY="https://calendly.com/PLATZHALTER/erstgespraech";
-  document.querySelectorAll('[data-book]').forEach(function(a){a.href=CALENDLY;a.target="_blank";a.rel="noopener";});
   var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
   mb.addEventListener('click',function(){nl.classList.toggle('open')});
   nl.addEventListener('click',function(e){if(e.target.tagName==='A')nl.classList.remove('open')});
