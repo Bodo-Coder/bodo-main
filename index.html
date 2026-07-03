@@ -71,6 +71,7 @@
   .nav-cta:hover{background:var(--blue-deep);transform:translateY(-1px)}
   .menu-btn{display:none;background:none;border:0;font-size:26px;color:var(--ink);cursor:pointer}
   @media(max-width:860px){
+    .nav img{height:20px}
     .nav-links{display:none}
     .menu-btn{display:block}
     .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 0}
@@ -289,7 +290,7 @@
   .clip .more:hover{text-decoration:underline}
   .press-hint{text-align:center;color:var(--muted);font-size:.92rem;margin-top:18px}
   @media(max-width:760px){
-    .table{height:720px}
+    .table{height:800px}
     .clip{width:250px}
   }
 
@@ -800,13 +801,22 @@
     }
     function defaultLayout(){
       var w=table.clientWidth;
-      if(w<760){tidy();return;}
+      if(w<760){mobileLayout();return;}
       var cw=els[0].offsetWidth;
       setClip(els[1],-36,150,-2,1);           // HORIZONT 2022
       setClip(els[0],w*.17,70,0,5);           // Handelsblatt
       setClip(els[2],w*.43,168,1,2);          // HORIZONT 2018
       setClip(els[4],w*.57,150,0,4);          // BDZV-Jahresreport
       setClip(els[3],w-cw-28,92,0,6);         // Springer-Vieweg
+      z=6;
+    }
+    function mobileLayout(){
+      var w=table.clientWidth,cw=els[0].offsetWidth;
+      setClip(els[1],-86,122,-4,1);                  // HORIZONT 2022
+      setClip(els[0],Math.max(20,w*.18),42,1,5);     // Handelsblatt
+      setClip(els[2],w-cw+72,178,3,2);               // HORIZONT 2018
+      setClip(els[4],Math.max(14,w*.08),266,-1,4);   // BDZV-Jahresreport
+      setClip(els[3],Math.max(34,w*.24),404,2,6);    // Springer-Vieweg
       z=6;
     }
     function scatter(){
