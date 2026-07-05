@@ -192,6 +192,7 @@
   .stat{background:var(--blue);padding:48px 30px;text-align:center}
   .stat .big{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,5vw,3.6rem);color:#fff;line-height:1;letter-spacing:-.02em}
   .stat .big .u{color:var(--accent)}
+  .stat .big .u.word{font-family:var(--serif);font-size:.46em;vertical-align:middle;margin-left:.12em}
   .stat .lab{margin-top:14px;font-size:.96rem;color:rgba(255,255,255,.82)}
   @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}}
 
@@ -507,7 +508,7 @@
     <div class="stats-grid" id="stats">
       <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
       <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
-      <div class="stat"><div class="big" data-target="11" data-suffix=" Mon.">0</div><div class="lab">bis zum Break-even eines Tech-Start-ups</div></div>
+      <div class="stat"><div class="big" data-target="11" data-suffix="Monate">0</div><div class="lab">bis zum Break-even eines Tech-Start-ups</div></div>
       <div class="stat"><div class="big" data-target="1" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
     </div>
   </div>
@@ -778,7 +779,7 @@
       if(e.isIntersecting&&!done){done=true;
         grid.querySelectorAll('.big').forEach(function(el){
           var tgt=+el.dataset.target,suf=el.dataset.suffix||'',t0=null,dur=1400;
-          function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var val=Math.round((1-Math.pow(1-p,3))*tgt);el.innerHTML=val+'<span class="u">'+suf+'</span>';if(p<1)requestAnimationFrame(step);}
+          function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var val=Math.round((1-Math.pow(1-p,3))*tgt);var cls=suf.length>1?'u word':'u';el.innerHTML=val+'<span class="'+cls+'">'+suf+'</span>';if(p<1)requestAnimationFrame(step);}
           requestAnimationFrame(step);
         });
       }
