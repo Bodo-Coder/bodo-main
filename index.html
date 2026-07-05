@@ -721,7 +721,12 @@
   (function(){
     var words=['zu viele Maßnahmen','unklare Prioritäten','Silos','Bauchgefühl','Budget?','Wer entscheidet?','Kampagne ≠ Strategie','widersprüchliche Ziele','kein roter Faden','Agentur vs. intern','Reporting-Chaos','Aktionismus','Positionierung?','Tool-Wildwuchs','zu wenig Manpower','unklare Prozesse','offene Verantwortlichkeiten','steigende Kosten','zu viele Projekte gleichzeitig'];
     var field=document.getElementById('chaosField');
-    var place=[[8,18,-9],[34,10,6],[60,16,-5],[12,42,4],[40,38,-7],[66,46,8],[20,66,-4],[48,70,5],[72,74,-8],[6,82,7],[36,86,-3],[58,30,4],[80,22,-6],[26,54,8]];
+    var place=[
+      [8,20,-8],[35,12,5],[61,17,-4],[12,49,3],[42,45,-6],
+      [73,56,7],[21,72,-4],[49,75,4],[74,78,-8],[5,84,6],
+      [37,86,-3],[65,45,5],[80,23,-6],[29,59,7],[11,34,-7],
+      [37,29,4],[62,31,-5],[10,63,4],[50,58,-5]
+    ];
     words.forEach(function(w,i){
       var p=place[i%place.length];
       var c=document.createElement('div');c.className='chip';c.textContent=w;
