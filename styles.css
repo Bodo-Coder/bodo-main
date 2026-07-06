@@ -86,6 +86,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .story-copy .kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;display:block}
 .story-copy h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.12;letter-spacing:-.015em;margin-bottom:18px}
 .story-copy p{color:var(--ink-soft);margin-bottom:16px}
+.story-copy p.strong{font-weight:700;color:var(--ink)}
 .story-media img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 24px 50px -32px rgba(13,27,42,.38)}
 .story-media figcaption{font-size:.82rem;color:var(--muted);margin-top:10px}
 .story-quote{background:var(--blue);color:#fff;border-radius:18px;padding:42px 48px;box-shadow:0 24px 50px -34px rgba(13,27,42,.45)}
