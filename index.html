@@ -134,22 +134,22 @@
 
   /* CHAOS -> CLARITY */
   .transform{background:var(--paper-2)}
-  .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:none;box-shadow:0 30px 60px -36px rgba(13,27,42,.4)}
+  .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:none;box-shadow:0 30px 60px -36px rgba(13,27,42,.4);isolation:isolate}
   .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 56px}
   .layer .tag-lab{position:absolute;top:22px;z-index:3;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:30px}
   .chaos{z-index:1;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a)}
   .chaos .tag-lab{left:24px;background:rgba(255,255,255,.1);color:#fff}
   .chaos-field{position:absolute;inset:0}
-  .chip{position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.82);font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap;backdrop-filter:blur(2px)}
-  .clarity{z-index:2;background:linear-gradient(135deg,var(--blue-deep),var(--blue));color:#fff;clip-path:inset(0 0 0 50%)}
-  .clarity .tag-lab{right:24px;background:rgba(255,255,255,.18);color:#fff}
+  .chip{position:absolute;background:rgba(255,255,255,.09);border:0;color:rgba(255,255,255,.82);font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap}
+  .clarity{z-index:2;background:#fff;color:var(--ink);left:50%;right:0;overflow:hidden}
+  .clarity .tag-lab{right:24px;background:var(--paper-2);color:var(--blue);border:1px solid var(--line)}
   .clarity-inner{max-width:380px;margin-left:auto;margin-right:8%}
-  .clarity-inner h3{font-family:var(--serif);font-weight:500;font-size:1.7rem;margin-bottom:24px;line-height:1.2}
-  .clar-step{display:flex;align-items:center;gap:14px;padding:11px 0;border-top:1px solid rgba(255,255,255,.22);font-size:1.05rem}
+  .clarity-inner h3{font-family:var(--serif);font-weight:500;font-size:1.7rem;margin-bottom:24px;line-height:1.2;color:var(--ink)}
+  .clar-step{display:flex;align-items:center;gap:14px;padding:11px 0;border-top:1px solid rgba(48,111,186,.16);font-size:1.05rem;color:var(--ink-soft)}
   .clar-step:first-of-type{border-top:0}
   .clar-step b{font-family:var(--sans);font-weight:700;color:var(--accent);font-size:1.1rem;width:24px}
-  .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--accent);z-index:5;transform:translateX(-50%);cursor:ew-resize}
-  .handle::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;background:var(--accent);color:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+  .handle{position:absolute;top:0;bottom:0;left:50%;width:6px;background:var(--blue);z-index:5;transform:translateX(-50%);cursor:ew-resize}
+  .handle::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
   .compare-hint{text-align:center;color:var(--muted);font-size:.92rem;margin-top:18px}
   @media(max-width:640px){
     .compare{height:560px}
@@ -442,6 +442,18 @@
   </div>
 </section>
 
+<!-- STATS -->
+<section class="sec stats reveal">
+  <div class="wrap">
+    <div class="stats-grid" id="stats">
+      <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
+      <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
+      <div class="stat"><div class="big" data-target="11" data-suffix="Monate">0</div><div class="lab">bis zum Break-even eines Tech-Start-ups</div></div>
+      <div class="stat"><div class="big" data-target="1" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
+    </div>
+  </div>
+</section>
+
 <!-- WHEN -->
 <section class="sec when reveal" id="einsatz" style="background:#fff">
   <div class="wrap">
@@ -507,18 +519,6 @@
       <div class="split-media">
         <img src="images/leistungen-bodo-schiefer-portrait.jpg" alt="Zusammenarbeit und Strategie">
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="sec stats reveal">
-  <div class="wrap">
-    <div class="stats-grid" id="stats">
-      <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
-      <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
-      <div class="stat"><div class="big" data-target="11" data-suffix="Monate">0</div><div class="lab">bis zum Break-even eines Tech-Start-ups</div></div>
-      <div class="stat"><div class="big" data-target="1" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
     </div>
   </div>
 </section>
@@ -767,15 +767,14 @@
       field.appendChild(c);
     });
     var box=document.getElementById('compare'),clar=document.getElementById('clarityLayer'),h=document.getElementById('handle');
-    function setPos(px){var r=box.getBoundingClientRect();var pct=Math.max(6,Math.min(94,(px-r.left)/r.width*100));clar.style.clipPath='inset(0 0 0 '+pct+'%)';h.style.left=pct+'%';}
+    function setPos(px){var r=box.getBoundingClientRect();var pct=Math.max(6,Math.min(94,(px-r.left)/r.width*100));clar.style.left=pct+'%';h.style.left=pct+'%';}
     var dragging=false;
     box.addEventListener('pointerdown',function(e){dragging=true;setPos(e.clientX);box.setPointerCapture(e.pointerId)});
     box.addEventListener('pointermove',function(e){if(dragging)setPos(e.clientX)});
     box.addEventListener('pointerup',function(){dragging=false});
     box.addEventListener('pointercancel',function(){dragging=false});
-    var demo=true,dir=1,pos=50;
-    box.addEventListener('pointerdown',function(){demo=false});
-    var iv=setInterval(function(){if(!demo){clearInterval(iv);return;}pos+=dir*0.6;if(pos>72||pos<34)dir*=-1;clar.style.clipPath='inset(0 0 0 '+pos+'%)';h.style.left=pos+'%';},40);
+    h.style.left='50%';
+    clar.style.left='50%';
   })();
 
   /* ---------- ACCORDION ---------- */
