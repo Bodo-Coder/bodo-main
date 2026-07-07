@@ -194,9 +194,10 @@
   .stat .big .u{color:var(--accent)}
   .stat .big .u.word{font-family:var(--serif);font-size:.46em;vertical-align:middle;margin-left:.12em}
   .stat .big.combo-stat{display:inline-flex;align-items:baseline;justify-content:center;gap:.12em}
+  .stat .big.combo-stat .stat-num{color:#fff}
   .stat .big.combo-stat .u.word{font-size:.46em;margin-left:0}
   .stat .lab{margin-top:14px;font-size:.96rem;color:rgba(255,255,255,.82)}
-  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-grid;gap:.02em;align-items:center}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1}}
+  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-flex;align-items:baseline;gap:.1em}.stat .big.combo-stat .stat-num{line-height:1}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1;transform:translateY(-.03em)}}
 
   /* OUTCOMES (dunkel) */
   .outcomes{background:var(--ink);color:#fff}
@@ -825,7 +826,7 @@
             var p=Math.min((ts-t0)/dur,1);
             var val=Math.round(start+(1-Math.pow(1-p,3))*(tgt-start));
             if(pre){
-              el.innerHTML='<span class="u word">'+pre+'</span>'+val+'<span class="u word">'+suf+'</span>';
+              el.innerHTML='<span class="u word">'+pre+'</span><span class="stat-num">'+val+'</span><span class="u word">'+suf+'</span>';
             }else{
               var cls=suf.length>1?'u word':'u';
               el.innerHTML=val+'<span class="'+cls+'">'+suf+'</span>';
