@@ -776,9 +776,10 @@
     function autoMove(ts){
       if(userControlled)return;
       if(autoStart===null)autoStart=ts;
-      var cycle=6800;
+      var mobile=window.matchMedia('(max-width: 640px)').matches;
+      var cycle=mobile?6180:6800;
       var progress=((ts-autoStart)%cycle)/cycle;
-      var min=37.5,max=100/1.5;
+      var min=mobile?6:37.5,max=100/1.5;
       var center=(min+max)/2;
       var amplitude=(max-min)/2;
       var phase=Math.asin((50-center)/amplitude);
