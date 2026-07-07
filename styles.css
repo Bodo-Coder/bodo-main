@@ -104,7 +104,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .story-mobile-card figcaption{font-size:.82rem;color:var(--muted);margin-top:10px}
 .story-highlight{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:30px 34px}
 .story-highlight span{display:block;color:var(--blue);font-family:var(--sans);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
-.story-highlight p{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink);margin:0 0 0 34px}
+.story-highlight p{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink);margin:0}
 .story-highlight ol{counter-reset:success;margin:10px 0 0;list-style:none;display:grid;gap:12px}
 .story-highlight li{counter-increment:success;position:relative;padding-left:34px;font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink)}
 .story-highlight li::before{content:counter(success) ".";position:absolute;left:0;top:0;color:var(--accent);font-family:var(--sans);font-weight:700;font-size:1rem;line-height:1.65}
