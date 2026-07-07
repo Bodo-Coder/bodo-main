@@ -193,8 +193,10 @@
   .stat .big{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,5vw,3.6rem);color:#fff;line-height:1;letter-spacing:-.02em}
   .stat .big .u{color:var(--accent)}
   .stat .big .u.word{font-family:var(--serif);font-size:.46em;vertical-align:middle;margin-left:.12em}
+  .stat .big.combo-stat{display:inline-flex;align-items:baseline;justify-content:center;gap:.12em}
+  .stat .big.combo-stat .u.word{font-size:.46em;margin-left:0}
   .stat .lab{margin-top:14px;font-size:.96rem;color:rgba(255,255,255,.82)}
-  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-grid;gap:.02em;align-items:center}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1}}
 
   /* OUTCOMES (dunkel) */
   .outcomes{background:var(--ink);color:#fff}
@@ -449,7 +451,7 @@
     <div class="stats-grid" id="stats">
       <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
       <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
-      <div class="stat"><div class="big" data-target="11" data-suffix="Monate">0</div><div class="lab">bis zum Break-even eines Technologie Start-ups</div></div>
+      <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="Unter" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie Start-ups</div></div>
       <div class="stat"><div class="big" data-target="1" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
     </div>
   </div>
@@ -816,8 +818,20 @@
     var so=new IntersectionObserver(function(es){es.forEach(function(e){
       if(e.isIntersecting&&!done){done=true;
         grid.querySelectorAll('.big').forEach(function(el){
-          var tgt=+el.dataset.target,suf=el.dataset.suffix||'',t0=null,dur=1400;
-          function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var val=Math.round((1-Math.pow(1-p,3))*tgt);var cls=suf.length>1?'u word':'u';el.innerHTML=val+'<span class="'+cls+'">'+suf+'</span>';if(p<1)requestAnimationFrame(step);}
+          if(!el.dataset.target)return;
+          var tgt=+el.dataset.target,start=el.dataset.start?+el.dataset.start:0,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=null,dur=1400;
+          function step(ts){
+            if(!t0)t0=ts;
+            var p=Math.min((ts-t0)/dur,1);
+            var val=Math.round(start+(1-Math.pow(1-p,3))*(tgt-start));
+            if(pre){
+              el.innerHTML='<span class="u word">'+pre+'</span>'+val+'<span class="u word">'+suf+'</span>';
+            }else{
+              var cls=suf.length>1?'u word':'u';
+              el.innerHTML=val+'<span class="'+cls+'">'+suf+'</span>';
+            }
+            if(p<1)requestAnimationFrame(step);
+          }
           requestAnimationFrame(step);
         });
       }

@@ -103,6 +103,9 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .story-highlight{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:30px 34px}
 .story-highlight span{display:block;color:var(--blue);font-family:var(--sans);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
 .story-highlight p{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink);margin:0}
+.story-highlight ol{counter-reset:success;margin:16px 0 0;list-style:none;display:grid;gap:12px}
+.story-highlight li{counter-increment:success;position:relative;padding-left:34px;font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink)}
+.story-highlight li::before{content:counter(success) ".";position:absolute;left:0;top:0;color:var(--accent);font-family:var(--sans);font-weight:700;font-size:1rem;line-height:1.65}
 .story-finale{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1fr);gap:34px;align-items:start}
 .story-finale img{width:100%;display:block;border-radius:16px;box-shadow:0 24px 50px -32px rgba(13,27,42,.38)}
 .story-finale .small-img{margin-top:24px}
