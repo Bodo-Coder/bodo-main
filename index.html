@@ -98,6 +98,7 @@
   .hero-tag{font-family:var(--serif);font-size:1.3rem;color:var(--blue);font-weight:500;margin-bottom:32px}
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
   .btn{display:inline-block;font-weight:600;font-size:15px;padding:15px 30px;border-radius:42px;text-decoration:none;transition:all .22s;cursor:pointer;border:1.5px solid transparent}
+  .hero-cta .btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;white-space:nowrap}
   .btn-primary{background:var(--blue);color:#fff}
   .btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(48,111,186,.6)}
   .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
@@ -366,7 +367,16 @@
 
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
-</style>
+    .comparison-hint {
+      color: var(--ink, #0d1b2a) !important;
+      font-family: var(--font-sans, "Inter", sans-serif);
+      font-size: clamp(1.25rem, 1.55vw, 1.7rem) !important;
+      font-weight: 500;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -397,11 +407,11 @@
       <div class="hero-text">
         <span class="eyebrow">Marke &amp; Kommunikation · Beratung</span>
         <h1>Wenn Marketing zu komplex wird, braucht es <em>Klarheit</em><span class="headline-dot">.</span></h1>
-        <p class="hero-lead">Ich unterstütze Geschäftsführungen und Marketingverantwortliche dabei, Themen zu ordnen, Perspektiven zusammenzuführen und Prioritäten zu schärfen. So werden Entscheidungen leichter, Kommunikation fokussierter und Marketing wirksamer.</p>
+        <p class="hero-lead">Gemeinsam mit Geschäftsführungen, Gründern und Marketingverantwortlichen ordne ich Themen, führe unterschiedliche Perspektiven zusammen und schärfe Prioritäten. So werden Entscheidungen leichter, Kommunikation fokussierter und Marketing wirksamer.</p>
         <p class="hero-tag">Für mehr Schlagkraft im Markt.</p>
         <div class="hero-cta">
-          <a href="mailto:bs@schiefer-online.eu" class="btn btn-primary">Jetzt Termin buchen</a>
-          <a href="#leistungen" class="btn btn-ghost">Wie ich helfe</a>
+          <a href="mailto:bs@schiefer-online.eu" class="btn btn-primary">Jetzt mehr Wirkung entfalten</a>
+          <a href="#leistungen" class="btn btn-ghost">Vorgehensweise</a>
         </div>
       </div>
       <div class="hero-media">
@@ -421,7 +431,7 @@
 <section class="quote-strip">
   <div class="wrap">
     <blockquote>„Viele Unternehmen wünschen sich mehr Klarheit, Orientierung und Wirkung statt immer neuer Maßnahmen. <b>Genau dabei unterstütze ich.“</b></blockquote>
-    <div class="att"><b>Bodo Schiefer</b> · Marke &amp; Kommunikation</div>
+    <div class="att"><b>Bodo Schiefer</b> · 25+ Jahre Erfahrung in Marke &amp; Kommunikation</div>
   </div>
 </section>
 
@@ -429,7 +439,7 @@
 <section class="sec transform reveal" id="klarheit">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker">Vom Durcheinander zur Richtung</span>
+      <span class="kicker">Vom Durcheinander zur Wirksamkeit</span>
       <h2>Ziehen Sie den Regler: so fühlt sich der Unterschied an.</h2>
     </div>
     <div class="compare" id="compare">
@@ -444,7 +454,7 @@
           <div class="clar-step"><b>01</b><span>Prioritäten klären</span></div>
           <div class="clar-step"><b>02</b><span>Positionierung schärfen</span></div>
           <div class="clar-step"><b>03</b><span>Prozesse, Rollen und Ressourcen ordnen</span></div>
-          <div class="clar-step"><b>04</b><span>Wirkung im Markt erhöhen</span></div>
+          <div class="clar-step"><b>04</b><span>Wirkung im Markt maximieren</span></div>
         </div>
       </div>
       <div class="handle" id="handle"></div>
