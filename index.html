@@ -93,6 +93,7 @@
   .eyebrow::before{content:"";width:30px;height:1.5px;background:var(--accent)}
   .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.5rem,4.6vw,4.2rem);line-height:1.04;letter-spacing:-.015em;margin-bottom:24px}
   .hero h1 em{font-style:italic;color:var(--blue)}
+  .hero h1 .headline-dot{color:var(--blue)}
   .hero-lead{font-size:1.12rem;color:var(--ink-soft);max-width:32em;margin-bottom:14px}
   .hero-tag{font-family:var(--serif);font-size:1.3rem;color:var(--blue);font-weight:500;margin-bottom:32px}
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
@@ -102,7 +103,9 @@
   .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
   .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
   .hero-media{position:relative;background:var(--blue);border-radius:18px;overflow:hidden}
-  .hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .hero-image-wrap{position:absolute;inset:0}
+  .hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .hero-badge{position:absolute;right:26px;top:26px;z-index:2;width:clamp(61px,6.4vw,94px);height:auto;filter:drop-shadow(0 14px 24px rgba(13,27,42,.22))}
   .hero-cap{position:absolute;left:26px;bottom:26px;z-index:3;background:rgba(251,250,247,.95);border-radius:14px;padding:15px 20px;box-shadow:0 18px 40px -20px rgba(0,0,0,.55);max-width:280px;border-left:3px solid var(--accent)}
   .hero-cap strong{font-family:var(--serif);font-size:1.3rem;color:var(--ink);display:block;line-height:1.1}
   .hero-cap span{font-size:.84rem;color:var(--muted);display:block;margin-top:5px}
@@ -113,7 +116,9 @@
   }
   @media(max-width:640px){
     .hero-media{display:flex;flex-direction:column;min-height:0;background:#fff;border:1px solid rgba(48,111,186,.42)}
-    .hero-media img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1 / 1.05;object-fit:cover;object-position:70% top}
+    .hero-image-wrap{position:relative;inset:auto;width:100%;aspect-ratio:1 / 1.05;overflow:hidden}
+    .hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% top}
+    .hero-badge{right:16px;top:16px;width:58px}
     .hero-cap{position:relative;left:auto;right:auto;bottom:auto;max-width:none;background:#fff;border-left:0;border-top:1px solid rgba(48,111,186,.28);border-radius:0;padding:16px 18px 18px;box-shadow:none}
   }
 
@@ -391,7 +396,7 @@
     <div class="hero-grid">
       <div class="hero-text">
         <span class="eyebrow">Marke &amp; Kommunikation · Beratung</span>
-        <h1>Wenn Marketing zu komplex wird, braucht es <em>Klarheit</em>.</h1>
+        <h1>Wenn Marketing zu komplex wird, braucht es <em>Klarheit</em><span class="headline-dot">.</span></h1>
         <p class="hero-lead">Ich unterstütze Geschäftsführungen und Marketingverantwortliche dabei, Themen zu ordnen, Perspektiven zusammenzuführen und Prioritäten zu schärfen. So werden Entscheidungen leichter, Kommunikation fokussierter und Marketing wirksamer.</p>
         <p class="hero-tag">Für mehr Schlagkraft im Markt.</p>
         <div class="hero-cta">
@@ -400,10 +405,12 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="images/Bodo%20Hero%20Section.png" alt="Bodo Schiefer">
+        <div class="hero-image-wrap">
+          <img class="hero-portrait" src="images/Bodo%20Hero%20Section.png" alt="Bodo Schiefer">
+          <img class="hero-badge" src="images/Logo%20Unternehmer%20des%20tages.png" alt="Unternehmer des Tages">
+        </div>
         <div class="hero-cap">
           <strong>Bodo Schiefer</strong>
-          <span>vom Handelsblatt als „Unternehmer des Tages“ ausgezeichnet</span>
         </div>
       </div>
     </div>
