@@ -199,11 +199,12 @@
   .stat .big{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,5vw,3.6rem);color:#fff;line-height:1;letter-spacing:-.02em}
   .stat .big .u{color:var(--accent)}
   .stat .big .u.word{font-family:var(--serif);font-size:.46em;vertical-align:middle;margin-left:.12em}
-  .stat .big.combo-stat{display:inline-flex;align-items:baseline;justify-content:center;gap:.12em}
+  .stat .big.combo-stat{display:inline-flex;align-items:center;justify-content:center;gap:.12em}
   .stat .big.combo-stat .stat-num{color:#fff}
   .stat .big.combo-stat .u.word{font-size:.46em;margin-left:0}
+  .stat .big.combo-stat .u.symbol{font-size:1em;line-height:1;margin:0}
   .stat .lab{margin-top:14px;font-size:.96rem;color:rgba(255,255,255,.82)}
-  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-flex;align-items:baseline;gap:.1em}.stat .big.combo-stat .stat-num{line-height:1}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1;transform:translateY(-.03em)}}
+  @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-flex;align-items:center;gap:.1em}.stat .big.combo-stat .stat-num{line-height:1}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1}.stat .big.combo-stat .u.symbol{font-size:1em;line-height:1}}
 
   /* OUTCOMES (dunkel) */
   .outcomes{background:var(--ink);color:#fff}
@@ -459,7 +460,7 @@
       </div>
       <div class="handle" id="handle" role="slider" tabindex="0" aria-label="Vergleich zwischen Komplexität und Klarheit" aria-valuemin="6" aria-valuemax="94" aria-valuenow="50"></div>
     </div>
-    <p class="compare-hint">↔ Regler ziehen — links das typische Durcheinander, rechts die geordnete Richtung.</p>
+    <p class="compare-hint">Ziehen Sie den Regler! Das können wir gemeinsam bewegen: eine klarere Richtung,</p>
   </div>
 </section>
 
@@ -468,7 +469,7 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="kicker">Wann Unternehmen auf mich setzen</span>
-      <h2>Zwei Ausgangslagen, ein Ziel: wieder handlungsfähig werden.</h2>
+      <h2>Zwei Ausgangslagen, ein Ziel: Handlungsfähigkeit erhöhen.</h2>
     </div>
     <div class="when-grid">
       <div class="when-card">
@@ -538,7 +539,7 @@
     <div class="stats-grid" id="stats">
       <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
       <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
-      <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="Unter" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie Start-ups</div></div>
+      <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="&lt;" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie-Start-ups</div></div>
       <div class="stat"><div class="big" data-target="1" data-start="9" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
     </div>
   </div>
@@ -566,12 +567,12 @@
     <div class="how-grid">
       <div>
         <span class="kicker">Wie ich arbeite</span>
-        <h2>Zuhören, ordnen, verdichten.</h2>
+        <h2>Zuhören, ordnen, schärfen.</h2>
         <p class="how-pull" style="margin-top:32px">Ich arbeite pragmatisch, strukturiert und partnerschaftlich. Mit klarem Blick für das, was strategisch sinnvoll, im Unternehmen umsetzbar ist und wirklich funktioniert.</p>
       </div>
       <div class="how-steps">
         <div class="how-step"><div class="n">01</div><p>Ich steige dort ein, wo Themen unübersichtlich werden, Entscheidungen stocken oder unterschiedliche Sichtweisen zusammengebracht werden müssen.</p></div>
-        <div class="how-step"><div class="n">02</div><p>Ich höre zu, frage nach, ordne ein und verdichte. So wird sichtbar, welche Fragen wirklich entscheidend sind und welche Themen nachrangig werden.</p></div>
+        <div class="how-step"><div class="n">02</div><p>Ich höre zu, frage nach, ordne ein und schärfe. So wird sichtbar, welche Fragen wirklich entscheidend sind und welche Themen nachrangig werden.</p></div>
         <div class="how-step"><div class="n">03</div><p>Daraus entsteht eine tragfähige Grundlage für Entscheidungen, Kommunikation und Umsetzung.</p></div>
       </div>
     </div>
@@ -855,7 +856,8 @@
             var p=Math.min((ts-t0)/dur,1);
             var val=Math.round(start+(1-Math.pow(1-p,3))*(tgt-start));
             if(pre){
-              el.innerHTML='<span class="u word">'+pre+'</span><span class="stat-num">'+val+'</span><span class="u word">'+suf+'</span>';
+              var preClass=pre==='<'?'symbol':'word',preText=pre==='<'?'&lt;':pre;
+              el.innerHTML='<span class="u '+preClass+'">'+preText+'</span><span class="stat-num">'+val+'</span><span class="u word">'+suf+'</span>';
             }else{
               var cls=suf.length>1?'u word':'u';
               el.innerHTML=val+'<span class="'+cls+'">'+suf+'</span>';
