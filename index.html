@@ -538,8 +538,8 @@
   <div class="wrap">
     <div class="stats-grid" id="stats">
       <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke &amp; Kommunikation</div></div>
-      <div class="stat"><div class="big" data-target="6" data-suffix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
-      <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="&lt;" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie-Start-ups</div></div>
+      <div class="stat"><div class="big combo-stat" data-target="6" data-prefix="×">0</div><div class="lab">Umsatz in 2,5 Jahren versechsfacht</div></div>
+      <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="&gt;" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie-Start-ups</div></div>
       <div class="stat"><div class="big" data-target="1" data-start="9" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
     </div>
   </div>
@@ -619,12 +619,12 @@
       <h2>Wirkung, die sich messen lässt.</h2>
     </div>
     <div class="succ-grid">
-      <div class="succ-card"><div class="ic">Wachstum</div><h4>Umsatz in 2,5 Jahren versechsfacht</h4><p>Angebot, Positionierung und Kommunikation strategisch neu ausgerichtet.</p></div>
-      <div class="succ-card"><div class="ic">Profitabilität</div><h4>Break-even in unter 1&nbsp;Jahr</h4><p>Marketing- und Kommunikationsstrategie für ein Technologie-Start-up geschärft und das Anwendungsfeld zielgruppengerecht erweitert.</p></div>
+      <div class="succ-card"><div class="ic">Wachstum</div><h4>Umsatz x6 in 2,5 Jahren</h4><p>Angebot, Positionierung und Kommunikation strategisch neu ausgerichtet.</p></div>
+      <div class="succ-card"><div class="ic">Profitabilität</div><h4>Break-even in &gt; 1&nbsp;Jahr</h4><p>Marketing- und Kommunikationsstrategie für ein Technologie-Start-up geschärft und das Anwendungsfeld zielgruppengerecht erweitert.</p></div>
       <div class="succ-card"><div class="ic">Effizienz</div><h4>Internationale Marketingbudgets reduziert</h4><p>Einheitliche Produktpositionierung für mehrere Länder entwickelt und implementiert.</p></div>
-      <div class="succ-card"><div class="ic">Transformation</div><h4>Marketing-Transformation unterstützt</h4><p>Kundenzentriertes Mindset etabliert, Geschäftsmodell und Organisationsstrukturen weiterentwickelt.</p></div>
-      <div class="succ-card"><div class="ic">Performance</div><h4>Wirkung im Marketingfunnel erhöht</h4><p>Performance und Branding markenadäquat verbunden und Maßnahmen effizienter gesteuert.</p></div>
-      <div class="succ-card"><div class="ic">Kreativität</div><h4>Strategie in Wirkung übersetzt</h4><p>Marke mit Kleinstbudget revitalisiert und fachübergreifend aktiviert. Sogar mit Eintrag ins Guinness-Buch der Rekorde.</p></div>
+      <div class="succ-card"><div class="ic">Transformation</div><h4>Marketing-Transformation geleitet</h4><p>Kundenzentriertes Mindset etabliert, Geschäftsmodell und Organisationsstrukturen weiterentwickelt.</p></div>
+      <div class="succ-card"><div class="ic">Performance</div><h4>Wirkung im Marketing-Funnel maximiert</h4><p>Performance und Branding markenadäquat verbunden und Maßnahmen effizienter gesteuert.</p></div>
+      <div class="succ-card"><div class="ic">Kreativität</div><h4>Strategie in Wirkung übersetzt</h4><p>Eintrag ins Guinness-Buch der Rekorde mit der Revitalisierung und Aktivierung einer Marke trotz Kleinstbudget.</p></div>
     </div>
   </div>
 </section>
@@ -856,7 +856,7 @@
             var p=Math.min((ts-t0)/dur,1);
             var val=Math.round(start+(1-Math.pow(1-p,3))*(tgt-start));
             if(pre){
-              var preClass=pre==='<'?'symbol':'word',preText=pre==='<'?'&lt;':pre;
+              var preClass=(pre==='<'||pre==='>'||pre==='×')?'symbol':'word',preText=pre==='<'?'&lt;':pre==='>'?'&gt;':pre;
               el.innerHTML='<span class="u '+preClass+'">'+preText+'</span><span class="stat-num">'+val+'</span><span class="u word">'+suf+'</span>';
             }else{
               var cls=suf.length>1?'u word':'u';
