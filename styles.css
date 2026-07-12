@@ -132,6 +132,8 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .cta-strip p{color:rgba(255,255,255,.78);margin-bottom:30px}
 .btn{display:inline-block;font-weight:600;font-size:15px;padding:15px 30px;border-radius:42px;text-decoration:none;transition:all .22s;cursor:pointer;border:1.5px solid transparent;background:var(--blue);color:#fff}
 .btn:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(48,111,186,.6)}
+.btn-muted{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-muted:hover{background:transparent;border-color:var(--blue);color:var(--blue);box-shadow:none}
 
 /* FOOTER */
 footer{background:var(--blue);color:rgba(255,255,255,.78);padding:70px 0 38px}
