@@ -44,7 +44,7 @@
     <a href="../" aria-label="Zur Startseite">
       <img src="../images/site-logo-header.png" alt="Bodo Schiefer — Marke & Kommunikation">
     </a>
-    <nav class="nav-links" id="navlinks">
+    <nav class="nav-links" id="navlinks" aria-label="Hauptnavigation">
       <a href="../#leistungen">Leistungen</a>
       <a href="../#vorgehen">Vorgehen</a>
       <a href="../#ueber-mich">Über mich</a>
@@ -53,7 +53,7 @@
       <a href="../fun-fact/">Fun Fact</a>
       <a href="mailto:bs@schiefer-online.eu" class="nav-cta">Jetzt Termin buchen</a>
     </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menü öffnen" aria-controls="navlinks" aria-expanded="false">☰</button>
   </div>
 </header>
 
@@ -207,8 +207,9 @@
 <script>
   document.getElementById('yr').textContent=new Date().getFullYear();
   var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
-  mb.addEventListener('click',function(){nl.classList.toggle('open')});
-  nl.addEventListener('click',function(e){if(e.target.tagName==='A')nl.classList.remove('open')});
+  function setMenu(open){nl.classList.toggle('open',open);mb.setAttribute('aria-expanded',String(open));mb.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');}
+  mb.addEventListener('click',function(){setMenu(!nl.classList.contains('open'))});
+  nl.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
 </script>
 </body>
 </html>
