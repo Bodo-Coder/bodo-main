@@ -103,8 +103,8 @@
   .btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(48,111,186,.6)}
   .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
   .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
-  .btn-gold{background:var(--accent);color:var(--ink)}
-  .btn-gold:hover{background:var(--accent);color:var(--ink);transform:translateY(-2px)}
+  .btn-gold{background:var(--accent);color:#fff}
+  .btn-gold:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
   .hero-media{position:relative;background:var(--blue);border-radius:18px;overflow:hidden}
   .hero-image-wrap{position:absolute;inset:0}
   .hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
@@ -265,7 +265,7 @@
   .cta-banner h2{color:#fff;margin-bottom:8px}
   .cta-banner .sub{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--accent);margin-bottom:22px}
   .cta-banner p{color:rgba(255,255,255,.8);font-size:1.1rem;margin-bottom:36px}
-  .cta-banner .btn-primary{background:var(--accent);color:var(--ink)}
+  .cta-banner .btn-primary{background:var(--accent);color:#fff}
   .cta-banner .btn-primary:hover{background:#d7b873;box-shadow:0 12px 28px -12px rgba(200,164,92,.65)}
 
   /* TESTIMONIAL CAROUSEL */
@@ -321,7 +321,8 @@
   .clip-desc{font-size:.9rem;color:var(--ink-soft);line-height:1.45;margin-bottom:14px}
   .clip .more{font-size:.84rem;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
   .clip .more:hover{text-decoration:underline}
-  .press-hint{text-align:center;color:var(--muted);font-size:.92rem;margin-top:18px}
+  .press-hint{text-align:center;color:var(--ink);font-size:1rem;margin-top:18px}
+  .press-hint .btn,.press-hint .btn:hover{margin-top:18px;color:#fff}
   @media(max-width:760px){
     .table{height:590px;margin-left:-16px;margin-right:-16px;border-radius:16px}
     .clip{width:188px;padding-bottom:13px}
@@ -715,7 +716,10 @@
       </div>
     </div>
     <div class="table" id="table"></div>
-    <p class="press-hint">✦ Ziehen Sie die Ausschnitte über den Tisch — oben rechts mischen oder ordentlich stapeln. &nbsp;<a href="presse/" style="color:var(--blue);font-weight:600;text-decoration:none">Zur Presseübersicht →</a></p>
+    <div class="press-hint">
+      <p>Ziehen Sie die Ausschnitte über den Tisch — oben rechts mischen oder ordentlich stapeln.</p>
+      <a href="presse/" class="btn btn-gold">Zur Presseübersicht</a>
+    </div>
   </div>
 </section>
 
