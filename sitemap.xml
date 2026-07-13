@@ -6,22 +6,22 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.schiefer-online.eu/presse</loc>
+    <loc>https://www.schiefer-online.eu/presse/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.schiefer-online.eu/fun-fact</loc>
+    <loc>https://www.schiefer-online.eu/fun-fact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.schiefer-online.eu/impressum</loc>
+    <loc>https://www.schiefer-online.eu/impressum/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.schiefer-online.eu/datenschutz</loc>
+    <loc>https://www.schiefer-online.eu/datenschutz/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
