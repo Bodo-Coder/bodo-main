@@ -120,6 +120,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
   .story-copy .story-media,.story-copy .story-mobile-card{margin:22px 0 18px}
   .story-finale .story-copy{order:1}
   .story-finale-media{order:2}
+  .story-finale .mobile-back-link{order:3;justify-self:start}
   .story{gap:52px}
   .story-pair{grid-template-columns:1fr}
   .story-pair img{height:auto;max-height:340px}
