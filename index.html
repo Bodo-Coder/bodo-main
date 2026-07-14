@@ -73,6 +73,8 @@
   .nav-links{display:flex;gap:18px;align-items:center}
   .nav-links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink-soft);letter-spacing:.01em;transition:color .2s}
   .nav-links a:hover{color:var(--blue)}
+  .nav-fun{background:var(--accent);color:#fff!important;padding:5px 9px;border-radius:2px;line-height:1.2}
+  .nav-fun:hover{background:#d7b873;color:#fff!important}
   .nav-cta{background:var(--blue);color:#fff !important;padding:11px 22px;border-radius:40px;font-weight:600;transition:background .2s,transform .2s}
   .nav-cta:hover{background:var(--blue-deep);transform:translateY(-1px)}
   .menu-btn{display:none;background:none;border:0;font-size:26px;color:var(--ink);cursor:pointer}
@@ -82,6 +84,7 @@
     .menu-btn{display:block}
     .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 0}
     .nav-links.open a{padding:14px 32px}
+    .nav-links.open .nav-fun{background:transparent;color:var(--ink-soft)!important;border-radius:0}
     .nav-links.open .nav-cta{margin:10px 32px;text-align:center}
   }
 
@@ -397,7 +400,7 @@
       <a href="#ueber-mich">Über mich</a>
       <a href="#erfolge">Erfolge</a>
       <a href="presse/">Presse</a>
-      <a href="fun-fact/">Fun Fact</a>
+      <a href="fun-fact/" class="nav-fun">Fun Fact</a>
       <a href="mailto:bs@schiefer-online.eu" class="nav-cta">Jetzt Termin buchen</a>
     </nav>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Menü öffnen" aria-controls="navlinks" aria-expanded="false">☰</button>
