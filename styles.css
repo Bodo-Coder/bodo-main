@@ -32,7 +32,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
   .menu-btn{display:block}
   .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 0}
   .nav-links.open a{padding:14px 32px}
-  .nav-links.open .nav-fun{background:transparent;color:var(--ink-soft)!important;border-radius:0}
+  .nav-links.open .nav-fun{align-self:center;background:var(--accent);color:#fff!important;padding:7px 12px;margin:7px 0;border-radius:2px}
   .nav-links.open .nav-cta{margin:10px 32px;text-align:center}
 }
 
