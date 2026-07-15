@@ -69,6 +69,8 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .parsed-card .ph.packservice-composite{background:#fff}
 .parsed-card .ph.packservice-composite img{object-fit:contain;object-position:center}
 .parsed-card .ph.printde-group img{object-position:center top}
+.parsed-card .ph.springer-cover{height:300px}
+.parsed-card .ph.springer-cover img{object-position:center 65%}
 .parsed-card .ph.startup-logos{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:18px;padding:14px 24px;background:#fff}
 .parsed-card .ph.startup-logos img{justify-self:center;width:auto;height:auto;max-width:100%;max-height:92px;object-fit:contain;display:block}
 .parsed-card .ph.startup-logos .snoopstar-logo{max-height:86px}
@@ -83,6 +85,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 @media(max-width:760px){
   .press-grid{grid-template-columns:1fr}
   .parsed-card .ph.handelsblatt-proof{height:200px;padding:14px}
+  .parsed-card .ph.springer-cover{height:200px}
 }
 
 /* FUN FACT */
