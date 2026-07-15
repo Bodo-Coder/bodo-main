@@ -324,6 +324,7 @@
   .clip-desc{font-size:.9rem;color:var(--ink-soft);line-height:1.45;margin-bottom:14px}
   .clip .more{font-size:.84rem;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
   .clip .more:hover{text-decoration:underline}
+  .clip .availability{font-size:.84rem;font-weight:600;color:var(--muted);display:inline-flex;line-height:1.35}
   .press-hint{text-align:center;color:var(--ink);font-size:1rem;margin-top:18px}
   .press-hint .btn,.press-hint .btn:hover{margin-top:18px;color:#fff}
   @media(max-width:760px){
@@ -335,7 +336,7 @@
     .clip-mast{font-size:1.05rem;padding-bottom:6px;line-height:1.12}
     .clip-yr{font-size:.62rem;margin:8px 0 7px}
     .clip-desc{display:none}
-    .clip .more{font-size:.76rem}
+    .clip .more,.clip .availability{font-size:.76rem}
   }
 
   /* AWARDS */
@@ -914,14 +915,15 @@
       {yr:'2022',outlet:'HORIZONT',img:'images/presse-horizont-2022.jpg',desc:'Bericht über den strategischen Einsatz von Augmented Reality in Marketingkommunikation und Sales Funnel.',url:'https://www.horizont.net/marketing/nachrichten/snoopstar-so-macht-sich-print-mit-ar-fit-fuers-metaverse-197190'},
       {yr:'2018',outlet:'HORIZONT',img:'images/presse-horizont-2018.jpg',desc:'Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.',url:'https://www.horizont.net/agenturen/nachrichten/Expansion-Britische-Agenturgruppe-Engine-kommt-nach-Deutschland-167503'},
       {yr:'2022 · Buchkapitel',outlet:'Springer-Vieweg',img:'images/presse-springer-vieweg-nachhaltige-gebaeude.jpg',desc:'Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.',url:'https://link.springer.com/chapter/10.1007/978-3-658-34962-2_28'},
-      {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',url:'https://www.bdzv.de/service/presse/branchennachrichten/2025/kurswechsel-jetzt-der-bdzv-vermarktungsreport-2025-fuer-mehr-wachstum'}
+      {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',status:'Mitgliederpublikation · nicht öffentlich zugänglich'}
     ];
     var table=document.getElementById('table'),z=1,els=[],customLayout=false;
     articles.forEach(function(a){
       var c=document.createElement('div');c.className='clip';
       var html='';
       if(a.img){html+='<div class="clip-photo"><img src="'+a.img+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';}
-      html+='<div class="clip-pad"><div class="clip-mast">'+a.outlet+'</div><div class="clip-yr">'+a.yr+'</div><div class="clip-desc">'+a.desc+'</div><a class="more" href="'+a.url+'" target="_blank" rel="noopener">Artikel lesen →</a></div>';
+      var action=a.url?'<a class="more" href="'+a.url+'" target="_blank" rel="noopener">Artikel lesen →</a>':'<span class="availability">'+a.status+'</span>';
+      html+='<div class="clip-pad"><div class="clip-mast">'+a.outlet+'</div><div class="clip-yr">'+a.yr+'</div><div class="clip-desc">'+a.desc+'</div>'+action+'</div>';
       c.innerHTML=html;
       table.appendChild(c);els.push(c);makeDraggable(c);
     });

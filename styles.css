@@ -75,6 +75,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .parsed-card p{color:var(--muted);font-size:1rem;margin-bottom:20px;flex:1}
 .parsed-card .more{font-size:.9rem;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
 .parsed-card .more:hover{text-decoration:underline}
+.parsed-card .availability{font-size:.9rem;font-weight:600;color:var(--muted);display:inline-flex;line-height:1.35}
 @media(max-width:760px){.press-grid{grid-template-columns:1fr}}
 
 /* FUN FACT */
