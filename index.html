@@ -304,24 +304,22 @@
     .tcar-card .q{font-size:1.05rem}
   }
 
-  /* PRESS WÜHLTISCH */
+  /* FESTE PRESSE-COLLAGE */
   .press{background:var(--paper-2)}
-  .press-head-row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:30px}
-  .press-tools{display:flex;gap:10px}
-  .press-tools button{font-family:var(--sans);font-size:.86rem;font-weight:600;color:var(--blue);background:#fff;border:1.5px solid var(--line);padding:10px 18px;border-radius:30px;cursor:pointer;transition:all .2s}
-  .press-tools button:hover{border-color:var(--blue);background:var(--blue);color:#fff}
+  .press-head-row{margin-bottom:30px}
   .table{position:relative;height:600px;border-radius:20px;background:repeating-linear-gradient(45deg,#efe9dd 0 22px,#ece5d6 22px 44px);border:1px solid var(--line);overflow:hidden;box-shadow:inset 0 2px 30px rgba(13,27,42,.08)}
-  .clip{position:absolute;width:294px;background:#fffdf8;border:1px solid #e7dfce;border-radius:4px;padding:0 0 18px;cursor:grab;box-shadow:0 14px 30px -14px rgba(13,27,42,.45);transition:box-shadow .2s, transform .12s;touch-action:none;overflow:hidden}
-  .clip:hover{box-shadow:0 22px 48px -16px rgba(13,27,42,.55)}
-  .clip.drag{cursor:grabbing;box-shadow:0 30px 60px -16px rgba(13,27,42,.6)}
+  .clip{position:absolute;width:294px;background:#fffdf8;border:1px solid #e7dfce;border-radius:4px;padding:0 0 18px;box-shadow:0 14px 30px -14px rgba(13,27,42,.45);overflow:hidden}
   .clip::before{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-3deg);width:64px;height:18px;background:rgba(200,164,92,.5);border:1px solid rgba(160,130,70,.4);z-index:2}
   .clip-photo{width:100%;height:140px;overflow:hidden;background:#e9e2d4}
   .clip-photo img{width:100%;height:100%;object-fit:cover;display:block}
   .clip-photo.handelsblatt-proof{height:155px;padding:8px;background:#fff}
   .clip-photo.handelsblatt-proof img{object-fit:contain;object-position:center}
+  .clip-photo.printde-teaser{height:92px}
+  .clip-photo.printde-teaser img{object-position:center top}
   .clip-pad{padding:18px 22px 0}
   .clip-mast{font-family:var(--serif);font-weight:600;font-size:1.32rem;color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:8px;letter-spacing:.01em}
   .clip-yr{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:10px 0 10px}
+  .clip-title{font-family:var(--serif);font-weight:600;font-size:1.1rem;color:var(--ink);line-height:1.18;margin-bottom:10px}
   .clip-desc{font-size:.9rem;color:var(--ink-soft);line-height:1.45;margin-bottom:14px}
   .clip .more{font-size:.84rem;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
   .clip .more:hover{text-decoration:underline}
@@ -338,6 +336,7 @@
     .clip-mast{font-size:1.05rem;padding-bottom:6px;line-height:1.12}
     .clip-yr{font-size:.62rem;margin:8px 0 7px}
     .clip-desc{display:none}
+    .clip-title{font-size:.9rem;margin-bottom:7px}
     .clip .more,.clip .availability{font-size:.76rem}
   }
 
@@ -716,14 +715,9 @@
         <h2>Sichtbar in Fach- und Wirtschaftsmedien.</h2>
         <p>Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und den wirksamen Einsatz von Augmented Reality in der Marketingkommunikation.</p>
       </div>
-      <div class="press-tools">
-        <button id="shuffleBtn">Mischen</button>
-        <button id="tidyBtn">Aufräumen</button>
-      </div>
     </div>
     <div class="table" id="table"></div>
     <div class="press-hint">
-      <p>Ziehen Sie die Ausschnitte über den Tisch — oben rechts mischen oder ordentlich stapeln.</p>
       <a href="presse/" class="btn btn-gold">Zur Presseübersicht</a>
     </div>
   </div>
@@ -910,26 +904,26 @@
     car.addEventListener('mouseleave',function(){rs()});
   })();
 
-  /* ---------- PRESS WÜHLTISCH (echte Artikelbilder) ---------- */
+  /* ---------- PRESSE-COLLAGE (feste Komposition) ---------- */
   (function(){
     var articles=[
       {yr:'2021',outlet:'Handelsblatt',img:'images/presse-handelsblatt-2021-unternehmer-des-tages.png',proof:true,desc:'Porträt über unternehmerische Innovationsleistung, profitables Wachstum und Augmented Reality als wirksames Instrument in der Marketingkommunikation. Auszeichnung als „Unternehmer des Tages“.',url:'https://www.handelsblatt.com/unternehmen/handel-konsumgueter/augmented-reality-das-start-up-snoopstar-bringt-aldi-prospekten-das-sprechen-bei/27359276.html',cta:'Artikel lesen →'},
       {yr:'2022',outlet:'HORIZONT',img:'images/presse-horizont-2022.jpg',desc:'Bericht über den strategischen Einsatz von Augmented Reality in Marketingkommunikation und Sales Funnel.',url:'https://www.horizont.net/marketing/nachrichten/snoopstar-so-macht-sich-print-mit-ar-fit-fuers-metaverse-197190'},
       {yr:'2018',outlet:'HORIZONT',img:'images/presse-horizont-2018.jpg',desc:'Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.',url:'https://www.horizont.net/agenturen/nachrichten/Expansion-Britische-Agenturgruppe-Engine-kommt-nach-Deutschland-167503'},
       {yr:'2022 · Buchkapitel',outlet:'Springer-Vieweg',img:'images/presse-springer-vieweg-nachhaltige-gebaeude.jpg',desc:'Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.',url:'https://link.springer.com/chapter/10.1007/978-3-658-34962-2_28'},
-      {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',status:'Mitgliederpublikation · nicht öffentlich zugänglich'}
+      {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',status:'Mitgliederpublikation · nicht öffentlich zugänglich'},
+      {yr:'2023',outlet:'PRINT.DE',title:'snoopstar mit neuer Strategie',img:'images/presse-printde-2023.jpg',teaser:true,desc:'Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketingtransformation.',url:'https://www.print.de/allgemein/snoopstar-gmbh-mit-neuer-strategie-und-fuehrungsspitze/'}
     ];
-    var table=document.getElementById('table'),z=1,els=[],customLayout=false;
+    var table=document.getElementById('table'),els=[];
     articles.forEach(function(a){
       var c=document.createElement('div');c.className='clip';
       var html='';
-      if(a.img){html+='<div class="clip-photo'+(a.proof?' handelsblatt-proof':'')+'"><img src="'+a.img+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';}
+      if(a.img){html+='<div class="clip-photo'+(a.proof?' handelsblatt-proof':'')+(a.teaser?' printde-teaser':'')+'"><img src="'+a.img+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';}
       var action=a.url?'<a class="more" href="'+a.url+'" target="_blank" rel="noopener">'+(a.cta||'Artikel lesen →')+'</a>':'<span class="availability">'+a.status+'</span>';
-      html+='<div class="clip-pad"><div class="clip-mast">'+a.outlet+'</div><div class="clip-yr">'+a.yr+'</div><div class="clip-desc">'+a.desc+'</div>'+action+'</div>';
+      html+='<div class="clip-pad"><div class="clip-mast">'+a.outlet+'</div>'+(a.title?'<div class="clip-title">'+a.title+'</div>':'')+'<div class="clip-yr">'+a.yr+'</div><div class="clip-desc">'+a.desc+'</div>'+action+'</div>';
       c.innerHTML=html;
-      table.appendChild(c);els.push(c);makeDraggable(c);
+      table.appendChild(c);els.push(c);
     });
-    function rnd(a,b){return a+Math.random()*(b-a)}
     function setClip(c,x,y,rot,zi){
       var maxX=table.clientWidth-c.offsetWidth+20;
       var maxY=table.clientHeight-c.offsetHeight+10;
@@ -943,66 +937,24 @@
       if(w<760){mobileLayout();return;}
       var cw=els[0].offsetWidth;
       setClip(els[1],-36,150,-2,1);           // HORIZONT 2022
-      setClip(els[0],w*.17,70,0,5);           // Handelsblatt
-      setClip(els[2],w*.43,168,1,2);          // HORIZONT 2018
+      setClip(els[0],w*.17,70,0,6);           // Handelsblatt
+      setClip(els[5],w*.38,20,0,2);           // PRINT.DE 2023
+      setClip(els[2],w*.43,215,1,3);          // HORIZONT 2018
       setClip(els[4],w*.57,150,0,4);          // BDZV-Jahresreport
-      setClip(els[3],w-cw-28,92,0,6);         // Springer-Vieweg
-      z=6;
+      setClip(els[3],w-cw-28,92,0,7);         // Springer-Vieweg
     }
     function mobileLayout(){
       var w=table.clientWidth,cw=els[0].offsetWidth;
       setClip(els[1],-62,88,-5,1);                   // HORIZONT 2022
-      setClip(els[0],Math.max(26,w*.18),28,1,5);     // Handelsblatt
-      setClip(els[2],w-cw+18,116,4,2);               // HORIZONT 2018
+      setClip(els[5],Math.max(80,w*.4),150,0,2);      // PRINT.DE 2023
+      setClip(els[0],Math.max(26,w*.18),28,1,6);      // Handelsblatt
+      setClip(els[2],w-cw+18,330,4,3);               // HORIZONT 2018
       setClip(els[4],Math.max(18,w*.08),238,-1,4);   // BDZV-Jahresreport
-      setClip(els[3],Math.max(88,w*.33),318,3,6);    // Springer-Vieweg
-      z=6;
+      setClip(els[3],Math.max(88,w*.33),318,3,7);    // Springer-Vieweg
     }
-    function scatter(){
-      customLayout=true;
-      var w=table.clientWidth,h=table.clientHeight;
-      els.forEach(function(c){
-        var cw=c.offsetWidth,ch=c.offsetHeight;
-        var x=rnd(8,Math.max(10,w-cw-8)),y=rnd(8,Math.max(10,h-ch-8));
-        c.style.left=x+'px';c.style.top=y+'px';c.style.transform='rotate('+rnd(-10,10)+'deg)';c.style.zIndex=++z;
-      });
-    }
-    function tidy(){
-      customLayout=true;
-      var w=table.clientWidth,cw=els[0].offsetWidth;
-      var cols=Math.max(1,Math.floor((w-24)/(cw+18)));
-      var totalW=cols*cw+(cols-1)*18,startX=(w-totalW)/2;
-      els.forEach(function(c,i){
-        var col=i%cols,row=Math.floor(i/cols);
-        c.style.left=(startX+col*(cw+18))+'px';
-        c.style.top=(24+row*(c.offsetHeight+18))+'px';
-        c.style.transform='rotate(0deg)';c.style.zIndex=i+1;
-      });
-    }
-    function makeDraggable(c){
-      c.addEventListener('pointerdown',function(e){
-        if(e.target.classList.contains('more'))return;
-        customLayout=true;
-        c.classList.add('drag');c.style.zIndex=++z;
-        var r=c.getBoundingClientRect();
-        var ox=e.clientX-r.left,oy=e.clientY-r.top;
-        c.setPointerCapture(e.pointerId);c.style.transform='rotate(0deg)';
-        function mv(ev){
-          var pr=table.getBoundingClientRect();
-          var x=ev.clientX-pr.left-ox,y=ev.clientY-pr.top-oy;
-          x=Math.max(-20,Math.min(pr.width-c.offsetWidth+20,x));
-          y=Math.max(-10,Math.min(pr.height-c.offsetHeight+10,y));
-          c.style.left=x+'px';c.style.top=y+'px';
-        }
-        function up(){c.classList.remove('drag');c.releasePointerCapture(e.pointerId);document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);}
-        document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
-      });
-    }
-    document.getElementById('shuffleBtn').addEventListener('click',scatter);
-    document.getElementById('tidyBtn').addEventListener('click',tidy);
     var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){setTimeout(defaultLayout,60);pio.disconnect();}})},{threshold:.2});
     pio.observe(table);
-    var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!customLayout)defaultLayout();},200);});
+    var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(defaultLayout,200);});
   })();
 </script>
 </body>
