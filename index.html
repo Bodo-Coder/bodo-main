@@ -317,7 +317,8 @@
   .clip::before{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-3deg);width:64px;height:18px;background:rgba(200,164,92,.5);border:1px solid rgba(160,130,70,.4);z-index:2}
   .clip-photo{width:100%;height:140px;overflow:hidden;background:#e9e2d4}
   .clip-photo img{width:100%;height:100%;object-fit:cover;display:block}
-  .clip-photo img[src$="presse-handelsblatt-2021-ausschnitt.jpg"]{object-position:center 35%}
+  .clip-photo.handelsblatt-proof{height:155px;padding:8px;background:#fff}
+  .clip-photo.handelsblatt-proof img{object-fit:contain;object-position:center}
   .clip-pad{padding:18px 22px 0}
   .clip-mast{font-family:var(--serif);font-weight:600;font-size:1.32rem;color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:8px;letter-spacing:.01em}
   .clip-yr{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:10px 0 10px}
@@ -332,6 +333,7 @@
     .clip{width:188px;padding-bottom:13px}
     .clip::before{top:-7px;width:52px;height:15px}
     .clip-photo{height:92px}
+    .clip-photo.handelsblatt-proof{height:140px;padding:8px}
     .clip-pad{padding:13px 15px 0}
     .clip-mast{font-size:1.05rem;padding-bottom:6px;line-height:1.12}
     .clip-yr{font-size:.62rem;margin:8px 0 7px}
@@ -911,7 +913,7 @@
   /* ---------- PRESS WÜHLTISCH (echte Artikelbilder) ---------- */
   (function(){
     var articles=[
-      {yr:'2021',outlet:'Handelsblatt',img:'images/presse-handelsblatt-2021-ausschnitt.jpg',desc:'Porträt über unternehmerische Innovationsleistung, profitables Wachstum und Augmented Reality als wirksames Instrument in der Marketingkommunikation. Auszeichnung als „Unternehmer des Tages“.',url:'https://www.handelsblatt.com/unternehmen/handel-konsumgueter/augmented-reality-das-start-up-snoopstar-bringt-aldi-prospekten-das-sprechen-bei/27359276.html',cta:'Artikel lesen →'},
+      {yr:'2021',outlet:'Handelsblatt',img:'images/presse-handelsblatt-2021-unternehmer-des-tages.png',proof:true,desc:'Porträt über unternehmerische Innovationsleistung, profitables Wachstum und Augmented Reality als wirksames Instrument in der Marketingkommunikation. Auszeichnung als „Unternehmer des Tages“.',url:'https://www.handelsblatt.com/unternehmen/handel-konsumgueter/augmented-reality-das-start-up-snoopstar-bringt-aldi-prospekten-das-sprechen-bei/27359276.html',cta:'Artikel lesen →'},
       {yr:'2022',outlet:'HORIZONT',img:'images/presse-horizont-2022.jpg',desc:'Bericht über den strategischen Einsatz von Augmented Reality in Marketingkommunikation und Sales Funnel.',url:'https://www.horizont.net/marketing/nachrichten/snoopstar-so-macht-sich-print-mit-ar-fit-fuers-metaverse-197190'},
       {yr:'2018',outlet:'HORIZONT',img:'images/presse-horizont-2018.jpg',desc:'Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.',url:'https://www.horizont.net/agenturen/nachrichten/Expansion-Britische-Agenturgruppe-Engine-kommt-nach-Deutschland-167503'},
       {yr:'2022 · Buchkapitel',outlet:'Springer-Vieweg',img:'images/presse-springer-vieweg-nachhaltige-gebaeude.jpg',desc:'Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.',url:'https://link.springer.com/chapter/10.1007/978-3-658-34962-2_28'},
@@ -921,7 +923,7 @@
     articles.forEach(function(a){
       var c=document.createElement('div');c.className='clip';
       var html='';
-      if(a.img){html+='<div class="clip-photo"><img src="'+a.img+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';}
+      if(a.img){html+='<div class="clip-photo'+(a.proof?' handelsblatt-proof':'')+'"><img src="'+a.img+'" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';}
       var action=a.url?'<a class="more" href="'+a.url+'" target="_blank" rel="noopener">'+(a.cta||'Artikel lesen →')+'</a>':'<span class="availability">'+a.status+'</span>';
       html+='<div class="clip-pad"><div class="clip-mast">'+a.outlet+'</div><div class="clip-yr">'+a.yr+'</div><div class="clip-desc">'+a.desc+'</div>'+action+'</div>';
       c.innerHTML=html;
