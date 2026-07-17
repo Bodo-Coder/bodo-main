@@ -143,8 +143,7 @@
   .sec-head p{font-size:1.12rem;color:var(--ink-soft);margin-top:20px}
 
   /* CHAOS -> CLARITY */
-  .transform{background:var(--paper-2)}
-  @media(min-width:881px){.transform{background:var(--paper)}}
+  .transform{background:var(--paper)}
   .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:none;box-shadow:0 30px 60px -36px rgba(13,27,42,.4);isolation:isolate}
   .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 56px}
   .layer .tag-lab{position:absolute;top:22px;z-index:3;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:30px}
@@ -249,17 +248,14 @@
   @media(max-width:880px){.about-story{grid-template-columns:1fr;gap:26px}.about-practice{order:-1;max-width:360px}}
   @media(max-width:760px){.about-practice{max-width:360px;margin-left:0}}
   /* SUCCESS */
-  .success{background:var(--paper-2)}
+  .success{background:var(--paper)}
   .succ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:14px}
   .succ-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 30px;transition:transform .25s,box-shadow .25s}
   .succ-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(13,27,42,.25)}
   .succ-card .ic{font-family:var(--sans);font-weight:700;font-style:normal;color:var(--accent);font-size:.95rem;margin-bottom:12px}
   .succ-card h4{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--blue);line-height:1.2;margin-bottom:12px}
   .succ-card p{color:var(--muted);font-size:.98rem}
-  @media(min-width:881px){
-    .when{background:var(--paper-2)!important}
-    .success{background:var(--paper)}
-  }
+  .when{background:var(--paper-2)!important}
   @media(max-width:880px){.succ-grid{grid-template-columns:1fr}}
 
   /* MANDATES */
@@ -793,30 +789,16 @@
   mb.addEventListener('click',function(){setMenu(!nl.classList.contains('open'))});
   nl.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
 
-  /* desktop section order */
+  /* section order */
   (function(){
-    var mq=window.matchMedia('(min-width: 881px)');
     var success=document.getElementById('erfolge');
     var clarity=document.getElementById('klarheit');
-    var originalNext=document.getElementById('mandate');
     var stats=document.getElementById('kennzahlen');
     var conviction=document.getElementById('ueberzeugung');
-    var when=document.getElementById('einsatz');
     var services=document.getElementById('leistungen');
-    function placeSections(){
-      var successNext=mq.matches?clarity:originalNext;
-      if(success.nextElementSibling!==successNext)successNext.parentNode.insertBefore(success,successNext);
-      if(mq.matches){
-        if(conviction.nextElementSibling!==clarity)clarity.parentNode.insertBefore(conviction,clarity);
-        if(stats.nextElementSibling!==services)services.parentNode.insertBefore(stats,services);
-      }else{
-        if(stats.nextElementSibling!==when)when.parentNode.insertBefore(stats,when);
-        if(conviction.nextElementSibling!==services)services.parentNode.insertBefore(conviction,services);
-      }
-    }
-    placeSections();
-    if(mq.addEventListener)mq.addEventListener('change',placeSections);
-    else mq.addListener(placeSections);
+    clarity.parentNode.insertBefore(success,clarity);
+    clarity.parentNode.insertBefore(conviction,clarity);
+    services.parentNode.insertBefore(stats,services);
   })();
 
   /* reveal */
