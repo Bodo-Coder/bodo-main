@@ -795,9 +795,12 @@
     var clarity=document.getElementById('klarheit');
     var stats=document.getElementById('kennzahlen');
     var conviction=document.getElementById('ueberzeugung');
+    var when=document.getElementById('einsatz');
+    var cta=document.querySelector('.cta-banner');
     var services=document.getElementById('leistungen');
     clarity.parentNode.insertBefore(success,clarity);
     clarity.parentNode.insertBefore(conviction,clarity);
+    when.parentNode.insertBefore(cta,when);
     services.parentNode.insertBefore(stats,services);
   })();
 
