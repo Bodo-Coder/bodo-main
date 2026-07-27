@@ -154,6 +154,7 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
 .btn:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(48,111,186,.6)}
 .btn-gold{background:var(--accent);color:#fff}
 .btn-gold:hover{background:var(--blue);color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(48,111,186,.6)}
+.fun-fact-booking:hover{background:var(--accent);box-shadow:0 12px 28px -12px rgba(200,164,92,.65)}
 .press-booking:hover{background:var(--accent);box-shadow:0 12px 28px -12px rgba(200,164,92,.65)}
 .btn-muted{background:transparent;border-color:var(--line);color:var(--ink)}
 .btn-muted:hover{background:transparent;border-color:var(--blue);color:var(--blue);box-shadow:none}
