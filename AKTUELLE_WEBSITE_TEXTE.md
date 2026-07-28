@@ -312,7 +312,7 @@ Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäft
         Impressum
         Datenschutz
 
-      ©  Bodo Schiefer · Marke & Kommunikation
+      ©  Bodo Schiefer · Marke & Wachstum
 
 # Quelle: fun-fact/index.html
 
@@ -437,7 +437,7 @@ Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäft
         Impressum
         Datenschutz
 
-      ©  Bodo Schiefer · Marke & Kommunikation
+      ©  Bodo Schiefer · Marke & Wachstum
 
 # Quelle: presse/index.html
 
@@ -555,7 +555,7 @@ Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäft
         Impressum
         Datenschutz
 
-      ©  Bodo Schiefer · Marke & Kommunikation
+      ©  Bodo Schiefer · Marke & Wachstum
 
 # Quelle: impressum/index.html
 
@@ -639,7 +639,7 @@ Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäft
         Impressum
         Datenschutz
 
-      ©  Bodo Schiefer · Marke & Kommunikation
+      ©  Bodo Schiefer · Marke & Wachstum
 
 # Quelle: datenschutz/index.html
 
@@ -749,4 +749,4 @@ Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäft
         Impressum
         Datenschutz
 
-      ©  Bodo Schiefer · Marke & Kommunikation
+      ©  Bodo Schiefer · Marke & Wachstum
