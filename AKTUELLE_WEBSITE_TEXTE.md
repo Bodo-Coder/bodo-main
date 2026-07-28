@@ -105,7 +105,7 @@ Genau dabei unterstütze ich.“
 
 ## Marke trifft digitales Nutzungserlebnis.
 
-Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war nicht abstrakte Digitalisierung, sondern Growth Marketing in der Praxis: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.
+Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.
 
 Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik kann ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis einordnen und bewerten. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern.
 
