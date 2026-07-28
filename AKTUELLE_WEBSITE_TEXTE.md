@@ -240,7 +240,7 @@ Eintrag ins Guinness-Buch der Rekorde mit der Revitalisierung und Aktivierung ei
 
     Ob Neuausrichtung, Wachstum oder festgefahrene Entscheidungen.
 
-Wenn Marke und Kommunikation an Klarheit, Fokus und Wirkung gewinnen sollen, lohnt sich ein unverbindliches Kennenlernen.
+Wenn Marketing und Zusammenarbeit klarer gesteuert werden und mehr Wirkung im Markt entfalten sollen, lohnt sich ein unverbindliches Kennenlernen.
 
     Jetzt Termin buchen
 
