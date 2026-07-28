@@ -1,6 +1,6 @@
 # Aktuelle Website-Texte
 
-Stand: 27. Juli 2026. Diese Datei ist die vollständige Textübergabe für die nächste Bearbeitung der Website.
+Stand: 27. Juli 2026, nach Vereinheitlichung der Footer-Texte. Diese Datei ist die vollständige Textübergabe für die nächste Bearbeitung der Website.
 
 ## Geltungsbereich
 
