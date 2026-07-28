@@ -584,7 +584,7 @@ Zum Inhalt springen
 
         Bodo Schiefer
 
-        BS | Marke & Kommunikation
+        BS | Marke & Wachstum
 
         Niederrheinstraße 14 B
 
@@ -600,7 +600,7 @@ E-Mail: bs@schiefer-online.eu
 
         Bodo Schiefer
 
-        BS | Marke & Kommunikation
+        BS | Marke & Wachstum
 
         Niederrheinstraße 14 B
 
@@ -672,7 +672,7 @@ Verantwortlich für die Datenverarbeitung auf dieser Website ist:
 
         Bodo Schiefer
 
-        BS | Marke & Kommunikation
+        BS | Marke & Wachstum
 
         Niederrheinstraße 14 B
 
