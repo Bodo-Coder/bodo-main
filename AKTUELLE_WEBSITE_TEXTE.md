@@ -293,7 +293,7 @@ Seit mehr als fünfundzwanzig Jahren unterstütze ich anspruchsvolle Organisatio
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -414,11 +414,11 @@ Persönlich, die erste Kampagne, bei der ich Berater, Inspirationsquelle und am 
 
 ## Manchmal bleibt eine Idee länger hängen als geplant.
 
-Wenn aus Strategie, Marke und Kommunikation etwas Eigenständiges entstehen soll, lohnt sich ein Gespräch.
+Wenn aus Strategie, Marke und Umsetzung etwas Eigenständiges entstehen soll, lohnt sich ein Gespräch.
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -536,7 +536,7 @@ Für Presseanfragen und ein unverbindliches Kennenlernen freue ich mich über Ih
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -620,7 +620,7 @@ Diese Website kann Links zu externen Websites Dritter enthalten. Auf deren Inhal
 
 Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Rechteinhabers.
 
-Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -730,7 +730,7 @@ Sie haben jederzeit das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), L�
 
 Diese Datenschutzerklärung wird angepasst, sobald sich die Datenverarbeitung auf dieser Website ändert. Es gilt die jeweils aktuelle, hier veröffentlichte Fassung.
 
-Klarheit, Steuerung und Wirkung für Marketing und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
