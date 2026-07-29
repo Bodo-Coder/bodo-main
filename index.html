@@ -186,7 +186,10 @@
 
   /* DIGITAL GROWTH */
   .growth{background:var(--paper-2)}
-  .growth-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+  .growth-intro{display:grid;grid-template-columns:.9fr 1.1fr;grid-template-areas:"heading copy" "image copy";gap:32px 72px;align-items:start}
+  .growth-heading{grid-area:heading}
+  .growth-copy{grid-area:copy}
+  .growth-image{grid-area:image;width:100%;max-width:460px;display:block;filter:brightness(1.05) saturate(.8);-webkit-mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%);mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%)}
   .growth-intro p{color:var(--ink-soft);font-size:1.08rem;max-width:60ch}
   .growth-intro p+p{margin-top:18px}
   .growth-lead-in{font-family:var(--serif);font-size:1.32rem;color:var(--ink);font-weight:500;margin:48px 0 22px}
@@ -194,7 +197,7 @@
   .growth-point{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 30px;color:var(--ink-soft);font-size:1rem;line-height:1.5;transition:transform .25s,box-shadow .25s}
   .growth-point:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
   .growth-point b{display:block;color:var(--accent);font-family:var(--serif);font-size:2rem;font-weight:500;line-height:1;margin-bottom:22px}
-  @media(max-width:880px){.growth-intro,.growth-points{grid-template-columns:1fr;gap:32px}.growth-lead-in{margin-top:36px}.growth-point{padding:30px}}
+  @media(max-width:880px){.growth-intro{grid-template-columns:1fr;grid-template-areas:"heading" "copy" "image";gap:32px}.growth-points{grid-template-columns:1fr;gap:32px}.growth-image{max-width:520px}.growth-lead-in{margin-top:36px}.growth-point{padding:30px}}
 
   /* LEISTUNGEN ACCORDION */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
@@ -544,14 +547,15 @@
 <section class="sec growth reveal" id="digitale-wachstumsarbeit">
   <div class="wrap">
     <div class="growth-intro">
-      <div>
+      <div class="growth-heading">
         <span class="kicker">Digitale Wachstumsarbeit aus der Praxis</span>
         <h2>Marke trifft digitales Nutzungserlebnis.</h2>
       </div>
-      <div>
+      <div class="growth-copy">
         <p>Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.</p>
         <p>Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik kann ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis einordnen und bewerten. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern.</p>
       </div>
+      <img class="growth-image" src="images/digitale-wachstumsarbeit-puzzle-praxis.png" alt="Lose angeordnete Puzzleteile für Zielgruppen, Customer Journey, Marke, Markenerlebnis, Vertrieb, Kanäle, Digitalisierung und Growth Marketing">
     </div>
     <p class="growth-lead-in">Für den Erfolg sind dabei drei Dinge entscheidend:</p>
     <div class="growth-points" aria-label="Drei Schwerpunkte digitaler Wachstumsarbeit">
