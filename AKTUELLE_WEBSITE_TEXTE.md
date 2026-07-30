@@ -107,7 +107,7 @@ Genau dabei unterstütze ich.“
 
 Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.
 
-Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik kann ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis einordnen und bewerten. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern.
+Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte und optimiere ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern.
 
 Für den Erfolg sind dabei drei Dinge entscheidend:
 
@@ -135,9 +135,9 @@ Marketing, Kommunikation und Zusammenarbeit so strukturieren, dass Verantwortlic
 
 Geschäftsführung, Marketing, Vertrieb und Partner auf eine gemeinsame Linie bringen. Damit aus unterschiedlichen Sichtweisen eine tragfähige Entscheidungsgrundlage entsteht.
 
-            05 Wirkung und digitales Wachstum erhöhen +
+            05 Wirkung und Wachstum erhöhen +
 
-Marke, Kommunikation und digitale Maßnahmen so aufeinander abstimmen, dass sie Aufmerksamkeit, Aktivierung und Kundenbindung unterstützen. Relevante Kennzahlen helfen, Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern.
+Marke, Kommunikation und Maßnahmen so aufeinander abstimmen, dass sie Aufmerksamkeit, Aktivierung und Kundenbindung unterstützen. Relevante Kennzahlen helfen, Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern.
 
       Was daraus entsteht
 
@@ -293,7 +293,7 @@ Seit mehr als fünfundzwanzig Jahren unterstütze ich anspruchsvolle Organisatio
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -418,7 +418,7 @@ Wenn aus Strategie, Marke und Umsetzung etwas Eigenständiges entstehen soll, lo
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -536,7 +536,7 @@ Für Presseanfragen und ein unverbindliches Kennenlernen freue ich mich über Ih
 
     Jetzt Termin buchen
 
-Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -620,7 +620,7 @@ Diese Website kann Links zu externen Websites Dritter enthalten. Auf deren Inhal
 
 Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Rechteinhabers.
 
-Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
@@ -730,7 +730,7 @@ Sie haben jederzeit das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), L�
 
 Diese Datenschutzerklärung wird angepasst, sobald sich die Datenverarbeitung auf dieser Website ändert. Es gilt die jeweils aktuelle, hier veröffentlichte Fassung.
 
-Klarheit, Steuerung und Wirkung für Marketing, Marke und Kommunikation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
+Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
