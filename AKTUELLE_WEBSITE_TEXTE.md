@@ -180,11 +180,11 @@ Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird
 
         Über mich
 
-## Über 25 Jahre an der Schnittstelle von Marke, Marketing und Kommunikation.
+## Über 25 Jahre an der Schnittstelle von Marke, Marketing und Organisation.
 
 Ich habe internationale Marken, mittelständische Unternehmen und Start-ups begleitet: von FMCG, OTC und Handel über Automotive, Telekommunikation und Cybersecurity bis zu B2B, Maschinenbau, Weiterbildung und Versicherungen.
 
-Diese Breite hat meinen Blick geschärft. Ich sehe nicht nur Branchen. Ich erkenne Muster: wo Themen unklar werden, wo Entscheidungen stocken, wo Interessen auseinanderlaufen und wo Kommunikation an Wirkung verliert.
+Diese Breite hat meinen Blick geschärft. Ich sehe nicht nur Branchen. Ich erkenne Muster: wo Themen unklar werden, wo Entscheidungen stocken, wo Interessen auseinanderlaufen und wo etwa Kommunikation an Wirkung verliert.
 
 Geprägt hat mich dabei besonders, dass ich unterschiedliche Rollen von innen kenne. Ich habe auf Agenturseite gearbeitet, in Beratungs- und Führungsverantwortung, war als Marketing Manager direkt beim Kunden im Einsatz und habe ein Technologie-Start-up mitaufgebaut und geleitet. Denn wer selbst gesteuert, entschieden, Ressourcen geplant und unternehmerische Verantwortung getragen hat, berät anders.
 
