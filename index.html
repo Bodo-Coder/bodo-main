@@ -189,9 +189,15 @@
   .growth-intro{display:grid;grid-template-columns:.9fr 1.1fr;grid-template-areas:"heading ." "image copy";gap:32px 72px;align-items:start}
   .growth-heading{grid-area:heading}
   .growth-copy{grid-area:copy}
-  .growth-image{grid-area:image;width:100%;max-width:414px;display:block;filter:brightness(1.05) saturate(.8);-webkit-mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%);mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%)}
+  .growth-visual{grid-area:image;width:100%;max-width:414px;margin:0}
+  .growth-image{width:100%;display:block;filter:brightness(1.05) saturate(.8);-webkit-mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%);mask-image:radial-gradient(ellipse 76% 65% at 50% 50%,#000 34%,transparent 100%)}
+  .growth-visual figcaption{margin:18px 0 0;padding-left:16px;border-left:2px solid var(--accent);display:flex;flex-direction:column;gap:3px}
+  .growth-visual figcaption strong{color:var(--blue);font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.35}
+  .growth-visual figcaption em{font-family:var(--serif);font-size:1.13rem;font-style:italic;color:var(--ink);line-height:1.25}
+  .growth-visual figcaption span{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
   .growth-intro p{color:var(--ink-soft);font-size:1.08rem;max-width:60ch}
   .growth-intro p+p{margin-top:18px}
+  .growth-subhead{font-family:var(--serif);font-size:1.26rem;font-weight:500;line-height:1.2;color:var(--ink);margin:28px 0 12px}
   .growth-lead-in{font-family:var(--serif);font-size:1.32rem;color:var(--ink);font-weight:500;margin:48px 0 22px}
   .growth-points{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
   .growth-point{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 30px;color:var(--ink-soft);font-size:1rem;line-height:1.5;transition:transform .25s,box-shadow .25s}
@@ -555,9 +561,19 @@
       </div>
       <div class="growth-copy">
         <p>Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.</p>
+        <h3 class="growth-subhead">Aus Print wird ein digitales Markenerlebnis.</h3>
+        <p>Als Geschäftsführer habe ich mit snoopstar aus einer AR-Technologie ein Marken-, Aktivierungs- und Vertriebsangebot entwickelt: Print wurde zum Einstieg in interaktive Brand Stories, Kundenkontakte und messbare Customer Journeys.</p>
+        <h3 class="growth-subhead">Der Vorteil für meine Arbeit</h3>
         <p>Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern.</p>
       </div>
-      <img class="growth-image" src="images/digitale-wachstumsarbeit-puzzle-praxis-v3.png?v=20260730-3" alt="Lose angeordnete Puzzleteile für Zielgruppenverständnis, Customer Journey, Marke, Relevanz und Nutzen, Vertriebsstrategie, Plattformstrategie, Erlösmodell sowie Wirkung und Wachstum">
+      <figure class="growth-visual">
+        <img class="growth-image" src="images/snoopstar-telekom-digital-brand-experience.png" alt="Augmented-Reality-Markenerlebnis von snoopstar für Telekom mit Produktinformation, Shop, Terminvereinbarung und individueller Beratung">
+        <figcaption>
+          <strong>Digital Brand of the Year</strong>
+          <em>snoopstar – activating brand stories</em>
+          <span>German Brand Award 2021</span>
+        </figcaption>
+      </figure>
     </div>
     <p class="growth-lead-in">Für den Erfolg sind vier Dinge entscheidend:</p>
     <div class="growth-points" aria-label="Vier Schwerpunkte digitaler Wachstumsarbeit">
