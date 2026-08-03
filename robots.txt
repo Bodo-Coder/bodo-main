@@ -21,4 +21,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.schiefer-online.eu/sitemap.xml
+Sitemap: https://marke-wachstum.de/sitemap.xml

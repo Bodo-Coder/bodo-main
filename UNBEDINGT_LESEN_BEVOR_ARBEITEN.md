@@ -25,7 +25,7 @@ Erst vollständig lesen, dann ändern. Ziel: eine konsistente, saubere Website �
 - **Zweck:** Vertrauen aufbauen und Erstgespräche generieren (Lead-Gen). Primäres Ziel = **„Jetzt Termin buchen"** (Calendly).
 - **Zielgruppe:** Geschäftsführungen und Marketingverantwortliche aus **Mittelstand** und **Start-ups** im DACH-Raum.
 - **Tonalität & Look:** Premium-Beratung, **editorial, ruhig, klar, souverän, nahbar.** Viel Weißraum. Kernbotschaft der Marke: **„Aus Komplexität wird Klarheit."**
-- **Hosting:** Statische Seite, aktuell GitHub (Repo `TheMavel/bodo`), Zieldomain `schiefer-online.eu`. Muss als pure statische Site lauffähig bleiben (GitHub Pages / jeder Webspace).
+- **Hosting:** Statische Seite auf GitHub Pages (Repo `Bodo-Coder/bodo-main`), Primärdomain `marke-wachstum.de`. Muss als pure statische Site lauffähig bleiben (GitHub Pages / jeder Webspace).
 
 ---
 
@@ -165,7 +165,7 @@ Alle in Vanilla-JS, ohne Abhängigkeiten. Bei Änderungen unbedingt im Browser t
 - Saubere Heading-Hierarchie (genau ein `h1` pro Seite), beschreibende Alt-Texte, interne Verlinkung.
 - **Clean URLs (erledigt):** Unterseiten liegen als `presse/index.html`, `impressum/index.html`, `datenschutz/index.html` → erreichbar unter `/presse/` usw., passend zu den Canonicals und der `sitemap.xml`.
 - **KI-Auffindbarkeit:** `robots.txt` erlaubt KI-Crawler (OAI-SearchBot, GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended); `llms.txt` (KI-Kurzprofil) liegt im Root. Details/Deployment: siehe `setup-manual.md`.
-- **Domain-Umzug:** Domain `schiefer-online.eu` behalten, gleiche Pfade nutzen (301 wo nötig), danach Sitemap in der Google Search Console **und** den Bing Webmaster Tools einreichen.
+- **Domain-Umzug:** `schiefer-online.eu` und `marke-und-wachstum.de` behalten, beide mit gleichen Pfaden per 301 auf `marke-wachstum.de` weiterleiten. Danach die Sitemap in der Google Search Console **und** den Bing Webmaster Tools einreichen.
 
 ---
 

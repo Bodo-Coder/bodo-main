@@ -11,10 +11,10 @@ Diese Seite ist eine **statische Website** (reines HTML/CSS/Vanilla-JS, kein Bui
 
 | Platzhalter | Aktueller Wert (anpassen falls abweichend) |
 |---|---|
-| `<OWNER>` | GitHub-Benutzer/Org, z. B. `TheMavel` |
-| `<REPO>` | Repository-Name, z. B. `bodo` |
-| `<DOMAIN>` | `schiefer-online.eu` |
-| `<WWW>` | `www.schiefer-online.eu` |
+| `<OWNER>` | `Bodo-Coder` |
+| `<REPO>` | `bodo-main` |
+| `<DOMAIN>` | `marke-wachstum.de` |
+| `<WWW>` | `www.marke-wachstum.de` |
 
 **Dateien im Repo (Root):** `index.html`, `presse.html`, `impressum.html`, `datenschutz.html`, `styles.css`, `sitemap.xml`, `robots.txt`, plus Doku-MDs. Alles muss im **Repo-Root** liegen.
 
@@ -39,9 +39,9 @@ git push -u origin main
 ## 2) GitHub Pages aktivieren
 
 1. Im Repo: **Settings → Pages**.
-2. **Source:** „Deploy from a branch".
-3. **Branch:** `main`, Ordner `/ (root)` → **Save**.
-4. Nach 1–2 Minuten ist die Seite erreichbar unter `https://<OWNER>.github.io/<REPO>/`.
+2. **Source:** „GitHub Actions" (bereits aktiv).
+3. Der Workflow `.github/workflows/deploy-pages.yml` veröffentlicht bei jedem Push auf `main`.
+4. Nach dem Workflow-Lauf ist die Seite erreichbar unter der konfigurierten Custom Domain.
 
 > Test: Diese URL öffnen und prüfen, dass Startseite, Presse-/Impressum-/Datenschutz-Links funktionieren.
 
@@ -59,14 +59,14 @@ Dieser Ordner ist bereits auf Clean URLs umgestellt — **nichts zu tun, nur ver
 
 ## 4) Custom Domain — GitHub-Seite
 
-1. **Settings → Pages → Custom domain:** `<DOMAIN>` eintragen → **Save**. (Das legt automatisch eine `CNAME`-Datei im Repo an mit Inhalt `<DOMAIN>`.)
+1. **Settings → Pages → Custom domain:** `<DOMAIN>` eintragen → **Save**. Bei diesem GitHub-Actions-Deployment ist keine `CNAME`-Datei nötig; eine vorhandene `CNAME`-Datei wird ignoriert.
 2. (Empfohlen) **Domain verifizieren:** **Settings → Pages → „Verify"** bzw. Account/Org **Settings → Pages → Add a domain**. GitHub zeigt einen **TXT-Record** `_github-pages-challenge-<OWNER>.<DOMAIN>` mit einem Wert → diesen als TXT im DNS anlegen (siehe §5).
 
 ---
 
 ## 5) DNS-Einstellungen (beim Domain-Anbieter)
 
-> Aktuell liegt die Domain vermutlich bei **Squarespace** → dort unter Domain-Einstellungen die DNS-Records bearbeiten. (Oder beim jeweiligen Registrar.)
+> Die Domain wird bei **United Domains** verwaltet → dort über das DNS-Symbol → „DNS-Einträge“ bearbeiten.
 
 **A) Apex-Domain `<DOMAIN>` → GitHub Pages (A-Records):**
 
@@ -123,9 +123,9 @@ dig www.<DOMAIN> +short    # erwartet: <OWNER>.github.io ...
 
 Die Seite bringt bereits mit: pro Seite `title`, `meta description`, `canonical`, Open-Graph-Tags, `theme-color`, Favicon, JSON-LD (ProfessionalService + CollectionPage), `sitemap.xml`, `robots.txt`, semantische Headings. **Zu tun:**
 
-1. **Domain konsistent:** Falls die finale Domain von `schiefer-online.eu` abweicht, in **allen** Dateien ersetzen: `canonical`, `og:url`, JSON-LD `url`, `sitemap.xml`, `robots.txt`-Sitemap-Zeile.
+1. **Domain konsistent:** Die finale Domain ist `marke-wachstum.de`. `canonical`, `og:url`, JSON-LD-URLs, `sitemap.xml` und die Sitemap-Zeile in `robots.txt` müssen darauf zeigen.
    ```bash
-   grep -rl "schiefer-online.eu" . --include=*.html --include=*.xml --include=*.txt
+   grep -rl "https://www.schiefer-online.eu" . --include=*.html --include=*.xml --include=*.txt
    ```
 2. **Google Search Console** (https://search.google.com/search-console):
    - Property für `<DOMAIN>` anlegen → per **DNS-TXT** verifizieren.
@@ -219,7 +219,7 @@ grep -rl "calendly.com/PLATZHALTER" . --include=*.html
 
 - [ ] `https://<DOMAIN>` und `https://<WWW>` laden, HTTPS erzwungen
 - [ ] `/`, `/presse/`, `/impressum/`, `/datenschutz/` erreichbar, Styles greifen
-- [ ] `CNAME`-Datei im Repo = `<DOMAIN>`
+- [x] GitHub-Actions-Deployment: keine `CNAME`-Datei erforderlich
 - [ ] DNS: vier A-Records (+ optional AAAA), `www`-CNAME, MX unangetastet
 - [ ] `canonical`/`og:url`/JSON-LD/`sitemap.xml`/`robots.txt` auf finale Domain
 - [ ] Google Search Console + Bing: verifiziert, Sitemap eingereicht
