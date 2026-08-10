@@ -148,7 +148,7 @@
   .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:none;box-shadow:0 30px 60px -36px rgba(13,27,42,.4);isolation:isolate}
   .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 56px}
   .layer .tag-lab{position:absolute;top:22px;z-index:3;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:30px}
-  .chaos{z-index:1;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a)}
+  .chaos{z-index:1;right:50%;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a);overflow:hidden}
   .chaos .tag-lab{left:24px;background:rgba(255,255,255,.1);color:#fff}
   .chaos-field{position:absolute;inset:0}
   .chip{position:absolute;background:rgba(255,255,255,.09);border:0;color:rgba(255,255,255,.82);font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap}
@@ -917,8 +917,9 @@
     function setPct(pct){
       var limits=getLimits();
       pct=Math.max(limits.min,Math.min(limits.max,pct));
-      chaos.style.right='0';
-      chaosTag.style.maxWidth=window.matchMedia('(max-width: 640px)').matches?'':Math.max(0,box.getBoundingClientRect().width*pct/100-24)+'px';
+      var mobile=window.matchMedia('(max-width: 640px)').matches;
+      chaos.style.right=mobile?'0':(100-pct)+'%';
+      chaosTag.style.maxWidth=mobile?'':Math.max(0,box.getBoundingClientRect().width*pct/100-24)+'px';
       clar.style.left=pct+'%';h.style.left=pct+'%';
       h.setAttribute('aria-valuemin',String(Math.round(limits.min)));
       h.setAttribute('aria-valuemax',String(Math.round(limits.max)));
