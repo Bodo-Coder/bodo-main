@@ -244,9 +244,21 @@
   .out-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:14px}
   .out-cell{background:#fff;padding:44px 40px}
   .out-cell .num{font-family:var(--sans);font-weight:700;font-style:normal;font-size:1.3rem;color:var(--accent);margin-bottom:16px}
-  .out-cell h4{font-family:var(--serif);font-weight:500;font-size:1.45rem;color:var(--blue);margin-bottom:14px;line-height:1.25}
-  .out-cell p{color:var(--muted);font-size:1rem}
-  @media(max-width:760px){.out-grid{grid-template-columns:1fr}}
+  .out-head{width:100%;padding:0;background:none;border:0;text-align:left}
+  .out-head h4{font-family:var(--serif);font-weight:500;font-size:1.45rem;color:var(--blue);margin-bottom:14px;line-height:1.25}
+  .out-head .pm{display:none}
+  .out-body p{color:var(--muted);font-size:1rem}
+  @media(max-width:760px){
+    .out-grid{grid-template-columns:1fr}
+    .out-cell{padding:30px 28px}
+    .out-cell .num{margin-bottom:10px}
+    .out-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}
+    .out-head h4{margin-bottom:0}
+    .out-head .pm{display:block;margin-left:auto;color:var(--blue);font-size:1.5rem;line-height:1;transition:transform .3s}
+    .out-cell.open .out-head .pm{transform:rotate(45deg)}
+    .out-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .out-body p{padding-top:14px}
+  }
 
   /* HOW */
   .how{background:var(--blue);color:#fff}
@@ -633,11 +645,11 @@
       <span class="kicker">Was daraus entsteht</span>
       <h2>Klarheit, die im Alltag trägt.</h2>
     </div>
-    <div class="out-grid">
-      <div class="out-cell"><div class="num">01</div><h4>Klare Prioritäten und schnellere Entscheidungen</h4><p>Weniger Themen laufen gleichzeitig. Es ist klarer, was jetzt wichtig ist, wer entscheidet und welche Maßnahmen warten können.</p></div>
-      <div class="out-cell"><div class="num">02</div><h4>Verbindliche Rollen und bessere Zusammenarbeit</h4><p>Bereiche, Stakeholder und externe Partner arbeiten besser zusammen, weil Rollen, Abläufe und Entscheidungswege klarer sind.</p></div>
-      <div class="out-cell"><div class="num">03</div><h4>Relevante KPIs und Steuerungsgrößen</h4><p>Es wird schneller erkennbar, was wirkt, wo nachjustiert werden muss und wie Maßnahmen laufend verbessert werden können.</p></div>
-      <div class="out-cell"><div class="num">04</div><h4>Mehr Verbindlichkeit in der Umsetzung</h4><p>Teams und Beteiligte kennen ihre Aufgaben, Entscheidungen und nächsten Schritte. Dadurch wird weniger abgestimmt und mehr umgesetzt.</p></div>
+    <div class="out-grid" id="outcomesAcc">
+      <div class="out-cell open"><div class="num">01</div><button class="out-head" type="button" aria-expanded="true" aria-controls="out-body-1"><h4>Klare Prioritäten und schnellere Entscheidungen</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-1"><p>Weniger Themen laufen gleichzeitig. Es ist klarer, was jetzt wichtig ist, wer entscheidet und welche Maßnahmen warten können.</p></div></div>
+      <div class="out-cell"><div class="num">02</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-2"><h4>Verbindliche Rollen und bessere Zusammenarbeit</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-2"><p>Bereiche, Stakeholder und externe Partner arbeiten besser zusammen, weil Rollen, Abläufe und Entscheidungswege klarer sind.</p></div></div>
+      <div class="out-cell"><div class="num">03</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-3"><h4>Relevante KPIs und Steuerungsgrößen</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-3"><p>Es wird schneller erkennbar, was wirkt, wo nachjustiert werden muss und wie Maßnahmen laufend verbessert werden können.</p></div></div>
+      <div class="out-cell"><div class="num">04</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-4"><h4>Mehr Verbindlichkeit in der Umsetzung</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-4"><p>Teams und Beteiligte kennen ihre Aufgaben, Entscheidungen und nächsten Schritte. Dadurch wird weniger abgestimmt und mehr umgesetzt.</p></div></div>
     </div>
   </div>
 </section>
@@ -954,6 +966,31 @@
       });
     });
     window.addEventListener('resize',function(){var op=document.querySelector('#acc .acc-item.open');if(op)setBody(op,true);});
+  })();
+
+  /* ---------- OUTCOMES ACCORDION (MOBILE) ---------- */
+  (function(){
+    var items=document.querySelectorAll('#outcomesAcc .out-cell');
+    var mobile=window.matchMedia('(max-width: 760px)');
+    function setBody(it,open){var b=it.querySelector('.out-body');b.style.maxHeight=open?(b.scrollHeight+'px'):'0px';it.querySelector('.out-head').setAttribute('aria-expanded',String(open));}
+    function sync(){
+      if(mobile.matches){
+        var active=document.querySelector('#outcomesAcc .out-cell.open')||items[0];
+        items.forEach(function(it){setBody(it,it===active);});
+      }else{
+        items.forEach(function(it){it.classList.remove('open');it.querySelector('.out-body').style.maxHeight='';it.querySelector('.out-head').setAttribute('aria-expanded','true');});
+      }
+    }
+    items.forEach(function(it){
+      it.querySelector('.out-head').addEventListener('click',function(){
+        if(!mobile.matches)return;
+        var isOpen=it.classList.contains('open');
+        items.forEach(function(other){other.classList.remove('open');setBody(other,false);});
+        if(!isOpen){it.classList.add('open');setBody(it,true);}
+      });
+    });
+    mobile.addEventListener('change',sync);
+    sync();
   })();
 
   /* ---------- STATS COUNTER ---------- */
