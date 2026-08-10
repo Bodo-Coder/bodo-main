@@ -148,8 +148,8 @@
   .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:none;box-shadow:0 30px 60px -36px rgba(13,27,42,.4);isolation:isolate}
   .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 56px}
   .layer .tag-lab{position:absolute;top:22px;z-index:3;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:30px}
-  .chaos{z-index:1;right:50%;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a);overflow:hidden}
-  .chaos .tag-lab{left:24px;max-width:calc(100% - 24px);background:rgba(255,255,255,.1);color:#fff}
+  .chaos{z-index:1;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a)}
+  .chaos .tag-lab{left:24px;background:rgba(255,255,255,.1);color:#fff}
   .chaos-field{position:absolute;inset:0}
   .chip{position:absolute;background:rgba(255,255,255,.09);border:0;color:rgba(255,255,255,.82);font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap}
   .clarity{z-index:2;background:#fff;color:var(--ink);left:50%;right:0;overflow:hidden}
@@ -166,6 +166,9 @@
   @media(max-width:640px){
     .compare{height:560px}
     .layer{padding:40px 26px}
+    .layer .tag-lab{width:144px;max-width:none}
+    .chaos .tag-lab{left:6px}
+    .clarity .tag-lab{right:6px}
     .chip{font-size:12px;padding:7px 11px}
     .clarity-inner{max-width:280px;margin-left:auto;margin-right:4%}
     .clarity-inner h3{font-size:1.45rem;margin-bottom:18px}
@@ -905,16 +908,18 @@
       return measuredWidth;
     }
     function getLimits(){
+      if(window.matchMedia('(max-width: 640px)').matches)return {min:0,max:100};
       var width=box.getBoundingClientRect().width;
-      var min=(naturalWidth(chaosTag)+23)/width*100;
-      var max=100-(naturalWidth(clarityTag)+23)/width*100;
-      if(min>=max)return {min:40,max:60};
+      var min=(naturalWidth(chaosTag)+30)/width*100;
+      var max=100-(naturalWidth(clarityTag)+30)/width*100;
       return {min:min,max:max};
     }
     function setPct(pct){
       var limits=getLimits();
       pct=Math.max(limits.min,Math.min(limits.max,pct));
-      chaos.style.right=(100-pct)+'%';clar.style.left=pct+'%';h.style.left=pct+'%';
+      chaos.style.right='0';
+      chaosTag.style.maxWidth=window.matchMedia('(max-width: 640px)').matches?'':Math.max(0,box.getBoundingClientRect().width*pct/100-24)+'px';
+      clar.style.left=pct+'%';h.style.left=pct+'%';
       h.setAttribute('aria-valuemin',String(Math.round(limits.min)));
       h.setAttribute('aria-valuemax',String(Math.round(limits.max)));
       h.setAttribute('aria-valuenow',String(Math.round(pct)));
