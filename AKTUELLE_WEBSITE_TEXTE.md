@@ -206,9 +206,11 @@ Unsere Aufgabe ist nicht, mit KI um Antworten zu konkurrieren. Unsere Aufgabe is
 
 ## Über 25 Jahre an der Schnittstelle von Marke, Marketing und Organisation.
 
+Für mich ist Marketing marktorientierte Unternehmensführung, die Marke, Angebot, Kundenerlebnis, Vertrieb und Organisation zusammenführt.
+
 Ich habe internationale Marken, mittelständische Unternehmen und Start-ups begleitet: von FMCG, OTC und Handel über Automotive, Telekommunikation und Cybersecurity bis zu B2B, Maschinenbau, Weiterbildung und Versicherungen.
 
-Diese Breite hat meinen Blick geschärft. Ich sehe nicht nur Branchen. Ich erkenne Muster: wo Themen unklar werden, wo Entscheidungen stocken, wo Interessen auseinanderlaufen oder wo etwa Kommunikationsmaßnahmen an Wirkung verlieren.
+Diese Breite hat mein Verständnis von Marketing und Markenführung geprägt. Ich sehe nicht nur Branchen. Ich erkenne Muster: wo Themen unklar werden, wo Entscheidungen stocken, wo Interessen auseinanderlaufen oder wo Aktivitäten und Maßnahmen an Wirkung verlieren.
 
 Geprägt hat mich dabei besonders, dass ich unterschiedliche Rollen von innen kenne. Ich habe auf Agenturseite gearbeitet, in Beratungs- und Führungsverantwortung, war als Marketing Manager direkt beim Kunden im Einsatz und habe ein Technologie-Start-up mitaufgebaut und geleitet. Denn wer selbst gesteuert, entschieden, Ressourcen geplant und unternehmerische Verantwortung getragen hat, berät anders.
 
