@@ -115,6 +115,18 @@ Für den Erfolg sind dabei drei Dinge entscheidend:
       02Angebote und Anwendungsfälle für Zielgruppen und Partner verständlich machen
       03Maßnahmen anhand von Nutzung, Resonanz und Wirkung weiterentwickeln
 
+        Markenführung
+
+## Marken brauchen eine Idee, die alles verbindet.
+
+Eine weitere Kampagne ist selten die Antwort. Was Marken brauchen, ist Orientierung.
+
+Starke Marken folgen einer klaren Leitidee. Sie verbindet Produkt, Service, Kultur, Vertrieb, Innovation und Kommunikation zu einer gemeinsamen Richtung.
+
+IKEA verkauft nicht nur Möbel. Die Marke will einen besseren Alltag für die vielen Menschen ermöglichen. Diese Idee verbindet Preis, Design, Logistik, Selbstaufbau und Nachhaltigkeit. Patek Philippe steht nicht nur für Uhren, sondern für die Verantwortung, etwas Wertvolles an die nächste Generation weiterzugeben.
+
+Moderne Strategie beginnt deshalb nicht beim Briefing. Sie beginnt mit der Entscheidung, welche Rolle ein Unternehmen künftig im Leben der Menschen spielen will. Diese Idee muss im gesamten Unternehmen wirksam werden und im Alltag gelebt werden.
+
         Wie ich konkret unterstütze
 
 ## Fünf Hebel für fokussiertes Marketing.
