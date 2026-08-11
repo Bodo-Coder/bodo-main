@@ -498,7 +498,7 @@ Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenf�
 
 ### snoopstar mit neuer Strategie
 
-Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketingtransformation.
+Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketing-Transformation.
 
           Artikel lesen →
 
