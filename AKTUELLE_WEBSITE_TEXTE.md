@@ -127,6 +127,10 @@ IKEA verkauft nicht nur Möbel. Die Marke will einen besseren Alltag für die vi
 
 Moderne Strategie beginnt deshalb nicht beim Briefing. Sie beginnt mit der Entscheidung, welche Rolle ein Unternehmen künftig im Leben der Menschen spielen will. Diese Idee muss im gesamten Unternehmen wirksam werden und im Alltag gelebt werden.
 
+> **„Wirksames Marketing entsteht im Spannungsfeld zwischen Unternehmenszielen und Kundenrelevanz.** Wer nur in Business-KPIs denkt, verliert die Marke. Wer nur den Kunden versteht, aber das Business nicht, entfaltet intern keine Wirkung.“
+
+    Bodo Schiefer · Marke & Business
+
         Wie ich konkret unterstütze
 
 ## Fünf Hebel für fokussiertes Marketing.
