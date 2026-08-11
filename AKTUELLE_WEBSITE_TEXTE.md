@@ -87,7 +87,7 @@ Genau dabei unterstütze ich.“
 
 ### Mittelstand · STEUERUNG
 
-- Marketing und Kommunikation sollen stärker zum Unternehmenserfolg beitragen.
+- Marketing soll vom Cost Center zum Business Driver werden.
 
 - Intern ist zu viel Komplexität entstanden: zu viele Projekte, zu wenig Ressourcen, unklare Prioritäten und steigender Kostendruck.
 
@@ -137,7 +137,9 @@ Geschäftsführung, Marketing, Vertrieb und Partner auf eine gemeinsame Linie br
 
             05 Wirkung und Wachstum erhöhen +
 
-Marke, Kommunikation und Maßnahmen so aufeinander abstimmen, dass sie Aufmerksamkeit, Aktivierung und Kundenbindung unterstützen. Relevante Kennzahlen helfen, Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern.
+Strategie so in Maßnahmen übersetzen, dass daraus Business Impact entsteht. Nicht nur die richtigen Dinge tun, sondern sie auch so umsetzen, dass sie Wirkung entfalten.
+Relevante Kennzahlen nutzen, um Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern.
+Damit Marketing vom Cost Center zum Business Driver wird.
 
       Was daraus entsteht
 
