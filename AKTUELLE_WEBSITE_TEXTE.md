@@ -192,6 +192,16 @@ Ich höre zu, frage nach, ordne ein und schärfe. So wird sichtbar, welche Frage
         03
 Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird priorisiert? Was wird beendet oder verschoben? Wer übernimmt welche Verantwortung? Und woran erkennen wir, ob die Maßnahmen wirken?
 
+        KI als Werkzeug
+
+## KI produziert Antworten. Menschen geben ihnen Bedeutung.
+
+KI ist ein wirksames Werkzeug. Sie recherchiert schneller, analysiert schneller, schreibt schneller und erkennt Muster. Richtig eingesetzt, schafft sie Tempo und erweitert Möglichkeiten.
+
+Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr stellt und wie ihre Ergebnisse eingeordnet werden. Sie entscheidet nicht, welche Richtung die richtige ist und übernimmt keine Verantwortung für diese Entscheidung. Je intelligenter Maschinen werden, desto wertvoller wird menschliches Urteilsvermögen.
+
+Unsere Aufgabe ist nicht, mit KI um Antworten zu konkurrieren. Unsere Aufgabe ist, sie für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu machen.
+
         Über mich
 
 ## Über 25 Jahre an der Schnittstelle von Marke, Marketing und Organisation.
