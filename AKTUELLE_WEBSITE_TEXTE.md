@@ -153,9 +153,7 @@ Geschäftsführung, Marketing, Vertrieb und Partner auf eine gemeinsame Linie br
 
             05 Wirkung und Wachstum erhöhen +
 
-Strategie so in Maßnahmen übersetzen, dass daraus Business Impact entsteht. Nicht nur die richtigen Dinge tun, sondern sie auch so umsetzen, dass sie Wirkung entfalten.
-Relevante Kennzahlen nutzen, um Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern.
-Damit Marketing vom Cost Center zum Business Driver wird.
+Strategie so in Maßnahmen übersetzen, dass sie heute Wirkung entfalten und zugleich aufbauen, wovon das Unternehmen morgen lebt. Relevante Kennzahlen nutzen, um Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern, ohne sich auf das zu beschränken, was heute bereits messbar ist. Damit Marketing vom Cost Center zum Business Driver wird.
 
       Was daraus entsteht
 
