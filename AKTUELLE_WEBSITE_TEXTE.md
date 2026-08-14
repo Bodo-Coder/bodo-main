@@ -202,7 +202,7 @@ KI ist ein wirksames Werkzeug. Sie recherchiert schneller, analysiert schneller,
 
 Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr stellt und wie ihre Ergebnisse eingeordnet werden. Sie entscheidet nicht, welche Richtung die richtige ist und übernimmt keine Verantwortung für diese Entscheidung. Je intelligenter Maschinen werden, desto wertvoller wird menschliches Urteilsvermögen.
 
-Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns keine KI ab.
+Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns KI auch nicht ab.
 
 Unsere Aufgabe bleibt deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu machen.
 
