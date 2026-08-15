@@ -204,7 +204,7 @@ Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr st
 
 Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns KI auch nicht ab.
 
-Unsere Aufgabe bleibt deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu treffen.
+Unsere Aufgabe ist deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu treffen.
 
         Über mich
 
