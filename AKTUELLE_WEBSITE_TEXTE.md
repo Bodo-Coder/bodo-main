@@ -204,7 +204,7 @@ Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr st
 
 Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns KI auch nicht ab.
 
-Unsere Aufgabe ist deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu machen.
+Unsere Aufgabe bleibt deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und aus ihren Ergebnissen gute Entscheidungen zu treffen.
 
         Über mich
 
@@ -337,7 +337,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 ##### Kontakt & Rechtliches
 
         Termin buchen
-        bs@schiefer-online.eu
+        bs@marke-wachstum.de
         LinkedIn
         Impressum
         Datenschutz
@@ -462,7 +462,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 ##### Kontakt & Rechtliches
 
         Termin buchen
-        bs@schiefer-online.eu
+        bs@marke-wachstum.de
         LinkedIn
         Impressum
         Datenschutz
@@ -580,7 +580,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 ##### Kontakt & Rechtliches
 
         Termin buchen
-        bs@schiefer-online.eu
+        bs@marke-wachstum.de
         LinkedIn
         Impressum
         Datenschutz
@@ -624,7 +624,7 @@ Zum Inhalt springen
 
 ## Kontakt
 
-E-Mail: bs@schiefer-online.eu
+E-Mail: bs@marke-wachstum.de
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
@@ -664,7 +664,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 ##### Kontakt & Rechtliches
 
         Termin buchen
-        bs@schiefer-online.eu
+        bs@marke-wachstum.de
         LinkedIn
         Impressum
         Datenschutz
@@ -710,7 +710,7 @@ Verantwortlich für die Datenverarbeitung auf dieser Website ist:
 
         Deutschland
 
-        E-Mail: bs@schiefer-online.eu
+        E-Mail: bs@marke-wachstum.de
 
 ## 2. Allgemeines zur Datenverarbeitung
 
@@ -734,29 +734,25 @@ Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der An
 
 ## 7. Terminanfrage per E-Mail
 
-Wenn Sie den „Termin buchen"-Button nutzen, öffnet sich Ihr E-Mail-Programm mit einer Nachricht an bs@schiefer-online.eu. Die dabei übermittelten Angaben werden zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.
+Wenn Sie den „Termin buchen"-Button nutzen, öffnet sich Ihr E-Mail-Programm mit einer Nachricht an bs@marke-wachstum.de. Die dabei übermittelten Angaben werden zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.
 
-## 8. Schriftarten (Google Fonts)
-
-Diese Website nutzt zur einheitlichen Darstellung Schriftarten, die von Google Fonts (Google Ireland Limited) geladen werden. Beim Seitenaufruf wird Ihre IP-Adresse an Google übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Empfehlung für volle Kontrolle: Schriftarten lokal einbinden (Self-Hosting), um externe Aufrufe zu vermeiden.
-
-## 9. Bild- und Medieninhalte
+## 8. Bild- und Medieninhalte
 
 Bild- und Logo-Dateien werden lokal von dieser Website geladen. Dadurch erfolgt beim Laden dieser Medien keine Übermittlung an ein externes Content-Delivery-Netzwerk.
 
-## 10. Hinweis zu KI-erstellten Bildinhalten
+## 9. Hinweis zu KI-erstellten Bildinhalten
 
 Einzelne auf dieser Website eingesetzte Bildmotive wurden ganz oder teilweise mithilfe generativer künstlicher Intelligenz erstellt oder bearbeitet. Dies betrifft insbesondere illustrative und editoriale Motive; echte Presseabbildungen, Logos und unveränderte Originalfotos sind hiervon nicht umfasst. Die Kennzeichnung erfolgt vorsorglich und transparent im Sinne der Transparenzanforderungen für künstlich erzeugte oder manipulierte Inhalte nach Art. 50 der Verordnung (EU) 2024/1689 (KI-Verordnung). Die betreffenden Bilder dienen ausschließlich der visuellen Gestaltung dieser Website und nicht dazu, über reale Ereignisse, Aussagen oder Handlungen zu täuschen.
 
-## 11. Verlinkung externer Inhalte
+## 10. Verlinkung externer Inhalte
 
 Im Pressebereich verlinken wir auf externe Veröffentlichungen (z. B. Handelsblatt, HORIZONT, BDZV). Beim Anklicken gelten die Datenschutzbestimmungen der jeweiligen Anbieter.
 
-## 12. Ihre Rechte
+## 11. Ihre Rechte
 
 Sie haben jederzeit das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch (Art. 21 DSGVO). Eine erteilte Einwilligung können Sie jederzeit widerrufen. Zudem steht Ihnen ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.
 
-## 13. Aktualität
+## 12. Aktualität
 
 Diese Datenschutzerklärung wird angepasst, sobald sich die Datenverarbeitung auf dieser Website ändert. Es gilt die jeweils aktuelle, hier veröffentlichte Fassung.
 
@@ -774,7 +770,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 ##### Kontakt & Rechtliches
 
         Termin buchen
-        bs@schiefer-online.eu
+        bs@marke-wachstum.de
         LinkedIn
         Impressum
         Datenschutz

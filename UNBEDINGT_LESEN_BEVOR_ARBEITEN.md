@@ -83,7 +83,7 @@ UNBEDINGT_LESEN_BEVOR_ARBEITEN.md  → diese Datei
 
 ## 4) TYPOGRAFIE
 
-- **Schriften:** Fraunces (Serif) für Headlines/Zitate/Akzente; Inter (Sans) für Text & UI. Geladen via Google Fonts (siehe TODO: ggf. self-hosten).
+- **Schriften:** Fraunces (Serif) für Headlines/Zitate/Akzente; Inter (Sans) für Text & UI. Lokal aus `/fonts/` eingebunden.
 - **Body:** 17px, `line-height:1.6`, Farbe `--ink`.
 - **Skala (responsiv via `clamp`):**
   - `h1` (Hero): `clamp(2.5rem, 4.6vw, 4.2rem)`, Fraunces 500, `line-height:1.04`, `letter-spacing:-.015em`. Akzentwort in `<em>` → kursiv + `--blue`.
@@ -143,7 +143,7 @@ Alle in Vanilla-JS, ohne Abhängigkeiten. Bei Änderungen unbedingt im Browser t
 - **Presse-Bilder:** echte Artikelbilder lokal aus `images/` verwenden (Handelsblatt, Horizont 2022/2018, „Nachhaltige Gebäude", BDZV).
 - **Neue Bilder:** KI-Bilder sind willkommen — am besten mit den Prompts aus `image-prompts.md` als Startpunkt (Modell: OpenAI Image 2; für Porträts Bodos Referenzfoto als Input, damit die Identität konsistent bleibt). Auf Qualität und einheitlichen Marken-Look achten.
 - **Alt-Texte** sind Pflicht und müssen beschreibend sein.
-- **Hinweis:** Bilder und Logos sind lokal gehostet. Fonts sind aktuell noch über Google Fonts eingebunden.
+- **Hinweis:** Bilder, Logos und Schriften sind lokal gehostet.
 
 ---
 
@@ -234,7 +234,7 @@ Reihenfolge nicht ohne Grund ändern; der Wechsel hell/dunkel ist gewollt:
 - [ ] Calendly-Platzhalter durch echten Link ersetzen (alle Seiten, Suche: `calendly.com/PLATZHALTER`).
 - [ ] GitHub Pages aktivieren + Custom Domain + DNS (siehe `setup-manual.md`).
 - [ ] Nach Go-Live: Sitemap in Google Search Console **und** Bing Webmaster Tools einreichen.
-- [ ] Bilder, Logos, Fonts lokal hosten (`/assets/`) — optional, DSGVO/Performance.
+- [x] Bilder, Logos und Schriften lokal hosten — DSGVO/Performance.
 - [ ] Optional: Bootsfoto für „Über mich" (echtes Foto von Bodo) einbauen.
 
 ---

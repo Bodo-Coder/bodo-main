@@ -187,7 +187,7 @@ Konvention für KI-Modelle: eine Markdown-Datei `llms.txt` im Root, die Zweck un
 - [Datenschutz](https://<DOMAIN>/datenschutz)
 
 ## Kontakt
-- E-Mail: bs@schiefer-online.eu
+- E-Mail: bs@marke-wachstum.de
 - LinkedIn: https://www.linkedin.com/in/bodoschiefer/
 - Termin: (Calendly-Link)
 ```
