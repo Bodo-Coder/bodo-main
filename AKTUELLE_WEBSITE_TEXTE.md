@@ -312,7 +312,7 @@ Beitr채ge und Publikationen 체ber unternehmerische Innovationsleistung, Markenf�
 
     Auszeichnungen
 
-## Pr채miert f체r wirksame Marken- und Kommunikationsarbeit.
+## Pr채miert f체r wirksame Marken- und Wachstumsarbeit.
 
 ## Erfahrung, die
 Klarheit schafft.
