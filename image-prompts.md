@@ -1,4 +1,4 @@
-# Bild-Prompts — Bodo Schiefer | Marke & Kommunikation
+# Bild-Prompts — Bodo Schiefer | Marke & Wachstum
 
 **Modell:** OpenAI Image 2
 **Workflow:** Lade **Bodos Referenzfoto als Bild-Input** hoch und füge dann den jeweiligen Prompt ein. Jeder Prompt sagt dem Modell ausdrücklich, das Gesicht und die Identität aus dem Referenzbild beizubehalten. Jeder Block ist eigenständig (Stil, Wardrobe, Palette, Ausschlüsse eingebaut) — einfach kopieren und 1:1 einfügen.

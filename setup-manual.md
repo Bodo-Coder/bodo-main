@@ -173,7 +173,7 @@ Sitemap: https://<DOMAIN>/sitemap.xml
 Konvention für KI-Modelle: eine Markdown-Datei `llms.txt` im Root, die Zweck und wichtigste Seiten beschreibt. Liegt bereits im Root (bei Domain-Wechsel URLs darin anpassen). Inhalt:
 
 ```
-# Bodo Schiefer — Marke & Kommunikation
+# Bodo Schiefer — Marke & Wachstum
 
 > Unabhängige Beratung für Marke, Marketing und Kommunikation. Bringt Geschäftsführungen und Marketingverantwortlichen (Mittelstand und Start-ups, DACH) Klarheit, Orientierung und Wirkung. Über 30 Jahre Erfahrung. Sitz: Düsseldorf.
 

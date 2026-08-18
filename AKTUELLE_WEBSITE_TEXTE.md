@@ -14,7 +14,7 @@ Header → Hero → erstes Zitat → Ausgewählte Erfolge → zweites Zitat → 
 
 # Quelle: index.html
 
-**Seitentitel:** Bodo Schiefer — Marke &amp; Kommunikation | Klarheit für wirksames Marketing
+**Seitentitel:** Bodo Schiefer — Marke &amp; Wachstum | Klarheit für wirksames Marketing
 
 **Meta-Beschreibung:** Bodo Schiefer unterstützt Geschäftsführungen, Marketingverantwortliche und Gründerteams dabei, Marketing und Kommunikation klarer zu steuern: mit klaren Prioritäten, Rollen, Prozessen und wirksamer Umsetzung.
 
@@ -62,7 +62,7 @@ Genau dabei unterstütze ich.“
 
     Diese Komplexität können wir gemeinsam in eine klarere Richtung bewegen!
 
-      0Jahre an der Schnittstelle von Marke & Kommunikation
+      0Jahre an der Schnittstelle von Marke, Marketing & Kommunikation
       0Umsatz in 2,5 Jahren versechsfacht
       0bis zum Break-even eines Technologie-Start-ups
       0Eintrag ins Guinness-Buch der Rekorde
@@ -346,7 +346,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 
 # Quelle: fun-fact/index.html
 
-**Seitentitel:** Fun Fact — Bodo Schiefer | Marke &amp; Kommunikation
+**Seitentitel:** Fun Fact — Bodo Schiefer | Marke &amp; Wachstum
 
 **Meta-Beschreibung:** Die Geschichte, wie eine BoxaGrippal-Werbefigur erst aussah wie Bodo Schiefer und später auch noch Bodo hieß.
 
@@ -471,7 +471,7 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 
 # Quelle: presse/index.html
 
-**Seitentitel:** Presse &amp; Publikationen — Bodo Schiefer | Marke &amp; Kommunikation
+**Seitentitel:** Presse &amp; Publikationen — Bodo Schiefer | Marke &amp; Wachstum
 
 **Meta-Beschreibung:** Presse und Publikationen von Bodo Schiefer: Handelsblatt, HORIZONT, BDZV und Springer-Vieweg über Markenführung, Marketingkommunikation und Augmented Reality.
 
@@ -589,9 +589,9 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 
 # Quelle: impressum/index.html
 
-**Seitentitel:** Impressum — Bodo Schiefer | Marke &amp; Kommunikation
+**Seitentitel:** Impressum — Bodo Schiefer | Marke &amp; Wachstum
 
-**Meta-Beschreibung:** Impressum von Bodo Schiefer – BS | Marke & Kommunikation, Düsseldorf. Angaben gemäß § 5 DDG.
+**Meta-Beschreibung:** Impressum von Bodo Schiefer – BS | Marke & Wachstum, Düsseldorf. Angaben gemäß § 5 DDG.
 
 Zum Inhalt springen
 
@@ -673,9 +673,9 @@ Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Ges
 
 # Quelle: datenschutz/index.html
 
-**Seitentitel:** Datenschutzerklärung — Bodo Schiefer | Marke &amp; Kommunikation
+**Seitentitel:** Datenschutzerklärung — Bodo Schiefer | Marke &amp; Wachstum
 
-**Meta-Beschreibung:** Datenschutzerklärung von Bodo Schiefer – BS | Marke & Kommunikation. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.
+**Meta-Beschreibung:** Datenschutzerklärung von Bodo Schiefer – BS | Marke & Wachstum. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.
 
 Zum Inhalt springen
 

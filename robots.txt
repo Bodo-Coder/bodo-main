@@ -1,4 +1,4 @@
-# robots.txt — Bodo Schiefer | Marke & Kommunikation
+# robots.txt — Bodo Schiefer | Marke & Wachstum
 User-agent: *
 Allow: /
 

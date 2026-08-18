@@ -21,7 +21,7 @@ Erst vollständig lesen, dann ändern. Ziel: eine konsistente, saubere Website �
 
 ## 1) WAS IST DAS & WOFÜR
 
-- **Projekt:** Persönliche Website-Visitenkarte von **Bodo Schiefer — „BS | Marke & Kommunikation"**, Düsseldorf.
+- **Projekt:** Persönliche Website-Visitenkarte von **Bodo Schiefer — „BS | Marke & Wachstum"**, Düsseldorf.
 - **Zweck:** Vertrauen aufbauen und Erstgespräche generieren (Lead-Gen). Primäres Ziel = **„Jetzt Termin buchen"** (Calendly).
 - **Zielgruppe:** Geschäftsführungen und Marketingverantwortliche aus **Mittelstand** und **Start-ups** im DACH-Raum.
 - **Tonalität & Look:** Premium-Beratung, **editorial, ruhig, klar, souverän, nahbar.** Viel Weißraum. Kernbotschaft der Marke: **„Aus Komplexität wird Klarheit."**
