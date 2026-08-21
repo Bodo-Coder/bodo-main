@@ -62,7 +62,7 @@ Genau dabei unterstütze ich.“
 
     Diese Komplexität können wir gemeinsam in eine klarere Richtung bewegen!
 
-      0Jahre an der Schnittstelle von Marke, Marketing & Kommunikation
+      0Jahre an der Schnittstelle von Marke, Marketing & Organisation
       0Umsatz in 2,5 Jahren versechsfacht
       0bis zum Break-even eines Technologie-Start-ups
       0Eintrag ins Guinness-Buch der Rekorde
@@ -107,7 +107,7 @@ Genau dabei unterstütze ich.“
 
 Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.
 
-Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern. Denn eine Plattform skaliert erst, wenn Angebot, Nachfrage, Nutzenversprechen und Go-to-Market zusammenpassen.
+Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern. Aus meiner Plattform-Erfahrung weiß ich zugleich: Skalierung entsteht erst, wenn Angebot, Nachfrage, Nutzenversprechen und Go-to-Market zusammenpassen.
 
 Für den Erfolg sind dabei drei Dinge entscheidend:
 
