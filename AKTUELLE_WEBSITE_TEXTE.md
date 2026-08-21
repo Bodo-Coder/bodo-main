@@ -196,7 +196,7 @@ Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird
 
         KI als Werkzeug
 
-## KI produziert Antworten. Menschen geben ihnen Bedeutung.
+## KI produziert Antworten. Menschen geben ihnen Richtung und Bedeutung.
 
 KI ist ein wirksames Werkzeug. Sie recherchiert schneller, analysiert schneller, schreibt schneller und erkennt Muster. Richtig eingesetzt, schafft sie Tempo und erweitert Möglichkeiten.
 
