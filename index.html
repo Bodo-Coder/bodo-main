@@ -208,9 +208,12 @@
   .growth-point{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 30px;color:var(--ink-soft);font-size:1rem;line-height:1.5;transition:transform .25s,box-shadow .25s}
   .growth-point:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
   .growth-point b{display:block;color:var(--accent);font-family:var(--serif);font-size:2rem;font-weight:500;line-height:1;margin-bottom:22px}
-  .growth-point h3{color:var(--ink);font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.15;margin:0 0 12px}
-  .growth-point p{margin:0}
+  .growth-head{width:100%;padding:0;background:none;border:0;text-align:left}
+  .growth-head h3{color:var(--ink);font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.15;margin:0 0 12px}
+  .growth-head .pm{display:none}
+  .growth-body p{margin:0}
   @media(max-width:880px){.growth-intro{grid-template-columns:1fr;grid-template-areas:"heading" "copy" "image";gap:32px}.growth-points{grid-template-columns:1fr;gap:32px}.growth-image{max-width:468px}.growth-lead-in{margin-top:36px}.growth-point{padding:30px}}
+  @media(max-width:760px){.growth-points{gap:12px}.growth-point b{margin-bottom:10px}.growth-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.growth-head h3{margin-bottom:0}.growth-head .pm{display:block;margin-left:auto;color:var(--blue);font-size:1.5rem;line-height:1;transition:transform .3s}.growth-point.open .growth-head .pm{transform:rotate(45deg)}.growth-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.growth-body p{padding-top:14px}}
 
   /* LEISTUNGEN ACCORDION */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
@@ -288,17 +291,20 @@
   .industries{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
   .industries span{font-size:.85rem;font-weight:500;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--line);padding:7px 15px;border-radius:30px}
   @media(max-width:880px){.about-story{grid-template-columns:1fr;gap:26px}.about-practice{order:-1;max-width:360px}}
-  @media(max-width:760px){.about-practice{max-width:360px;margin-left:0}}
+  @media(max-width:760px){.about-practice{max-width:360px;margin:0 0 26px}}
   /* SUCCESS */
   .success{background:var(--paper)}
   .succ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:14px}
   .succ-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 30px;transition:transform .25s,box-shadow .25s}
   .succ-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(13,27,42,.25)}
   .succ-card .ic{font-family:var(--sans);font-weight:700;font-style:normal;color:var(--accent);font-size:.95rem;margin-bottom:12px}
-  .succ-card h4{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--blue);line-height:1.2;margin-bottom:12px}
-  .succ-card p{color:var(--muted);font-size:.98rem}
+  .succ-head{width:100%;padding:0;background:none;border:0;text-align:left}
+  .succ-head h4{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--blue);line-height:1.2;margin-bottom:12px}
+  .succ-head .pm{display:none}
+  .succ-body p{color:var(--muted);font-size:.98rem}
   .when{background:var(--paper-2)!important}
   @media(max-width:880px){.succ-grid{grid-template-columns:1fr}}
+  @media(max-width:760px){.succ-grid{gap:12px}.succ-card{padding:30px 28px}.succ-card .ic{margin-bottom:10px}.succ-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.succ-head h4{margin-bottom:0}.succ-head .pm{display:block;margin-left:auto;color:var(--blue);font-size:1.5rem;line-height:1;transition:transform .3s}.succ-card.open .succ-head .pm{transform:rotate(45deg)}.succ-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.succ-body p{padding-top:14px}}
 
   /* MANDATES */
   .mandates{text-align:center}
@@ -594,11 +600,11 @@
       </figure>
     </div>
     <p class="growth-lead-in">Für den Erfolg digitaler Angebote und Plattformmodelle sind vier Dinge entscheidend:</p>
-    <div class="growth-points" aria-label="Vier Schwerpunkte digitaler Wachstumsarbeit">
-      <div class="growth-point"><b>01</b><h3>Kundennutzen verstehen</h3><p>Zielgruppen, Bedarf und Zahlungsbereitschaft präzise verstehen.</p></div>
-      <div class="growth-point"><b>02</b><h3>Relevante Angebote entwickeln</h3><p>Nutzenversprechen, Anwendungsfälle und Nutzererlebnis klar machen.</p></div>
-      <div class="growth-point"><b>03</b><h3>Plattformen und Kanäle strategisch nutzen</h3><p>Den passenden Zugang zum Markt über eigene Kanäle, Partner und Plattformen gestalten.</p></div>
-      <div class="growth-point"><b>04</b><h3>Wirkung wirtschaftlich steuern</h3><p>Erlösmodelle, Conversion und Kennzahlen auf profitables Wachstum ausrichten.</p></div>
+    <div class="growth-points" id="growthAcc" aria-label="Vier Schwerpunkte digitaler Wachstumsarbeit">
+      <div class="growth-point open"><b>01</b><button class="growth-head" type="button" aria-expanded="true" aria-controls="growth-body-1"><h3>Kundennutzen verstehen</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-1"><p>Zielgruppen, Bedarf und Zahlungsbereitschaft präzise verstehen.</p></div></div>
+      <div class="growth-point"><b>02</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-2"><h3>Relevante Angebote entwickeln</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-2"><p>Nutzenversprechen, Anwendungsfälle und Nutzererlebnis klar machen.</p></div></div>
+      <div class="growth-point"><b>03</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-3"><h3>Plattformen und Kanäle strategisch nutzen</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-3"><p>Den passenden Zugang zum Markt über eigene Kanäle, Partner und Plattformen gestalten.</p></div></div>
+      <div class="growth-point"><b>04</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-4"><h3>Wirkung wirtschaftlich steuern</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-4"><p>Erlösmodelle, Conversion und Kennzahlen auf profitables Wachstum ausrichten.</p></div></div>
     </div>
   </div>
 </section>
@@ -717,7 +723,7 @@
       <div class="about-body">
         <span class="kicker">Über mich</span>
         <h2>Über 25 Jahre an der Schnittstelle von Marke, Marketing und Organisation.</h2>
-        <p style="margin-top:24px">Für mich ist Marketing marktorientierte Unternehmensführung, die Marke, Angebot, Kundenerlebnis, Vertrieb und Organisation zusammenführt.</p>
+        <p id="about-intro" style="margin-top:24px">Für mich ist Marketing marktorientierte Unternehmensführung, die Marke, Angebot, Kundenerlebnis, Vertrieb und Organisation zusammenführt.</p>
         <p>Ich habe internationale Marken, mittelständische Unternehmen und Start-ups begleitet: von FMCG, OTC und Handel über Automotive, Telekommunikation und Cybersecurity bis zu B2B, Maschinenbau, Weiterbildung und Versicherungen.</p>
         <div class="about-story">
           <div class="about-copy">
@@ -751,13 +757,13 @@
       <span class="kicker">Ausgewählte Erfolge</span>
       <h2>Wirkung, die messbar ist.</h2>
     </div>
-    <div class="succ-grid">
-      <div class="succ-card"><div class="ic">Wachstum</div><h4>Umsatz in 2,5 Jahren versechsfacht</h4><p>Leistungsportfolio und Positionierung weiterentwickelt und neue Geschäftspotenziale erschlossen.</p></div>
-      <div class="succ-card"><div class="ic">Profitabilität</div><h4>Break-even in 11 Monaten</h4><p>Marketing- und Kommunikationsstrategie für ein Technologie-Start-up geschärft und das Anwendungsfeld zielgruppengerecht erweitert.</p></div>
-      <div class="succ-card"><div class="ic">Effizienz</div><h4>Budgets gezielter eingesetzt</h4><p>Einheitliche Produktpositionierung für mehrere Länder entwickelt und implementiert. Maßnahmen konnten gebündelt und Ressourcen wirksamer eingesetzt werden.</p></div>
-      <div class="succ-card"><div class="ic">Transformation</div><h4>Marketing-Transformation geleitet</h4><p>Kundenzentriertes Mindset etabliert, Geschäftsmodell und Organisationsstrukturen weiterentwickelt.</p></div>
-      <div class="succ-card"><div class="ic">Performance</div><h4>Wirkung im Marketing-Funnel maximiert</h4><p>Performance und Branding markenadäquat verbunden und Maßnahmen effizienter gesteuert.</p></div>
-      <div class="succ-card"><div class="ic">Kreativität</div><h4>Strategie in Wirkung übersetzt</h4><p>Eintrag ins Guinness-Buch der Rekorde mit der Revitalisierung und Aktivierung einer Marke trotz Kleinstbudget.</p></div>
+    <div class="succ-grid" id="successAcc">
+      <div class="succ-card open"><div class="ic">Wachstum</div><button class="succ-head" type="button" aria-expanded="true" aria-controls="succ-body-1"><h4>Umsatz in 2,5 Jahren versechsfacht</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-1"><p>Leistungsportfolio und Positionierung weiterentwickelt und neue Geschäftspotenziale erschlossen.</p></div></div>
+      <div class="succ-card"><div class="ic">Profitabilität</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-2"><h4>Break-even in 11 Monaten</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-2"><p>Marketing- und Kommunikationsstrategie für ein Technologie-Start-up geschärft und das Anwendungsfeld zielgruppengerecht erweitert.</p></div></div>
+      <div class="succ-card"><div class="ic">Effizienz</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-3"><h4>Budgets gezielter eingesetzt</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-3"><p>Einheitliche Produktpositionierung für mehrere Länder entwickelt und implementiert. Maßnahmen konnten gebündelt und Ressourcen wirksamer eingesetzt werden.</p></div></div>
+      <div class="succ-card"><div class="ic">Transformation</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-4"><h4>Marketing-Transformation geleitet</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-4"><p>Kundenzentriertes Mindset etabliert, Geschäftsmodell und Organisationsstrukturen weiterentwickelt.</p></div></div>
+      <div class="succ-card"><div class="ic">Performance</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-5"><h4>Wirkung im Marketing-Funnel maximiert</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-5"><p>Performance und Branding markenadäquat verbunden und Maßnahmen effizienter gesteuert.</p></div></div>
+      <div class="succ-card"><div class="ic">Kreativität</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-6"><h4>Strategie in Wirkung übersetzt</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-6"><p>Eintrag ins Guinness-Buch der Rekorde mit der Revitalisierung und Aktivierung einer Marke trotz Kleinstbudget.</p></div></div>
     </div>
   </div>
 </section>
@@ -1007,27 +1013,52 @@
     window.addEventListener('resize',function(){var op=document.querySelector('#acc .acc-item.open');if(op)setBody(op,true);});
   })();
 
-  /* ---------- OUTCOMES ACCORDION (MOBILE) ---------- */
+  /* ---------- MOBILE ACCORDIONS ---------- */
   (function(){
-    var items=document.querySelectorAll('#outcomesAcc .out-cell');
+    function initMobileAccordion(rootSelector,itemSelector,headSelector,bodySelector){
+      var root=document.querySelector(rootSelector),items=root?root.querySelectorAll(itemSelector):[];
+      if(!items.length)return;
+      var mobile=window.matchMedia('(max-width: 760px)');
+      function setBody(it,open){var body=it.querySelector(bodySelector);body.style.maxHeight=open?(body.scrollHeight+'px'):'0px';it.querySelector(headSelector).setAttribute('aria-expanded',String(open));}
+      function sync(){
+        if(mobile.matches){
+          var active=root.querySelector(itemSelector+'.open')||items[0];
+          items.forEach(function(it){var open=it===active;it.classList.toggle('open',open);setBody(it,open);});
+        }else{
+          items.forEach(function(it){it.classList.remove('open');it.querySelector(bodySelector).style.maxHeight='';it.querySelector(headSelector).setAttribute('aria-expanded','true');});
+        }
+      }
+      items.forEach(function(it){
+        it.querySelector(headSelector).addEventListener('click',function(){
+          if(!mobile.matches)return;
+          var isOpen=it.classList.contains('open');
+          items.forEach(function(other){other.classList.remove('open');setBody(other,false);});
+          if(!isOpen){it.classList.add('open');setBody(it,true);}
+        });
+      });
+      mobile.addEventListener('change',sync);
+      sync();
+    }
+    initMobileAccordion('#outcomesAcc','.out-cell','.out-head','.out-body');
+    initMobileAccordion('#successAcc','.succ-card','.succ-head','.succ-body');
+    initMobileAccordion('#growthAcc','.growth-point','.growth-head','.growth-body');
+  })();
+
+  /* ---------- ABOUT IMAGE (MOBILE) ---------- */
+  (function(){
+    var body=document.querySelector('#ueber-mich .about-body');
+    var intro=document.getElementById('about-intro');
+    var story=document.querySelector('#ueber-mich .about-story');
+    var practice=document.querySelector('#ueber-mich .about-practice');
+    if(!body||!intro||!story||!practice)return;
     var mobile=window.matchMedia('(max-width: 760px)');
-    function setBody(it,open){var b=it.querySelector('.out-body');b.style.maxHeight=open?(b.scrollHeight+'px'):'0px';it.querySelector('.out-head').setAttribute('aria-expanded',String(open));}
     function sync(){
       if(mobile.matches){
-        var active=document.querySelector('#outcomesAcc .out-cell.open')||items[0];
-        items.forEach(function(it){setBody(it,it===active);});
-      }else{
-        items.forEach(function(it){it.classList.remove('open');it.querySelector('.out-body').style.maxHeight='';it.querySelector('.out-head').setAttribute('aria-expanded','true');});
+        if(practice.parentNode!==body)intro.insertAdjacentElement('afterend',practice);
+      }else if(practice.parentNode!==story){
+        story.appendChild(practice);
       }
     }
-    items.forEach(function(it){
-      it.querySelector('.out-head').addEventListener('click',function(){
-        if(!mobile.matches)return;
-        var isOpen=it.classList.contains('open');
-        items.forEach(function(other){other.classList.remove('open');setBody(other,false);});
-        if(!isOpen){it.classList.add('open');setBody(it,true);}
-      });
-    });
     mobile.addEventListener('change',sync);
     sync();
   })();
