@@ -1083,7 +1083,8 @@
       {yr:'2018',outlet:'HORIZONT',img:'images/presse-horizont-2018.jpg',desc:'Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.',url:'https://www.horizont.net/agenturen/nachrichten/Expansion-Britische-Agenturgruppe-Engine-kommt-nach-Deutschland-167503'},
       {yr:'2022 · Buchkapitel',outlet:'Springer-Vieweg',img:'images/presse-springer-vieweg-nachhaltige-gebaeude.jpg',desc:'Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.',url:'https://link.springer.com/chapter/10.1007/978-3-658-34962-2_28',cta:'Zum Buch →'},
       {yr:'2021',outlet:'BDZV-Jahresreport',img:'images/presse-bdzv-jahresreport.jpg',desc:'Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.',status:'Mitgliederpublikation · nicht öffentlich zugänglich'},
-      {yr:'2023',outlet:'PRINT.DE',title:'snoopstar mit neuer Strategie',img:'images/presse-printde-2023.jpg',teaser:true,desc:'Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketing-Transformation.',url:'https://www.print.de/allgemein/snoopstar-gmbh-mit-neuer-strategie-und-fuehrungsspitze/'}
+      {yr:'2023',outlet:'PRINT.DE',title:'snoopstar mit neuer Strategie',img:'images/presse-printde-2023.jpg',teaser:true,desc:'Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketing-Transformation.',url:'https://www.print.de/allgemein/snoopstar-gmbh-mit-neuer-strategie-und-fuehrungsspitze/'},
+      {yr:'2016',outlet:'HORIZONT',title:'Raser statt Hase: Duracell-Weltrekord',img:'images/presse-horizont-duracell-achievements-2016.jpg',desc:'Bericht über die unter Führung von Bodo Schiefer entwickelte Duracell-Kampagne „#Achievements“. Ein batteriegetriebenes, ferngesteuertes Spielzeugauto wiederholt die historische 106 km lange Fahrt von Bertha Benz und übersetzt die Markenidee in einen aufmerksamkeitsstarken Weltrekord.',url:'https://www.horizont.net/marketing/nachrichten/Raser-statt-Hase-So-feiert-Duracell-die-historische-Fahrt-von-Berta-Benz-139928'}
     ];
     var table=document.getElementById('table'),els=[];
     articles.forEach(function(a){
@@ -1107,8 +1108,9 @@
       var w=table.clientWidth;
       if(w<760){mobileLayout();return;}
       var cw=els[0].offsetWidth;
-      setClip(els[2],-36,150,-2,1);           // HORIZONT 2018
-      setClip(els[0],w*.17,70,0,6);           // Handelsblatt
+      setClip(els[6],w*.03,212,-1,0);         // HORIZONT 2016 · Duracell
+      setClip(els[2],-36,185,-2,1);           // HORIZONT 2018
+      setClip(els[0],w*.17,105,0,6);          // Handelsblatt
       setClip(els[5],w*.42,20,0,2);           // PRINT.DE 2023
       setClip(els[1],w*.43,215,1,3);          // HORIZONT 2022
       setClip(els[4],w*.57,150,0,4);          // BDZV-Jahresreport
@@ -1116,6 +1118,7 @@
     }
     function mobileLayout(){
       var w=table.clientWidth,cw=els[0].offsetWidth;
+      setClip(els[6],-48,348,-3,0);                  // HORIZONT 2016 · Duracell
       setClip(els[1],-62,88,-5,1);                   // HORIZONT 2022
       setClip(els[5],Math.max(80,w*.4),150,0,2);      // PRINT.DE 2023
       setClip(els[0],Math.max(26,w*.18),28,1,6);      // Handelsblatt
