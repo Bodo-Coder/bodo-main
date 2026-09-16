@@ -310,7 +310,9 @@
   /* MANDATES */
   .mandates{text-align:center}
   .mandates .mandate-copy{max-width:680px;margin:14px auto 0;color:var(--ink-soft);font-size:1.08rem}
-  .mandates img{max-width:100%;height:auto;margin:36px auto 0;display:block;mix-blend-mode:multiply}
+  .mandate-logos{position:relative;container-type:inline-size;margin:36px auto 0}
+  .mandate-logos img{width:100%;height:auto;display:block;mix-blend-mode:multiply}
+  .mandate-label{position:absolute;left:var(--x);top:var(--y);font-family:var(--sans);font-size:1.4cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
 
   /* CTA BANNER */
   .cta-banner{background:var(--blue);color:#fff;text-align:center}
@@ -775,7 +777,19 @@
     <span class="kicker">Auswahl bisheriger Mandate</span>
       <h2>Marken aus vielen Branchen,<br>für die ich tätig sein durfte.</h2>
       <p class="mandate-copy">Eine Auswahl aus mehr als 25 Jahren Marken-, Marketing- und Wachstumsarbeit.</p>
-    <img src="images/Logoteppich%20Website_v2.png" alt="Auswahl bisheriger Mandate">
+    <div class="mandate-logos">
+      <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter bisheriger Mandate, nach Branchen gruppiert">
+      <span class="mandate-label" style="--x:5%;--y:1.55%">Automotive</span>
+      <span class="mandate-label" style="--x:53.2%;--y:1.55%">Konsumgüter · Food</span>
+      <span class="mandate-label" style="--x:4%;--y:21.4%">Weiterbildung &amp; Gründungsförderung</span>
+      <span class="mandate-label" style="--x:51.8%;--y:21.4%">Handel</span>
+      <span class="mandate-label" style="--x:4.5%;--y:35.3%">Konsumgüter · Non Food</span>
+      <span class="mandate-label" style="--x:51.6%;--y:35.3%">Gesundheit &amp; OTC</span>
+      <span class="mandate-label" style="--x:4%;--y:63.85%">Technologie &amp; Telekommunikation</span>
+      <span class="mandate-label" style="--x:51.8%;--y:63.85%">Öffentlicher Sektor &amp; Verbände</span>
+      <span class="mandate-label" style="--x:4%;--y:81.1%">Banken &amp; Versicherungen</span>
+      <span class="mandate-label" style="--x:51.8%;--y:81.1%">Industrie &amp; Bauen</span>
+    </div>
   </div>
 </section>
 
