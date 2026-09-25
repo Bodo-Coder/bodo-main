@@ -310,9 +310,15 @@
   /* MANDATES */
   .mandates{text-align:center}
   .mandates .mandate-copy{max-width:680px;margin:14px auto 0;color:var(--ink-soft);font-size:1.08rem}
-  .mandate-logos{position:relative;container-type:inline-size;margin:36px auto 0}
-  .mandate-logos img{width:100%;height:auto;display:block;mix-blend-mode:multiply}
+  .mandate-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));position:relative;container-type:inline-size;margin:36px auto 0}
+  .mandate-panel{position:relative;overflow:hidden}
+  .mandate-panel--right img{margin-left:-100%}
+  .mandate-logos img{width:200%;max-width:none;height:auto;display:block;mix-blend-mode:multiply}
   .mandate-label{position:absolute;left:var(--x);top:var(--y);font-family:var(--sans);font-size:1.4cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
+  @media(max-width:640px){
+    .mandate-logos{grid-template-columns:minmax(0,1fr);gap:24px}
+    .mandate-label{font-size:2.8cqw}
+  }
 
   /* CTA BANNER */
   .cta-banner{background:var(--blue);color:#fff;text-align:center}
@@ -641,17 +647,22 @@
       <h2>Marken aus vielen Branchen,<br>für die ich tätig sein durfte.</h2>
       <p class="mandate-copy">Eine Auswahl aus mehr als 25 Jahren Marken-, Marketing- und Wachstumsarbeit.</p>
     <div class="mandate-logos">
-      <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter bisheriger Mandate, nach Branchen gruppiert">
-      <span class="mandate-label" style="--x:5%;--y:1.55%">Automotive</span>
-      <span class="mandate-label" style="--x:53.2%;--y:1.55%">Konsumgüter · Food</span>
-      <span class="mandate-label" style="--x:4%;--y:21.4%">Weiterbildung &amp; Gründungsförderung</span>
-      <span class="mandate-label" style="--x:51.8%;--y:21.4%">Handel</span>
-      <span class="mandate-label" style="--x:4.5%;--y:35.3%">Konsumgüter · Non Food</span>
-      <span class="mandate-label" style="--x:51.6%;--y:35.3%">Gesundheit &amp; OTC</span>
-      <span class="mandate-label" style="--x:4%;--y:63.85%">Technologie &amp; Telekommunikation</span>
-      <span class="mandate-label" style="--x:51.8%;--y:63.85%">Öffentlicher Sektor &amp; Verbände</span>
-      <span class="mandate-label" style="--x:4%;--y:81.1%">Banken &amp; Versicherungen</span>
-      <span class="mandate-label" style="--x:51.8%;--y:81.1%">Industrie &amp; Bauen</span>
+      <div class="mandate-panel mandate-panel--left">
+        <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter Mandate: Automotive, Weiterbildung, Non Food, Technologie und Banken">
+        <span class="mandate-label" style="--x:10%;--y:1.55%">Automotive</span>
+        <span class="mandate-label" style="--x:8%;--y:21.4%">Weiterbildung &amp; Gründungsförderung</span>
+        <span class="mandate-label" style="--x:9%;--y:35.3%">Konsumgüter · Non Food</span>
+        <span class="mandate-label" style="--x:8%;--y:63.85%">Technologie &amp; Telekommunikation</span>
+        <span class="mandate-label" style="--x:8%;--y:81.1%">Banken &amp; Versicherungen</span>
+      </div>
+      <div class="mandate-panel mandate-panel--right">
+        <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter Mandate: Food, Handel, Gesundheit, öffentlicher Sektor und Industrie">
+        <span class="mandate-label" style="--x:6.4%;--y:1.55%">Konsumgüter · Food</span>
+        <span class="mandate-label" style="--x:3.6%;--y:21.4%">Handel</span>
+        <span class="mandate-label" style="--x:3.2%;--y:35.3%">Gesundheit &amp; OTC</span>
+        <span class="mandate-label" style="--x:3.6%;--y:63.85%">Öffentlicher Sektor &amp; Verbände</span>
+        <span class="mandate-label" style="--x:3.6%;--y:81.1%">Industrie &amp; Bauen</span>
+      </div>
     </div>
   </div>
 </section>
