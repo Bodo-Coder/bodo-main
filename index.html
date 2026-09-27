@@ -145,39 +145,6 @@
   #leistungen{background:var(--paper-2)}
   .ai-position{background:var(--paper-2)}
 
-  /* CHAOS -> CLARITY */
-  .transform{background:var(--paper)}
-  .compare{position:relative;width:100%;height:440px;border-radius:20px;overflow:hidden;border:1px solid var(--line);margin-top:14px;user-select:none;touch-action:pan-y;box-shadow:0 30px 60px -36px rgba(13,27,42,.4);isolation:isolate}
-  .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 56px}
-  .layer .tag-lab{position:absolute;top:22px;z-index:3;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:30px}
-  .chaos{z-index:1;right:50%;background:radial-gradient(circle at 30% 40%,#26384a,#0d1b2a);overflow:hidden}
-  .chaos .tag-lab{left:24px;background:rgba(255,255,255,.1);color:#fff}
-  .chaos-field{position:absolute;inset:0}
-  .chip{position:absolute;background:rgba(255,255,255,.09);border:0;color:rgba(255,255,255,.82);font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap}
-  .clarity{z-index:2;background:#fff;color:var(--ink);left:50%;right:0;overflow:hidden}
-  .clarity .tag-lab{right:24px;background:var(--paper-2);color:var(--blue);border:1px solid var(--line)}
-  .clarity-inner{max-width:380px;margin-left:auto;margin-right:8%}
-  .clarity-inner h3{font-family:var(--serif);font-weight:500;font-size:1.7rem;margin-bottom:24px;line-height:1.2;color:var(--ink)}
-  .clar-step{display:flex;align-items:center;gap:14px;padding:11px 0;border-top:1px solid rgba(48,111,186,.16);font-size:1.05rem;color:var(--ink-soft)}
-  .clar-step:first-of-type{border-top:0}
-  .clar-step b{font-family:var(--sans);font-weight:700;color:var(--accent);font-size:1.1rem;width:24px}
-  .handle{position:absolute;top:0;bottom:0;left:50%;width:6px;background:var(--blue);z-index:5;transform:translateX(-50%);cursor:ew-resize}
-  .handle::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
-  .compare-hint{background:var(--blue);border-radius:42px;color:var(--white);display:block;font-family:var(--sans);font-size:15px;font-weight:400;line-height:1.4;margin:26px auto 0;max-width:max-content;padding:15px 30px;text-align:center;text-decoration:none;transition:background .22s,transform .22s}
-  .compare-hint:hover{background:var(--accent);transform:translateY(-2px)}
-  @media(max-width:640px){
-    .compare{height:560px}
-    .layer{padding:40px 26px}
-    .layer .tag-lab{width:144px;max-width:none}
-    .chaos .tag-lab{left:6px}
-    .clarity .tag-lab{right:6px}
-    .chip{font-size:12px;padding:7px 11px}
-    .clarity-inner{max-width:280px;margin-left:auto;margin-right:4%}
-    .clarity-inner h3{font-size:1.45rem;margin-bottom:18px}
-    .clar-step{gap:10px;padding:10px 0;font-size:.96rem;line-height:1.25}
-    .handle::after{top:82%}
-  }
-
   /* WHEN */
   .when-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:8px}
   .when-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:42px 40px;transition:transform .25s,box-shadow .25s}
@@ -576,34 +543,6 @@
   </div>
 </section>
 
-<!-- CHAOS -> CLARITY -->
-<section class="sec transform reveal" id="klarheit">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="kicker">Vom Durcheinander zur Wirksamkeit</span>
-      <h2>Ziehen Sie den Regler: so fühlt sich der Unterschied an.</h2>
-    </div>
-    <div class="compare" id="compare">
-      <div class="layer chaos">
-        <span class="tag-lab">Vorher · Komplexität</span>
-        <div class="chaos-field" id="chaosField"></div>
-      </div>
-      <div class="layer clarity" id="clarityLayer">
-        <span class="tag-lab">Nachher · Klarheit</span>
-        <div class="clarity-inner">
-          <h3>Eine gemeinsame Richtung.</h3>
-          <div class="clar-step"><b>01</b><span>Prioritäten klären</span></div>
-          <div class="clar-step"><b>02</b><span>Positionierung schärfen</span></div>
-          <div class="clar-step"><b>03</b><span>Prozesse, Rollen und Ressourcen ordnen</span></div>
-          <div class="clar-step"><b>04</b><span>Wirkung im Markt maximieren</span></div>
-        </div>
-      </div>
-      <div class="handle" id="handle" role="slider" tabindex="0" aria-label="Vergleich zwischen Komplexität und Klarheit" aria-valuemin="6" aria-valuemax="94" aria-valuenow="50"></div>
-    </div>
-    <a class="compare-hint" href="mailto:bs@marke-wachstum.de">Diese Komplexität können wir gemeinsam in eine klarere Richtung bewegen!</a>
-  </div>
-</section>
-
 <!-- STATS -->
 <section class="sec stats reveal" id="kennzahlen">
   <div class="wrap">
@@ -948,84 +887,22 @@
   /* section order */
   (function(){
     var success=document.getElementById('erfolge');
-    var clarity=document.getElementById('klarheit');
     var mandates=document.getElementById('mandate');
-    var testimonials=document.getElementById('stimmen');
     var stats=document.getElementById('kennzahlen');
     var conviction=document.getElementById('ueberzeugung');
     var digitalGrowth=document.getElementById('digitale-wachstumsarbeit');
     var when=document.getElementById('einsatz');
     var cta=document.querySelector('.cta-banner');
-    clarity.parentNode.insertBefore(success,clarity);
-    clarity.parentNode.insertBefore(conviction,clarity);
-    clarity.parentNode.insertBefore(digitalGrowth,clarity);
-    clarity.parentNode.insertBefore(stats,clarity);
-    clarity.parentNode.insertBefore(mandates,clarity);
-    clarity.parentNode.insertBefore(testimonials,clarity);
+    mandates.parentNode.insertBefore(success,mandates);
+    mandates.parentNode.insertBefore(conviction,mandates);
+    mandates.parentNode.insertBefore(digitalGrowth,mandates);
+    mandates.parentNode.insertBefore(stats,mandates);
     when.parentNode.insertBefore(cta,when);
   })();
 
   /* reveal */
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-
-  /* ---------- CHAOS -> CLARITY ---------- */
-  (function(){
-    var words=['zu viele Maßnahmen','unklare Prioritäten','Silos','Bauchgefühl','Budget?','Wer entscheidet?','Kampagne ≠ Strategie','widersprüchliche Ziele','kein roter Faden','Agentur vs. intern','Reporting-Chaos','Aktionismus','Positionierung?','Tool-Wildwuchs','zu wenig Manpower','unklare Prozesse','offene Verantwortlichkeiten','steigende Kosten','zu viele Projekte gleichzeitig'];
-    var field=document.getElementById('chaosField');
-    var place=[
-      [8,20,-8],[35,12,5],[61,17,-4],[12,49,3],[42,45,-6],
-      [73,56,7],[21,72,-4],[49,75,4],[74,78,-8],[5,84,6],
-      [37,86,-3],[65,45,5],[80,23,-6],[29,59,7],[11,34,-7],
-      [37,29,4],[62,31,-5],[10,63,4],[50,58,-5]
-    ];
-    words.forEach(function(w,i){
-      var p=place[i%place.length];
-      var c=document.createElement('div');c.className='chip';c.textContent=w;
-      c.style.left=p[0]+'%';c.style.top=p[1]+'%';c.style.transform='rotate('+p[2]+'deg)';
-      field.appendChild(c);
-    });
-    var box=document.getElementById('compare'),chaos=document.querySelector('.chaos'),clar=document.getElementById('clarityLayer'),h=document.getElementById('handle'),chaosTag=chaos.querySelector('.tag-lab'),clarityTag=clar.querySelector('.tag-lab');
-    function naturalWidth(el){
-      var maxWidth=el.style.maxWidth,width=el.style.width,whiteSpace=el.style.whiteSpace;
-      el.style.maxWidth='none';el.style.width='max-content';el.style.whiteSpace='nowrap';
-      var measuredWidth=el.getBoundingClientRect().width;
-      el.style.maxWidth=maxWidth;el.style.width=width;el.style.whiteSpace=whiteSpace;
-      return measuredWidth;
-    }
-    function getLimits(){
-      if(window.matchMedia('(max-width: 640px)').matches)return {min:0,max:100};
-      var width=box.getBoundingClientRect().width;
-      var min=(naturalWidth(chaosTag)+30)/width*100;
-      var max=100-(naturalWidth(clarityTag)+30)/width*100;
-      return {min:min,max:max};
-    }
-    function setPct(pct){
-      var limits=getLimits();
-      pct=Math.max(limits.min,Math.min(limits.max,pct));
-      var mobile=window.matchMedia('(max-width: 640px)').matches;
-      chaos.style.right=mobile?'0':(100-pct)+'%';
-      chaosTag.style.maxWidth=mobile?'':Math.max(0,box.getBoundingClientRect().width*pct/100-24)+'px';
-      clar.style.left=pct+'%';h.style.left=pct+'%';
-      h.setAttribute('aria-valuemin',String(Math.round(limits.min)));
-      h.setAttribute('aria-valuemax',String(Math.round(limits.max)));
-      h.setAttribute('aria-valuenow',String(Math.round(pct)));
-    }
-    function setPos(px){var r=box.getBoundingClientRect();setPct((px-r.left)/r.width*100);}
-    var dragging=false;
-    h.addEventListener('pointerdown',function(e){dragging=true;setPos(e.clientX);h.setPointerCapture(e.pointerId)});
-    box.addEventListener('pointermove',function(e){if(dragging)setPos(e.clientX)});
-    box.addEventListener('pointerup',function(){dragging=false});
-    box.addEventListener('pointercancel',function(){dragging=false});
-    h.addEventListener('keydown',function(e){
-      var current=Number(h.getAttribute('aria-valuenow'))||50;
-      if(e.key==='ArrowLeft'||e.key==='ArrowDown'){e.preventDefault();setPct(current-2)}
-      if(e.key==='ArrowRight'||e.key==='ArrowUp'){e.preventDefault();setPct(current+2)}
-      if(e.key==='Home'){e.preventDefault();setPct(0)}
-      if(e.key==='End'){e.preventDefault();setPct(100)}
-    });
-    setPct(50);
-  })();
 
   /* ---------- ACCORDION ---------- */
   (function(){
