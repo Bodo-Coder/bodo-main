@@ -547,7 +547,7 @@
 <section class="sec stats reveal" id="kennzahlen">
   <div class="wrap">
     <div class="stats-grid" id="stats">
-      <div class="stat"><div class="big" data-target="25" data-suffix="+">0</div><div class="lab">Jahre an der Schnittstelle von Marke, Marketing &amp; Organisation</div></div>
+      <div class="stat"><div class="big combo-stat" data-target="10" data-prefix="+" data-suffix="%">0</div><div class="lab">Online-Umsatz der beworbenen Produkte</div></div>
       <div class="stat"><div class="big combo-stat" data-target="6" data-prefix="×">0</div><div class="lab">Umsatz in 2,5 Jahren</div></div>
       <div class="stat"><div class="big combo-stat" data-target="1" data-start="9" data-prefix="&gt;" data-suffix="Jahr">0</div><div class="lab">bis zum Break-even eines Technologie-Start-ups</div></div>
       <div class="stat"><div class="big" data-target="1" data-start="9" data-suffix="×">0</div><div class="lab">Eintrag ins Guinness-Buch der Rekorde</div></div>
@@ -982,7 +982,7 @@
             var p=Math.min((ts-t0)/dur,1);
             var val=Math.round(start+(1-Math.pow(1-p,3))*(tgt-start));
             if(pre){
-              var preClass=(pre==='<'||pre==='>'||pre==='×')?'symbol':'word',preText=pre==='<'?'&lt;':pre==='>'?'&gt;':pre;
+              var preClass=(pre==='<'||pre==='>'||pre==='×'||pre==='+')?'symbol':'word',preText=pre==='<'?'&lt;':pre==='>'?'&gt;':pre;
               el.innerHTML='<span class="u '+preClass+'">'+preText+'</span><span class="stat-num">'+val+'</span><span class="u word">'+suf+'</span>';
             }else{
               var cls=suf.length>1?'u word':'u';
