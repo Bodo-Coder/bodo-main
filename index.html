@@ -284,6 +284,7 @@
   .mandate-label{position:absolute;left:var(--x);top:var(--y);font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
   @media(max-width:640px){
     .mandate-logos{grid-template-columns:minmax(0,1fr);gap:12px}
+    .mandate-panel--left::after{content:"";position:absolute;inset:0 0 0 auto;z-index:1;width:12px;background:#fff;pointer-events:none}
     .mandate-label{font-size:3.22cqw}
   }
 
