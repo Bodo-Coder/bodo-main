@@ -282,11 +282,13 @@
   .mandate-panel--right img{margin-left:-100%}
   .mandate-logos img{width:200%;max-width:none;height:auto;display:block;mix-blend-mode:multiply}
   .mandate-label{position:absolute;left:var(--x);top:var(--y);width:89%;height:2.1%;display:flex;align-items:center;background:#fff;font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
+  .mandate-panel--mobile{display:none}
   @media(max-width:640px){
-    .mandate-logos{grid-template-columns:minmax(0,1fr);gap:12px}
-    .mandate-panel--left::after{content:"";position:absolute;inset:0 0 0 auto;z-index:1;width:12px;background:#fff;pointer-events:none}
-    .mandate-panel--right::before{content:"";position:absolute;inset:0 auto 0 0;z-index:1;width:4px;background:#fff;pointer-events:none}
-    .mandate-label{font-size:3.22cqw}
+    .mandate-logos{grid-template-columns:minmax(0,1fr)}
+    .mandate-panel--left,.mandate-panel--right{display:none}
+    .mandate-panel--mobile{display:block}
+    .mandate-panel--mobile img{width:100%}
+    .mandate-panel--mobile .mandate-label{font-size:3.22cqw;height:.883%;width:88%}
   }
 
   /* CTA BANNER */
@@ -497,6 +499,20 @@
         <span class="mandate-label" style="--x:8%;--y:55.1%">Kultur &amp; Entertainment</span>
         <span class="mandate-label" style="--x:8%;--y:66.5%">Öffentlicher Sektor &amp; Verbände</span>
         <span class="mandate-label" style="--x:8%;--y:82.05%">Industrie &amp; Bauen</span>
+      </div>
+      <div class="mandate-panel mandate-panel--mobile">
+        <img src="images/Logoteppich%20Oktober%20mobil.png" width="1200" height="5069" alt="Logos ausgewählter Mandate aus elf Branchen">
+        <span class="mandate-label" style="--x:6.429%;--y:1.042%">Automotive</span>
+        <span class="mandate-label" style="--x:6.625%;--y:10.290%">Konsumgüter · Food</span>
+        <span class="mandate-label" style="--x:6.656%;--y:20.251%">Konsumgüter · Non Food</span>
+        <span class="mandate-label" style="--x:6.448%;--y:32.274%">OTC &amp; Gesundheit</span>
+        <span class="mandate-label" style="--x:6.429%;--y:49.243%">Weiterbildung &amp; Gründungsförderung</span>
+        <span class="mandate-label" style="--x:6.496%;--y:54.992%">Technologie &amp; Telekommunikation</span>
+        <span class="mandate-label" style="--x:6.429%;--y:62.703%">Banken &amp; Versicherungen</span>
+        <span class="mandate-label" style="--x:6.863%;--y:71.148%">Industrie &amp; Bauen</span>
+        <span class="mandate-label" style="--x:6.837%;--y:80.363%">Handel</span>
+        <span class="mandate-label" style="--x:6.797%;--y:86.669%">Kultur &amp; Entertainment</span>
+        <span class="mandate-label" style="--x:6.863%;--y:93.087%">Öffentlicher Sektor &amp; Verbände</span>
       </div>
     </div>
   </div>
