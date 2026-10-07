@@ -281,11 +281,11 @@
   .mandate-panel{position:relative;overflow:hidden}
   .mandate-panel--right img{margin-left:-100%}
   .mandate-logos img{width:200%;max-width:none;height:auto;display:block;mix-blend-mode:multiply}
-  .mandate-label{position:absolute;left:var(--x);top:var(--y);font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
+  .mandate-label{position:absolute;left:var(--x);top:var(--y);width:89%;height:2.1%;display:flex;align-items:center;background:#fff;font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
   @media(max-width:640px){
     .mandate-logos{grid-template-columns:minmax(0,1fr);gap:12px}
     .mandate-panel--left::after{content:"";position:absolute;inset:0 0 0 auto;z-index:1;width:12px;background:#fff;pointer-events:none}
-    .mandate-panel--right{margin-top:-26px}
+    .mandate-panel--right::before{content:"";position:absolute;inset:0 auto 0 0;z-index:1;width:4px;background:#fff;pointer-events:none}
     .mandate-label{font-size:3.22cqw}
   }
 
@@ -482,20 +482,21 @@
       <p class="mandate-copy">Eine Auswahl aus mehr als 25 Jahren Marken-, Marketing- und Wachstumsarbeit.</p>
     <div class="mandate-logos">
       <div class="mandate-panel mandate-panel--left">
-        <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter Mandate: Automotive, Weiterbildung, Non Food, Technologie und Banken">
-        <span class="mandate-label" style="--x:10%;--y:1.55%">Automotive</span>
-        <span class="mandate-label" style="--x:8%;--y:21.4%">Weiterbildung &amp; Gründungsförderung</span>
-        <span class="mandate-label" style="--x:9%;--y:35.3%">Konsumgüter · Non Food</span>
-        <span class="mandate-label" style="--x:8%;--y:63.85%">Technologie &amp; Telekommunikation</span>
-        <span class="mandate-label" style="--x:8%;--y:81.1%">Banken &amp; Versicherungen</span>
+        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Automotive, OTC &amp; Gesundheit, Weiterbildung &amp; Gründungsförderung, Technologie &amp; Telekommunikation, Banken &amp; Versicherungen">
+        <span class="mandate-label" style="--x:5.5%;--y:2.15%">Automotive</span>
+        <span class="mandate-label" style="--x:5.5%;--y:22%">OTC &amp; Gesundheit</span>
+        <span class="mandate-label" style="--x:5.5%;--y:55.1%">Weiterbildung &amp; Gründungsförderung</span>
+        <span class="mandate-label" style="--x:5.5%;--y:66.5%">Technologie &amp; Telekommunikation</span>
+        <span class="mandate-label" style="--x:5.5%;--y:82.05%">Banken &amp; Versicherungen</span>
       </div>
       <div class="mandate-panel mandate-panel--right">
-        <img src="images/Logoteppich%20September_v2.jpg" width="1820" height="1769" alt="Logos ausgewählter Mandate: Food, Handel, Gesundheit, öffentlicher Sektor und Industrie">
-        <span class="mandate-label" style="--x:6.4%;--y:1.55%">Konsumgüter · Food</span>
-        <span class="mandate-label" style="--x:3.6%;--y:21.4%">Handel</span>
-        <span class="mandate-label" style="--x:3.2%;--y:35.3%">Gesundheit &amp; OTC</span>
-        <span class="mandate-label" style="--x:3.6%;--y:63.85%">Öffentlicher Sektor &amp; Verbände</span>
-        <span class="mandate-label" style="--x:3.6%;--y:81.1%">Industrie &amp; Bauen</span>
+        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Konsumgüter · Food, Konsumgüter · Non Food, Handel, Kultur &amp; Entertainment, Öffentlicher Sektor &amp; Verbände, Industrie &amp; Bauen">
+        <span class="mandate-label" style="--x:8%;--y:2.15%">Konsumgüter · Food</span>
+        <span class="mandate-label" style="--x:8%;--y:22%">Konsumgüter · Non Food</span>
+        <span class="mandate-label" style="--x:8%;--y:44.5%">Handel</span>
+        <span class="mandate-label" style="--x:8%;--y:55.1%">Kultur &amp; Entertainment</span>
+        <span class="mandate-label" style="--x:8%;--y:66.5%">Öffentlicher Sektor &amp; Verbände</span>
+        <span class="mandate-label" style="--x:8%;--y:82.05%">Industrie &amp; Bauen</span>
       </div>
     </div>
   </div>
