@@ -1,121 +1,296 @@
 # Aktuelle Website-Texte
 
-Stand: 27. Juli 2026, nach Vereinheitlichung der Footer-Texte. Diese Datei ist die vollständige Textübergabe für die nächste Bearbeitung der Website.
+Stand: 7. Oktober 2026. Die Inhalte dieser Datei wurden direkt mit dem veröffentlichten Stand von marke-wachstum.de abgeglichen. Die fünf ausgelieferten HTML-Dateien stimmen bytegenau mit dem lokalen Website-Stand überein.
 
 ## Geltungsbereich
 
-Enthalten sind die Texte der Startseite und der Unterseiten „Fun Fact“, „Presse“, „Impressum“ und „Datenschutz“, einschließlich Seitentiteln, Meta-Beschreibungen, Navigation, CTAs, Bildunterschriften und Footer.
+Enthalten sind die Texte der Startseite und der Unterseiten „Fun Fact“, „Presse“, „Impressum“ und „Datenschutz“, einschließlich Seitentiteln, Meta-Beschreibungen, Navigation, CTAs, Bildtexten, Bildunterschriften und Footer.
+
+Texte, die nur wegen unterschiedlicher Desktop- und Mobil-Darstellung mehrfach im Quellcode stehen, erscheinen hier einmal. Die dynamisch per JavaScript ergänzten Presse-Karten auf der Startseite sind enthalten.
 
 ## Tatsächliche Reihenfolge der Startseite
 
-Header → Hero → erstes Zitat → Ausgewählte Erfolge → zweites Zitat → Digitale Wachstumsarbeit aus der Praxis → Erfolgszahlen → Vom Durcheinander zur Wirksamkeit → CTA-Banner → Wann Unternehmen auf mich setzen → Wie ich konkret unterstütze → Was daraus entsteht → Wie ich arbeite → Über mich → Auswahl bisheriger Mandate → Kundenstimmen → Presse & Publikationen → Auszeichnungen → Erfahrung, die Klarheit schafft → Footer.
+Header → Hero → erstes Zitat → Ausgewählte Erfolge → zweites Zitat → Digitale Wachstumsarbeit aus der Praxis → Erfolgszahlen → Auswahl bisheriger Mandate → Kundenstimmen → CTA-Banner → Wann Unternehmen auf mich setzen → Presse & Publikationen → Markenführung → drittes Zitat → Wie ich konkret unterstütze → Was daraus entsteht → Auszeichnungen → Wie ich arbeite → KI als Werkzeug → Über mich → Erfahrung, die Klarheit schafft → Footer.
 
 ---
 
 # Quelle: index.html
 
-**Seitentitel:** Bodo Schiefer — Marke &amp; Wachstum | Klarheit für wirksames Marketing
+**Seitentitel:** Bodo Schiefer — Marke & Wachstum | Klarheit für wirksames Marketing
 
 **Meta-Beschreibung:** Bodo Schiefer unterstützt Geschäftsführungen, Marketingverantwortliche und Gründerteams dabei, Marketing und Kommunikation klarer zu steuern: mit klaren Prioritäten, Rollen, Prozessen und wirksamer Umsetzung.
 
-Leistungen
-      Ergebnis
-      Erfolge
-      Presse
-      Über mich
-      Fun Fact
-      Jetzt Termin buchen
+## Header und Navigation
 
-    ☰
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
 
-        Bodo Schiefer:
+- Leistungen
+- Ergebnis
+- Erfolge
+- Presse
+- Über mich
+- Fun Fact
+- Jetzt Termin buchen
+- ☰ (Menü öffnen)
 
-# Wenn Marketing und Zusammenarbeit zu komplex werden, braucht es Klarheit.
+## Hero
 
-Gemeinsam mit Geschäftsführungen, Marketingverantwortlichen und Gründerteams ordne ich Themen, führe unterschiedliche Perspektiven zusammen und schärfe Prioritäten.
-So werden Entscheidungen leichter, Ressourcen gezielter eingesetzt und Marketing wirksamer.
+**Bodo Schiefer:**
 
-Für mehr Schlagkraft im Markt.
+# Mehr Wirkung schafft *Wachstum*.
 
-          Jetzt mehr Wirkung entfalten
-          Vorgehensweise
+In vielen Unternehmen steckt mehr Potenzial, als im Markt tatsächlich wirksam wird. Je komplexer die Anforderungen werden, desto wichtiger sind Orientierung und Prioritäten. So lassen sich die richtigen Hebel erkennen und Ressourcen gezielter einsetzen.
+
+Entscheidend ist das Zusammenspiel von Markenführung, Marketing und Organisation. Geschäftsführung, Vertrieb, interne Teams und externe Partner müssen in dieselbe Richtung arbeiten.
+
+Strategie, Verantwortlichkeiten und Umsetzung müssen so zusammenpassen, dass sie auch im Alltag funktionieren.
+
+**Für mehr Schlagkraft im Markt.**
+
+- Jetzt mehr Wirkung entfalten
+- Vorgehensweise
+
+Bildbeschreibung: Bodo Schiefer
+
+Bildbeschreibung: Unternehmer des Tages
 
 > „Entscheidend ist, dass aus vielen Aktivitäten eine gemeinsame Richtung entsteht.
-Genau dabei unterstütze ich.“
+>
+> **Genau dabei unterstütze ich.**“
 
-    Bodo Schiefer · Marke & Wachstum
+**Bodo Schiefer** · Marke & Wachstum
 
-      Vom Durcheinander zur Wirksamkeit
+## Ausgewählte Erfolge
 
-## Ziehen Sie den Regler: so fühlt sich der Unterschied an.
+## Wirkung, die messbar ist.
 
-        Vorher · Komplexität
+### Performance
 
-        Nachher · Klarheit
+#### 10 % mehr Umsatz im direkten Vorjahresvergleich
 
-### Eine gemeinsame Richtung.
+Print, Augmented Reality und Online-Shop für einen führenden Discounter verbunden und den Online-Umsatz der aktivierten Produkte messbar gesteigert.
 
-          01Prioritäten klären
-          02Positionierung schärfen
-          03Prozesse, Rollen und Ressourcen ordnen
-          04Wirkung im Markt maximieren
+### Effizienz
 
-    Diese Komplexität können wir gemeinsam in eine klarere Richtung bewegen!
+#### Einsparungen im zweistelligen Millionenbereich erzielt
 
-      0Jahre an der Schnittstelle von Marke, Marketing & Organisation
-      0Umsatz in 2,5 Jahren versechsfacht
-      0bis zum Break-even eines Technologie-Start-ups
-      0Eintrag ins Guinness-Buch der Rekorde
+Globale Kampagnen- und Steuerungsstruktur für Dulcolax / Boehringer Ingelheim mit vier Hubs für 62 Märkte etabliert. Lokale Aktivitäten gebündelt und regionale Anpassungen auf das Notwendige reduziert.
 
-      Wann Unternehmen auf mich setzen
+### Profitabilität
 
-## Zwei Ausgangslagen, ein Ziel: Handlungsfähigkeit erhöhen.
+#### Break-even in 11 Monaten
 
-### Start-ups · WACHSTUM
+Als Geschäftsführer des Technologie-Start-ups snoopstar Geschäftsmodell und Go-to-Market-Strategie weiterentwickelt, Positionierung geschärft, zusätzliche Zielgruppen erschlossen.
 
-- Ein starkes Produkt ist da, aber noch nicht klar, wie daraus ein marktfähiges Angebot wird.
+### Wachstum
 
-- Positionierung, Vermarktung und Go-to-Market spielen noch nicht klar genug zusammen.
+#### Agenturumsatz mit Volvo in 2,5 Jahren versechsfacht
 
-- Viele Themen sollen gleichzeitig gelöst werden und klare Prioritäten fehlen.
+Leistungsportfolio für den Kunden weiterentwickelt und zusätzliche Geschäftspotenziale erschlossen. Dadurch den Umsatz von GREY mit Volvo von 0,5 auf 3 Mio. Euro gesteigert.
 
-- Gründer sind stark auf Produkt und Entwicklung fokussiert, doch Marke und Aktivierung brauchen mehr Gewicht.
+### Transformation
 
-- Ein digitales Produkt, eine Plattform oder ein neues Angebot braucht klare Anwendungsfälle, ein verständliches Nutzenversprechen und die richtigen Partner und Kanäle, um im Markt wirklich anzukommen.
+#### Kundenzentrierung im Unternehmen verankert
 
-- Aus ersten Aktivitäten soll ein wirksames Zusammenspiel aus Positionierung, Customer Journey, Content, Partnern und Zusammenarbeit entstehen.
+Bei snoopstar Organisation, Prozesse und Zusammenarbeit neu ausgerichtet. Das Team von technologiegetriebenem Denken zu konsequenter Zielgruppenorientierung geführt.
 
-### Mittelstand · STEUERUNG
+### Kreativität
 
-- Marketing soll vom Cost Center zum Business Driver werden.
+#### Mit begrenzten Mitteln zum Guinness-Weltrekord
 
-- Intern ist zu viel Komplexität entstanden: zu viele Projekte, zu wenig Ressourcen, unklare Prioritäten und steigender Kostendruck.
+Für Duracell / Procter & Gamble eine Markenaktivierung zur Revitalisierung der Marke entwickelt und außergewöhnliche Aufmerksamkeit erzielt.
 
-- Positionierung, Kommunikation und Maßnahmen zahlen nicht mehr ausreichend auf eine gemeinsame Richtung ein.
+> **„Wirksames Marketing entsteht im Spannungsfeld zwischen Unternehmenszielen und Kundenrelevanz.** Wer nur in Business-KPIs denkt, verliert die Marke. Wer nur den Kunden versteht, aber das Business nicht, entfaltet intern keine Wirkung.“
 
-- Geschäftsführung, Marketing, Vertrieb und Partner bringen Perspektiven ein, aber es entsteht keine klare Entscheidungsgrundlage.
+**Bodo Schiefer** · Marke & Business
 
-- Entscheidungen dauern zu lange, weil Orientierung, Zuständigkeiten und operative Steuerung fehlen.
-
-> „Ich bin überzeugt: Schwierige Aufgaben scheitern selten daran, dass es keine Lösung gibt. Häufig wurde nur noch nicht klar genug gefragt, tief genug gedacht oder konsequent genug daran gearbeitet.“
-
-    Bodo Schiefer · Führung & Organisation aus der Praxis
-
-        Digitale Wachstumsarbeit aus der Praxis
+## Digitale Wachstumsarbeit aus der Praxis
 
 ## Marke trifft digitales Nutzungserlebnis.
 
 Drei Jahre lang habe ich ein Technologie-Start-up für digitale Markenerlebnisse geführt. Die Aufgabe war keine abstrakte Digitalisierung, sondern permanentes Growth Marketing: Anwendungsfälle entwickeln, Partner gewinnen, Zielgruppen aktivieren und den Nutzen einer Augmented-Reality-Anwendung für Marken und ihre Kunden verständlich machen.
 
+### Aus Print wird ein digitales Markenerlebnis.
+
+Als Geschäftsführer habe ich mit snoopstar aus einer AR-Technologie ein Marken-, Aktivierungs- und Vertriebsangebot entwickelt: Print wurde zum Einstieg in interaktive Brand Stories, Kundenkontakte und messbare Customer Journeys.
+
+### Der Vorteil für meine Arbeit
+
 Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern. Aus meiner Plattform-Erfahrung weiß ich zugleich: Skalierung entsteht erst, wenn Angebot, Nachfrage, Nutzenversprechen und Go-to-Market zusammenpassen.
 
-Für den Erfolg sind dabei drei Dinge entscheidend:
+Bildbeschreibung: Augmented-Reality-Markenerlebnis von snoopstar für Telekom mit Produktinformation, Shop, Terminvereinbarung und individueller Beratung
 
-      01Marke, Content und digitale Interaktion zusammendenken
-      02Angebote und Anwendungsfälle für Zielgruppen und Partner verständlich machen
-      03Maßnahmen anhand von Nutzung, Resonanz und Wirkung weiterentwickeln
+_Bildunterschrift:_<br>
+**Digital Brand of the Year**<br>
+*snoopstar – activating brand stories*<br>
+German Brand Award 2021
 
-        Markenführung
+Für den Erfolg digitaler Angebote und Plattformmodelle sind vier Dinge entscheidend:
+
+### 01 Kundennutzen verstehen
+
+Zielgruppen, Bedarf und Zahlungsbereitschaft präzise verstehen.
+
+### 02 Relevante Angebote entwickeln
+
+Nutzenversprechen, Anwendungsfälle und Nutzererlebnis klar machen.
+
+### 03 Plattformen und Kanäle strategisch nutzen
+
+Den passenden Zugang zum Markt über eigene Kanäle, Partner und Plattformen gestalten.
+
+### 04 Wirkung wirtschaftlich steuern
+
+Erlösmodelle, Conversion und Kennzahlen auf profitables Wachstum ausrichten.
+
+## Erfolgszahlen
+
+- **+10 %** Online-Umsatz der beworbenen Produkte
+- **×6** Umsatz in 2,5 Jahren
+- **>1 Jahr** bis zum Break-even eines Technologie-Start-ups
+- **1×** Eintrag ins Guinness-Buch der Rekorde
+
+## Auswahl bisheriger Mandate
+
+## Marken aus vielen Branchen, für die ich tätig sein durfte.
+
+Eine Auswahl aus mehr als 25 Jahren Marken-, Marketing- und Wachstumsarbeit.
+
+Bildbeschreibung: Logos ausgewählter Mandate: Automotive, OTC & Gesundheit, Weiterbildung & Gründungsförderung, Technologie & Telekommunikation, Banken & Versicherungen
+
+Bildbeschreibung: Logos ausgewählter Mandate: Konsumgüter · Food, Konsumgüter · Non Food, Handel, Kultur & Entertainment, Öffentlicher Sektor & Verbände, Industrie & Bauen
+
+Bildbeschreibung: Logos ausgewählter Mandate aus elf Branchen
+
+- Automotive
+- OTC & Gesundheit
+- Weiterbildung & Gründungsförderung
+- Technologie & Telekommunikation
+- Banken & Versicherungen
+- Konsumgüter · Food
+- Konsumgüter · Non Food
+- Handel
+- Kultur & Entertainment
+- Öffentlicher Sektor & Verbände
+- Industrie & Bauen
+
+## Was Kunden sagen
+
+## Stimmen aus der Zusammenarbeit.
+
+> Bodo hat unsere Arbeit über mehrere Jahre hinweg mit großem Engagement, hohem Qualitätsanspruch, strategischer Stärke und großer Verlässlichkeit begleitet. **Er durchdringt komplexe Zusammenhänge schnell und schafft klare Orientierung.**
+
+**Marcel Theijs**<br>
+Marketingdirektor, Haufe Akademie
+
+> **Bodo verbindet strategisches Verständnis mit operativer Klarheit** und einem sehr guten Gespür für Kundenbedürfnisse. Auch bei anspruchsvollen Themen und engen Timings brachte er Ruhe, Verbindlichkeit und Orientierung in den Prozess.
+
+**Philipp Hofmann**<br>
+Head of B2B Marketing
+
+Bildbeschreibung: o2B Logo
+
+> Bodo ist offen, gut organisiert und effizient. **Er hat die Zusammenarbeit zwischen den verschiedenen Beteiligten verbessert und dafür gesorgt, dass die Ergebnisse termingerecht und im Rahmen des Budgets geliefert wurden.**
+
+**Kate Evans**<br>
+Global Marketing Director Dulcolax, Boehringer Ingelheim
+
+> Bodo verfügt über ein außergewöhnlich gutes Verständnis dafür, wie Marken, Marketing und Customer Experience zusammenwirken müssen, um messbare Wirkung zu entfalten. **Die von ihm verantworteten Maßnahmen führten zu nachweisbarem Wachstum.**
+
+**Stefan W. Herzberg**<br>
+Aufsichtsratsvorsitzender, snoopstar
+
+> Bodo ist nicht nur ein hochmotivierter, zuverlässiger und kooperativer Geschäftspartner, sondern auch ein **leidenschaftlicher Lösungsfinder.** Mit seiner dynamischen Art schafft er eine Atmosphäre des Vertrauens und der Inspiration.
+
+**Julia Risch**<br>
+Team Lead Brand Marketing & Campaigns, Volvo
+
+- ‹ Vorherige Kundenstimme
+- › Nächste Kundenstimme
+
+## Lassen Sie uns sprechen.
+
+**Ob Neuausrichtung, Wachstum oder festgefahrene Entscheidungen.**
+
+Wenn Marketing und Zusammenarbeit klarer gesteuert werden und mehr Wirkung im Markt entfalten sollen, lohnt sich ein unverbindliches Kennenlernen.
+
+Jetzt Termin buchen
+
+## Wann Unternehmen auf mich setzen
+
+## Zwei Ausgangslagen, ein Ziel: Handlungsfähigkeit erhöhen.
+
+### Start-ups · WACHSTUM
+
+- Ein starkes Produkt ist da, aber noch nicht klar, wie daraus ein marktfähiges Angebot mit einem überzeugenden Nutzenversprechen wird.
+- Positionierung und Go-to-Market müssen so zusammenspielen, dass das Angebot im Markt ankommt.
+- Viele Themen konkurrieren gleichzeitig um Aufmerksamkeit und Ressourcen. Es braucht klare Prioritäten für die nächsten Schritte.
+- Produkt und Entwicklung stehen im Mittelpunkt. Jetzt müssen Markenführung, Customer Journey und Aktivierung stärker auf die Geschäftsentwicklung einzahlen.
+
+### Mittelstand · STEUERUNG
+
+- Marketing soll vom Cost Center zum Business Driver werden.
+- Zu viele Projekte treffen auf begrenzte Ressourcen. Es braucht klare Prioritäten und einen gezielteren Einsatz von Budgets.
+- Positionierung, Markenführung und Maßnahmen brauchen wieder eine gemeinsame strategische Richtung.
+- Geschäftsführung, Marketing, Vertrieb und Partner bringen unterschiedliche Perspektiven ein. Daraus müssen tragfähige Entscheidungen und gemeinsames Handeln entstehen.
+
+## Presse & Publikationen
+
+## Sichtbar in Fach- und Wirtschaftsmedien.
+
+Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und profitables Wachstum sowie den Einsatz innovativer Technologien für multimediale Interaktionen und Markenerlebnisse.
+
+### Handelsblatt · 2021
+
+#### „Unternehmer des Tages“
+
+Porträt über unternehmerische Innovationsleistung, profitables Wachstum und Augmented Reality als wirksames Instrument in der Marketingkommunikation.
+
+Artikel lesen →
+
+### HORIZONT · 2022
+
+Bericht über den strategischen Einsatz von Augmented Reality in Marketingkommunikation und Sales Funnel.
+
+Artikel lesen →
+
+### HORIZONT · 2018
+
+Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.
+
+Artikel lesen →
+
+### Springer-Vieweg · 2022 · Buchkapitel
+
+Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.
+
+Zum Buch →
+
+### BDZV-Jahresreport · 2021
+
+Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.
+
+Mitgliederpublikation · nicht öffentlich zugänglich
+
+### PRINT.DE · 2023
+
+#### snoopstar mit neuer Strategie
+
+Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketing-Transformation.
+
+Artikel lesen →
+
+### HORIZONT · 2016
+
+#### Raser statt Hase: Duracell-Weltrekord
+
+Bericht über die unter Führung von Bodo Schiefer entwickelte Duracell-Kampagne „#Achievements“. Ein batteriegetriebenes, ferngesteuertes Spielzeugauto wiederholt die historische 106 km lange Fahrt von Bertha Benz und übersetzt die Markenidee in einen aufmerksamkeitsstarken Weltrekord.
+
+Artikel lesen →
+
+Zur Presseübersicht
+
+## Markenführung
 
 ## Marken brauchen eine Idee, die alles verbindet.
 
@@ -127,74 +302,81 @@ IKEA verkauft nicht nur Möbel. Die Marke will einen besseren Alltag für die vi
 
 Moderne Strategie beginnt deshalb nicht beim Briefing. Sie beginnt mit der Entscheidung, welche Rolle ein Unternehmen künftig im Leben der Menschen spielen will. Diese Idee muss im gesamten Unternehmen wirksam werden und im Alltag gelebt werden.
 
-> **„Wirksames Marketing entsteht im Spannungsfeld zwischen Unternehmenszielen und Kundenrelevanz.** Wer nur in Business-KPIs denkt, verliert die Marke. Wer nur den Kunden versteht, aber das Business nicht, entfaltet intern keine Wirkung.“
+> **„Ich bin überzeugt:** Schwierige Aufgaben scheitern selten daran, dass es keine Lösung gibt. Häufig wurde nur noch nicht klar genug gefragt, tief genug gedacht oder konsequent genug daran gearbeitet.“
 
-    Bodo Schiefer · Marke & Business
+**Bodo Schiefer** · Führung & Organisation aus der Praxis
 
-        Wie ich konkret unterstütze
+## Wie ich konkret unterstütze
 
 ## Fünf Hebel für fokussiertes Marketing.
 
-            01 Prioritäten und Entscheidungen klären +
+### 01 Prioritäten und Entscheidungen klären
 
 Themen, Maßnahmen und Anforderungen so ordnen, dass Entscheidungen leichter fallen und Ressourcen gezielter wirken.
 
-            02 Marke, Angebot und Positionierung schärfen +
+### 02 Marke, Angebot und Positionierung schärfen
 
 Klarer bestimmen, wofür eine Marke oder ein Angebot steht, worin die relevante Differenzierung liegt und welche Botschaften daraus folgen.
 
-            03 Rollen, Prozesse und Zusammenarbeit ordnen +
+### 03 Rollen, Prozesse und Zusammenarbeit ordnen
 
 Marketing, Kommunikation und Zusammenarbeit so strukturieren, dass Verantwortlichkeiten, Abläufe und Übergaben klarer werden. Damit weniger Energie in Abstimmungen verloren geht und mehr in wirksame Umsetzung fließt.
 
-            04 Teams, Partner und Stakeholder zusammenführen +
+### 04 Teams, Partner und Stakeholder zusammenführen
 
 Geschäftsführung, Marketing, Vertrieb und Partner auf eine gemeinsame Linie bringen. Damit aus unterschiedlichen Sichtweisen eine tragfähige Entscheidungsgrundlage entsteht.
 
-            05 Wirkung und Wachstum erhöhen +
+### 05 Wirkung und Wachstum erhöhen
 
 Strategie so in Maßnahmen übersetzen, dass sie heute Wirkung entfalten und zugleich aufbauen, wovon das Unternehmen morgen lebt. Relevante Kennzahlen nutzen, um Wirkung sichtbar zu machen und die nächsten Schritte gezielter zu steuern, ohne sich auf das zu beschränken, was heute bereits messbar ist. Damit Marketing vom Cost Center zum Business Driver wird.
 
-      Was daraus entsteht
+Bildbeschreibung: Bodo Schiefer — Zusammenarbeit und Strategie
+
+## Was daraus entsteht
 
 ## Klarheit, die im Alltag trägt.
 
-      01
-#### Klare Prioritäten und schnellere Entscheidungen
+### 01 Klare Prioritäten und schnellere Entscheidungen
 
 Weniger Themen laufen gleichzeitig. Es ist klarer, was jetzt wichtig ist, wer entscheidet und welche Maßnahmen warten können.
 
-      02
-#### Verbindliche Rollen und bessere Zusammenarbeit
+### 02 Verbindliche Rollen und bessere Zusammenarbeit
 
 Bereiche, Stakeholder und externe Partner arbeiten besser zusammen, weil Rollen, Abläufe und Entscheidungswege klarer sind.
 
-      03
-#### Relevante KPIs und Steuerungsgrößen
+### 03 Relevante KPIs und Steuerungsgrößen
 
 Es wird schneller erkennbar, was wirkt, wo nachjustiert werden muss und wie Maßnahmen laufend verbessert werden können.
 
-      04
-#### Mehr Verbindlichkeit in der Umsetzung
+### 04 Mehr Verbindlichkeit in der Umsetzung
 
 Teams und Beteiligte kennen ihre Aufgaben, Entscheidungen und nächsten Schritte. Dadurch wird weniger abgestimmt und mehr umgesetzt.
 
-        Wie ich arbeite
+## Auszeichnungen
+
+## Prämiert für wirksame Marken- und Wachstumsarbeit.
+
+Bildbeschreibung: Auszeichnungen
+
+## Wie ich arbeite
 
 ## Zuhören, ordnen, schärfen.
 
 Ich arbeite pragmatisch, strukturiert und partnerschaftlich. Mit klarem Blick für das, was strategisch sinnvoll, im Unternehmen umsetzbar ist und wirklich funktioniert.
 
-        01
+### 01
+
 Ich steige dort ein, wo Themen unübersichtlich werden, Entscheidungen stocken oder unterschiedliche Sichtweisen zusammengebracht werden müssen.
 
-        02
+### 02
+
 Ich höre zu, frage nach, ordne ein und schärfe. So wird sichtbar, welche Fragen wirklich entscheidend sind und welche Themen nachrangig werden.
 
-        03
+### 03
+
 Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird priorisiert? Was wird beendet oder verschoben? Wer übernimmt welche Verantwortung? Und woran erkennen wir, ob die Maßnahmen wirken?
 
-        KI als Werkzeug
+## KI als Werkzeug
 
 ## KI produziert Antworten. Menschen geben ihnen Richtung und Bedeutung.
 
@@ -206,7 +388,7 @@ Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Mögl
 
 Unsere Aufgabe ist deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und ihre Ergebnisse für bessere Entscheidungen zu nutzen.
 
-        Über mich
+## Über mich
 
 ## Über 25 Jahre an der Schnittstelle von Marke, Marketing und Organisation.
 
@@ -224,157 +406,98 @@ Deshalb bleibt meine Arbeit nicht bei einer Strategie stehen. Ich achte ebenso a
 
 Jetzt Fun Fact lesen
 
+Bildbeschreibung: Bodo Schiefer bei einem Vortrag auf der DIGITAL X
+
 _Bildunterschrift: Vortrag auf der DIGITAL X, der Digitalisierungsinitiative der TELEKOM_
 
-          FMCGOTCHandelAutomotiveTelekommunikationCybersecurityB2BMaschinenbauWeiterbildungVersicherungenBaustoffeElektrotechnikKunststoffverarbeitungFoodB2C
+- FMCG
+- OTC
+- Handel
+- Automotive
+- Telekommunikation
+- Cybersecurity
+- B2B
+- Maschinenbau
+- Weiterbildung
+- Versicherungen
+- Baustoffe
+- Elektrotechnik
+- Kunststoffverarbeitung
+- Food
+- B2C
 
-      Ausgewählte Erfolge
+## Erfahrung, die<br>Klarheit schafft.
 
-## Wirkung, die messbar ist.
-
-      Wachstum
-#### Umsatz x6 in 2,5 Jahren
-
-Leistungsportfolio und Positionierung weiterentwickelt und neue Geschäftspotenziale erschlossen.
-
-      Profitabilität
-#### Break-even in > 1 Jahr
-
-Marketing- und Kommunikationsstrategie für ein Technologie-Start-up geschärft und das Anwendungsfeld zielgruppengerecht erweitert.
-
-      Effizienz
-#### Budgets gezielter eingesetzt
-
-Einheitliche Produktpositionierung für mehrere Länder entwickelt und implementiert. Maßnahmen konnten gebündelt und Ressourcen wirksamer eingesetzt werden.
-
-      Transformation
-#### Marketing-Transformation geleitet
-
-Kundenzentriertes Mindset etabliert, Geschäftsmodell und Organisationsstrukturen weiterentwickelt.
-
-      Performance
-#### Wirkung im Marketing-Funnel maximiert
-
-Performance und Branding markenadäquat verbunden und Maßnahmen effizienter gesteuert.
-
-      Kreativität
-#### Strategie in Wirkung übersetzt
-
-Eintrag ins Guinness-Buch der Rekorde mit der Revitalisierung und Aktivierung einer Marke trotz Kleinstbudget.
-
-    Auswahl bisheriger Mandate
-
-## Marken aus vielen Branchen, die mir vertrauen.
-
-## Lassen Sie uns sprechen.
-
-    Ob Neuausrichtung, Wachstum oder festgefahrene Entscheidungen.
-
-Wenn Marketing und Zusammenarbeit klarer gesteuert werden und mehr Wirkung im Markt entfalten sollen, lohnt sich ein unverbindliches Kennenlernen.
-
-    Jetzt Termin buchen
-
-      Was Kunden sagen
-
-## Stimmen aus der Zusammenarbeit.
-
-Bodo hat unsere Arbeit über mehrere Jahre hinweg mit großem Engagement, hohem Qualitätsanspruch, strategischer Stärke und großer Verlässlichkeit begleitet. Er durchdringt komplexe Zusammenhänge schnell und schafft klare Orientierung.
-
-            Marcel TheijsMarketingdirektor, Haufe Akademie
-
-Bodo verbindet strategisches Verständnis mit operativer Klarheit und einem sehr guten Gespür für Kundenbedürfnisse. Auch bei anspruchsvollen Themen und engen Timings brachte er Ruhe, Verbindlichkeit und Orientierung in den Prozess.
-
-            Philipp HofmannHead of B2B Marketing
-
-Bodo ist offen, gut organisiert und effizient. Er hat die Zusammenarbeit zwischen den verschiedenen Beteiligten verbessert und dafür gesorgt, dass die Ergebnisse termingerecht und im Rahmen des Budgets geliefert wurden.
-
-            Kate EvansGlobal Marketing Director Dulcolax, Boehringer Ingelheim
-
-Bodo verfügt über ein außergewöhnlich gutes Verständnis dafür, wie Marken, Marketing und Customer Experience zusammenwirken müssen, um messbare Wirkung zu entfalten. Die von ihm verantworteten Maßnahmen führten zu nachweisbarem Wachstum.
-
-            Stefan W. HerzbergAufsichtsratsvorsitzender, snoopstar
-
-Bodo ist nicht nur ein hochmotivierter, zuverlässiger und kooperativer Geschäftspartner, sondern auch ein leidenschaftlicher Lösungsfinder. Mit seiner dynamischen Art schafft er eine Atmosphäre des Vertrauens und der Inspiration.
-
-            Julia RischTeam Lead Brand Marketing & Campaigns, Volvo
-
-        ‹
-
-        ›
-
-        Presse & Publikationen
-
-## Sichtbar in Fach- und Wirtschaftsmedien.
-
-Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und profitables Wachstum sowie den Einsatz innovativer Technologien für multimediale Interaktionen und Markenerlebnisse.
-
-      Zur Presseübersicht
-
-    Auszeichnungen
-
-## Prämiert für wirksame Marken- und Wachstumsarbeit.
-
-## Erfahrung, die
-Klarheit schafft.
+Bildbeschreibung: Bodo Schiefer Siegel
 
 Seit mehr als fünfundzwanzig Jahren unterstütze ich anspruchsvolle Organisationen dabei, komplexe Herausforderungen strukturiert zu lösen, Ressourcen gezielter einzusetzen und Wirkung im Markt zu erhöhen.
 
-      Für mehr Schlagkraft im Markt.
+**Für mehr Schlagkraft im Markt.**
 
-    Jetzt Termin buchen
+Jetzt Termin buchen
+
+## Footer
+
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
 
 Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
-        Leistungen
-        Vorgehen
-        Über mich
-        Erfolge
-        Presse
-        Fun Fact
+- Leistungen
+- Vorgehen
+- Über mich
+- Erfolge
+- Presse
+- Fun Fact
 
 ##### Kontakt & Rechtliches
 
-        Termin buchen
-        bs@marke-wachstum.de
-        LinkedIn
-        Impressum
-        Datenschutz
+- Termin buchen
+- bs@marke-wachstum.de
+- LinkedIn
+- Impressum
+- Datenschutz
 
-      ©  Bodo Schiefer · Marke & Wachstum
+© 2026 Bodo Schiefer · Marke & Wachstum
+
+---
 
 # Quelle: fun-fact/index.html
 
-**Seitentitel:** Fun Fact — Bodo Schiefer | Marke &amp; Wachstum
+**Seitentitel:** Fun Fact — Bodo Schiefer | Marke & Wachstum
 
 **Meta-Beschreibung:** Die Geschichte, wie eine BoxaGrippal-Werbefigur erst aussah wie Bodo Schiefer und später auch noch Bodo hieß.
 
-Zum Inhalt springen
+## Header und Navigation
 
-      Leistungen
-      Ergebnis
-      Erfolge
-      Presse
-      Über mich
-      Fun Fact
-      Jetzt Termin buchen
+- Zum Inhalt springen
+- Leistungen
+- Ergebnis
+- Erfolge
+- Presse
+- Über mich
+- Fun Fact
+- Jetzt Termin buchen
+- ☰ (Menü öffnen)
 
-    ☰
+Start / Fun Fact
 
-    Start  /  Fun Fact
-
-      Fun Fact
+## Fun Fact
 
 # Erst sah er nur aus wie ich. Dann bekam er auch noch meinen Namen.
 
 Über eine Kampagne für BoxaGrippal, eine Werbefigur mit rotem Schal und eine Pointe, die niemand kommen sah.
 
-          Die Herausforderung
+Bildbeschreibung: BoxaGrippal-Character mit rotem Schal und Packung
+
+## Die Herausforderung
 
 ## Ein neues Produkt in einem stark besetzten Markt.
 
 Vor über 10 Jahren habe ich BoxaGrippal als Produkt für Boehringer Ingelheim auf den Weg gebracht. Das war eine große Herausforderung: Die schnelle Etablierung einer völlig neuen OTC-Marke (Over-the-Counter, rezeptfrei) in einer außergewöhnlich umkämpften Erkältungsmedikamenten-Kategorie.
+
+Bildbeschreibung: BoxaGrippal Anzeige mit Kampagnenmotiv
 
 _Bildunterschrift: Anzeige BoxaGrippal_
 
@@ -382,13 +505,11 @@ BoxaGrippal brachte damals eine vollkommen neue, rezeptfreie Wirkstoffkombinatio
 
 Die Kommunikation griff den Zielgruppen-Insight „Das Leben soll wie gewohnt weitergehen“ auf und übersetzte ihn in eine Idee, die genau das widerspiegelte, was Menschen mit einer Erkältung empfinden:
 
-_Bildunterschrift: Anzeige BoxaGrippal_
-
-        Die kreative Leitidee
+## Die kreative Leitidee
 
 „Wenn du erkältet bist, fühlst du dich wie eine schlechte Kopie deiner selbst.“
 
-          Die Umsetzung
+## Die Umsetzung
 
 ## Eine Figur, die den Zustand sofort verständlich machte.
 
@@ -396,39 +517,41 @@ Daraus entstand ein Character mit gestreiftem Schlafanzug, rotem Schal, müdem G
 
 Wir zeigten humorvolle Situationen, wie der erkältete Protagonist seinen Alltag als schlechte Kopie seiner selbst durchlebt. Und wie er nicht so funktioniert, wie er es üblicherweise würde. Mit BoxaGrippal wurde er wieder er selbst und Herr über die Erkältungssymptome.
 
-Was mir zu diesem Zeitpunkt nicht bewusst war: Die Creative Directorin Lindsay Cullen hatte den Character visuell an mich angelehnt. Besonders auch an meine damalige Brille.
+**Was mir zu diesem Zeitpunkt nicht bewusst war: Die Creative Directorin Lindsay Cullen hatte den Character visuell an mich angelehnt. Besonders auch an meine damalige Brille.**
+
+Bildbeschreibung: BoxaGrippal TVC Motiv
 
 _Bildunterschrift: BoxaGrippal TVC_
 
-        Der Erfolg
+## Der Erfolg
 
 Die Kampagne funktionierte:
 
-- BoxaGrippal wurde schnell bekannt: 47 % Markenbekanntheit nach nur 3 Monaten.
+1. BoxaGrippal wurde schnell bekannt: 47 % Markenbekanntheit nach nur 3 Monaten.
+2. Die Marke konnte sich in einem sehr kompetitiven Umfeld aus dem Stand in den Top 4 etablieren und den Wettbewerbern innerhalb der ersten 3 Monate 8 % Marktanteile abnehmen.
+3. Die Kampagne wurde für Effektivität und Kreativität ausgezeichnet: Effie, Pharma Award Austria.
 
-- Die Marke konnte sich in einem sehr kompetitiven Umfeld aus dem Stand in den Top 4 etablieren und den Wettbewerbern innerhalb der ersten 3 Monate 8 % Marktanteile abnehmen.
-
-- Die Kampagne wurde für Effektivität und Kreativität ausgezeichnet: Effie, Pharma Award Austria.
-
-          Der Name
+## Der Name
 
 ## Wirklich überraschend wurde es aber erst danach.
 
 Boehringer Ingelheim suchte einen Namen für die Werbefigur und startete einen Wettbewerb in über 700 Apotheken. 878 Namensvorschläge wurden eingereicht. Drei Namen bekamen die meisten Einreichungen und wurden zur Abstimmung gestellt.
 
+Bildbeschreibung: BoxaGrippal-Figur mit Hinweis auf Namenssuche
+
 _Bildunterschrift: Name gesucht_
 
-Der Gewinnername war: Bodo.
+**Der Gewinnername war: Bodo.**
 
 Nicht von uns vorgeschlagen oder von BI gesteuert. Einfach von den Apotheken gewählt.
 
 Die Figur sah jetzt nicht nur aus wie ich. Jetzt hieß sie auch noch wie ich.
 
-_Bildunterschrift: Name gesucht_
+Bildbeschreibung: BoxaGrippal-Figur mit Schild Ich bin Bodo
 
 _Bildunterschrift: Name gefunden_
 
-          Die Pointe
+## Die Pointe
 
 ## Bodo ging als Bodo.
 
@@ -438,189 +561,226 @@ Strategisch war BoxaGrippal ein sehr erfolgreicher Produkt- und Markenlaunch.
 
 Persönlich, die erste Kampagne, bei der ich Berater, Inspirationsquelle und am Ende sogar namensgleiche Karnevalsversion der Werbefigur war.
 
-          Zurück zu ÜBER MICH
+Bildbeschreibung: Bodo Schiefer als BoxaGrippal-Bodo im Karnevalskostüm
 
-        Zurück zu ÜBER MICH
+Bildbeschreibung: BoxaGrippal-Kostüm mit Aufschrift bodofiziert
+
+Zurück zu ÜBER MICH
 
 ## Manchmal bleibt eine Idee länger hängen als geplant.
 
 Wenn aus Strategie, Marke und Umsetzung etwas Eigenständiges entstehen soll, lohnt sich ein Gespräch.
 
-    Jetzt Termin buchen
+Jetzt Termin buchen
+
+## Footer
+
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
 
 Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
-        Leistungen
-        Vorgehen
-        Über mich
-        Erfolge
-        Presse
-        Fun Fact
+- Leistungen
+- Vorgehen
+- Über mich
+- Erfolge
+- Presse
+- Fun Fact
 
 ##### Kontakt & Rechtliches
 
-        Termin buchen
-        bs@marke-wachstum.de
-        LinkedIn
-        Impressum
-        Datenschutz
+- Termin buchen
+- bs@marke-wachstum.de
+- LinkedIn
+- Impressum
+- Datenschutz
 
-      ©  Bodo Schiefer · Marke & Wachstum
+© 2026 Bodo Schiefer · Marke & Wachstum
+
+---
 
 # Quelle: presse/index.html
 
-**Seitentitel:** Presse &amp; Publikationen — Bodo Schiefer | Marke &amp; Wachstum
+**Seitentitel:** Presse & Publikationen — Bodo Schiefer | Marke & Wachstum
 
 **Meta-Beschreibung:** Presse und Publikationen von Bodo Schiefer: Handelsblatt, HORIZONT, BDZV und Springer-Vieweg über Markenführung, Marketingkommunikation und Augmented Reality.
 
-Zum Inhalt springen
+## Header und Navigation
 
-      Leistungen
-      Ergebnis
-      Erfolge
-      Presse
-      Über mich
-      Fun Fact
-      Jetzt Termin buchen
+- Zum Inhalt springen
+- Leistungen
+- Ergebnis
+- Erfolge
+- Presse
+- Über mich
+- Fun Fact
+- Jetzt Termin buchen
+- ☰ (Menü öffnen)
 
-    ☰
+Start / Presse
 
-    Start  /  Presse
-    Presse & Publikationen
+## Presse & Publikationen
 
 # Sichtbar in Fach- und Wirtschaftsmedien.
 
 Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und profitables Wachstum sowie den Einsatz innovativer Technologien für multimediale Interaktionen und Markenerlebnisse.
 
-          PRINT.DE · 2023
+### PRINT.DE · 2023
 
-### snoopstar mit neuer Strategie
+#### snoopstar mit neuer Strategie
+
+Bildbeschreibung: Bodo Schiefer, Chris Finken, Klaus Finken und Thilo Reichert bei snoopstar
 
 Bericht über den Strategiewechsel des Technologie-Start-ups und Würdigung von Bodo Schiefers erfolgreicher unternehmerischer Pionierarbeit sowie seines Know-hows in Marketing-Transformation.
 
-          Artikel lesen →
+Artikel lesen →
 
-          HORIZONT · 2022
+### HORIZONT · 2022
 
-### Print trifft Metaverse
+#### Print trifft Metaverse
+
+Bildbeschreibung: HORIZONT-Beitrag 2022
 
 Bericht über den strategischen Einsatz von Augmented Reality in Marketingkommunikation und Sales Funnel.
 
-          Artikel lesen →
+Artikel lesen →
 
-          Springer-Vieweg · 2022 · Buchkapitel
+### Springer-Vieweg · 2022 · Buchkapitel
 
-### Innovative Vermarktung von Gebäuden
+#### Innovative Vermarktung von Gebäuden
+
+Bildbeschreibung: Springer-Vieweg Buchkapitel
 
 Buchkapitel über die digitale und innovative Vermarktung von Gebäuden durch Augmented Reality aus Kommunikations-, Vermarktungs- und Transformationssicht.
 
-          Zum Buch →
+Zum Buch →
 
-          Handelsblatt · 2021
+### Handelsblatt · 2021
 
-### „Unternehmer des Tages“
+#### „Unternehmer des Tages“
+
+Bildbeschreibung: Handelsblatt-Seite Unternehmer/in des Tages mit Bodo Schiefer
 
 Porträt über unternehmerische Innovationsleistung, profitables Wachstum und Augmented Reality als wirksames Instrument in der Marketingkommunikation.
 
-          Artikel lesen →
+Artikel lesen →
 
-          BDZV-Jahresreport · 2021
+### BDZV-Jahresreport · 2021
 
-### Print & Digital im Mediamix
+#### Print & Digital im Mediamix
+
+Bildbeschreibung: BDZV-Jahresreport
 
 Fachbeitrag über die strategische Verbindung von Print und Digital im Mediamix sowie den Einsatz von Augmented Reality für Wirkung, Conversion und Optimierung.
 
-          Mitgliederpublikation · nicht öffentlich zugänglich
+Mitgliederpublikation · nicht öffentlich zugänglich
 
-          PACKSERVICE · 2021
+### PACKSERVICE · 2021
 
-### Augmented Reality verleiht Packaging eine digitale Dimension
+#### Augmented Reality verleiht Packaging eine digitale Dimension
+
+Bildbeschreibung: Bodo Schiefer und Smart-Packaging-Anwendung von snoopstar
 
 Fachbeitrag über Smart Packaging als Medienkanal: Wie sich Print und Verpackungen in multimediale Interaktionen verwandeln, Offline und Online verbinden und Kundenbindung sowie Conversion stärken.
 
-          Artikel lesen →
+Artikel lesen →
 
-          ×
+### DÜSSELDORF STARTUPS · 2020
 
-          DÜSSELDORF STARTUPS · 2020
+#### snoopstar erweckt Gedrucktes zum Leben
 
-### snoopstar erweckt Gedrucktes zum Leben
+Bildbeschreibung: Düsseldorf Startups × snoopstar
 
 Interview über den Aufbau des Technologie-Start-ups snoopstar, die Verbindung von Print und digitalen Erlebnissen sowie den Einsatz von Augmented Reality für Markenkommunikation und Markenbildung.
 
-          Interview lesen →
+Interview lesen →
 
-          HORIZONT · 2018
+### HORIZONT · 2018
 
-### Markteintritt der Agenturgruppe Engine
+#### Markteintritt der Agenturgruppe Engine
+
+Bildbeschreibung: HORIZONT-Beitrag 2018
 
 Bericht über den Aufbau des deutschen Geschäfts der britischen Agenturgruppe Engine im Kontext von Expansion und Brexit.
 
-          Artikel lesen →
+Artikel lesen →
+
+### HORIZONT · 2016
+
+#### Raser statt Hase: Duracell-Weltrekord
+
+Bildbeschreibung: Batteriebetriebenes Duracell-Modellauto der Kampagne #Achievements
+
+Bericht über die unter Führung von Bodo Schiefer entwickelte Duracell-Kampagne „#Achievements“. Ein batteriegetriebenes, ferngesteuertes Spielzeugauto wiederholt die historische 106 km lange Fahrt von Bertha Benz und übersetzt die Markenidee in einen aufmerksamkeitsstarken Weltrekord.
+
+- Artikel lesen →
+- Video ansehen →
 
 ## Sie planen einen Beitrag oder ein Interview?
 
 Für Presseanfragen und ein unverbindliches Kennenlernen freue ich mich über Ihre Nachricht.
 
-    Jetzt Termin buchen
+Jetzt Termin buchen
+
+## Footer
+
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
 
 Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
-        Leistungen
-        Vorgehen
-        Über mich
-        Erfolge
-        Presse
-        Fun Fact
+- Leistungen
+- Vorgehen
+- Über mich
+- Erfolge
+- Presse
+- Fun Fact
 
 ##### Kontakt & Rechtliches
 
-        Termin buchen
-        bs@marke-wachstum.de
-        LinkedIn
-        Impressum
-        Datenschutz
+- Termin buchen
+- bs@marke-wachstum.de
+- LinkedIn
+- Impressum
+- Datenschutz
 
-      ©  Bodo Schiefer · Marke & Wachstum
+© 2026 Bodo Schiefer · Marke & Wachstum
+
+---
 
 # Quelle: impressum/index.html
 
-**Seitentitel:** Impressum — Bodo Schiefer | Marke &amp; Wachstum
+**Seitentitel:** Impressum — Bodo Schiefer | Marke & Wachstum
 
 **Meta-Beschreibung:** Impressum von Bodo Schiefer – BS | Marke & Wachstum, Düsseldorf. Angaben gemäß § 5 DDG.
 
-Zum Inhalt springen
+## Header und Navigation
 
-      Leistungen
-      Ergebnis
-      Erfolge
-      Presse
-      Über mich
-      Fun Fact
-      Jetzt Termin buchen
+- Zum Inhalt springen
+- Leistungen
+- Ergebnis
+- Erfolge
+- Presse
+- Über mich
+- Fun Fact
+- Jetzt Termin buchen
+- ☰ (Menü öffnen)
 
-    ☰
+Start / Impressum
 
-    Start  /  Impressum
-    Rechtliches
+## Rechtliches
 
 # Impressum
 
 ## Angaben gemäß § 5 DDG
 
-        Bodo Schiefer
-
-        BS | Marke & Wachstum
-
-        Niederrheinstraße 14 B
-
-        40474 Düsseldorf
-
-        Deutschland
+Bodo Schiefer<br>
+BS | Marke & Wachstum<br>
+Niederrheinstraße 14 B<br>
+40474 Düsseldorf<br>
+Deutschland
 
 ## Kontakt
 
@@ -628,15 +788,11 @@ E-Mail: bs@marke-wachstum.de
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-        Bodo Schiefer
-
-        BS | Marke & Wachstum
-
-        Niederrheinstraße 14 B
-
-        40474 Düsseldorf
-
-        Deutschland
+Bodo Schiefer<br>
+BS | Marke & Wachstum<br>
+Niederrheinstraße 14 B<br>
+40474 Düsseldorf<br>
+Deutschland
 
 ## Haftung für Inhalte
 
@@ -650,47 +806,54 @@ Diese Website kann Links zu externen Websites Dritter enthalten. Auf deren Inhal
 
 Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Rechteinhabers.
 
+## Footer
+
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
+
 Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
-        Leistungen
-        Vorgehen
-        Über mich
-        Erfolge
-        Presse
-        Fun Fact
+- Leistungen
+- Vorgehen
+- Über mich
+- Erfolge
+- Presse
+- Fun Fact
 
 ##### Kontakt & Rechtliches
 
-        Termin buchen
-        bs@marke-wachstum.de
-        LinkedIn
-        Impressum
-        Datenschutz
+- Termin buchen
+- bs@marke-wachstum.de
+- LinkedIn
+- Impressum
+- Datenschutz
 
-      ©  Bodo Schiefer · Marke & Wachstum
+© 2026 Bodo Schiefer · Marke & Wachstum
+
+---
 
 # Quelle: datenschutz/index.html
 
-**Seitentitel:** Datenschutzerklärung — Bodo Schiefer | Marke &amp; Wachstum
+**Seitentitel:** Datenschutzerklärung — Bodo Schiefer | Marke & Wachstum
 
 **Meta-Beschreibung:** Datenschutzerklärung von Bodo Schiefer – BS | Marke & Wachstum. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.
 
-Zum Inhalt springen
+## Header und Navigation
 
-      Leistungen
-      Ergebnis
-      Erfolge
-      Presse
-      Über mich
-      Fun Fact
-      Jetzt Termin buchen
+- Zum Inhalt springen
+- Leistungen
+- Ergebnis
+- Erfolge
+- Presse
+- Über mich
+- Fun Fact
+- Jetzt Termin buchen
+- ☰ (Menü öffnen)
 
-    ☰
+Start / Datenschutz
 
-    Start  /  Datenschutz
-    Rechtliches
+## Rechtliches
 
 # Datenschutzerklärung
 
@@ -700,17 +863,12 @@ Informationen zur Verarbeitung personenbezogener Daten gemäß Art. 13 DSGVO.
 
 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
 
-        Bodo Schiefer
-
-        BS | Marke & Wachstum
-
-        Niederrheinstraße 14 B
-
-        40474 Düsseldorf
-
-        Deutschland
-
-        E-Mail: bs@marke-wachstum.de
+Bodo Schiefer<br>
+BS | Marke & Wachstum<br>
+Niederrheinstraße 14 B<br>
+40474 Düsseldorf<br>
+Deutschland<br>
+E-Mail: bs@marke-wachstum.de
 
 ## 2. Allgemeines zur Datenverarbeitung
 
@@ -756,23 +914,27 @@ Sie haben jederzeit das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), L�
 
 Diese Datenschutzerklärung wird angepasst, sobald sich die Datenverarbeitung auf dieser Website ändert. Es gilt die jeweils aktuelle, hier veröffentlichte Fassung.
 
+## Footer
+
+Logo-Alternativtext: Bodo Schiefer — Marke & Wachstum
+
 Klarheit, Steuerung und Wirkung für Marketing, Marke und Organisation. Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ##### Navigation
 
-        Leistungen
-        Vorgehen
-        Über mich
-        Erfolge
-        Presse
-        Fun Fact
+- Leistungen
+- Vorgehen
+- Über mich
+- Erfolge
+- Presse
+- Fun Fact
 
 ##### Kontakt & Rechtliches
 
-        Termin buchen
-        bs@marke-wachstum.de
-        LinkedIn
-        Impressum
-        Datenschutz
+- Termin buchen
+- bs@marke-wachstum.de
+- LinkedIn
+- Impressum
+- Datenschutz
 
-      ©  Bodo Schiefer · Marke & Wachstum
+© 2026 Bodo Schiefer · Marke & Wachstum
