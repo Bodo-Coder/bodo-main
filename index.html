@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-</script>
 <title>Bodo Schiefer — Marke &amp; Wachstum | Klarheit für wirksames Marketing</title>
 <meta name="description" content="Bodo Schiefer unterstützt Geschäftsführungen, Marketingverantwortliche und Gründerteams dabei, Marketing und Kommunikation klarer zu steuern: mit klaren Prioritäten, Rollen, Prozessen und wirksamer Umsetzung.">
 <link rel="canonical" href="https://marke-wachstum.de/">
@@ -119,9 +116,9 @@
     .hero-badge{left:26px;right:auto;top:auto;bottom:26px;width:clamp(47px,4.93vw,73px)}
   }
   @media(max-width:880px){
-    .hero-grid{grid-template-columns:1fr}
+    .hero-grid{display:flex;flex-direction:column;min-height:0}
     .hero-text{padding:48px 0 40px}
-    .hero-media{min-height:380px;order:-1}
+    .hero-media{min-height:380px;order:-1;flex:none}
   }
   @media(max-width:640px){
     .hero-media{min-height:0;aspect-ratio:1 / 1.05;background:#fff;border:1px solid rgba(48,111,186,.42)}
@@ -910,9 +907,6 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  if(!window.location.hash){
-    window.addEventListener('pageshow',function(){window.scrollTo(0,0);},{once:true});
-  }
 
   /* mobile menu */
   var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
