@@ -253,7 +253,7 @@
   .how-step .n{font-family:var(--sans);font-weight:700;font-size:1.1rem;width:34px;flex:none;color:var(--accent);line-height:1.4}
   .how-step p{color:rgba(255,255,255,.88);font-size:1.05rem}
   .how-pull{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.5vw,2.05rem);line-height:1.32;border-left:3px solid var(--accent);padding-left:30px}
-  @media(max-width:880px){.how-grid{grid-template-columns:1fr;gap:44px;align-items:start}.how-media{min-height:0;max-width:440px;aspect-ratio:3 / 4}}
+  @media(max-width:880px){.how-grid{grid-template-columns:1fr;gap:44px;align-items:start}.how-media{order:-1;min-height:0;max-width:440px;aspect-ratio:3 / 4}.how-content{display:contents}.how-intro{order:-2}}
 
   /* ABOUT */
   .about-solo{max-width:1120px;margin:0 auto}
@@ -778,7 +778,7 @@
         <img src="images/2026_BODO-7451_Website.jpeg" alt="Bodo Schiefer" loading="lazy">
       </div>
       <div class="how-content">
-        <div>
+        <div class="how-intro">
           <span class="kicker">Wie ich arbeite</span>
           <h2>Zuhören, ordnen, schärfen.</h2>
           <p class="how-pull" style="margin-top:32px">Ich arbeite pragmatisch, strukturiert und partnerschaftlich. Mit klarem Blick für das, was strategisch sinnvoll, im Unternehmen umsetzbar ist und wirklich funktioniert.</p>
