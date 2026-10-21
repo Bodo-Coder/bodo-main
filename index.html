@@ -253,8 +253,10 @@
   .how-step{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
   .how-step .n{font-family:var(--sans);font-weight:700;font-size:1.1rem;width:34px;flex:none;color:var(--accent);line-height:1.4}
   .how-step p{color:rgba(255,255,255,.88);font-size:1.05rem}
+  .how-step-toggle{display:none}
   .how-pull{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.5vw,2.05rem);line-height:1.32;border-left:3px solid var(--accent);padding-left:30px}
   @media(max-width:880px){.how-grid{grid-template-columns:1fr;gap:44px;align-items:start}.how-media{order:-1;min-height:0;max-width:440px;aspect-ratio:3 / 4}.how-content{display:contents}.how-intro{order:-2}}
+  @media(max-width:760px){.how-steps{gap:16px}.how-step{grid-template-columns:auto minmax(0,1fr) 32px;gap:14px}.how-step p{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4}.how-step.open p{white-space:normal;overflow:visible}.how-step-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.how-step-toggle span{display:block;transition:transform .3s}.how-step.open .how-step-toggle span{transform:rotate(45deg)}.how-step-toggle:focus-visible{outline:2px solid var(--white);outline-offset:2px;border-radius:50%}}
 
   /* ABOUT */
   .about-solo{max-width:1120px;margin:0 auto}
@@ -785,9 +787,9 @@
           <p class="how-pull" style="margin-top:32px">Ich arbeite pragmatisch, strukturiert und partnerschaftlich. Mit klarem Blick für das, was strategisch sinnvoll, im Unternehmen umsetzbar ist und wirklich funktioniert.</p>
         </div>
         <div class="how-steps">
-          <div class="how-step"><div class="n">01</div><p>Ich steige dort ein, wo Themen unübersichtlich werden, Entscheidungen stocken oder unterschiedliche Sichtweisen zusammengebracht werden müssen.</p></div>
-          <div class="how-step"><div class="n">02</div><p>Ich höre zu, frage nach, ordne ein und schärfe. So wird sichtbar, welche Fragen wirklich entscheidend sind und welche Themen nachrangig werden.</p></div>
-          <div class="how-step"><div class="n">03</div><p>Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird priorisiert? Was wird beendet oder verschoben? Wer übernimmt welche Verantwortung? Und woran erkennen wir, ob die Maßnahmen wirken?</p></div>
+          <div class="how-step"><div class="n">01</div><p id="how-step-1">Ich steige dort ein, wo Themen unübersichtlich werden, Entscheidungen stocken oder unterschiedliche Sichtweisen zusammengebracht werden müssen.</p><button class="how-step-toggle" type="button" aria-expanded="false" aria-controls="how-step-1" aria-label="Schritt 01 vollständig anzeigen"><span aria-hidden="true">+</span></button></div>
+          <div class="how-step"><div class="n">02</div><p id="how-step-2">Ich höre zu, frage nach, ordne ein und schärfe. So wird sichtbar, welche Fragen wirklich entscheidend sind und welche Themen nachrangig werden.</p><button class="how-step-toggle" type="button" aria-expanded="false" aria-controls="how-step-2" aria-label="Schritt 02 vollständig anzeigen"><span aria-hidden="true">+</span></button></div>
+          <div class="how-step"><div class="n">03</div><p id="how-step-3">Daraus entsteht eine klare Grundlage für Entscheidungen und Umsetzung: Was wird priorisiert? Was wird beendet oder verschoben? Wer übernimmt welche Verantwortung? Und woran erkennen wir, ob die Maßnahmen wirken?</p><button class="how-step-toggle" type="button" aria-expanded="false" aria-controls="how-step-3" aria-label="Schritt 03 vollständig anzeigen"><span aria-hidden="true">+</span></button></div>
         </div>
       </div>
     </div>
@@ -1013,6 +1015,30 @@
     initMobileAccordion('#outcomesAcc','.out-cell','.out-head','.out-body');
     initMobileAccordion('#successAcc','.succ-card','.succ-head','.succ-body');
     initMobileAccordion('#growthAcc','.growth-point','.growth-head','.growth-body');
+  })();
+
+  /* ---------- HOW STEPS (MOBILE) ---------- */
+  (function(){
+    var steps=document.querySelectorAll('#vorgehen .how-step');
+    if(!steps.length)return;
+    var mobile=window.matchMedia('(max-width: 760px)');
+    function setStep(step,open){
+      var button=step.querySelector('.how-step-toggle');
+      var number=step.querySelector('.n').textContent;
+      step.classList.toggle('open',open);
+      button.setAttribute('aria-expanded',String(open));
+      button.setAttribute('aria-label',open?'Schritt '+number+' einklappen':'Schritt '+number+' vollständig anzeigen');
+    }
+    function sync(){
+      steps.forEach(function(step){setStep(step,!mobile.matches);});
+    }
+    steps.forEach(function(step){
+      step.querySelector('.how-step-toggle').addEventListener('click',function(){
+        if(mobile.matches)setStep(step,!step.classList.contains('open'));
+      });
+    });
+    mobile.addEventListener('change',sync);
+    sync();
   })();
 
   /* ---------- ABOUT IMAGE (MOBILE) ---------- */
