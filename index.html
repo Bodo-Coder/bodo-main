@@ -162,7 +162,9 @@
   .when-card ul{list-style:none;display:flex;flex-direction:column;gap:15px}
   .when-card li{position:relative;padding-left:26px;font-size:1rem;color:var(--ink-soft);line-height:1.5}
   .when-card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;border:2px solid var(--accent)}
+  .when-point-toggle{display:none}
   @media(max-width:820px){.when-grid{grid-template-columns:1fr}}
+  @media(max-width:760px){.when-card li.when-point{display:grid;grid-template-columns:minmax(0,1fr) 32px;column-gap:8px;align-items:start}.when-card li.when-point .when-point-text{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.when-card li.when-point.open .when-point-text{white-space:normal;overflow:visible}.when-point-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.when-point-toggle span{display:block;transition:transform .3s}.when-point.open .when-point-toggle span{transform:rotate(45deg)}.when-point-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}}
 
   /* DIGITAL GROWTH */
   .growth{background:var(--paper-2)}
@@ -609,18 +611,18 @@
         <h3>Start-ups <span>· WACHSTUM</span></h3>
         <ul>
           <li>Ein starkes Produkt ist da, aber noch nicht klar, wie daraus ein marktfähiges Angebot mit einem überzeugenden Nutzenversprechen wird.</li>
-          <li>Positionierung und Go-to-Market müssen so zusammenspielen, dass das Angebot im Markt ankommt.</li>
-          <li>Viele Themen konkurrieren gleichzeitig um Aufmerksamkeit und Ressourcen. Es braucht klare Prioritäten für die nächsten Schritte.</li>
-          <li>Produkt und Entwicklung stehen im Mittelpunkt. Jetzt müssen Markenführung, Customer Journey und Aktivierung stärker auf die Geschäftsentwicklung einzahlen.</li>
+          <li class="when-point"><span class="when-point-text" id="when-startup-2">Positionierung und Go-to-Market müssen so zusammenspielen, dass das Angebot im Markt ankommt.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-startup-2" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
+          <li class="when-point"><span class="when-point-text" id="when-startup-3">Viele Themen konkurrieren gleichzeitig um Aufmerksamkeit und Ressourcen. Es braucht klare Prioritäten für die nächsten Schritte.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-startup-3" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
+          <li class="when-point"><span class="when-point-text" id="when-startup-4">Produkt und Entwicklung stehen im Mittelpunkt. Jetzt müssen Markenführung, Customer Journey und Aktivierung stärker auf die Geschäftsentwicklung einzahlen.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-startup-4" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
         </ul>
       </div>
       <div class="when-card">
         <h3>Mittelstand <span>· STEUERUNG</span></h3>
         <ul>
           <li>Marketing soll vom Cost Center zum Business Driver werden.</li>
-          <li>Zu viele Projekte treffen auf begrenzte Ressourcen. Es braucht klare Prioritäten und einen gezielteren Einsatz von Budgets.</li>
-          <li>Positionierung, Markenführung und Maßnahmen brauchen wieder eine gemeinsame strategische Richtung.</li>
-          <li>Geschäftsführung, Marketing, Vertrieb und Partner bringen unterschiedliche Perspektiven ein. Daraus müssen tragfähige Entscheidungen und gemeinsames Handeln entstehen.</li>
+          <li class="when-point"><span class="when-point-text" id="when-mittelstand-2">Zu viele Projekte treffen auf begrenzte Ressourcen. Es braucht klare Prioritäten und einen gezielteren Einsatz von Budgets.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-mittelstand-2" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
+          <li class="when-point"><span class="when-point-text" id="when-mittelstand-3">Positionierung, Markenführung und Maßnahmen brauchen wieder eine gemeinsame strategische Richtung.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-mittelstand-3" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
+          <li class="when-point"><span class="when-point-text" id="when-mittelstand-4">Geschäftsführung, Marketing, Vertrieb und Partner bringen unterschiedliche Perspektiven ein. Daraus müssen tragfähige Entscheidungen und gemeinsames Handeln entstehen.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-mittelstand-4" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
         </ul>
       </div>
     </div>
@@ -1035,6 +1037,29 @@
     steps.forEach(function(step){
       step.querySelector('.how-step-toggle').addEventListener('click',function(){
         if(mobile.matches)setStep(step,!step.classList.contains('open'));
+      });
+    });
+    mobile.addEventListener('change',sync);
+    sync();
+  })();
+
+  /* ---------- WHEN POINTS (MOBILE) ---------- */
+  (function(){
+    var points=document.querySelectorAll('#einsatz .when-point');
+    if(!points.length)return;
+    var mobile=window.matchMedia('(max-width: 760px)');
+    function setPoint(point,open){
+      var button=point.querySelector('.when-point-toggle');
+      point.classList.toggle('open',open);
+      button.setAttribute('aria-expanded',String(open));
+      button.setAttribute('aria-label',open?'Unterpunkt einklappen':'Unterpunkt vollständig anzeigen');
+    }
+    function sync(){
+      points.forEach(function(point){setPoint(point,!mobile.matches);});
+    }
+    points.forEach(function(point){
+      point.querySelector('.when-point-toggle').addEventListener('click',function(){
+        if(mobile.matches)setPoint(point,!point.classList.contains('open'));
       });
     });
     mobile.addEventListener('change',sync);
