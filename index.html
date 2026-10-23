@@ -1017,7 +1017,9 @@
     var digitalGrowth=document.getElementById('digitale-wachstumsarbeit');
     var when=document.getElementById('einsatz');
     var cta=document.querySelector('.cta-banner');
+    var proofTicker=document.querySelector('.proof-ticker');
     mandates.parentNode.insertBefore(success,mandates);
+    if(proofTicker)success.parentNode.insertBefore(proofTicker,success.nextSibling);
     mandates.parentNode.insertBefore(conviction,mandates);
     mandates.parentNode.insertBefore(digitalGrowth,mandates);
     mandates.parentNode.insertBefore(stats,mandates);
