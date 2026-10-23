@@ -141,6 +141,36 @@
   .quote-action:hover{background:#f5f9ff;color:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 24px -14px rgba(13,27,42,.8)}
   .quote-action:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
+  /* CUSTOMER PROOF TICKER */
+  .proof-ticker{position:relative;overflow:hidden;background:#e6f0fa;border-top:1px solid rgba(48,111,186,.24);border-bottom:1px solid rgba(48,111,186,.24)}
+  .proof-ticker-view{overflow:hidden}
+  .proof-ticker-track{display:flex;width:max-content;will-change:transform;animation:proof-ticker-scroll 43.9s linear infinite}
+  .proof-ticker-group{display:flex;align-items:center;flex:none}
+  .proof-ticker-item{display:inline-flex;align-items:center;gap:.7rem;min-height:84px;padding:0 1.7rem;white-space:nowrap}
+  .proof-ticker-group:first-child .proof-ticker-item:first-child{padding-left:clamp(1.5rem,5vw,5rem)}
+  .proof-ticker-quote{font-family:var(--serif);font-size:clamp(1.03rem,1.45vw,1.22rem);font-weight:500;color:var(--blue)}
+  .proof-ticker-source{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .proof-ticker-dot{width:7px;height:7px;flex:none;border-radius:50%;background:var(--accent)}
+  .proof-ticker:hover .proof-ticker-track,.proof-ticker:focus-within .proof-ticker-track,.proof-ticker.is-paused .proof-ticker-track{animation-play-state:paused}
+  .proof-ticker-toggle{position:absolute;z-index:1;right:clamp(12px,2.5vw,34px);top:50%;width:32px;height:32px;padding:0;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--blue);font-size:13px;line-height:1;transform:translateY(-50%);cursor:pointer;box-shadow:0 8px 18px -14px rgba(13,27,42,.7)}
+  .proof-ticker-toggle:hover{border-color:var(--blue);background:var(--blue);color:#fff}
+  .proof-ticker-toggle:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  @keyframes proof-ticker-scroll{to{transform:translateX(-50%)}}
+  @media(max-width:760px){
+    .proof-ticker{overflow:visible}
+    .proof-ticker-view{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 16px}
+    .proof-ticker-view::-webkit-scrollbar{display:none}
+    .proof-ticker-track{width:max-content;animation:none}
+    .proof-ticker-group[aria-hidden="true"]{display:none}
+    .proof-ticker-item{width:min(82vw,340px);min-height:104px;padding:18px 16px;white-space:normal;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px;scroll-snap-align:start}
+    .proof-ticker-group:first-child .proof-ticker-item:first-child{padding-left:16px}
+    .proof-ticker-quote{font-size:1.08rem;line-height:1.25}
+    .proof-ticker-source{font-size:.64rem}
+    .proof-ticker-dot{width:1px;height:54px;border-radius:0;background:var(--line)}
+    .proof-ticker-toggle{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){.proof-ticker-track{animation:none}.proof-ticker-toggle{display:none}}
+
   /* SECTION BASICS */
   .sec{padding:104px 0}
   .sec-head{max-width:760px;margin-bottom:56px}
@@ -499,6 +529,29 @@
       <a href="#ergebnisse" class="quote-action">Ergebnis</a>
     </div>
   </div>
+</section>
+
+<!-- CUSTOMER PROOF TICKER -->
+<section class="proof-ticker" aria-label="Stimmen aus der Zusammenarbeit">
+  <div class="proof-ticker-view">
+    <div class="proof-ticker-track" id="proofTickerTrack">
+      <div class="proof-ticker-group">
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo ist ein leidenschaftlicher Lösungsfinder.“</span><span class="proof-ticker-source">Volvo</span></div><span class="proof-ticker-dot" aria-hidden="true"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Er verbindet strategisches Verständnis mit operativer Klarheit.“</span><span class="proof-ticker-source">O2 Business</span></div><span class="proof-ticker-dot" aria-hidden="true"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo durchdringt komplexe Zusammenhänge schnell und schafft klare Orientierung.“</span><span class="proof-ticker-source">Haufe Akademie</span></div><span class="proof-ticker-dot" aria-hidden="true"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Die von ihm verantworteten Maßnahmen führten zu nachweisbarem Wachstum.“</span><span class="proof-ticker-source">snoopstar</span></div><span class="proof-ticker-dot" aria-hidden="true"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo hat die Zusammenarbeit zwischen den verschiedenen Beteiligten verbessert.“</span><span class="proof-ticker-source">Boehringer Ingelheim</span></div><span class="proof-ticker-dot" aria-hidden="true"></span>
+      </div>
+      <div class="proof-ticker-group" aria-hidden="true">
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo ist ein leidenschaftlicher Lösungsfinder.“</span><span class="proof-ticker-source">Volvo</span></div><span class="proof-ticker-dot"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Er verbindet strategisches Verständnis mit operativer Klarheit.“</span><span class="proof-ticker-source">O2 Business</span></div><span class="proof-ticker-dot"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo durchdringt komplexe Zusammenhänge schnell und schafft klare Orientierung.“</span><span class="proof-ticker-source">Haufe Akademie</span></div><span class="proof-ticker-dot"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Die von ihm verantworteten Maßnahmen führten zu nachweisbarem Wachstum.“</span><span class="proof-ticker-source">snoopstar</span></div><span class="proof-ticker-dot"></span>
+        <div class="proof-ticker-item"><span class="proof-ticker-quote">„Bodo hat die Zusammenarbeit zwischen den verschiedenen Beteiligten verbessert.“</span><span class="proof-ticker-source">Boehringer Ingelheim</span></div><span class="proof-ticker-dot"></span>
+      </div>
+    </div>
+  </div>
+  <button class="proof-ticker-toggle" type="button" aria-controls="proofTickerTrack" aria-pressed="false" aria-label="Laufschrift anhalten"><span aria-hidden="true">Ⅱ</span></button>
 </section>
 
 <!-- MANDATES -->
@@ -1113,6 +1166,19 @@
       }
     });},{threshold:.4});
     so.observe(grid);
+  })();
+
+  /* ---------- CUSTOMER PROOF TICKER ---------- */
+  (function(){
+    var ticker=document.querySelector('.proof-ticker');
+    if(!ticker)return;
+    var toggle=ticker.querySelector('.proof-ticker-toggle');
+    toggle.addEventListener('click',function(){
+      var paused=ticker.classList.toggle('is-paused');
+      toggle.setAttribute('aria-pressed',String(paused));
+      toggle.setAttribute('aria-label',paused?'Laufschrift fortsetzen':'Laufschrift anhalten');
+      toggle.querySelector('span').textContent=paused?'▶':'Ⅱ';
+    });
   })();
 
   /* ---------- TESTIMONIAL CAROUSEL ---------- */
