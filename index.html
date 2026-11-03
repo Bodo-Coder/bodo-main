@@ -196,7 +196,7 @@
   .when-card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;border:2px solid var(--accent)}
   .when-point-toggle{display:none}
   @media(max-width:820px){.when-grid{grid-template-columns:1fr}}
-  @media(max-width:760px){.when-grid,.when-card{min-width:0}.when-card h3{flex-wrap:wrap;row-gap:4px}.when-card li.when-point{display:grid;grid-template-columns:minmax(0,1fr) 32px;column-gap:8px;align-items:start}.when-card li.when-point .when-point-text{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.when-card li.when-point.open .when-point-text{white-space:normal;overflow:visible}.when-point-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.when-point-toggle span{display:block;transition:transform .3s}.when-point.open .when-point-toggle span{transform:rotate(45deg)}.when-point-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}}
+  @media(max-width:760px){.when-grid,.when-card{min-width:0}.when-card h3{flex-wrap:wrap;row-gap:4px}.when-card h3>span{flex-basis:100%}.when-card h3 .when-card-dot{display:none}.when-card li.when-point{display:grid;grid-template-columns:minmax(0,1fr) 32px;column-gap:8px;align-items:start}.when-card li.when-point .when-point-text{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.when-card li.when-point.open .when-point-text{white-space:normal;overflow:visible}.when-point-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.when-point-toggle span{display:block;transition:transform .3s}.when-point.open .when-point-toggle span{transform:rotate(45deg)}.when-point-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}}
 
   /* CALL REASONS */
   .call-reasons{background:var(--paper-2)}
@@ -679,7 +679,7 @@
     </div>
     <div class="when-grid">
       <div class="when-card">
-        <h3>Start-ups <span>· WACHSTUM</span></h3>
+        <h3>Start-ups <span><span class="when-card-dot">· </span>WACHSTUM</span></h3>
         <ul>
           <li>Ihr habt ein innovatives Produkt oder eine vielversprechende Technologie entwickelt und möchtet daraus ein Angebot machen, für das Kunden bereit sind zu bezahlen.</li>
           <li class="when-point"><span class="when-point-text" id="when-startup-2">Ihr möchtet euer Angebot erfolgreich in den Markt bringen und dafür eine klare Go-to-Market-Strategie entwickeln, die Zielgruppen, Vertriebswege und Marketingmaßnahmen sinnvoll verbindet.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-startup-2" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
@@ -688,7 +688,7 @@
         </ul>
       </div>
       <div class="when-card">
-        <h3>Mittelstand <span>· WEITERENTWICKLUNG</span></h3>
+        <h3>Mittelstand <span><span class="when-card-dot">· </span>WEITERENTWICKLUNG</span></h3>
         <ul>
           <li>Mit Ihren bestehenden Produkten und Dienstleistungen möchten Sie zusätzliche Kunden gewinnen und neue Geschäftsmöglichkeiten erschließen.</li>
           <li class="when-point"><span class="when-point-text" id="when-mittelstand-2">Ihre Produkte und Leistungen sind überzeugend. Sie möchten aber deutlicher zeigen, was Sie vom Wettbewerb unterscheidet.</span><button class="when-point-toggle" type="button" aria-expanded="false" aria-controls="when-mittelstand-2" aria-label="Unterpunkt vollständig anzeigen"><span aria-hidden="true">+</span></button></li>
