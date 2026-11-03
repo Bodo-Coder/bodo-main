@@ -237,8 +237,8 @@
   .acc-item.open .acc-head .pm{transform:rotate(45deg)}
   .acc-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
   .acc-body p{color:var(--muted);font-size:1rem;padding:0 0 24px 46px}
-  @media(max-width:760px){#leistungen .split-media{order:-1}.acc-head:hover{color:var(--ink)}}
   @media(max-width:880px){.split{grid-template-columns:1fr;gap:40px}.split-media img{width:100%}}
+  @media(max-width:760px){#leistungen .split{grid-template-columns:1fr;grid-template-areas:"kicker" "media" "heading" "accordion";gap:0}#leistungen .leistungen-copy{display:contents}#leistungen .leistungen-kicker{grid-area:kicker;margin-bottom:24px}#leistungen .split-media{grid-area:media;margin-bottom:40px}#leistungen .leistungen-heading{grid-area:heading;margin-bottom:14px}#leistungen .leistungen-acc{grid-area:accordion;margin-top:0}.acc-head:hover{color:var(--ink)}}
 
   /* STATS */
   .stats{background:var(--blue);color:#fff}
@@ -775,10 +775,10 @@
 <section class="sec reveal" id="leistungen">
   <div class="wrap">
     <div class="split">
-      <div>
-        <span class="kicker">Wie ich konkret unterstütze</span>
-        <h2>Fünf Hebel für wirksames Wachstum.</h2>
-        <div class="acc" id="acc">
+      <div class="leistungen-copy">
+        <span class="kicker leistungen-kicker">Wie ich konkret unterstütze</span>
+        <h2 class="leistungen-heading">Fünf Hebel für wirksames Wachstum.</h2>
+        <div class="acc leistungen-acc" id="acc">
           <div class="acc-item open">
             <button class="acc-head" type="button" aria-expanded="true" aria-controls="acc-body-1"><span class="ix">01</span> Zusätzliche Geschäftschancen erkennen <span class="pm" aria-hidden="true">+</span></button>
             <div class="acc-body" id="acc-body-1"><p>Bestehende Produkte, Dienstleistungen und Kundenbeziehungen aus einer neuen Perspektive betrachten. Herausfinden, welche Bedürfnisse bisher nicht ausreichend berücksichtigt werden, welche Zielgruppen zusätzlich interessant sein könnten und wo sich neue Geschäftsmöglichkeiten eröffnen.</p></div>
