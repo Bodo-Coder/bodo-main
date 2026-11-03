@@ -764,7 +764,7 @@
 </section>
 
 <!-- QUOTE STRIP -->
-<section class="quote-strip">
+<section class="quote-strip" id="klarheit-konsequenz">
   <div class="wrap">
     <blockquote>„Ich bin überzeugt: Schwierige Aufgaben scheitern selten daran, dass es keine Lösung gibt. <b>Häufig wurde nur noch nicht klar genug gefragt, tief genug gedacht oder konsequent genug daran gearbeitet.“</b></blockquote>
     <div class="att"><b>Bodo Schiefer</b> · Klarheit &amp; Konsequenz</div>
@@ -777,7 +777,7 @@
     <div class="split">
       <div>
         <span class="kicker">Wie ich konkret unterstütze</span>
-        <h2>Fünf Hebel für fokussiertes Marketing.</h2>
+        <h2>Fünf Hebel für wirksames Wachstum.</h2>
         <div class="acc" id="acc">
           <div class="acc-item open">
             <button class="acc-head" type="button" aria-expanded="true" aria-controls="acc-body-1"><span class="ix">01</span> Zusätzliche Geschäftschancen erkennen <span class="pm" aria-hidden="true">+</span></button>
@@ -1019,18 +1019,38 @@
   (function(){
     var success=document.getElementById('erfolge');
     var mandates=document.getElementById('mandate');
-    var stats=document.getElementById('kennzahlen');
+    var testimonials=document.getElementById('stimmen');
     var conviction=document.getElementById('ueberzeugung');
     var digitalGrowth=document.getElementById('digitale-wachstumsarbeit');
+    var brand=document.getElementById('markenfuehrung');
+    var clarityQuote=document.getElementById('klarheit-konsequenz');
+    var services=document.getElementById('leistungen');
+    var outcomes=document.getElementById('ergebnisse');
     var when=document.getElementById('einsatz');
+    var press=document.getElementById('presse');
+    var awards=document.getElementById('awards');
     var cta=document.querySelector('.cta-banner');
     var proofTicker=document.querySelector('.proof-ticker');
+    function insertAfter(reference,section){
+      reference.parentNode.insertBefore(section,reference.nextSibling);
+    }
     mandates.parentNode.insertBefore(success,mandates);
-    if(proofTicker)success.parentNode.insertBefore(proofTicker,success.nextSibling);
-    mandates.parentNode.insertBefore(conviction,mandates);
-    mandates.parentNode.insertBefore(digitalGrowth,mandates);
-    mandates.parentNode.insertBefore(stats,mandates);
-    when.parentNode.insertBefore(cta,when);
+    if(proofTicker){
+      insertAfter(success,proofTicker);
+      insertAfter(proofTicker,conviction);
+      insertAfter(conviction,when);
+    }else{
+      insertAfter(success,when);
+    }
+    insertAfter(when,mandates);
+    insertAfter(mandates,cta);
+    insertAfter(cta,testimonials);
+    insertAfter(testimonials,press);
+    brand.parentNode.insertBefore(services,brand);
+    insertAfter(services,outcomes);
+    insertAfter(outcomes,awards);
+    insertAfter(awards,digitalGrowth);
+    insertAfter(digitalGrowth,clarityQuote);
   })();
 
   /* reveal */
