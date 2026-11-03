@@ -198,6 +198,15 @@
   @media(max-width:820px){.when-grid{grid-template-columns:1fr}}
   @media(max-width:760px){.when-card li.when-point{display:grid;grid-template-columns:minmax(0,1fr) 32px;column-gap:8px;align-items:start}.when-card li.when-point .when-point-text{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.when-card li.when-point.open .when-point-text{white-space:normal;overflow:visible}.when-point-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.when-point-toggle span{display:block;transition:transform .3s}.when-point.open .when-point-toggle span{transform:rotate(45deg)}.when-point-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}}
 
+  /* CALL REASONS */
+  .call-reasons{background:var(--paper-2)}
+  .call-reasons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  .call-reason{display:grid;grid-template-columns:34px minmax(0,1fr);gap:8px 18px;align-content:start;background:var(--white);padding:40px 38px}
+  .call-reason .num{grid-row:span 2;padding-top:.2rem;color:var(--accent);font-family:var(--sans);font-size:1.3rem;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.2}
+  .call-reason h3{font-family:var(--serif);font-size:clamp(1.32rem,2.05vw,1.68rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;color:var(--blue)}
+  .call-reason p{grid-column:2;margin:0;max-width:62ch;color:var(--ink-soft);font-size:.96rem;line-height:1.55}
+  @media(max-width:760px){.call-reasons-grid{grid-template-columns:1fr;gap:12px;background:transparent;border:0;border-radius:0}.call-reason{border:1px solid var(--line);border-radius:16px;padding:28px 24px;gap:8px 16px}.call-reason h3{font-size:clamp(1.3rem,5.8vw,1.56rem)}.call-reason p{font-size:.93rem;line-height:1.52}}
+
   /* DIGITAL GROWTH */
   .growth{background:var(--paper-2)}
   .growth-intro{display:grid;grid-template-columns:.9fr 1.1fr;grid-template-areas:"heading ." "image copy";gap:32px 72px;align-items:start}
@@ -840,7 +849,7 @@
   <div class="wrap">
     <div class="how-grid">
       <div class="how-media">
-        <img src="images/2026_BODO-7451_Website.jpeg" alt="Bodo Schiefer" loading="lazy" decoding="async">
+        <img src="images/2026_BODO-7451_Website-960.jpeg" srcset="images/2026_BODO-7451_Website-960.jpeg 960w, images/2026_BODO-7451_Website-1280.jpeg 1280w, images/2026_BODO-7451_Website.jpeg 1600w" sizes="(max-width: 504px) calc(100vw - 64px), (max-width: 880px) 440px, (max-width: 1180px) calc(40vw - 54px), 428px" width="1600" height="2178" alt="Bodo Schiefer" loading="lazy" decoding="async">
       </div>
       <div class="how-content">
         <div class="how-intro">
@@ -935,6 +944,48 @@
 
 
 
+<!-- CALL REASONS -->
+<section class="sec call-reasons reveal" id="anrufen">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Der richtige Zeitpunkt</span>
+      <h2>Wann Sie mich anrufen sollten</h2>
+    </div>
+    <div class="call-reasons-grid">
+      <article class="call-reason">
+        <div class="num">01</div>
+        <h3>„Wir haben viel Potenzial. Aber wir schöpfen es nicht aus.“</h3>
+        <p>Ich erkenne zusätzliche Geschäftschancen in bestehenden Produkten, Dienstleistungen und Kundenbeziehungen und entwickle konkrete Ansätze, um diese Potenziale zu erschließen.</p>
+      </article>
+      <article class="call-reason">
+        <div class="num">02</div>
+        <h3>„Unsere Produkte sind gut. Aber der Markt erkennt den Unterschied nicht.“</h3>
+        <p>Ich arbeite heraus, was Ihr Angebot aus Kundensicht besonders macht, und entwickle daraus eine klare Positionierung, die Sie vom Wettbewerb unterscheidet.</p>
+      </article>
+      <article class="call-reason">
+        <div class="num">03</div>
+        <h3>„Wir investieren viel in Marketing. Aber was bringt es uns eigentlich?“</h3>
+        <p>Ich helfe Ihnen, Marketingmaßnahmen an Ihren Geschäftszielen auszurichten, Prioritäten zu setzen und die Zusammenarbeit zwischen Marketing, Vertrieb und Geschäftsführung wirksamer zu gestalten.</p>
+      </article>
+      <article class="call-reason">
+        <div class="num">04</div>
+        <h3>„Wir wollen wachsen oder etwas Neues aufbauen. Aber uns fehlt eine klare Richtung.“</h3>
+        <p>Ich entwickle passende Strategien für neue Angebote, Zielgruppen und Märkte und unterstütze Sie dabei, den richtigen Weg in den Markt zu finden.</p>
+      </article>
+      <article class="call-reason">
+        <div class="num">05</div>
+        <h3>„Wir wissen, was wir erreichen wollen. Aber die Umsetzung funktioniert nicht.“</h3>
+        <p>Ich schaffe klare Prioritäten und Verantwortlichkeiten, führe unterschiedliche Perspektiven zusammen und übernehme bei Bedarf auch die operative Steuerung der Umsetzung.</p>
+      </article>
+      <article class="call-reason">
+        <div class="num">06</div>
+        <h3>„Wir haben gute Kunden. Aber machen wir auch genug Geschäft mit ihnen?“</h3>
+        <p>Ich erkenne zusätzliche Bedürfnisse und Geschäftsmöglichkeiten bei bestehenden Kunden und entwickle passende Angebote, um Kundenbeziehungen auszubauen und zusätzliche Umsätze zu erschließen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- CTA BANNER -->
 <section class="sec cta-banner reveal">
   <div class="wrap">
@@ -1028,6 +1079,7 @@
     var when=document.getElementById('einsatz');
     var press=document.getElementById('presse');
     var awards=document.getElementById('awards');
+    var callReasons=document.getElementById('anrufen');
     var cta=document.querySelector('.cta-banner');
     var proofTicker=document.querySelector('.proof-ticker');
     function insertAfter(reference,section){
@@ -1042,7 +1094,8 @@
       insertAfter(success,when);
     }
     insertAfter(when,mandates);
-    insertAfter(mandates,cta);
+    insertAfter(mandates,callReasons);
+    insertAfter(callReasons,cta);
     insertAfter(cta,testimonials);
     insertAfter(testimonials,press);
     brand.parentNode.insertBefore(services,brand);
