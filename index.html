@@ -201,14 +201,17 @@
   /* CALL REASONS */
   .call-reasons{background:var(--paper-2)}
   .call-reasons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-  .call-reason{display:grid;grid-template-columns:34px minmax(0,1fr);gap:8px 18px;align-content:start;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:40px 38px;transition:transform .25s,box-shadow .25s}
+  .call-reason{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"num topic" "heading heading" "body body";gap:18px;align-content:start;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:40px 38px;transition:transform .25s,box-shadow .25s}
   .call-reason:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
-  .call-reason .num{grid-row:span 2;padding-top:.2rem;color:var(--accent);font-family:var(--sans);font-size:1.3rem;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.2}
-  .call-reason h3{font-family:var(--serif);font-size:clamp(1.32rem,2.05vw,1.68rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;color:var(--blue)}
+  .call-reason .num{grid-area:num;padding-top:.1rem;color:var(--accent);font-family:var(--sans);font-size:1.3rem;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.2}
+  .call-reason-topic{grid-area:topic;align-self:start;margin:0;color:var(--accent);font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.075em;line-height:1.25;text-align:right;text-transform:uppercase}
+  .call-reason h3{grid-area:heading;min-width:0;font-family:var(--serif);font-size:clamp(1.32rem,2.05vw,1.68rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;color:var(--blue)}
   .call-reason-toggle{display:none}
-  .call-reason-body{grid-column:2;max-width:62ch}
+  .call-reason-body{grid-area:body;min-width:0;max-width:62ch}
   .call-reason-body p{margin:0;color:var(--ink-soft);font-size:.96rem;line-height:1.55}
-  @media(max-width:760px){.call-reasons-grid{grid-template-columns:1fr;gap:12px;background:transparent;border:0;border-radius:0}.call-reason{grid-template-columns:34px minmax(0,1fr) 32px;column-gap:16px;row-gap:0;border:1px solid var(--line);border-radius:16px;padding:28px 24px}.call-reason .num{grid-row:1 / span 2}.call-reason h3{grid-column:2;grid-row:1;min-width:0;font-size:clamp(1.3rem,5.8vw,1.56rem)}.call-reason-toggle{display:flex;grid-column:3;grid-row:1;align-items:center;justify-content:center;width:32px;height:32px;margin:-3px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.call-reason-toggle span{display:block;transition:transform .3s}.call-reason.open .call-reason-toggle span{transform:rotate(45deg)}.call-reason-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}.call-reason-body{grid-column:2 / 4;grid-row:2;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .2s ease}.call-reason-body p{padding-top:10px;font-size:.93rem;line-height:1.52}.call-reason.open .call-reason-body{max-height:50rem;opacity:1}}
+  @media(max-width:760px){.call-reasons-grid{grid-template-columns:1fr;gap:12px;background:transparent;border:0;border-radius:0}.call-reason{grid-template-columns:34px minmax(0,1fr) 32px;grid-template-areas:"num topic topic" "heading heading toggle" "body body body";column-gap:16px;row-gap:12px;border:1px solid var(--line);border-radius:16px;padding:28px 24px}.call-reason .num{padding-top:.1rem}.call-reason-topic{align-self:center;font-size:clamp(.54rem,2.35vw,.76rem);letter-spacing:.04em;white-space:nowrap}.call-reason h3{font-size:clamp(1.3rem,5.8vw,1.56rem)}.call-reason-toggle{display:flex;grid-area:toggle;align-self:start;align-items:center;justify-content:center;width:32px;height:32px;margin:-3px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.call-reason-toggle span{display:block;transition:transform .3s}.call-reason.open .call-reason-toggle span{transform:rotate(45deg)}.call-reason-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}.call-reason-body{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .2s ease}.call-reason-body p{padding-top:0;font-size:.93rem;line-height:1.52}.call-reason.open .call-reason-body{max-height:50rem;opacity:1}}
+  @media(max-width:375px){.call-reasons .wrap{padding:0 20px}.call-reason{grid-template-columns:32px minmax(0,1fr) 28px;column-gap:10px;padding:24px 20px}.call-reason-toggle{width:28px;height:28px;font-size:1.4rem}}
+  @media(max-width:340px){.call-reasons .wrap{padding:0 16px}.call-reason{column-gap:8px;padding:22px 16px}.call-reason-topic{font-size:.51rem;letter-spacing:.02em}}
 
   /* DIGITAL GROWTH */
   .growth{background:var(--paper-2)}
@@ -960,36 +963,42 @@
     <div class="call-reasons-grid">
       <article class="call-reason open">
         <div class="num">01</div>
+        <p class="call-reason-topic">Umsatzpotenziale ausschöpfen</p>
         <h3>„Wir haben viel Potenzial. Aber wir schöpfen es nicht aus.“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="true" aria-controls="call-reason-body-1" aria-label="Grund 01 einklappen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-1"><p>Ich erkenne zusätzliche Geschäftschancen in bestehenden Produkten, Dienstleistungen und Kundenbeziehungen und entwickle konkrete Ansätze, um diese Potenziale zu erschließen.</p></div>
       </article>
       <article class="call-reason">
         <div class="num">02</div>
+        <p class="call-reason-topic">Marktpositionierung schärfen</p>
         <h3>„Unsere Produkte sind gut. Aber der Markt erkennt den Unterschied nicht.“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="false" aria-controls="call-reason-body-2" aria-label="Grund 02 vollständig anzeigen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-2"><p>Ich arbeite heraus, was Ihr Angebot aus Kundensicht besonders macht, und entwickle daraus eine klare Positionierung, die Sie vom Wettbewerb unterscheidet.</p></div>
       </article>
       <article class="call-reason">
         <div class="num">03</div>
+        <p class="call-reason-topic">Marketingwirksamkeit steigern</p>
         <h3>„Wir investieren viel in Marketing. Aber was bringt es uns eigentlich?“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="false" aria-controls="call-reason-body-3" aria-label="Grund 03 vollständig anzeigen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-3"><p>Ich helfe Ihnen, Marketingmaßnahmen an Ihren Geschäftszielen auszurichten, Prioritäten zu setzen und die Zusammenarbeit zwischen Marketing, Vertrieb und Geschäftsführung wirksamer zu gestalten.</p></div>
       </article>
       <article class="call-reason">
         <div class="num">04</div>
+        <p class="call-reason-topic">Wachstumsstrategien entwickeln</p>
         <h3>„Wir wollen wachsen oder etwas Neues aufbauen. Aber uns fehlt eine klare Richtung.“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="false" aria-controls="call-reason-body-4" aria-label="Grund 04 vollständig anzeigen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-4"><p>Ich entwickle passende Strategien für neue Angebote, Zielgruppen und Märkte und unterstütze Sie dabei, den richtigen Weg in den Markt zu finden.</p></div>
       </article>
       <article class="call-reason">
         <div class="num">05</div>
+        <p class="call-reason-topic">Umsetzung sicherstellen</p>
         <h3>„Wir wissen, was wir erreichen wollen. Aber die Umsetzung hakt irgendwie.“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="false" aria-controls="call-reason-body-5" aria-label="Grund 05 vollständig anzeigen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-5"><p>Ich identifiziere Hindernisse, schaffe klare Prioritäten und Verantwortlichkeiten und führe unterschiedliche Perspektiven zusammen. Bei Bedarf übernehme ich auch die operative Steuerung der Umsetzung.</p></div>
       </article>
       <article class="call-reason">
         <div class="num">06</div>
+        <p class="call-reason-topic">Bestandskundengeschäft ausbauen</p>
         <h3>„Wir haben gute Kunden. Aber machen wir auch genug Geschäft mit ihnen?“</h3>
         <button class="call-reason-toggle" type="button" aria-expanded="false" aria-controls="call-reason-body-6" aria-label="Grund 06 vollständig anzeigen"><span aria-hidden="true">+</span></button>
         <div class="call-reason-body" id="call-reason-body-6"><p>Ich erkenne zusätzliche Bedürfnisse und Geschäftsmöglichkeiten bei bestehenden Kunden und entwickle passende Angebote, um Kundenbeziehungen auszubauen und zusätzliche Umsätze zu erschließen.</p></div>
