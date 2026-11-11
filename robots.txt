@@ -2,15 +2,16 @@
 User-agent: *
 Allow: /
 
-# KI-Such-/Antwort-Crawler ausdrücklich willkommen (für Sichtbarkeit in ChatGPT-Suche, Perplexity, Claude etc.)
+# Such- und Antwort-Crawler ausdrücklich willkommen
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# GPTBot betrifft das Training von OpenAI-Modellen, nicht die ChatGPT-Suche.
 User-agent: GPTBot
-Allow: /
+Disallow: /
 
 User-agent: PerplexityBot
 Allow: /

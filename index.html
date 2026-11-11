@@ -233,12 +233,12 @@
   .growth-point{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 30px;color:var(--ink-soft);font-size:1rem;line-height:1.5;transition:transform .25s,box-shadow .25s}
   .growth-point:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
   .growth-point b{display:block;color:var(--accent);font-family:var(--serif);font-size:2rem;font-weight:500;line-height:1;margin-bottom:22px}
-  .growth-head{width:100%;padding:0;background:none;border:0;text-align:left}
-  .growth-head h3{color:var(--ink);font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.15;margin:0 0 12px}
+  .growth-point h3{color:var(--ink);font-family:var(--serif);font-size:1.28rem;font-weight:500;line-height:1.15;margin:0 0 12px}
+  .growth-head{width:100%;padding:0;background:none;border:0;text-align:left;font:inherit;line-height:inherit;color:inherit}
   .growth-head .pm{display:none}
   .growth-body p{margin:0}
   @media(max-width:880px){.growth-intro{grid-template-columns:1fr;grid-template-areas:"heading" "copy" "image";gap:32px}.growth-points{grid-template-columns:1fr;gap:32px}.growth-image{max-width:468px}.growth-lead-in{margin-top:36px}.growth-point{padding:30px}}
-  @media(max-width:760px){.growth-points{gap:12px}.growth-point b{font-size:1.3rem;margin-bottom:10px}.growth-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.growth-head h3{margin-bottom:0}.growth-head .pm{display:block;margin-left:auto;color:var(--accent);font-size:1.5rem;line-height:1;transition:transform .3s}.growth-point.open .growth-head .pm{transform:rotate(45deg)}.growth-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.growth-body p{padding-top:14px}.growth-mobile-strong{font-weight:700}}
+  @media(max-width:760px){.growth-points{gap:12px}.growth-point b{font-size:1.3rem;margin-bottom:10px}.growth-point h3{margin:0}.growth-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.growth-head .pm{display:block;margin-left:auto;color:var(--accent);font-size:1.5rem;line-height:1;transition:transform .3s}.growth-point.open .growth-head .pm{transform:rotate(45deg)}.growth-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.growth-body p{padding-top:14px}.growth-mobile-strong{font-weight:700}}
 
   /* LEISTUNGEN ACCORDION */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
@@ -276,16 +276,16 @@
   .out-cell{background:#fff;border:1px solid var(--line);border-radius:16px;padding:44px 40px;transition:transform .25s,box-shadow .25s}
   .out-cell:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
   .out-cell .num{font-family:var(--sans);font-weight:700;font-style:normal;font-size:1.3rem;color:var(--accent);margin-bottom:16px}
-  .out-head{width:100%;padding:0;background:none;border:0;text-align:left}
-  .out-head h4{font-family:var(--serif);font-weight:500;font-size:clamp(1.32rem,2.05vw,1.68rem);color:var(--blue);margin-bottom:14px;line-height:1.18;letter-spacing:-.012em}
+  .out-cell h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.32rem,2.05vw,1.68rem);color:var(--blue);margin:0 0 14px;line-height:1.18;letter-spacing:-.012em}
+  .out-head{width:100%;padding:0;background:none;border:0;text-align:left;font:inherit;line-height:inherit;color:inherit}
   .out-head .pm{display:none}
   .out-body p{color:var(--muted);font-size:1rem}
   @media(max-width:760px){
     .out-grid{grid-template-columns:1fr;gap:12px;background:transparent;border:0;border-radius:0;overflow:visible}
     .out-cell{display:grid;grid-template-columns:34px minmax(0,1fr) 32px;column-gap:16px;row-gap:0;align-content:start;border:1px solid var(--line);border-radius:16px;padding:28px 24px}
     .out-cell .num{grid-column:1;grid-row:1 / span 2;margin:0;padding-top:.2rem}
-    .out-head{display:grid;grid-template-columns:minmax(0,1fr) 32px;grid-column:2 / 4;grid-row:1;align-items:start;column-gap:16px;cursor:pointer}
-    .out-head h4{margin-bottom:0;font-size:clamp(1.3rem,5.8vw,1.56rem);line-height:1.18}
+    .out-cell h3{grid-column:2 / 4;grid-row:1;margin:0;min-width:0;font-size:clamp(1.3rem,5.8vw,1.56rem);line-height:1.18}
+    .out-head{display:grid;grid-template-columns:minmax(0,1fr) 32px;align-items:start;column-gap:16px;cursor:pointer}
     .out-head .pm{display:flex;align-items:center;justify-content:center;min-width:32px;height:32px;margin:-3px -4px 0 0;color:var(--accent);font-size:1.55rem;line-height:1;transition:transform .3s}
     .out-cell.open .out-head .pm{transform:rotate(45deg)}
     .out-head:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
@@ -333,13 +333,13 @@
   .succ-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 30px;transition:transform .25s,box-shadow .25s}
   .succ-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(13,27,42,.25)}
   .succ-card .ic{font-family:var(--sans);font-weight:700;font-style:normal;color:var(--accent);font-size:.95rem;margin-bottom:12px}
-  .succ-head{width:100%;padding:0;background:none;border:0;text-align:left}
-  .succ-head h4{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--blue);line-height:1.2;margin-bottom:12px}
+  .succ-card h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--blue);line-height:1.2;margin:0 0 12px}
+  .succ-head{width:100%;padding:0;background:none;border:0;text-align:left;font:inherit;line-height:inherit;color:inherit}
   .succ-head .pm{display:none}
   .succ-body p{color:var(--muted);font-size:.98rem}
   .when{background:var(--paper)!important}
   @media(max-width:880px){.succ-grid{grid-template-columns:1fr}}
-  @media(max-width:760px){.succ-grid{gap:12px}.succ-card{padding:30px 28px}.succ-card .ic{margin-bottom:10px}.succ-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.succ-head h4{margin-bottom:0}.succ-head .pm{display:block;margin-left:auto;color:var(--blue);font-size:1.5rem;line-height:1;transition:transform .3s}.succ-card.open .succ-head .pm{transform:rotate(45deg)}.succ-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.succ-body p{padding-top:14px}}
+  @media(max-width:760px){.succ-grid{gap:12px}.succ-card{padding:30px 28px}.succ-card .ic{margin-bottom:10px}.succ-card h3{margin:0}.succ-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.succ-head .pm{display:block;margin-left:auto;color:var(--blue);font-size:1.5rem;line-height:1;transition:transform .3s}.succ-card.open .succ-head .pm{transform:rotate(45deg)}.succ-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.succ-body p{padding-top:14px}}
 
   /* MANDATES */
   .mandates{text-align:center}
@@ -471,7 +471,7 @@
   .foot-brand{font-size:.98rem}
   .foot-brand img{height:auto;width:335.7px;max-width:100%;margin-left:-.2em;margin-bottom:24px;display:block}
   .foot-brand p{font-size:1rem;max-width:30em}
-  .foot-col h5{color:var(--accent);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+  .foot-title{color:var(--accent);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 18px}
   .foot-col a{display:block;color:rgba(255,255,255,.78);text-decoration:none;font-size:.98rem;margin-bottom:12px;transition:color .2s}
   .foot-col a:hover{color:var(--accent)}
   .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;font-size:.85rem;color:rgba(255,255,255,.62);flex-wrap:wrap;gap:12px}
@@ -500,7 +500,7 @@
 <header>
   <div class="wrap nav">
     <a href="#top" aria-label="Bodo Schiefer Startseite">
-      <img src="images/Logo%20BS%20Marke%20und%20Wachstum%20blau.png?v=20260728-2" alt="Bodo Schiefer — Marke & Wachstum">
+      <img src="images/logo-nav-800.png" width="800" height="57" alt="Bodo Schiefer — Marke & Wachstum">
     </a>
     <nav class="nav-links" id="navlinks" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
@@ -534,8 +534,8 @@
       </div>
       <div class="hero-media">
         <div class="hero-image-wrap">
-          <img class="hero-portrait" src="images/2026_BODO-7632_Website.jpeg" alt="Bodo Schiefer">
-          <img class="hero-badge" src="images/Logo%20Unternehmer%20des%20tages.png" alt="Unternehmer des Tages">
+          <img class="hero-portrait" src="images/hero-bodo-800.jpeg" srcset="images/hero-bodo-800.jpeg 800w, images/hero-bodo-1200.jpeg 1200w, images/2026_BODO-7632_Website.jpeg 1600w" sizes="(max-width: 880px) calc(100vw - 64px), 45vw" width="1600" height="2520" alt="Bodo Schiefer" fetchpriority="high">
+          <img class="hero-badge" src="images/hero-badge-220.png" width="220" height="210" alt="Unternehmer des Tages" decoding="async">
         </div>
       </div>
     </div>
@@ -585,7 +585,7 @@
       <p class="mandate-copy">Eine Auswahl aus mehr als 25 Jahren Marken-, Marketing- und Wachstumsarbeit.</p>
     <div class="mandate-logos">
       <div class="mandate-panel mandate-panel--left">
-        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Automotive, OTC &amp; Gesundheit, Weiterbildung &amp; Gründungsförderung, Technologie &amp; Telekommunikation, Banken &amp; Versicherungen">
+        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Automotive, OTC &amp; Gesundheit, Weiterbildung &amp; Gründungsförderung, Technologie &amp; Telekommunikation, Banken &amp; Versicherungen" loading="lazy" decoding="async">
         <span class="mandate-label" style="--x:5.5%;--y:2.15%">Automotive</span>
         <span class="mandate-label" style="--x:5.5%;--y:22%">OTC &amp; Gesundheit</span>
         <span class="mandate-label" style="--x:5.5%;--y:55.1%">Weiterbildung &amp; Gründungsförderung</span>
@@ -593,7 +593,7 @@
         <span class="mandate-label" style="--x:5.5%;--y:82.05%">Banken &amp; Versicherungen</span>
       </div>
       <div class="mandate-panel mandate-panel--right">
-        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Konsumgüter · Food, Konsumgüter · Non Food, Handel, Kultur &amp; Entertainment, Öffentlicher Sektor &amp; Verbände, Industrie &amp; Bauen">
+        <img src="images/Logoteppich%20Oktober.jpg" width="1820" height="1921" alt="Logos ausgewählter Mandate: Konsumgüter · Food, Konsumgüter · Non Food, Handel, Kultur &amp; Entertainment, Öffentlicher Sektor &amp; Verbände, Industrie &amp; Bauen" loading="lazy" decoding="async">
         <span class="mandate-label" style="--x:8%;--y:2.15%">Konsumgüter · Food</span>
         <span class="mandate-label" style="--x:8%;--y:22%">Konsumgüter · Non Food</span>
         <span class="mandate-label" style="--x:8%;--y:44.5%">Handel</span>
@@ -602,7 +602,7 @@
         <span class="mandate-label" style="--x:8%;--y:82.05%">Industrie &amp; Bauen</span>
       </div>
       <div class="mandate-panel mandate-panel--mobile">
-        <img src="images/Logoteppich%20Oktober%20mobil.png" width="1200" height="5069" alt="Logos ausgewählter Mandate aus elf Branchen">
+        <img src="images/mandates-mobile-640.jpeg" srcset="images/mandates-mobile-640.jpeg 640w, images/mandates-mobile-960.jpeg 960w" sizes="(max-width: 640px) calc(100vw - 64px), 100vw" width="960" height="4055" alt="Logos ausgewählter Mandate aus elf Branchen" loading="lazy" decoding="async">
         <span class="mandate-label" style="--x:6.429%;--y:1.042%">Automotive</span>
         <span class="mandate-label" style="--x:6.625%;--y:10.290%">Konsumgüter · Food</span>
         <span class="mandate-label" style="--x:6.656%;--y:20.251%">Konsumgüter · Non Food</span>
@@ -731,7 +731,7 @@
         <p>Diese Erfahrung prägt meine Arbeit bis heute. Ich sehe digitale Kanäle nicht als Selbstzweck, sondern als Teil einer Customer Journey, die Menschen vom ersten Interesse bis zur Handlung begleiten. Plattformmärkte und digitale Vertriebslogik bewerte ich deshalb aus der Perspektive von Marke, Vermarktung und Nutzererlebnis. Daraus lassen sich Maßnahmen entlang der Customer Journey gezielter steuern. Aus meiner Plattform-Erfahrung weiß ich zugleich: <strong>Skalierung entsteht erst, wenn Angebot, Nachfrage, Nutzenversprechen und Go-to-Market zusammenpassen</strong>.</p>
       </div>
       <figure class="growth-visual">
-        <img class="growth-image" src="images/snoopstar-telekom-digital-brand-experience.png" alt="Augmented-Reality-Markenerlebnis von snoopstar für Telekom mit Produktinformation, Shop, Terminvereinbarung und individueller Beratung">
+        <img class="growth-image" src="images/growth-snoopstar-960.jpeg" width="960" height="1299" alt="Augmented-Reality-Markenerlebnis von snoopstar für Telekom mit Produktinformation, Shop, Terminvereinbarung und individueller Beratung" loading="lazy" decoding="async">
         <figcaption>
           <strong>Digital Brand of the Year:</strong>
           <em>snoopstar – activating brand stories</em>
@@ -741,10 +741,10 @@
     </div>
     <p class="growth-lead-in">Für den Erfolg digitaler Angebote und Plattformmodelle sind vier Dinge entscheidend:</p>
     <div class="growth-points" id="growthAcc" aria-label="Vier Schwerpunkte digitaler Wachstumsarbeit">
-      <div class="growth-point open"><b>01</b><button class="growth-head" type="button" aria-expanded="true" aria-controls="growth-body-1"><h3>Kundennutzen verstehen</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-1"><p>Zielgruppen, Bedarf und Zahlungsbereitschaft präzise verstehen.</p></div></div>
-      <div class="growth-point"><b>02</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-2"><h3>Relevante Angebote entwickeln</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-2"><p>Nutzenversprechen, Anwendungsfälle und Nutzererlebnis klar machen.</p></div></div>
-      <div class="growth-point"><b>03</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-3"><h3>Plattformen und Kanäle strategisch nutzen</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-3"><p>Den passenden Zugang zum Markt über eigene Kanäle, Partner und Plattformen gestalten.</p></div></div>
-      <div class="growth-point"><b>04</b><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-4"><h3>Wirkung wirtschaftlich steuern</h3><span class="pm" aria-hidden="true">+</span></button><div class="growth-body" id="growth-body-4"><p>Erlösmodelle, Conversion und Kennzahlen auf profitables Wachstum ausrichten.</p></div></div>
+      <div class="growth-point open"><b>01</b><h3><button class="growth-head" type="button" aria-expanded="true" aria-controls="growth-body-1">Kundennutzen verstehen<span class="pm" aria-hidden="true">+</span></button></h3><div class="growth-body" id="growth-body-1"><p>Zielgruppen, Bedarf und Zahlungsbereitschaft präzise verstehen.</p></div></div>
+      <div class="growth-point"><b>02</b><h3><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-2">Relevante Angebote entwickeln<span class="pm" aria-hidden="true">+</span></button></h3><div class="growth-body" id="growth-body-2"><p>Nutzenversprechen, Anwendungsfälle und Nutzererlebnis klar machen.</p></div></div>
+      <div class="growth-point"><b>03</b><h3><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-3">Plattformen und Kanäle strategisch nutzen<span class="pm" aria-hidden="true">+</span></button></h3><div class="growth-body" id="growth-body-3"><p>Den passenden Zugang zum Markt über eigene Kanäle, Partner und Plattformen gestalten.</p></div></div>
+      <div class="growth-point"><b>04</b><h3><button class="growth-head" type="button" aria-expanded="false" aria-controls="growth-body-4">Wirkung wirtschaftlich steuern<span class="pm" aria-hidden="true">+</span></button></h3><div class="growth-body" id="growth-body-4"><p>Erlösmodelle, Conversion und Kennzahlen auf profitables Wachstum ausrichten.</p></div></div>
     </div>
   </div>
 </section>
@@ -833,10 +833,10 @@
       <h2>Klarheit, die im Alltag trägt.</h2>
     </div>
     <div class="out-grid" id="outcomesAcc">
-      <div class="out-cell open"><div class="num">01</div><button class="out-head" type="button" aria-expanded="true" aria-controls="out-body-1"><h4>Zusätzliche Geschäftschancen erschließen</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-1"><p>Neue Kundengruppen erreichen, bestehende Angebote erfolgreicher vermarkten und zusätzliche Umsatzpotenziale nutzen. Aus erkannten Marktchancen werden konkrete Maßnahmen für mehr Geschäft.</p></div></div>
-      <div class="out-cell"><div class="num">02</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-2"><h4>Angebote überzeugender im Markt positionieren</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-2"><p>Kunden erkennen schneller, welchen besonderen Nutzen Ihre Produkte und Dienstleistungen bieten und warum sie sich für Ihr Angebot entscheiden sollten. Eine klare Positionierung stärkt die Differenzierung vom Wettbewerb und schafft bessere Voraussetzungen für die Kundengewinnung.</p></div></div>
-      <div class="out-cell"><div class="num">03</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-3"><h4>Bessere Entscheidungen und klare Prioritäten</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-3"><p>Geschäftsführung, Marketing und Vertrieb entwickeln ein gemeinsames Verständnis von Kunden, Markt und Unternehmenszielen. Entscheidungen werden auf einer fundierten Grundlage getroffen, Ressourcen gezielter eingesetzt und Maßnahmen nach ihrem wirtschaftlichen Nutzen priorisiert.</p></div></div>
-      <div class="out-cell"><div class="num">04</div><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-4"><h4>Konsequente Umsetzung und messbare Wirkung</h4><span class="pm" aria-hidden="true">+</span></button><div class="out-body" id="out-body-4"><p>Aus Strategien werden konkrete Maßnahmen mit klaren Verantwortlichkeiten und realistischen Zeitplänen. Teams und externe Partner arbeiten auf gemeinsame Ziele hin. Fortschritte und Ergebnisse werden überprüft, damit die Maßnahmen ihre wirtschaftliche Wirkung entfalten können.</p></div></div>
+      <div class="out-cell open"><div class="num">01</div><h3><button class="out-head" type="button" aria-expanded="true" aria-controls="out-body-1">Zusätzliche Geschäftschancen erschließen<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-1"><p>Neue Kundengruppen erreichen, bestehende Angebote erfolgreicher vermarkten und zusätzliche Umsatzpotenziale nutzen. Aus erkannten Marktchancen werden konkrete Maßnahmen für mehr Geschäft.</p></div></div>
+      <div class="out-cell"><div class="num">02</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-2">Angebote überzeugender im Markt positionieren<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-2"><p>Kunden erkennen schneller, welchen besonderen Nutzen Ihre Produkte und Dienstleistungen bieten und warum sie sich für Ihr Angebot entscheiden sollten. Eine klare Positionierung stärkt die Differenzierung vom Wettbewerb und schafft bessere Voraussetzungen für die Kundengewinnung.</p></div></div>
+      <div class="out-cell"><div class="num">03</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-3">Bessere Entscheidungen und klare Prioritäten<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-3"><p>Geschäftsführung, Marketing und Vertrieb entwickeln ein gemeinsames Verständnis von Kunden, Markt und Unternehmenszielen. Entscheidungen werden auf einer fundierten Grundlage getroffen, Ressourcen gezielter eingesetzt und Maßnahmen nach ihrem wirtschaftlichen Nutzen priorisiert.</p></div></div>
+      <div class="out-cell"><div class="num">04</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-4">Konsequente Umsetzung und messbare Wirkung<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-4"><p>Aus Strategien werden konkrete Maßnahmen mit klaren Verantwortlichkeiten und realistischen Zeitplänen. Teams und externe Partner arbeiten auf gemeinsame Ziele hin. Fortschritte und Ergebnisse werden überprüft, damit die Maßnahmen ihre wirtschaftliche Wirkung entfalten können.</p></div></div>
     </div>
   </div>
 </section>
@@ -847,8 +847,8 @@
     <span class="kicker">Auszeichnungen</span>
     <h2>Prämiert für wirksame Marken- und Wachstumsarbeit.</h2>
     <picture>
-      <source media="(max-width: 760px)" srcset="images/Bild%20Awards%20mobile%20neu.png?v=20261026-gold-120">
-      <img src="images/awards-auszeichnungen.png" alt="Auszeichnungen">
+      <source media="(max-width: 760px)" srcset="images/awards-mobile-900.jpeg" width="900" height="1350" type="image/jpeg">
+      <img src="images/awards-1800.jpeg" width="1800" height="771" alt="Auszeichnungen" loading="lazy" decoding="async">
     </picture>
   </div>
 </section>
@@ -941,12 +941,12 @@
       <h2>Wirkung, die messbar ist.</h2>
     </div>
     <div class="succ-grid" id="successAcc">
-      <div class="succ-card open"><div class="ic">Performance</div><button class="succ-head" type="button" aria-expanded="true" aria-controls="succ-body-5"><h4>10 % mehr Umsatz im direkten Vorjahresvergleich</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-5"><p>Print, Augmented Reality und Online-Shop für einen führenden Discounter verbunden und den Online-Umsatz der aktivierten Produkte messbar gesteigert.</p></div></div>
-      <div class="succ-card"><div class="ic">Effizienz</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-3"><h4>Einsparungen im zweistelligen Millionenbereich erzielt</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-3"><p>Globale Kampagnen- und Steuerungsstruktur für Dulcolax / Boehringer Ingelheim mit vier Hubs für 62 Märkte etabliert. Lokale Aktivitäten gebündelt und regionale Anpassungen auf das Notwendige reduziert.</p></div></div>
-      <div class="succ-card"><div class="ic">Profitabilität</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-2"><h4>Break-even in 11 Monaten</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-2"><p>Als Geschäftsführer des Technologie-Start-ups snoopstar Geschäftsmodell und Go-to-Market-Strategie weiterentwickelt, Positionierung geschärft, zusätzliche Zielgruppen erschlossen.</p></div></div>
-      <div class="succ-card"><div class="ic">Wachstum</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-1"><h4>Agenturumsatz mit Volvo in 2,5 Jahren versechsfacht</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-1"><p>Leistungsportfolio für den Kunden weiterentwickelt und zusätzliche Geschäftspotenziale erschlossen. Dadurch den Umsatz von GREY mit Volvo von 0,5 auf 3 Mio. Euro gesteigert.</p></div></div>
-      <div class="succ-card"><div class="ic">Transformation</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-4"><h4>Kundenzentrierung im Unternehmen verankert</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-4"><p>Bei snoopstar Organisation, Prozesse und Zusammenarbeit neu ausgerichtet. Das Team von technologiegetriebenem Denken zu konsequenter Zielgruppenorientierung geführt.</p></div></div>
-      <div class="succ-card"><div class="ic">Kreativität</div><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-6"><h4>Mit begrenzten Mitteln zum Guinness-Weltrekord</h4><span class="pm" aria-hidden="true">+</span></button><div class="succ-body" id="succ-body-6"><p>Für Duracell / Procter &amp; Gamble eine Markenaktivierung zur Revitalisierung der Marke entwickelt und außergewöhnliche Aufmerksamkeit erzielt.</p></div></div>
+      <div class="succ-card open"><div class="ic">Performance</div><h3><button class="succ-head" type="button" aria-expanded="true" aria-controls="succ-body-5">10 % mehr Umsatz im direkten Vorjahresvergleich<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-5"><p>Print, Augmented Reality und Online-Shop für einen führenden Discounter verbunden und den Online-Umsatz der aktivierten Produkte messbar gesteigert.</p></div></div>
+      <div class="succ-card"><div class="ic">Effizienz</div><h3><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-3">Einsparungen im zweistelligen Millionenbereich erzielt<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-3"><p>Globale Kampagnen- und Steuerungsstruktur für Dulcolax / Boehringer Ingelheim mit vier Hubs für 62 Märkte etabliert. Lokale Aktivitäten gebündelt und regionale Anpassungen auf das Notwendige reduziert.</p></div></div>
+      <div class="succ-card"><div class="ic">Profitabilität</div><h3><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-2">Break-even in 11 Monaten<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-2"><p>Als Geschäftsführer des Technologie-Start-ups snoopstar Geschäftsmodell und Go-to-Market-Strategie weiterentwickelt, Positionierung geschärft, zusätzliche Zielgruppen erschlossen.</p></div></div>
+      <div class="succ-card"><div class="ic">Wachstum</div><h3><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-1">Agenturumsatz mit Volvo in 2,5 Jahren versechsfacht<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-1"><p>Leistungsportfolio für den Kunden weiterentwickelt und zusätzliche Geschäftspotenziale erschlossen. Dadurch den Umsatz von GREY mit Volvo von 0,5 auf 3 Mio. Euro gesteigert.</p></div></div>
+      <div class="succ-card"><div class="ic">Transformation</div><h3><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-4">Kundenzentrierung im Unternehmen verankert<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-4"><p>Bei snoopstar Organisation, Prozesse und Zusammenarbeit neu ausgerichtet. Das Team von technologiegetriebenem Denken zu konsequenter Zielgruppenorientierung geführt.</p></div></div>
+      <div class="succ-card"><div class="ic">Kreativität</div><h3><button class="succ-head" type="button" aria-expanded="false" aria-controls="succ-body-6">Mit begrenzten Mitteln zum Guinness-Weltrekord<span class="pm" aria-hidden="true">+</span></button></h3><div class="succ-body" id="succ-body-6"><p>Für Duracell / Procter &amp; Gamble eine Markenaktivierung zur Revitalisierung der Marke entwickelt und außergewöhnliche Aufmerksamkeit erzielt.</p></div></div>
     </div>
   </div>
 </section>
@@ -1052,7 +1052,7 @@
         <p>Neue Geschäftschancen erkennen, Angebote überzeugend positionieren und Wachstum ermöglichen.<br>Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.</p>
       </div>
       <div class="foot-col">
-        <h5>Navigation</h5>
+        <p class="foot-title">Navigation</p>
         <a href="#leistungen">Leistungen</a>
         <a href="#vorgehen">Vorgehen</a>
         <a href="#ueber-mich">Über mich</a>
@@ -1061,7 +1061,7 @@
         <a href="fun-fact/">Fun Fact</a>
       </div>
       <div class="foot-col">
-        <h5>Kontakt &amp; Rechtliches</h5>
+        <p class="foot-title">Kontakt &amp; Rechtliches</p>
         <a href="mailto:bs@marke-wachstum.de">bs@marke-wachstum.de</a>
         <a href="https://www.linkedin.com/in/bodoschiefer/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="impressum/">Impressum</a>
