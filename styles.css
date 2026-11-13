@@ -89,6 +89,8 @@ header{position:sticky;top:0;z-index:200;background:rgba(251,250,247,.9);backdro
   .press-grid{grid-template-columns:1fr}
   .parsed-card .ph.handelsblatt-proof{height:200px;padding:14px}
   .parsed-card .ph.springer-cover{height:200px}
+  .parsed-card .ph.tradetalk-cover{height:auto;aspect-ratio:1000/335}
+  .parsed-card .ph.tradetalk-cover img{height:auto;object-fit:initial;object-position:initial}
 }
 
 /* FUN FACT */
