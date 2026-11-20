@@ -142,6 +142,14 @@
   .quote-action{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 24px;border:1px solid var(--white);border-radius:999px;background:var(--white);color:var(--blue);font-size:.9rem;font-weight:700;line-height:1;text-decoration:none;transition:background .2s,color .2s,transform .2s,box-shadow .2s}
   .quote-action:hover{background:#f5f9ff;color:var(--blue-deep);transform:translateY(-2px);box-shadow:0 12px 24px -14px rgba(13,27,42,.8)}
   .quote-action:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  @media(max-width:760px){
+    .quote-actions{display:grid;grid-template-columns:repeat(2,max-content);justify-content:center}
+    .quote-action:first-child{grid-column:1 / -1;justify-self:center}
+  }
+  @media(max-width:360px){
+    .quote-actions{grid-template-columns:max-content}
+    .quote-action:first-child{grid-column:auto}
+  }
 
   /* CUSTOMER PROOF TICKER */
   .proof-ticker{position:relative;overflow:hidden;background:#e6f0fa;border-top:1px solid rgba(48,111,186,.24);border-bottom:1px solid rgba(48,111,186,.24)}
@@ -549,6 +557,7 @@
     <blockquote>„Wer seine Produkte und Dienstleistungen konsequent <span class="quote-gold">aus der Perspektive seiner Kunden betrachtet,</span> <span class="quote-gold">entdeckt oft Geschäftschancen,</span> die aus der eigenen Unternehmenssicht verborgen bleiben.“</blockquote>
     <div class="att att-gold"><b>Bodo Schiefer</b> · Marke &amp; Wachstum</div>
     <div class="quote-actions" aria-label="Weiterführende Bereiche">
+      <a href="#anrufen" class="quote-action">6 Anruf-Gründe</a>
       <a href="#leistungen" class="quote-action">Angebote</a>
       <a href="#vorgehen" class="quote-action">Wie ich arbeite</a>
     </div>
