@@ -255,6 +255,8 @@
   .offer-head-copy{display:block;min-width:0}
   .offer-title{display:block;font-family:var(--sans);font-size:1.14rem;font-weight:600;line-height:1.3;transition:color .2s}
   .offer-question{display:block;margin-top:6px;color:var(--ink-soft);font-family:var(--sans);font-size:1rem;font-weight:400;line-height:1.45}
+  .offer-summary{display:flex;flex-wrap:wrap;gap:0;margin-top:12px;color:var(--ink);font-family:var(--serif);font-size:1.04rem;font-weight:500;line-height:1.3}
+  .offer-summary span+span{margin-left:18px;padding-left:18px;border-left:1px solid var(--line)}
   .offer-icon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--accent);font-size:1.7rem;font-weight:400;line-height:1;transition:transform .3s}
   .offer-item.open .offer-icon{transform:rotate(45deg)}
   .offer-head:hover .offer-title{color:var(--blue)}
@@ -264,10 +266,6 @@
   .offer-detail+.offer-detail{margin-top:24px}
   .offer-detail h5{margin:0 0 7px;color:var(--blue);font-family:var(--sans);font-size:.77rem;font-weight:700;letter-spacing:.12em;line-height:1.35;text-transform:uppercase}
   .offer-detail p{margin:0;color:var(--ink-soft);font-size:1rem;line-height:1.6}
-  .offer-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:32px 0 0;padding:24px 0 0;border-top:1px solid var(--line)}
-  .offer-meta div{display:flex;flex-direction:column;gap:4px}
-  .offer-meta dt{color:var(--muted);font-size:.77rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-  .offer-meta dd{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.2rem;font-weight:500;line-height:1.25}
   .offer-closing{max-width:760px;margin-top:72px;padding-top:56px}
   .offer-closing-copy{max-width:42rem}
   .offer-closing-copy h3{font-family:var(--serif);font-size:clamp(1.55rem,2.5vw,2rem);font-weight:500;line-height:1.18;letter-spacing:-.012em}
@@ -275,7 +273,7 @@
   .offer-closing-copy .btn{margin-top:28px}
   .offer-closing-copy .btn-primary:hover{background:var(--accent);box-shadow:0 12px 28px -12px rgba(200,164,92,.65)}
   @media(max-width:880px){.offers-intro-layout{grid-template-columns:1fr;gap:36px}.offers-intro-photo{max-width:400px;justify-self:start}}
-  @media(max-width:640px){.offers-intro-layout{gap:30px;margin-bottom:56px}.offers-intro-photo{max-width:360px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:1.08rem}.offer-question{font-size:.97rem;line-height:1.4}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{margin-top:60px;padding-top:48px}.offer-closing-copy p{font-size:1rem}}
+  @media(max-width:640px){.offers-intro-layout{gap:30px;margin-bottom:56px}.offers-intro-photo{max-width:360px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:1.08rem}.offer-question{font-size:.97rem;line-height:1.4}.offer-summary{margin-top:10px;font-size:1rem}.offer-summary span+span{margin-left:14px;padding-left:14px}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-closing{margin-top:60px;padding-top:48px}.offer-closing-copy p{font-size:1rem}}
 
   /* STATS */
   .stats{background:var(--blue);color:#fff}
@@ -803,40 +801,37 @@
       <h3 class="offer-group-title" id="offer-group-growth">Wachstum und Geschäftsentwicklung</h3>
       <div class="offer-acc">
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-check" type="button" aria-expanded="false" aria-controls="offer-body-growth-check"><span class="offer-head-copy"><span class="offer-title">Wachstumspotenzial-Check</span><em class="offer-question">Wie können wir mit unserem bestehenden Geschäft zusätzliche Umsatzpotenziale erschließen?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-check" type="button" aria-expanded="false" aria-controls="offer-body-growth-check"><span class="offer-head-copy"><span class="offer-title">Wachstumspotenzial-Check</span><em class="offer-question">Wie können wir mit unserem bestehenden Geschäft zusätzliche Umsatzpotenziale erschließen?</em><span class="offer-summary"><span aria-label="Laufzeit: 2 bis 3 Wochen">2–3 Wochen</span><span aria-label="Festpreis netto: 6.900 Euro">6.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-growth-check" role="region" aria-labelledby="offer-button-growth-check" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie vermuten zusätzliches Geschäftspotenzial in einem bestimmten Bereich Ihres Unternehmens. Vielleicht nutzen Ihre Bestandskunden nur einen Teil Ihres Leistungsangebots. Oder ein bestehendes Produkt könnte auch für weitere Kundengruppen interessant sein. Doch wie lassen sich diese Chancen konkret erschließen?</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich untersuche eine klar definierte Wachstumsfrage und entwickle einen fundierten geschäftlichen Lösungsansatz, mit dem Sie das identifizierte Potenzial erschließen können.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrer Ausgangssituation und spreche mit den relevanten Verantwortlichen. Anschließend analysiere ich vorhandene Geschäfts- und Kundeninformationen, hinterfrage bisherige Annahmen und beziehe die Kundenperspektive durch ausgewählte Gespräche ein. Daraus entwickle ich einen konkreten geschäftlichen Lösungsansatz, den ich Ihnen persönlich vorstelle.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten einen ausgearbeiteten Lösungsansatz für Ihre definierte Wachstumsfrage. Einschließlich einer ersten Einschätzung des wirtschaftlichen Potenzials und der wesentlichen Voraussetzungen für die Realisierung.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>2–3 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>6.900 €</dd></div></dl>
             </div>
           </div>
         </article>
 
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-strategy" type="button" aria-expanded="false" aria-controls="offer-body-growth-strategy"><span class="offer-head-copy"><span class="offer-title">Wachstumsstrategie</span><em class="offer-question">Wo liegen unsere aussichtsreichsten Wachstumsmöglichkeiten und welche strategischen Prioritäten sollten wir setzen?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-strategy" type="button" aria-expanded="false" aria-controls="offer-body-growth-strategy"><span class="offer-head-copy"><span class="offer-title">Wachstumsstrategie</span><em class="offer-question">Wo liegen unsere aussichtsreichsten Wachstumsmöglichkeiten und welche strategischen Prioritäten sollten wir setzen?</em><span class="offer-summary"><span aria-label="Laufzeit: 4 bis 5 Wochen">4–5 Wochen</span><span aria-label="Festpreis netto: 15.900 Euro">15.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-growth-strategy" role="region" aria-labelledby="offer-button-growth-strategy" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie möchten Ihr Geschäft weiterentwickeln, wissen aber noch nicht, wo die größten Chancen liegen. Sollten Sie stärker auf bestehende Kunden setzen, neue Zielgruppen erschließen oder Ihr Leistungsportfolio erweitern? Vielleicht entwickeln sich einzelne Geschäftsfelder bereits erfolgreich, während andere stagnieren. Ihnen fehlt eine klare Grundlage, um die richtigen Wachstumsentscheidungen zu treffen.</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich identifiziere und bewerte die Wachstumsmöglichkeiten in einem definierten Geschäftsbereich oder Wachstumsfeld. Daraus entwickle ich eine fundierte Strategie, die wirtschaftlich attraktive Geschäftschancen aufzeigt und klare Prioritäten für weiteres Wachstum setzt.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen, seiner Geschäftsentwicklung und seinen strategischen Herausforderungen. Anschließend untersuche ich Kundenbedürfnisse, Marktpotenziale und Wettbewerbsbedingungen, hinterfrage bisherige Annahmen und bewerte unterschiedliche Wachstumsoptionen. Auf dieser Grundlage entwickle ich eine Wachstumsstrategie, die ich Ihnen persönlich vorstelle.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Wachstumsstrategie mit priorisierten Geschäftschancen, einer Bewertung ihrer wirtschaftlichen Attraktivität und konkreten strategischen Empfehlungen. Damit verfügen Sie über eine fundierte Entscheidungsgrundlage für die weitere Geschäftsentwicklung.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>4–5 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>15.900 €</dd></div></dl>
             </div>
           </div>
         </article>
 
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-development" type="button" aria-expanded="false" aria-controls="offer-body-growth-development"><span class="offer-head-copy"><span class="offer-title">Wachstumsentwicklung</span><em class="offer-question">Wie entwickeln wir aus einer Geschäftschance ein tragfähiges Wachstumsvorhaben und bringen es in die Umsetzung?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-development" type="button" aria-expanded="false" aria-controls="offer-body-growth-development"><span class="offer-head-copy"><span class="offer-title">Wachstumsentwicklung</span><em class="offer-question">Wie entwickeln wir aus einer Geschäftschance ein tragfähiges Wachstumsvorhaben und bringen es in die Umsetzung?</em><span class="offer-summary"><span aria-label="Laufzeit: 8 bis 10 Wochen">8–10 Wochen</span><span aria-label="Festpreis netto: 29.900 Euro">29.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-growth-development" role="region" aria-labelledby="offer-button-growth-development" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie sehen neue Geschäftsmöglichkeiten, aber der Weg zu ihrer Realisierung ist noch unklar. Vielleicht möchten Sie aus vorhandenen Kompetenzen ein neues Leistungsangebot entwickeln. Oder Sie sehen Potenzial in einem bislang wenig erschlossenen Kundensegment, für das Ihnen noch das passende Geschäftsmodell fehlt.</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle für ein definiertes Wachstumsvorhaben ein tragfähiges Geschäftskonzept und begleite dessen erste Umsetzung. Dabei verbinde ich Kundenbedürfnisse, wirtschaftliche Chancen und die Möglichkeiten Ihres Unternehmens zu einer konkreten geschäftlichen Lösung.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen und den angestrebten Geschäftsmöglichkeiten. Anschließend untersuche ich Kundenbedürfnisse, Marktbedingungen und wirtschaftliche Potenziale. Daraus entwickle ich ein konkretes Wachstumskonzept und begleite die Erprobung einer ausgewählten Initiative.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten ein ausgearbeitetes Wachstumskonzept mit einem klaren Nutzenversprechen, einer wirtschaftlichen Einschätzung und einem konkreten Umsetzungsrahmen. Die fachliche Begleitung einer ersten Pilotinitiative liefert zusätzliche Erkenntnisse für die weitere Geschäftsentwicklung.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>8–10 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>29.900 €</dd></div></dl>
             </div>
           </div>
         </article>
@@ -847,40 +842,37 @@
       <h3 class="offer-group-title" id="offer-group-positioning">Marktpositionierung und Markteintritt</h3>
       <div class="offer-acc">
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-check" type="button" aria-expanded="false" aria-controls="offer-body-positioning-check"><span class="offer-head-copy"><span class="offer-title">Positionierungs-Check</span><em class="offer-question">Wie können wir den besonderen Kundennutzen unseres bestehenden Angebots überzeugender herausarbeiten?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-check" type="button" aria-expanded="false" aria-controls="offer-body-positioning-check"><span class="offer-head-copy"><span class="offer-title">Positionierungs-Check</span><em class="offer-question">Wie können wir den besonderen Kundennutzen unseres bestehenden Angebots überzeugender herausarbeiten?</em><span class="offer-summary"><span aria-label="Laufzeit: 2 bis 3 Wochen">2–3 Wochen</span><span aria-label="Festpreis netto: 6.900 Euro">6.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-positioning-check" role="region" aria-labelledby="offer-button-positioning-check" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie sind von der Qualität Ihres Produkts oder Ihrer Dienstleistung überzeugt. Doch potenzielle Kunden erkennen den Unterschied zum Wettbewerb nicht ausreichend. Vielleicht stehen in Ihrer Kommunikation technische Eigenschaften im Vordergrund, während die für Kunden entscheidenden Vorteile zu kurz kommen. Oder Ihr Angebot wird vor allem über den Preis verglichen, obwohl es deutlich mehr zu bieten hat.</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich untersuche die bestehende Positionierung eines ausgewählten Angebots aus Kunden- und Wettbewerbsperspektive. Daraus entwickle ich einen konkreten Ansatz, wie Sie den besonderen Kundennutzen überzeugender vermitteln und sich deutlicher vom Wettbewerb differenzieren können.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Angebot und seiner bisherigen Marktpositionierung. Anschließend untersuche ich relevante Kundenbedürfnisse, Kaufmotive und Wettbewerbsangebote. Auf dieser Grundlage entwickle ich einen geschärften Positionierungsansatz mit einem konkreten Nutzenversprechen, den ich Ihnen persönlich vorstelle.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten einen fundierten Vorschlag für die Positionierung Ihres Angebots mit einer nachvollziehbaren Differenzierung vom Wettbewerb und einem prägnant formulierten Nutzenversprechen. Damit haben Sie eine konkrete Grundlage, um Ihr Angebot überzeugender im Markt zu präsentieren.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>2–3 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>6.900 €</dd></div></dl>
             </div>
           </div>
         </article>
 
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-strategy" type="button" aria-expanded="false" aria-controls="offer-body-positioning-strategy"><span class="offer-head-copy"><span class="offer-title">Marktpositionierungsstrategie</span><em class="offer-question">Wie müssen wir unsere Marke, unser Leistungsportfolio oder unseren Geschäftsbereich positionieren, um uns überzeugend vom Wettbewerb zu differenzieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-strategy" type="button" aria-expanded="false" aria-controls="offer-body-positioning-strategy"><span class="offer-head-copy"><span class="offer-title">Marktpositionierungsstrategie</span><em class="offer-question">Wie müssen wir unsere Marke, unser Leistungsportfolio oder unseren Geschäftsbereich positionieren, um uns überzeugend vom Wettbewerb zu differenzieren?</em><span class="offer-summary"><span aria-label="Laufzeit: 4 bis 5 Wochen">4–5 Wochen</span><span aria-label="Festpreis netto: 15.900 Euro">15.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-positioning-strategy" role="region" aria-labelledby="offer-button-positioning-strategy" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Ihre bisherige Marktpositionierung trägt nicht mehr ausreichend. Vielleicht haben sich die Bedürfnisse Ihrer Kunden verändert oder neue Wettbewerber setzen andere Maßstäbe. Vielleicht hat sich Ihr Leistungsportfolio über die Jahre weiterentwickelt, ohne dass Ihre Positionierung mitgewachsen ist. Sie benötigen eine klare strategische Ausrichtung, die Ihre Stärken mit den Erwartungen Ihrer Kunden verbindet.</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle eine fundierte Marktpositionierungsstrategie, die auf den tatsächlichen Bedürfnissen Ihrer Kunden, den Stärken Ihres Unternehmens und einer klaren Differenzierung vom Wettbewerb basiert. Sie schafft eine klare strategische Grundlage für Ihre künftigen Markt- und Kommunikationsentscheidungen.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen, seiner bisherigen Positionierung und seinen strategischen Zielen. Anschließend untersuche ich Kundenbedürfnisse, Kaufmotive und das Wettbewerbsumfeld. Daraus entwickle ich eine differenzierende Marktpositionierungsstrategie, die ich Ihnen persönlich vorstelle.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Marktpositionierungsstrategie mit definierten Zielgruppen, einer klaren Differenzierung, einem überzeugenden Markenversprechen und einer strategischen Leitidee. Ergänzend zeige ich auf, welche Konsequenzen sich daraus für Ihr Leistungsangebot und Ihre Marktkommunikation ergeben.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>4–5 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>15.900 €</dd></div></dl>
             </div>
           </div>
         </article>
 
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-market-entry" type="button" aria-expanded="false" aria-controls="offer-body-market-entry"><span class="offer-head-copy"><span class="offer-title">Positionierung und Markteintritt</span><em class="offer-question">Wie können wir ein bereits definiertes Angebot erfolgreich in einem neuen Markt oder bei einer neuen Zielgruppe etablieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-market-entry" type="button" aria-expanded="false" aria-controls="offer-body-market-entry"><span class="offer-head-copy"><span class="offer-title">Positionierung und Markteintritt</span><em class="offer-question">Wie können wir ein bereits definiertes Angebot erfolgreich in einem neuen Markt oder bei einer neuen Zielgruppe etablieren?</em><span class="offer-summary"><span aria-label="Laufzeit: 8 bis 10 Wochen">8–10 Wochen</span><span aria-label="Festpreis netto: 29.900 Euro">29.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-market-entry" role="region" aria-labelledby="offer-button-market-entry" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie möchten ein neues Produkt oder eine neue Dienstleistung auf den Markt bringen. Vielleicht haben Sie eine innovative Lösung entwickelt, wissen aber noch nicht, wie Sie die richtigen Kunden erreichen. Oder Sie möchten mit einem bestehenden Angebot eine neue Zielgruppe erschließen. Dafür benötigen Sie eine überzeugende Positionierung und einen klaren Weg in den Markt.</p></div>
               <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle für Ihr Angebot eine differenzierende Marktpositionierung und eine konkrete Go-to-Market-Strategie. Anschließend begleite ich die erste Marktaktivierung, um den gewählten Ansatz in der Praxis zu erproben und Erkenntnisse für die weitere Markterschließung zu gewinnen.</p></div>
               <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Angebot und den angestrebten Marktchancen. Anschließend untersuche ich Kundenbedürfnisse, Kaufmotive und Wettbewerbsbedingungen und entwickle daraus eine überzeugende Positionierung sowie eine passende Markteintrittsstrategie. Die erste Marktaktivierung begleite ich fachlich und stelle Ihnen die gewonnenen Erkenntnisse und Empfehlungen persönlich vor.</p></div>
               <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Marktpositionierung mit klar definierten Zielgruppen, einem differenzierenden Nutzenversprechen und einer konkreten Go-to-Market-Strategie. Dazu gehören priorisierte Vertriebswege, ein passender Marketingansatz und die fachliche Begleitung einer ersten Marktaktivierung. Die dabei gewonnenen Erkenntnisse bilden die Grundlage für die weitere Markterschließung.</p></div>
-              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>8–10 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>29.900 €</dd></div></dl>
             </div>
           </div>
         </article>
