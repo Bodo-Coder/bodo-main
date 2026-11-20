@@ -241,17 +241,20 @@
   @media(max-width:760px){.growth-points{gap:12px}.growth-point b{font-size:1.3rem;margin-bottom:10px}.growth-point h3{margin:0}.growth-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.growth-head .pm{display:block;margin-left:auto;color:var(--accent);font-size:1.5rem;line-height:1;transition:transform .3s}.growth-point.open .growth-head .pm{transform:rotate(45deg)}.growth-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.growth-body p{padding-top:14px}.growth-mobile-strong{font-weight:700}}
 
   /* BERATUNGSANGEBOTE */
-  .offers-intro{max-width:800px;margin-bottom:72px}
+  .offers-intro-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:72px;align-items:center;margin-bottom:72px}
+  .offers-intro{max-width:760px;margin:0}
   .offers-intro p+p{margin-top:16px}
+  .offers-intro-photo{width:100%;max-width:360px;margin:0;justify-self:end}
+  .offers-intro-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 30px 60px -34px rgba(13,27,42,.4)}
   .offer-group+.offer-group{margin-top:76px}
-  .offer-group-title{font-family:var(--serif);font-size:clamp(1.55rem,2.4vw,2rem);font-weight:500;line-height:1.2;letter-spacing:-.012em;color:var(--blue);padding-bottom:18px;margin:0 0 8px;border-bottom:1px solid var(--line)}
+  .offer-group-title{color:var(--blue);font-family:var(--sans);font-size:.82rem;font-weight:700;letter-spacing:.14em;line-height:1.35;text-transform:uppercase;padding-bottom:18px;margin:0 0 8px;border-bottom:1px solid var(--line)}
   .offer-acc{border-top:1px solid var(--line)}
   .offer-item{border-bottom:1px solid var(--line)}
   .offer-name{font:inherit}
-  .offer-head{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:26px 0 24px;background:none;border:0;text-align:left;cursor:pointer;color:var(--ink);transition:color .2s}
+  .offer-head{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:22px 0;background:none;border:0;text-align:left;cursor:pointer;color:var(--ink);transition:color .2s}
   .offer-head-copy{display:block;min-width:0}
-  .offer-title{display:block;font-family:var(--serif);font-size:clamp(1.28rem,2vw,1.58rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;transition:color .2s}
-  .offer-question{display:block;margin-top:8px;color:var(--ink-soft);font-family:var(--serif);font-size:1.05rem;font-weight:400;line-height:1.4}
+  .offer-title{display:block;font-family:var(--sans);font-size:1.14rem;font-weight:600;line-height:1.3;transition:color .2s}
+  .offer-question{display:block;margin-top:6px;color:var(--ink-soft);font-family:var(--sans);font-size:1rem;font-weight:400;line-height:1.45}
   .offer-icon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--accent);font-size:1.7rem;font-weight:400;line-height:1;transition:transform .3s}
   .offer-item.open .offer-icon{transform:rotate(45deg)}
   .offer-head:hover .offer-title{color:var(--blue)}
@@ -265,15 +268,13 @@
   .offer-meta div{display:flex;flex-direction:column;gap:4px}
   .offer-meta dt{color:var(--muted);font-size:.77rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
   .offer-meta dd{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.2rem;font-weight:500;line-height:1.25}
-  .offer-closing{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(0,1fr);gap:72px;align-items:center;margin-top:80px;padding-top:72px;border-top:1px solid var(--line)}
-  .offer-closing-photo{max-width:400px;margin:0}
-  .offer-closing-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 30px 60px -34px rgba(13,27,42,.4)}
-  .offer-closing-copy{max-width:34rem}
-  .offer-closing-copy h3{font-family:var(--serif);font-size:clamp(1.7rem,2.7vw,2.35rem);font-weight:500;line-height:1.14;letter-spacing:-.015em}
-  .offer-closing-copy p{margin-top:20px;color:var(--ink-soft);font-size:1.08rem}
+  .offer-closing{max-width:760px;margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}
+  .offer-closing-copy{max-width:42rem}
+  .offer-closing-copy h3{font-family:var(--serif);font-size:clamp(1.55rem,2.5vw,2rem);font-weight:500;line-height:1.18;letter-spacing:-.012em}
+  .offer-closing-copy p{margin-top:16px;color:var(--ink-soft);font-size:1.08rem}
   .offer-closing-copy .btn{margin-top:28px}
-  @media(max-width:880px){.offer-closing{grid-template-columns:1fr;gap:36px}.offer-closing-photo{max-width:420px}}
-  @media(max-width:640px){.offers-intro{margin-bottom:56px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:clamp(1.25rem,5.4vw,1.5rem)}.offer-question{font-size:1rem;line-height:1.35}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{gap:30px;margin-top:60px;padding-top:56px}.offer-closing-copy p{font-size:1rem}}
+  @media(max-width:880px){.offers-intro-layout{grid-template-columns:1fr;gap:36px}.offers-intro-photo{max-width:400px;justify-self:start}}
+  @media(max-width:640px){.offers-intro-layout{gap:30px;margin-bottom:56px}.offers-intro-photo{max-width:360px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:1.08rem}.offer-question{font-size:.97rem;line-height:1.4}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{margin-top:60px;padding-top:48px}.offer-closing-copy p{font-size:1rem}}
 
   /* STATS */
   .stats{background:var(--blue);color:#fff}
@@ -786,15 +787,20 @@
 <section class="sec reveal" id="leistungen" aria-labelledby="offers-title">
   <div class="wrap">
     <div id="ergebnisse" aria-hidden="true"></div>
-    <div class="sec-head offers-intro">
-      <span class="kicker">Wie ich konkret unterstütze</span>
-      <h2 id="offers-title">Konkrete Lösungen für mehr Geschäft.</h2>
-      <p>Um Ihnen den Einstieg zu erleichtern, habe ich für typische unternehmerische Herausforderungen sechs konkrete Beratungsangebote entwickelt. Sie zeigen, wie ich Sie unterstützen kann, welche Ergebnisse Sie erwarten dürfen und mit welchem zeitlichen und finanziellen Rahmen Sie rechnen können.</p>
-      <p>Vielleicht finden Sie Ihre Aufgabenstellung darin wieder. Vielleicht ist Ihre Herausforderung eine ganz andere. In beiden Fällen lohnt sich ein Gespräch. Denn entscheidend ist, welche Lösung Ihr Unternehmen tatsächlich weiterbringt.</p>
+    <div class="offers-intro-layout">
+      <div class="sec-head offers-intro">
+        <span class="kicker">Wie ich unterstütze</span>
+        <h2 id="offers-title">Konkrete Lösungen für mehr Geschäft.</h2>
+        <p>Um Ihnen den Einstieg zu erleichtern, habe ich für typische unternehmerische Herausforderungen sechs konkrete Beratungsangebote entwickelt. Sie zeigen, wie ich Sie unterstützen kann, welche Ergebnisse Sie erwarten dürfen und mit welchem zeitlichen und finanziellen Rahmen Sie rechnen können.</p>
+        <p>Vielleicht finden Sie Ihre Aufgabenstellung darin wieder. Vielleicht ist Ihre Herausforderung eine ganz andere. In beiden Fällen lohnt sich ein Gespräch. Denn entscheidend ist, welche Lösung Ihr Unternehmen tatsächlich weiterbringt.</p>
+      </div>
+      <figure class="offers-intro-photo">
+        <img src="images/2026_BODO-7510-Ausschnitt-1600.jpeg" srcset="images/2026_BODO-7510-Ausschnitt-1600.jpeg 1600w, images/2026_BODO-7510-Ausschnitt-2300.jpeg 2300w" sizes="(max-width: 880px) min(100%, 400px), (max-width: 1180px) calc(34vw - 40px), 360px" width="1600" height="2559" alt="Bodo Schiefer vor dem Düsseldorfer Rheinturm" loading="lazy" decoding="async">
+      </figure>
     </div>
 
     <div class="offer-group" aria-labelledby="offer-group-growth">
-      <h3 class="offer-group-title" id="offer-group-growth">Wachstum &amp; Geschäftsentwicklung</h3>
+      <h3 class="offer-group-title" id="offer-group-growth">Wachstum und Geschäftsentwicklung</h3>
       <div class="offer-acc">
         <article class="offer-item">
           <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-check" type="button" aria-expanded="false" aria-controls="offer-body-growth-check"><span class="offer-head-copy"><span class="offer-title">Wachstumspotenzial-Check</span><em class="offer-question">Wie können wir mit unserem bestehenden Geschäft zusätzliche Umsatzpotenziale erschließen?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
@@ -838,7 +844,7 @@
     </div>
 
     <div class="offer-group" aria-labelledby="offer-group-positioning">
-      <h3 class="offer-group-title" id="offer-group-positioning">Marktpositionierung &amp; Markteintritt</h3>
+      <h3 class="offer-group-title" id="offer-group-positioning">Marktpositionierung und Markteintritt</h3>
       <div class="offer-acc">
         <article class="offer-item">
           <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-check" type="button" aria-expanded="false" aria-controls="offer-body-positioning-check"><span class="offer-head-copy"><span class="offer-title">Positionierungs-Check</span><em class="offer-question">Wie können wir den besonderen Kundennutzen unseres bestehenden Angebots überzeugender herausarbeiten?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
@@ -867,7 +873,7 @@
         </article>
 
         <article class="offer-item">
-          <h4 class="offer-name"><button class="offer-head" id="offer-button-market-entry" type="button" aria-expanded="false" aria-controls="offer-body-market-entry"><span class="offer-head-copy"><span class="offer-title">Positionierung &amp; Markteintritt</span><em class="offer-question">Wie können wir ein bereits definiertes Angebot erfolgreich in einem neuen Markt oder bei einer neuen Zielgruppe etablieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-market-entry" type="button" aria-expanded="false" aria-controls="offer-body-market-entry"><span class="offer-head-copy"><span class="offer-title">Positionierung und Markteintritt</span><em class="offer-question">Wie können wir ein bereits definiertes Angebot erfolgreich in einem neuen Markt oder bei einer neuen Zielgruppe etablieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-market-entry" role="region" aria-labelledby="offer-button-market-entry" aria-hidden="true">
             <div class="offer-body-inner">
               <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie möchten ein neues Produkt oder eine neue Dienstleistung auf den Markt bringen. Vielleicht haben Sie eine innovative Lösung entwickelt, wissen aber noch nicht, wie Sie die richtigen Kunden erreichen. Oder Sie möchten mit einem bestehenden Angebot eine neue Zielgruppe erschließen. Dafür benötigen Sie eine überzeugende Positionierung und einen klaren Weg in den Markt.</p></div>
@@ -882,9 +888,6 @@
     </div>
 
     <div class="offer-closing">
-      <figure class="offer-closing-photo">
-        <img src="images/2026_BODO-7510-Ausschnitt-1600.jpeg" srcset="images/2026_BODO-7510-Ausschnitt-1600.jpeg 1600w, images/2026_BODO-7510-Ausschnitt-2300.jpeg 2300w" sizes="(max-width: 880px) min(100%, 420px), (max-width: 1180px) calc(34vw - 40px), 400px" width="1600" height="2559" alt="Bodo Schiefer vor dem Düsseldorfer Rheinturm" loading="lazy" decoding="async">
-      </figure>
       <div class="offer-closing-copy">
         <h3>Ihre Herausforderung ist eine andere?</h3>
         <p>Die sechs Angebote sind mögliche Einstiege. Wenn Ihre Aufgabe anders aussieht, sprechen wir darüber, welche Unterstützung für Ihr Unternehmen sinnvoll ist.</p>
