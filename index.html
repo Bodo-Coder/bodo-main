@@ -1200,13 +1200,27 @@
   (function(){
     var items=document.querySelectorAll('#leistungen .offer-item');
     if(!items.length)return;
+    var scrollTimer;
     function setBody(it,open){var b=it.querySelector('.offer-body');b.style.maxHeight=open?(b.scrollHeight+'px'):'0px';b.setAttribute('aria-hidden',String(!open));it.querySelector('.offer-head').setAttribute('aria-expanded',String(open));}
+    function keepOpenItemVisible(it){
+      window.clearTimeout(scrollTimer);
+      scrollTimer=window.setTimeout(function(){
+        if(!it.classList.contains('open'))return;
+        var head=it.querySelector('.offer-head');
+        var siteHeader=document.querySelector('header');
+        var offset=(siteHeader?siteHeader.getBoundingClientRect().height:0)+16;
+        var top=head.getBoundingClientRect().top;
+        if(top<offset){
+          window.scrollTo({top:Math.max(0,window.scrollY+top-offset),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+        }
+      },425);
+    }
     items.forEach(function(it){
       setBody(it,it.classList.contains('open'));
       it.querySelector('.offer-head').addEventListener('click',function(){
         var isOpen=it.classList.contains('open');
         items.forEach(function(o){o.classList.remove('open');setBody(o,false);});
-        if(!isOpen){it.classList.add('open');setBody(it,true);}
+        if(!isOpen){it.classList.add('open');setBody(it,true);keepOpenItemVisible(it);}
       });
     });
     window.addEventListener('resize',function(){items.forEach(function(it){if(it.classList.contains('open'))setBody(it,true);});});
