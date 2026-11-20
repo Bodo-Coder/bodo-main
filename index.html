@@ -240,20 +240,40 @@
   @media(max-width:880px){.growth-intro{grid-template-columns:1fr;grid-template-areas:"heading" "copy" "image";gap:32px}.growth-points{grid-template-columns:1fr;gap:32px}.growth-image{max-width:468px}.growth-lead-in{margin-top:36px}.growth-point{padding:30px}}
   @media(max-width:760px){.growth-points{gap:12px}.growth-point b{font-size:1.3rem;margin-bottom:10px}.growth-point h3{margin:0}.growth-head{display:flex;align-items:flex-start;gap:14px;cursor:pointer}.growth-head .pm{display:block;margin-left:auto;color:var(--accent);font-size:1.5rem;line-height:1;transition:transform .3s}.growth-point.open .growth-head .pm{transform:rotate(45deg)}.growth-body{max-height:0;overflow:hidden;transition:max-height .35s ease}.growth-body p{padding-top:14px}.growth-mobile-strong{font-weight:700}}
 
-  /* LEISTUNGEN ACCORDION */
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-  .split-media img{width:80%;height:auto;border-radius:18px;display:block;margin:0 auto;box-shadow:0 30px 60px -34px rgba(13,27,42,.4)}
-  .acc{margin-top:14px;border-top:1px solid var(--line)}
-  .acc-item{border-bottom:1px solid var(--line)}
-  .acc-head{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:22px 0;display:flex;align-items:center;gap:16px;font-family:var(--sans);font-size:1.14rem;font-weight:600;color:var(--ink);transition:color .2s}
-  .acc-head:hover{color:var(--blue)}
-  .acc-head .ix{font-family:var(--sans);font-weight:700;font-style:normal;color:var(--accent);font-size:1.05rem;width:30px;flex:none}
-  .acc-head .pm{margin-left:auto;font-size:1.5rem;color:var(--accent);transition:transform .3s;line-height:1}
-  .acc-item.open .acc-head .pm{transform:rotate(45deg)}
-  .acc-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
-  .acc-body p{color:var(--muted);font-size:1rem;padding:0 0 24px 46px}
-  @media(max-width:880px){.split{grid-template-columns:1fr;gap:40px}.split-media img{width:100%}}
-  @media(max-width:760px){#leistungen .split{grid-template-columns:1fr;grid-template-areas:"kicker" "media" "heading" "accordion";gap:0}#leistungen .leistungen-copy{display:contents}#leistungen .leistungen-kicker{grid-area:kicker;margin-bottom:24px}#leistungen .split-media{grid-area:media;margin-bottom:40px}#leistungen .leistungen-heading{grid-area:heading;margin-bottom:14px}#leistungen .leistungen-acc{grid-area:accordion;margin-top:0}.acc-head:hover{color:var(--ink)}}
+  /* BERATUNGSANGEBOTE */
+  .offers-intro{max-width:800px;margin-bottom:72px}
+  .offers-intro p+p{margin-top:16px}
+  .offer-group+.offer-group{margin-top:76px}
+  .offer-group-title{font-family:var(--serif);font-size:clamp(1.55rem,2.4vw,2rem);font-weight:500;line-height:1.2;letter-spacing:-.012em;color:var(--blue);padding-bottom:18px;margin:0 0 8px;border-bottom:1px solid var(--line)}
+  .offer-acc{border-top:1px solid var(--line)}
+  .offer-item{border-bottom:1px solid var(--line)}
+  .offer-name{font:inherit}
+  .offer-head{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:26px 0 24px;background:none;border:0;text-align:left;cursor:pointer;color:var(--ink);transition:color .2s}
+  .offer-head-copy{display:block;min-width:0}
+  .offer-title{display:block;font-family:var(--serif);font-size:clamp(1.28rem,2vw,1.58rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;transition:color .2s}
+  .offer-question{display:block;margin-top:8px;color:var(--ink-soft);font-family:var(--serif);font-size:1.05rem;font-weight:400;line-height:1.4}
+  .offer-icon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--accent);font-size:1.7rem;font-weight:400;line-height:1;transition:transform .3s}
+  .offer-item.open .offer-icon{transform:rotate(45deg)}
+  .offer-head:hover .offer-title{color:var(--blue)}
+  .offer-head:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:4px}
+  .offer-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .offer-body-inner{max-width:68ch;padding:4px 64px 36px 0}
+  .offer-detail+.offer-detail{margin-top:24px}
+  .offer-detail h5{margin:0 0 7px;color:var(--blue);font-family:var(--sans);font-size:.77rem;font-weight:700;letter-spacing:.12em;line-height:1.35;text-transform:uppercase}
+  .offer-detail p{margin:0;color:var(--ink-soft);font-size:1rem;line-height:1.6}
+  .offer-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:32px 0 0;padding:24px 0 0;border-top:1px solid var(--line)}
+  .offer-meta div{display:flex;flex-direction:column;gap:4px}
+  .offer-meta dt{color:var(--muted);font-size:.77rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .offer-meta dd{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.2rem;font-weight:500;line-height:1.25}
+  .offer-closing{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(0,1fr);gap:72px;align-items:center;margin-top:80px;padding-top:72px;border-top:1px solid var(--line)}
+  .offer-closing-photo{max-width:400px;margin:0}
+  .offer-closing-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 30px 60px -34px rgba(13,27,42,.4)}
+  .offer-closing-copy{max-width:34rem}
+  .offer-closing-copy h3{font-family:var(--serif);font-size:clamp(1.7rem,2.7vw,2.35rem);font-weight:500;line-height:1.14;letter-spacing:-.015em}
+  .offer-closing-copy p{margin-top:20px;color:var(--ink-soft);font-size:1.08rem}
+  .offer-closing-copy .btn{margin-top:28px}
+  @media(max-width:880px){.offer-closing{grid-template-columns:1fr;gap:36px}.offer-closing-photo{max-width:420px}}
+  @media(max-width:640px){.offers-intro{margin-bottom:56px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:clamp(1.25rem,5.4vw,1.5rem)}.offer-question{font-size:1rem;line-height:1.35}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{gap:30px;margin-top:60px;padding-top:56px}.offer-closing-copy p{font-size:1rem}}
 
   /* STATS */
   .stats{background:var(--blue);color:#fff}
@@ -268,31 +288,6 @@
   .stat .big.combo-stat .u.symbol{font-size:1em;line-height:1;margin:0}
   .stat .lab{margin-top:14px;font-size:.96rem;color:rgba(255,255,255,.82)}
   @media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr}.stat .big.combo-stat{display:inline-flex;align-items:center;gap:.1em}.stat .big.combo-stat .stat-num{line-height:1}.stat .big.combo-stat .u.word{font-size:.42em;line-height:1}.stat .big.combo-stat .u.symbol{font-size:1em;line-height:1}}
-
-  /* OUTCOMES */
-  .outcomes{background:var(--paper);color:var(--ink)}
-  .outcomes h2{color:var(--ink)}
-  .out-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:14px}
-  .out-cell{background:#fff;border:1px solid var(--line);border-radius:16px;padding:44px 40px;transition:transform .25s,box-shadow .25s}
-  .out-cell:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
-  .out-cell .num{font-family:var(--sans);font-weight:700;font-style:normal;font-size:1.3rem;color:var(--accent);margin-bottom:16px}
-  .out-cell h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.32rem,2.05vw,1.68rem);color:var(--blue);margin:0 0 14px;line-height:1.18;letter-spacing:-.012em}
-  .out-head{width:100%;padding:0;background:none;border:0;text-align:left;font:inherit;line-height:inherit;color:inherit}
-  .out-head .pm{display:none}
-  .out-body p{color:var(--muted);font-size:1rem}
-  @media(max-width:760px){
-    .out-grid{grid-template-columns:1fr;gap:12px;background:transparent;border:0;border-radius:0;overflow:visible}
-    .out-cell{display:grid;grid-template-columns:34px minmax(0,1fr) 32px;column-gap:16px;row-gap:0;align-content:start;border:1px solid var(--line);border-radius:16px;padding:28px 24px}
-    .out-cell .num{grid-column:1;grid-row:1 / span 2;margin:0;padding-top:.2rem}
-    .out-cell h3{grid-column:2 / 4;grid-row:1;margin:0;min-width:0;font-size:clamp(1.3rem,5.8vw,1.56rem);line-height:1.18}
-    .out-head{display:grid;grid-template-columns:minmax(0,1fr) 32px;align-items:start;column-gap:16px;cursor:pointer}
-    .out-head .pm{display:flex;align-items:center;justify-content:center;min-width:32px;height:32px;margin:-3px -4px 0 0;color:var(--accent);font-size:1.55rem;line-height:1;transition:transform .3s}
-    .out-cell.open .out-head .pm{transform:rotate(45deg)}
-    .out-head:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
-    .out-body{grid-column:2 / 4;grid-row:2;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .2s ease}
-    .out-body p{padding-top:10px;font-size:.93rem;line-height:1.52}
-    .out-cell.open .out-body{opacity:1}
-  }
 
   /* HOW */
   .how{background:var(--blue);color:#fff}
@@ -504,7 +499,6 @@
     </a>
     <nav class="nav-links" id="navlinks" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
-      <a href="#ergebnisse">Ergebnis</a>
       <a href="#erfolge">Erfolge</a>
       <a href="presse/">Presse</a>
       <a href="#ueber-mich">Über mich</a>
@@ -548,8 +542,8 @@
     <blockquote>„Wer seine Produkte und Dienstleistungen konsequent <span class="quote-gold">aus der Perspektive seiner Kunden betrachtet,</span> <span class="quote-gold">entdeckt oft Geschäftschancen,</span> die aus der eigenen Unternehmenssicht verborgen bleiben.“</blockquote>
     <div class="att att-gold"><b>Bodo Schiefer</b> · Marke &amp; Wachstum</div>
     <div class="quote-actions" aria-label="Weiterführende Bereiche">
-      <a href="#leistungen" class="quote-action">Vorgehensweise</a>
-      <a href="#ergebnisse" class="quote-action">Ergebnis</a>
+      <a href="#leistungen" class="quote-action">Angebote</a>
+      <a href="#vorgehen" class="quote-action">Wie ich arbeite</a>
     </div>
   </div>
 </section>
@@ -788,55 +782,114 @@
   </div>
 </section>
 
-<!-- LEISTUNGEN -->
-<section class="sec reveal" id="leistungen">
+<!-- BERATUNGSANGEBOTE -->
+<section class="sec reveal" id="leistungen" aria-labelledby="offers-title">
   <div class="wrap">
-    <div class="split">
-      <div class="leistungen-copy">
-        <span class="kicker leistungen-kicker">Wie ich konkret unterstütze</span>
-        <h2 class="leistungen-heading">Fünf Hebel für wirksames Wachstum.</h2>
-        <div class="acc leistungen-acc" id="acc">
-          <div class="acc-item open">
-            <button class="acc-head" type="button" aria-expanded="true" aria-controls="acc-body-1"><span class="ix">01</span> Zusätzliche Geschäftschancen erkennen <span class="pm" aria-hidden="true">+</span></button>
-            <div class="acc-body" id="acc-body-1"><p>Bestehende Produkte, Dienstleistungen und Kundenbeziehungen aus einer neuen Perspektive betrachten. Herausfinden, welche Bedürfnisse bisher nicht ausreichend berücksichtigt werden, welche Zielgruppen zusätzlich interessant sein könnten und wo sich neue Geschäftsmöglichkeiten eröffnen.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head" type="button" aria-expanded="false" aria-controls="acc-body-2"><span class="ix">02</span> Angebote und Marktpositionierung schärfen <span class="pm" aria-hidden="true">+</span></button>
-            <div class="acc-body" id="acc-body-2"><p>Den besonderen Nutzen Ihrer Produkte und Dienstleistungen aus Kundensicht herausarbeiten. Angebote so weiterentwickeln und positionieren, dass sie sich deutlich vom Wettbewerb unterscheiden, relevante Kundenbedürfnisse erfüllen und überzeugende Kaufargumente liefern.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head" type="button" aria-expanded="false" aria-controls="acc-body-3"><span class="ix">03</span> Den Weg zum Kunden entwickeln <span class="pm" aria-hidden="true">+</span></button>
-            <div class="acc-body" id="acc-body-3"><p>Die passenden Zielgruppen, Vertriebswege und Marketingmaßnahmen bestimmen. Eine klare Go-to-Market-Strategie entwickeln, die vorhandene Ressourcen gezielt einsetzt und überzeugende Angebote auf dem richtigen Weg zu ihren potenziellen Kunden bringt.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head" type="button" aria-expanded="false" aria-controls="acc-body-4"><span class="ix">04</span> Unterschiedliche Perspektiven zusammenführen <span class="pm" aria-hidden="true">+</span></button>
-            <div class="acc-body" id="acc-body-4"><p>Das Wissen und die Erfahrungen aus Geschäftsführung, Marketing, Vertrieb und weiteren Unternehmensbereichen zusammenbringen. Unterschiedliche Sichtweisen auf Kunden, Markt und Geschäftschancen abgleichen und daraus gemeinsame Prioritäten, klare Entscheidungen und konkrete Maßnahmen ableiten.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head" type="button" aria-expanded="false" aria-controls="acc-body-5"><span class="ix">05</span> Umsetzung und wirtschaftliche Wirkung sichern <span class="pm" aria-hidden="true">+</span></button>
-            <div class="acc-body" id="acc-body-5"><p>Strategien in konkrete Maßnahmen, klare Verantwortlichkeiten und realistische Zeitpläne übersetzen. Teams und externe Partner bei der Umsetzung führen, Ressourcen gezielt einsetzen und Ergebnisse anhand wirtschaftlich relevanter Ziele überprüfen.</p></div>
-          </div>
-        </div>
-      </div>
-      <div class="split-media">
-        <img src="images/2026_BODO-7510-Ausschnitt-1600.jpeg" srcset="images/2026_BODO-7510-Ausschnitt-1600.jpeg 1600w, images/2026_BODO-7510-Ausschnitt-2300.jpeg 2300w" sizes="(max-width: 880px) calc(100vw - 64px), (max-width: 1180px) calc(40vw - 54px), 418px" width="1600" height="2559" alt="Bodo Schiefer — Zusammenarbeit und Strategie" loading="lazy" decoding="async">
-      </div>
+    <div id="ergebnisse" aria-hidden="true"></div>
+    <div class="sec-head offers-intro">
+      <span class="kicker">Wie ich konkret unterstütze</span>
+      <h2 id="offers-title">Konkrete Lösungen für mehr Geschäft.</h2>
+      <p>Um Ihnen den Einstieg zu erleichtern, habe ich für typische unternehmerische Herausforderungen sechs konkrete Beratungsangebote entwickelt. Sie zeigen, wie ich Sie unterstützen kann, welche Ergebnisse Sie erwarten dürfen und mit welchem zeitlichen und finanziellen Rahmen Sie rechnen können.</p>
+      <p>Vielleicht finden Sie Ihre Aufgabenstellung darin wieder. Vielleicht ist Ihre Herausforderung eine ganz andere. In beiden Fällen lohnt sich ein Gespräch. Denn entscheidend ist, welche Lösung Ihr Unternehmen tatsächlich weiterbringt.</p>
     </div>
-  </div>
-</section>
 
-<!-- OUTCOMES -->
-<section class="sec outcomes reveal" id="ergebnisse">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="kicker">Was daraus entsteht</span>
-      <h2>Klarheit, die im Alltag trägt.</h2>
+    <div class="offer-group" aria-labelledby="offer-group-growth">
+      <h3 class="offer-group-title" id="offer-group-growth">Wachstum &amp; Geschäftsentwicklung</h3>
+      <div class="offer-acc">
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-check" type="button" aria-expanded="false" aria-controls="offer-body-growth-check"><span class="offer-head-copy"><span class="offer-title">Wachstumspotenzial-Check</span><em class="offer-question">Wie können wir mit unserem bestehenden Geschäft zusätzliche Umsatzpotenziale erschließen?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-growth-check" role="region" aria-labelledby="offer-button-growth-check" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie vermuten zusätzliches Geschäftspotenzial in einem bestimmten Bereich Ihres Unternehmens. Vielleicht nutzen Ihre Bestandskunden nur einen Teil Ihres Leistungsangebots. Oder ein bestehendes Produkt könnte auch für weitere Kundengruppen interessant sein. Doch wie lassen sich diese Chancen konkret erschließen?</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich untersuche eine klar definierte Wachstumsfrage und entwickle einen fundierten geschäftlichen Lösungsansatz, mit dem Sie das identifizierte Potenzial erschließen können.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrer Ausgangssituation und spreche mit den relevanten Verantwortlichen. Anschließend analysiere ich vorhandene Geschäfts- und Kundeninformationen, hinterfrage bisherige Annahmen und beziehe die Kundenperspektive durch ausgewählte Gespräche ein. Daraus entwickle ich einen konkreten geschäftlichen Lösungsansatz, den ich Ihnen persönlich vorstelle.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten einen ausgearbeiteten Lösungsansatz für Ihre definierte Wachstumsfrage. Einschließlich einer ersten Einschätzung des wirtschaftlichen Potenzials und der wesentlichen Voraussetzungen für die Realisierung.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>2–3 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>6.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-strategy" type="button" aria-expanded="false" aria-controls="offer-body-growth-strategy"><span class="offer-head-copy"><span class="offer-title">Wachstumsstrategie</span><em class="offer-question">Wo liegen unsere aussichtsreichsten Wachstumsmöglichkeiten und welche strategischen Prioritäten sollten wir setzen?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-growth-strategy" role="region" aria-labelledby="offer-button-growth-strategy" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie möchten Ihr Geschäft weiterentwickeln, wissen aber noch nicht, wo die größten Chancen liegen. Sollten Sie stärker auf bestehende Kunden setzen, neue Zielgruppen erschließen oder Ihr Leistungsportfolio erweitern? Vielleicht entwickeln sich einzelne Geschäftsfelder bereits erfolgreich, während andere stagnieren. Ihnen fehlt eine klare Grundlage, um die richtigen Wachstumsentscheidungen zu treffen.</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich identifiziere und bewerte die Wachstumsmöglichkeiten in einem definierten Geschäftsbereich oder Wachstumsfeld. Daraus entwickle ich eine fundierte Strategie, die wirtschaftlich attraktive Geschäftschancen aufzeigt und klare Prioritäten für weiteres Wachstum setzt.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen, seiner Geschäftsentwicklung und seinen strategischen Herausforderungen. Anschließend untersuche ich Kundenbedürfnisse, Marktpotenziale und Wettbewerbsbedingungen, hinterfrage bisherige Annahmen und bewerte unterschiedliche Wachstumsoptionen. Auf dieser Grundlage entwickle ich eine Wachstumsstrategie, die ich Ihnen persönlich vorstelle.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Wachstumsstrategie mit priorisierten Geschäftschancen, einer Bewertung ihrer wirtschaftlichen Attraktivität und konkreten strategischen Empfehlungen. Damit verfügen Sie über eine fundierte Entscheidungsgrundlage für die weitere Geschäftsentwicklung.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>4–5 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>15.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-development" type="button" aria-expanded="false" aria-controls="offer-body-growth-development"><span class="offer-head-copy"><span class="offer-title">Wachstumsentwicklung</span><em class="offer-question">Wie entwickeln wir aus einer Geschäftschance ein tragfähiges Wachstumsvorhaben und bringen es in die Umsetzung?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-growth-development" role="region" aria-labelledby="offer-button-growth-development" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie sehen neue Geschäftsmöglichkeiten, aber der Weg zu ihrer Realisierung ist noch unklar. Vielleicht möchten Sie aus vorhandenen Kompetenzen ein neues Leistungsangebot entwickeln. Oder Sie sehen Potenzial in einem bislang wenig erschlossenen Kundensegment, für das Ihnen noch das passende Geschäftsmodell fehlt.</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle für ein definiertes Wachstumsvorhaben ein tragfähiges Geschäftskonzept und begleite dessen erste Umsetzung. Dabei verbinde ich Kundenbedürfnisse, wirtschaftliche Chancen und die Möglichkeiten Ihres Unternehmens zu einer konkreten geschäftlichen Lösung.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen und den angestrebten Geschäftsmöglichkeiten. Anschließend untersuche ich Kundenbedürfnisse, Marktbedingungen und wirtschaftliche Potenziale. Daraus entwickle ich ein konkretes Wachstumskonzept und begleite die Erprobung einer ausgewählten Initiative.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten ein ausgearbeitetes Wachstumskonzept mit einem klaren Nutzenversprechen, einer wirtschaftlichen Einschätzung und einem konkreten Umsetzungsrahmen. Die fachliche Begleitung einer ersten Pilotinitiative liefert zusätzliche Erkenntnisse für die weitere Geschäftsentwicklung.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>8–10 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>29.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="out-grid" id="outcomesAcc">
-      <div class="out-cell open"><div class="num">01</div><h3><button class="out-head" type="button" aria-expanded="true" aria-controls="out-body-1">Zusätzliche Geschäftschancen erschließen<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-1"><p>Neue Kundengruppen erreichen, bestehende Angebote erfolgreicher vermarkten und zusätzliche Umsatzpotenziale nutzen. Aus erkannten Marktchancen werden konkrete Maßnahmen für mehr Geschäft.</p></div></div>
-      <div class="out-cell"><div class="num">02</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-2">Angebote überzeugender im Markt positionieren<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-2"><p>Kunden erkennen schneller, welchen besonderen Nutzen Ihre Produkte und Dienstleistungen bieten und warum sie sich für Ihr Angebot entscheiden sollten. Eine klare Positionierung stärkt die Differenzierung vom Wettbewerb und schafft bessere Voraussetzungen für die Kundengewinnung.</p></div></div>
-      <div class="out-cell"><div class="num">03</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-3">Bessere Entscheidungen und klare Prioritäten<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-3"><p>Geschäftsführung, Marketing und Vertrieb entwickeln ein gemeinsames Verständnis von Kunden, Markt und Unternehmenszielen. Entscheidungen werden auf einer fundierten Grundlage getroffen, Ressourcen gezielter eingesetzt und Maßnahmen nach ihrem wirtschaftlichen Nutzen priorisiert.</p></div></div>
-      <div class="out-cell"><div class="num">04</div><h3><button class="out-head" type="button" aria-expanded="false" aria-controls="out-body-4">Konsequente Umsetzung und messbare Wirkung<span class="pm" aria-hidden="true">+</span></button></h3><div class="out-body" id="out-body-4"><p>Aus Strategien werden konkrete Maßnahmen mit klaren Verantwortlichkeiten und realistischen Zeitplänen. Teams und externe Partner arbeiten auf gemeinsame Ziele hin. Fortschritte und Ergebnisse werden überprüft, damit die Maßnahmen ihre wirtschaftliche Wirkung entfalten können.</p></div></div>
+
+    <div class="offer-group" aria-labelledby="offer-group-positioning">
+      <h3 class="offer-group-title" id="offer-group-positioning">Marktpositionierung &amp; Markteintritt</h3>
+      <div class="offer-acc">
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-check" type="button" aria-expanded="false" aria-controls="offer-body-positioning-check"><span class="offer-head-copy"><span class="offer-title">Positionierungs-Check</span><em class="offer-question">Wie können wir den besonderen Kundennutzen unseres bestehenden Angebots überzeugender herausarbeiten?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-positioning-check" role="region" aria-labelledby="offer-button-positioning-check" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie sind von der Qualität Ihres Produkts oder Ihrer Dienstleistung überzeugt. Doch potenzielle Kunden erkennen den Unterschied zum Wettbewerb nicht ausreichend. Vielleicht stehen in Ihrer Kommunikation technische Eigenschaften im Vordergrund, während die für Kunden entscheidenden Vorteile zu kurz kommen. Oder Ihr Angebot wird vor allem über den Preis verglichen, obwohl es deutlich mehr zu bieten hat.</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich untersuche die bestehende Positionierung eines ausgewählten Angebots aus Kunden- und Wettbewerbsperspektive. Daraus entwickle ich einen konkreten Ansatz, wie Sie den besonderen Kundennutzen überzeugender vermitteln und sich deutlicher vom Wettbewerb differenzieren können.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Angebot und seiner bisherigen Marktpositionierung. Anschließend untersuche ich relevante Kundenbedürfnisse, Kaufmotive und Wettbewerbsangebote. Auf dieser Grundlage entwickle ich einen geschärften Positionierungsansatz mit einem konkreten Nutzenversprechen, den ich Ihnen persönlich vorstelle.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten einen fundierten Vorschlag für die Positionierung Ihres Angebots mit einer nachvollziehbaren Differenzierung vom Wettbewerb und einem prägnant formulierten Nutzenversprechen. Damit haben Sie eine konkrete Grundlage, um Ihr Angebot überzeugender im Markt zu präsentieren.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>2–3 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>6.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-positioning-strategy" type="button" aria-expanded="false" aria-controls="offer-body-positioning-strategy"><span class="offer-head-copy"><span class="offer-title">Marktpositionierungsstrategie</span><em class="offer-question">Wie müssen wir unsere Marke, unser Leistungsportfolio oder unseren Geschäftsbereich positionieren, um uns überzeugend vom Wettbewerb zu differenzieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-positioning-strategy" role="region" aria-labelledby="offer-button-positioning-strategy" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Ihre bisherige Marktpositionierung trägt nicht mehr ausreichend. Vielleicht haben sich die Bedürfnisse Ihrer Kunden verändert oder neue Wettbewerber setzen andere Maßstäbe. Vielleicht hat sich Ihr Leistungsportfolio über die Jahre weiterentwickelt, ohne dass Ihre Positionierung mitgewachsen ist. Sie benötigen eine klare strategische Ausrichtung, die Ihre Stärken mit den Erwartungen Ihrer Kunden verbindet.</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle eine fundierte Marktpositionierungsstrategie, die auf den tatsächlichen Bedürfnissen Ihrer Kunden, den Stärken Ihres Unternehmens und einer klaren Differenzierung vom Wettbewerb basiert. Sie schafft eine klare strategische Grundlage für Ihre künftigen Markt- und Kommunikationsentscheidungen.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Unternehmen, seiner bisherigen Positionierung und seinen strategischen Zielen. Anschließend untersuche ich Kundenbedürfnisse, Kaufmotive und das Wettbewerbsumfeld. Daraus entwickle ich eine differenzierende Marktpositionierungsstrategie, die ich Ihnen persönlich vorstelle.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Marktpositionierungsstrategie mit definierten Zielgruppen, einer klaren Differenzierung, einem überzeugenden Markenversprechen und einer strategischen Leitidee. Ergänzend zeige ich auf, welche Konsequenzen sich daraus für Ihr Leistungsangebot und Ihre Marktkommunikation ergeben.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>4–5 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>15.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+
+        <article class="offer-item">
+          <h4 class="offer-name"><button class="offer-head" id="offer-button-market-entry" type="button" aria-expanded="false" aria-controls="offer-body-market-entry"><span class="offer-head-copy"><span class="offer-title">Positionierung &amp; Markteintritt</span><em class="offer-question">Wie können wir ein bereits definiertes Angebot erfolgreich in einem neuen Markt oder bei einer neuen Zielgruppe etablieren?</em></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
+          <div class="offer-body" id="offer-body-market-entry" role="region" aria-labelledby="offer-button-market-entry" aria-hidden="true">
+            <div class="offer-body-inner">
+              <div class="offer-detail"><h5>Die Ausgangssituation</h5><p>Sie möchten ein neues Produkt oder eine neue Dienstleistung auf den Markt bringen. Vielleicht haben Sie eine innovative Lösung entwickelt, wissen aber noch nicht, wie Sie die richtigen Kunden erreichen. Oder Sie möchten mit einem bestehenden Angebot eine neue Zielgruppe erschließen. Dafür benötigen Sie eine überzeugende Positionierung und einen klaren Weg in den Markt.</p></div>
+              <div class="offer-detail"><h5>Das Leistungsversprechen</h5><p>Ich entwickle für Ihr Angebot eine differenzierende Marktpositionierung und eine konkrete Go-to-Market-Strategie. Anschließend begleite ich die erste Marktaktivierung, um den gewählten Ansatz in der Praxis zu erproben und Erkenntnisse für die weitere Markterschließung zu gewinnen.</p></div>
+              <div class="offer-detail"><h5>Das Vorgehen</h5><p>Ich verschaffe mir vor Ort ein Bild von Ihrem Angebot und den angestrebten Marktchancen. Anschließend untersuche ich Kundenbedürfnisse, Kaufmotive und Wettbewerbsbedingungen und entwickle daraus eine überzeugende Positionierung sowie eine passende Markteintrittsstrategie. Die erste Marktaktivierung begleite ich fachlich und stelle Ihnen die gewonnenen Erkenntnisse und Empfehlungen persönlich vor.</p></div>
+              <div class="offer-detail"><h5>Das Ergebnis</h5><p>Sie erhalten eine ausgearbeitete Marktpositionierung mit klar definierten Zielgruppen, einem differenzierenden Nutzenversprechen und einer konkreten Go-to-Market-Strategie. Dazu gehören priorisierte Vertriebswege, ein passender Marketingansatz und die fachliche Begleitung einer ersten Marktaktivierung. Die dabei gewonnenen Erkenntnisse bilden die Grundlage für die weitere Markterschließung.</p></div>
+              <dl class="offer-meta"><div><dt>Laufzeit:</dt><dd>8–10 Wochen</dd></div><div><dt>Festpreis netto:</dt><dd>29.900 €</dd></div></dl>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="offer-closing">
+      <figure class="offer-closing-photo">
+        <img src="images/2026_BODO-7510-Ausschnitt-1600.jpeg" srcset="images/2026_BODO-7510-Ausschnitt-1600.jpeg 1600w, images/2026_BODO-7510-Ausschnitt-2300.jpeg 2300w" sizes="(max-width: 880px) min(100%, 420px), (max-width: 1180px) calc(34vw - 40px), 400px" width="1600" height="2559" alt="Bodo Schiefer vor dem Düsseldorfer Rheinturm" loading="lazy" decoding="async">
+      </figure>
+      <div class="offer-closing-copy">
+        <h3>Ihre Herausforderung ist eine andere?</h3>
+        <p>Die sechs Angebote sind mögliche Einstiege. Wenn Ihre Aufgabe anders aussieht, sprechen wir darüber, welche Unterstützung für Ihr Unternehmen sinnvoll ist.</p>
+        <a href="mailto:bs@marke-wachstum.de" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1097,7 +1150,6 @@
     var brand=document.getElementById('markenfuehrung');
     var clarityQuote=document.getElementById('klarheit-konsequenz');
     var services=document.getElementById('leistungen');
-    var outcomes=document.getElementById('ergebnisse');
     var when=document.getElementById('einsatz');
     var press=document.getElementById('presse');
     var awards=document.getElementById('awards');
@@ -1121,8 +1173,7 @@
     insertAfter(cta,testimonials);
     insertAfter(testimonials,press);
     brand.parentNode.insertBefore(services,brand);
-    insertAfter(services,outcomes);
-    insertAfter(outcomes,awards);
+    insertAfter(services,awards);
     var mobileQuoteOrder=window.matchMedia('(max-width: 760px)');
     function syncQuoteOrder(){
       if(mobileQuoteOrder.matches){
@@ -1141,19 +1192,20 @@
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 
-  /* ---------- ACCORDION ---------- */
+  /* ---------- ANGEBOTS-ACCORDION ---------- */
   (function(){
-    var items=document.querySelectorAll('#acc .acc-item');
-    function setBody(it,open){var b=it.querySelector('.acc-body');b.style.maxHeight=open?(b.scrollHeight+'px'):'0px';it.querySelector('.acc-head').setAttribute('aria-expanded',String(open));}
+    var items=document.querySelectorAll('#leistungen .offer-item');
+    if(!items.length)return;
+    function setBody(it,open){var b=it.querySelector('.offer-body');b.style.maxHeight=open?(b.scrollHeight+'px'):'0px';b.setAttribute('aria-hidden',String(!open));it.querySelector('.offer-head').setAttribute('aria-expanded',String(open));}
     items.forEach(function(it){
       setBody(it,it.classList.contains('open'));
-      it.querySelector('.acc-head').addEventListener('click',function(){
+      it.querySelector('.offer-head').addEventListener('click',function(){
         var isOpen=it.classList.contains('open');
         items.forEach(function(o){o.classList.remove('open');setBody(o,false);});
         if(!isOpen){it.classList.add('open');setBody(it,true);}
       });
     });
-    window.addEventListener('resize',function(){var op=document.querySelector('#acc .acc-item.open');if(op)setBody(op,true);});
+    window.addEventListener('resize',function(){items.forEach(function(it){if(it.classList.contains('open'))setBody(it,true);});});
   })();
 
   /* ---------- MOBILE ACCORDIONS ---------- */
@@ -1182,7 +1234,6 @@
       mobile.addEventListener('change',sync);
       sync();
     }
-    initMobileAccordion('#outcomesAcc','.out-cell','.out-head','.out-body');
     initMobileAccordion('#successAcc','.succ-card','.succ-head','.succ-body');
     initMobileAccordion('#growthAcc','.growth-point','.growth-head','.growth-body');
   })();
