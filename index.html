@@ -264,6 +264,7 @@
   .offers-intro-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 30px 60px -34px rgba(13,27,42,.4)}
   .offer-group+.offer-group{margin-top:76px}
   .offers-flow .offer-group{grid-column:1;grid-row:2;margin:0}
+  .offers-flow .offer-acc-growth-wide{grid-column:1 / -1;grid-row:3;border-top:0}
   .offers-flow+.offer-group{margin-top:76px}
   .offer-group-title{margin:0 0 24px;color:var(--blue);font-family:var(--serif);font-size:clamp(1.55rem,2.4vw,2rem);font-weight:500;letter-spacing:-.012em;line-height:1.2}
   .offer-acc{border-top:1px solid var(--line)}
@@ -295,9 +296,9 @@
   .offer-closing-copy p{margin-top:16px;color:var(--ink-soft);font-size:1.08rem}
   .offer-closing-copy .btn{margin-top:28px}
   .offer-closing-copy .btn-primary:hover{background:var(--accent);box-shadow:0 12px 28px -12px rgba(200,164,92,.65)}
-  @media(min-width:881px) and (max-width:1080px){.offers-flow{grid-template-columns:1fr;gap:36px}.offers-intro{grid-column:1;grid-row:1;margin:0}.offers-intro-photo{grid-column:1;grid-row:2;justify-self:start}.offers-flow .offer-group{grid-column:1;grid-row:3;margin:20px 0 0}}
-  @media(max-width:880px){.offers-flow{display:flex;flex-direction:column;gap:36px}.offers-intro{order:1;margin:0}.offers-intro-photo{order:2;width:100%;max-width:400px;margin:0;align-self:flex-start}.offers-flow .offer-group{order:3;margin:20px 0 0}.offers-flow+.offer-group{margin-top:60px}}
-  @media(max-width:640px){.offers-flow{gap:30px}.offers-intro-photo{max-width:360px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:1.08rem}.offer-question{font-size:.97rem;line-height:1.4}.offer-summary{margin-top:10px;font-size:1rem}.offer-summary span+span{margin-left:14px;padding-left:14px}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{margin-top:60px;padding-top:48px}.offer-closing-copy p{font-size:1rem}}
+  @media(min-width:881px) and (max-width:1080px){.offers-flow{grid-template-columns:1fr;gap:36px}.offers-intro{grid-column:1;grid-row:1;margin:0}.offers-intro-photo{grid-column:1;grid-row:2;justify-self:start}.offers-flow .offer-group{grid-column:1;grid-row:3;margin:20px 0 0}.offers-flow .offer-acc-growth-wide{grid-column:1;grid-row:4;margin-top:-36px}}
+  @media(max-width:880px){.offers-flow{display:flex;flex-direction:column;gap:36px}.offers-intro{order:1;margin:0}.offers-intro-photo{order:2;width:100%;max-width:400px;margin:0;align-self:flex-start}.offers-flow .offer-group{order:3;margin:20px 0 0}.offers-flow .offer-acc-growth-wide{order:4;margin-top:-36px}.offers-flow+.offer-group{margin-top:60px}}
+  @media(max-width:640px){.offers-flow{gap:30px}.offers-intro-photo{max-width:360px}.offers-flow .offer-acc-growth-wide{margin-top:-30px}.offer-group+.offer-group{margin-top:60px}.offer-head{gap:12px;padding:22px 0 20px}.offer-title{font-size:1.08rem}.offer-question{font-size:.97rem;line-height:1.4}.offer-summary{margin-top:10px;font-size:1rem}.offer-summary span+span{margin-left:14px;padding-left:14px}.offer-body-inner{padding:4px 0 30px}.offer-detail+.offer-detail{margin-top:22px}.offer-meta{grid-template-columns:1fr;gap:18px;margin-top:28px;padding-top:22px}.offer-closing{margin-top:60px;padding-top:48px}.offer-closing-copy p{font-size:1rem}}
 
   /* STATS */
   .stats{background:var(--blue);color:#fff}
@@ -857,6 +858,9 @@
           </div>
         </article>
 
+      </div>
+      </div>
+      <div class="offer-acc offer-acc-growth-wide">
         <article class="offer-item">
           <h4 class="offer-name"><button class="offer-head" id="offer-button-growth-development" type="button" aria-expanded="false" aria-controls="offer-body-growth-development"><span class="offer-head-copy"><span class="offer-title">Wachstumsentwicklung</span><em class="offer-question">Wie entwickeln wir aus einer Geschäftschance ein tragfähiges Wachstumsvorhaben und bringen es in die Umsetzung?</em><span class="offer-summary"><span aria-label="Laufzeit: circa 8 bis 10 Wochen">ca. 8–10 Wochen</span><span aria-label="Festpreis netto: 29.900 Euro">29.900 €</span></span></span><span class="offer-icon" aria-hidden="true">+</span></button></h4>
           <div class="offer-body" id="offer-body-growth-development" role="region" aria-labelledby="offer-button-growth-development" aria-hidden="true">
@@ -869,7 +873,6 @@
             </div>
           </div>
         </article>
-      </div>
       </div>
     </div>
 
