@@ -191,8 +191,13 @@
   .brand-idea{background:var(--paper)}
   #leistungen{background:var(--paper-2)}
   .ai-position{background:var(--paper-2)}
+  .ai-position-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:clamp(40px,6vw,84px);align-items:start}
+  .ai-position .sec-head{max-width:none;margin-bottom:0}
+  .ai-position-media{width:100%;margin-top:clamp(48px,6vw,88px)}
+  .ai-position-media img{display:block;width:100%;height:auto}
   #leistungen,#ergebnisse{scroll-margin-top:0}
   @media(max-width:980px){#leistungen,#ergebnisse{scroll-margin-top:76px}}
+  @media(min-width:881px) and (max-width:1020px){.ai-position-grid{grid-template-columns:1fr;gap:0}.ai-position-media{max-width:430px;margin-top:20px;justify-self:end}}
   @media(max-width:880px){#markenfuehrung,#ki-als-werkzeug{display:none}}
 
   /* WHEN */
@@ -956,13 +961,18 @@
 <!-- AI POSITIONING -->
 <section class="sec ai-position reveal" id="ki-als-werkzeug">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="kicker">KI als Werkzeug</span>
-      <h2>KI produziert Antworten. Menschen geben ihnen Richtung und Bedeutung.</h2>
-      <p>KI ist ein wirksames Werkzeug. Sie recherchiert schneller, analysiert schneller, schreibt schneller und erkennt Muster. Richtig eingesetzt, schafft sie Tempo und erweitert Möglichkeiten.</p>
-      <p>Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr stellt und wie ihre Ergebnisse eingeordnet werden. Sie entscheidet nicht, welche Richtung die richtige ist und übernimmt keine Verantwortung für diese Entscheidung. Je intelligenter Maschinen werden, desto wertvoller wird menschliches Urteilsvermögen.</p>
-      <p>Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns KI auch nicht ab.</p>
-      <p>Unsere Aufgabe ist deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und ihre Ergebnisse für bessere Entscheidungen zu nutzen.</p>
+    <div class="ai-position-grid">
+      <div class="sec-head">
+        <span class="kicker">KI als Werkzeug</span>
+        <h2>KI produziert Antworten. Menschen geben ihnen Richtung und Bedeutung.</h2>
+        <p>KI ist ein wirksames Werkzeug. Sie recherchiert schneller, analysiert schneller, schreibt schneller und erkennt Muster. Richtig eingesetzt, schafft sie Tempo und erweitert Möglichkeiten.</p>
+        <p>Entscheidend bleibt jedoch, wofür sie eingesetzt wird, welche Fragen man ihr stellt und wie ihre Ergebnisse eingeordnet werden. Sie entscheidet nicht, welche Richtung die richtige ist und übernimmt keine Verantwortung für diese Entscheidung. Je intelligenter Maschinen werden, desto wertvoller wird menschliches Urteilsvermögen.</p>
+        <p>Und wenn KI Tempo und Freiraum schafft, liegt ihr eigentlicher Wert in der Möglichkeit, neu zu entscheiden, wofür wir unseren Fokus und unsere Ressourcen künftig einsetzen wollen. Die gewonnene Zeit kann in zusätzliche operative Aufgaben fließen. Sie kann aber auch Raum schaffen, Märkte und Kunden besser zu verstehen, strategische Themen voranzutreiben und früher mit Vertrieb und Produktmanagement an relevanten Fragen zu arbeiten. Diese Entscheidung nimmt uns KI auch nicht ab.</p>
+        <p>Unsere Aufgabe ist deshalb, KI für die richtigen Fragen und Aufgaben einzusetzen und ihre Ergebnisse für bessere Entscheidungen zu nutzen.</p>
+      </div>
+      <div class="ai-position-media">
+        <img src="images/Gehirn.png" width="1470" height="1070" alt="Illustration eines digitalen Gehirns aus Binärcode" loading="lazy" decoding="async">
+      </div>
     </div>
   </div>
 </section>
