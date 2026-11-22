@@ -378,6 +378,8 @@
   @media(min-width:641px) and (prefers-reduced-motion:no-preference){
     .mandate-panel--left .mandate-label,.mandate-panel--right .mandate-label{transition:color .32s ease}
     .mandate-label.is-spotlight-label{color:var(--accent)}
+    .mandate-panel--left .mandate-label::after,.mandate-panel--right .mandate-label::after{content:"";position:absolute;left:-1.12%;top:111%;width:95.51%;height:15%;background:var(--accent);opacity:0;transition:opacity .32s ease}
+    .mandate-label.is-spotlight-label::after{opacity:1}
     .mandate-logos{overflow:hidden}
     .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;top:var(--spot-top,0%);height:var(--spot-height,0%);opacity:0;box-shadow:0 0 42px 9999px rgba(13,27,42,.16);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1),opacity .24s ease,background .24s ease,box-shadow .24s ease}
     .mandate-logos.is-spotlight-active .mandate-spotlight{opacity:1}
