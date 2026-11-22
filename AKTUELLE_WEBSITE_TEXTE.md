@@ -166,7 +166,7 @@ Bildbeschreibung rechts: Logos ausgewählter Mandate: Konsumgüter · Food, Kons
 
 Mobile Bildbeschreibung: Logos ausgewählter Mandate aus elf Branchen.
 
-Desktop-Interaktion: Beim Scrollen wird jeweils einer von fünf festen Branchenbereichen als breiter, weich auslaufender Spot hervorgehoben. Der übrige Logoteppich wird dezent abgedunkelt. Auf Mobilgeräten und bei reduzierter Bewegung bleibt die Darstellung statisch.
+Desktop-Interaktion: Beim Scrollen wird jeweils einer von vier festen Branchenbereichen als breiter, weich auslaufender Spot hervorgehoben. Der übrige Logoteppich wird dezent abgedunkelt. Auf Mobilgeräten und bei reduzierter Bewegung bleibt die Darstellung statisch.
 
 - Automotive
 - Konsumgüter · Food
