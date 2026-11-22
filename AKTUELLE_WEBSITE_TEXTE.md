@@ -777,6 +777,8 @@ CTA: **Jetzt Kontakt aufnehmen**
 
 **Meta-Beschreibung:** Presse und Publikationen von Bodo Schiefer: Handelsblatt, HORIZONT, BDZV und Springer-Vieweg über Markenführung, Marketingkommunikation und Augmented Reality.
 
+**Obere Navigationszeile:** Presse
+
 # Sichtbar in Fach- und Wirtschaftsmedien.
 
 Beiträge und Publikationen über unternehmerische Innovationsleistung, Markenführung und profitables Wachstum sowie den Einsatz innovativer Technologien für multimediale Interaktionen und Markenerlebnisse.
@@ -895,6 +897,8 @@ CTA: **Jetzt Kontakt aufnehmen**
 
 **Meta-Beschreibung:** Impressum von Bodo Schiefer – BS | Marke & Wachstum, Düsseldorf. Angaben gemäß § 5 DDG.
 
+**Obere Navigationszeile:** Impressum
+
 **Rechtliches**
 
 ## Angaben gemäß § 5 DDG
@@ -936,6 +940,8 @@ Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Ur
 **Seitentitel:** Datenschutzerklärung — Bodo Schiefer | Marke & Wachstum
 
 **Meta-Beschreibung:** Datenschutzerklärung von Bodo Schiefer – BS | Marke & Wachstum. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.
+
+**Obere Navigationszeile:** Datenschutz
 
 **Rechtliches**
 
