@@ -384,9 +384,9 @@
     .mandate-panel--left .mandate-label::after,.mandate-panel--right .mandate-label::after{transition:background-color .32s ease}
     .mandate-label.is-spotlight-label::after{background:var(--accent)}
     .mandate-logos{overflow:hidden}
-    .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;top:var(--spot-top,0%);height:var(--spot-height,0%);opacity:0;box-shadow:0 0 42px 9999px rgba(13,27,42,.10);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1),opacity .24s ease,background .24s ease,box-shadow .24s ease}
-    .mandate-logos.is-spotlight-active .mandate-spotlight{opacity:1}
-    .mandate-logos.is-spotlight-idle .mandate-spotlight{opacity:1;background:rgba(13,27,42,.10);box-shadow:none}
+    .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;background:rgba(13,27,42,.10);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1)}
+    .mandate-spotlight--top{top:0;height:var(--spot-top,0%)}
+    .mandate-spotlight--bottom{top:var(--spot-bottom,0%);bottom:0}
   }
   .mandate-panel--mobile{display:none}
   @media(max-width:640px){
@@ -661,7 +661,8 @@
         <span class="mandate-label" style="--x:6.797%;--y:86.669%">Kultur &amp; Entertainment</span>
         <span class="mandate-label" style="--x:6.863%;--y:93.087%">Öffentlicher Sektor &amp; Verbände</span>
       </div>
-      <span class="mandate-spotlight" aria-hidden="true"></span>
+      <span class="mandate-spotlight mandate-spotlight--top" aria-hidden="true"></span>
+      <span class="mandate-spotlight mandate-spotlight--bottom" aria-hidden="true"></span>
     </div>
   </div>
 </section>
@@ -1264,8 +1265,8 @@
   /* ---------- MANDATE SPOTLIGHT (DESKTOP) ---------- */
   (function(){
     var grid=document.querySelector('#mandate .mandate-logos');
-    var spotlight=grid&&grid.querySelector('.mandate-spotlight');
-    if(!grid||!spotlight||!window.IntersectionObserver)return;
+    var spotlights=grid&&grid.querySelectorAll('.mandate-spotlight');
+    if(!grid||spotlights.length!==2||!window.IntersectionObserver)return;
     var labels=Array.prototype.slice.call(grid.querySelectorAll('[data-spot-zone]'));
     var motion=window.matchMedia('(min-width: 641px) and (prefers-reduced-motion: no-preference)');
     var zones=[
@@ -1276,28 +1277,25 @@
     ];
     var visible=false,activeZone=-1,raf=0;
     function clear(){
-      grid.classList.remove('is-spotlight-active','is-spotlight-idle');
       grid.style.removeProperty('--spot-top');
-      grid.style.removeProperty('--spot-height');
+      grid.style.removeProperty('--spot-bottom');
       labels.forEach(function(label){label.classList.remove('is-spotlight-label')});
       activeZone=-1;
     }
-    function dim(){
-      if(activeZone===-2)return;
-      grid.style.setProperty('--spot-top','0%');
-      grid.style.setProperty('--spot-height','100%');
-      grid.classList.remove('is-spotlight-active');
-      grid.classList.add('is-spotlight-idle');
+    function dim(direction){
+      var state=direction==='after'?-3:-2;
+      if(activeZone===state)return;
+      var edge=direction==='after'?'100%':'0%';
+      grid.style.setProperty('--spot-top',edge);
+      grid.style.setProperty('--spot-bottom',edge);
       labels.forEach(function(label){label.classList.remove('is-spotlight-label')});
-      activeZone=-2;
+      activeZone=state;
     }
     function setZone(index){
       if(index===activeZone)return;
       var zone=zones[index];
       grid.style.setProperty('--spot-top',zone.top+'%');
-      grid.style.setProperty('--spot-height',(zone.bottom-zone.top)+'%');
-      grid.classList.remove('is-spotlight-idle');
-      grid.classList.add('is-spotlight-active');
+      grid.style.setProperty('--spot-bottom',zone.bottom+'%');
       labels.forEach(function(label){label.classList.toggle('is-spotlight-label',Number(label.getAttribute('data-spot-zone'))===index)});
       activeZone=index;
     }
@@ -1306,7 +1304,8 @@
       if(!visible||!motion.matches)return;
       var rect=grid.getBoundingClientRect();
       var focus=window.innerHeight*.56;
-      if(focus<rect.top||focus>rect.bottom){dim();return}
+      if(focus<rect.top){dim('before');return}
+      if(focus>rect.bottom){dim('after');return}
       var progress=Math.max(0,Math.min(99.999,(focus-rect.top)/rect.height*100));
       var index=zones.findIndex(function(zone){return progress<zone.bottom});
       setZone(index<0?zones.length-1:index);
