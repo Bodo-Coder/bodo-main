@@ -139,6 +139,9 @@
   function setMenu(open){nl.classList.toggle('open',open);mb.setAttribute('aria-expanded',String(open));mb.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');}
   mb.addEventListener('click',function(){setMenu(!nl.classList.contains('open'))});
   nl.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
+  document.addEventListener('click',function(e){
+    if(window.matchMedia('(max-width: 760px)').matches&&nl.classList.contains('open')&&!nl.contains(e.target)&&!mb.contains(e.target))setMenu(false);
+  });
 </script>
 </body>
 </html>
