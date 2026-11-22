@@ -210,6 +210,10 @@
   .when-card ul{list-style:none;display:flex;flex-direction:column;gap:15px}
   .when-card li{position:relative;padding-left:26px;font-size:1rem;color:var(--ink-soft);line-height:1.5}
   .when-card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;border:2px solid var(--accent)}
+  .when-actions{margin:clamp(28px,4vw,40px) auto 0}
+  .when-actions .quote-action{background:var(--accent);border-color:var(--accent);color:#fff}
+  .when-actions .quote-action:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+  .when-actions .quote-action:focus-visible{outline-color:var(--blue)}
   .when-point-toggle{display:none}
   @media(max-width:820px){.when-grid{grid-template-columns:1fr}}
   @media(max-width:760px){.when-grid,.when-card{min-width:0}.when-card h3{flex-wrap:wrap;row-gap:4px}.when-card h3>span{flex-basis:100%}.when-card h3 .when-card-dot{display:none}.when-card li.when-point{display:grid;grid-template-columns:minmax(0,1fr) 32px;column-gap:8px;align-items:start}.when-card li.when-point .when-point-text{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.when-card li.when-point.open .when-point-text{white-space:normal;overflow:visible}.when-point-toggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-4px -4px 0 0;padding:0;border:0;background:none;color:var(--accent);font:inherit;font-size:1.55rem;line-height:1;cursor:pointer}.when-point-toggle span{display:block;transition:transform .3s}.when-point.open .when-point-toggle span{transform:rotate(45deg)}.when-point-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:50%}}
@@ -605,16 +609,6 @@
   <button class="proof-ticker-toggle" type="button" aria-controls="proofTickerTrack" aria-pressed="false" aria-label="Laufschrift anhalten"><span aria-hidden="true">Ⅱ</span></button>
 </section>
 
-<section class="quote-actions-strip" id="mandate-actions" aria-label="Weiterführende Bereiche">
-  <div class="wrap">
-    <div class="quote-actions">
-      <a href="#anrufen" class="quote-action">6 Anruf-Gründe</a>
-      <a href="#leistungen" class="quote-action">Angebote</a>
-      <a href="#vorgehen" class="quote-action">Wie ich arbeite</a>
-    </div>
-  </div>
-</section>
-
 <!-- MANDATES -->
 <section class="sec mandates reveal" id="mandate" style="background:#fff">
   <div class="wrap">
@@ -742,6 +736,11 @@
         </ul>
       </div>
     </div>
+    <nav class="quote-actions when-actions" aria-label="Weiterführende Bereiche">
+      <a href="#anrufen" class="quote-action">6 Anruf-Gründe</a>
+      <a href="#leistungen" class="quote-action">Angebote</a>
+      <a href="#vorgehen" class="quote-action">Wie ich arbeite</a>
+    </nav>
   </div>
 </section>
 
@@ -1198,7 +1197,6 @@
   (function(){
     var success=document.getElementById('erfolge');
     var mandates=document.getElementById('mandate');
-    var mandateActions=document.getElementById('mandate-actions');
     var testimonials=document.getElementById('stimmen');
     var stats=document.getElementById('kennzahlen');
     var conviction=document.getElementById('ueberzeugung');
@@ -1222,12 +1220,7 @@
     }else{
       insertAfter(success,when);
     }
-    if(mandateActions){
-      insertAfter(when,mandateActions);
-      insertAfter(mandateActions,mandates);
-    }else{
-      insertAfter(when,mandates);
-    }
+    insertAfter(when,mandates);
     insertAfter(mandates,callReasons);
     insertAfter(callReasons,cta);
     insertAfter(cta,testimonials);
