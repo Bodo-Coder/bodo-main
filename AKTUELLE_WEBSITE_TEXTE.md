@@ -168,7 +168,7 @@ Mobile Bildbeschreibung: Logos ausgewählter Mandate aus elf Branchen.
 
 Desktop-Interaktion: Beim Scrollen wird jeweils einer von vier festen Branchenbereichen als breiter, weich auslaufender Spot hervorgehoben. Der übrige Logoteppich wird dezent abgedunkelt. Auf Mobilgeräten und bei reduzierter Bewegung bleibt die Darstellung statisch.
 
-Desktop-Gestaltung: Die Branchenüberschriften stehen in weißer Schrift auf einem blauen Balken. Der Balken hat jeweils die Breite der darunterliegenden Linie und geht ohne Abstand in sie über. Die Mobilansicht bleibt vorerst unverändert.
+Desktop-Gestaltung: Wenn einer der festen Bereiche als Spot hervorgehoben wird, wechseln die zugehörigen Branchenüberschriften zu Gold. Außerhalb des aktiven Spotbereichs bleiben sie blau. Die Mobilansicht bleibt vorerst unverändert.
 
 - Automotive
 - Konsumgüter · Food
