@@ -605,6 +605,16 @@
   <button class="proof-ticker-toggle" type="button" aria-controls="proofTickerTrack" aria-pressed="false" aria-label="Laufschrift anhalten"><span aria-hidden="true">Ⅱ</span></button>
 </section>
 
+<section class="quote-actions-strip" id="mandate-actions" aria-label="Weiterführende Bereiche">
+  <div class="wrap">
+    <div class="quote-actions">
+      <a href="#anrufen" class="quote-action">6 Anruf-Gründe</a>
+      <a href="#leistungen" class="quote-action">Angebote</a>
+      <a href="#vorgehen" class="quote-action">Wie ich arbeite</a>
+    </div>
+  </div>
+</section>
+
 <!-- MANDATES -->
 <section class="sec mandates reveal" id="mandate" style="background:#fff">
   <div class="wrap">
@@ -1188,10 +1198,11 @@
   (function(){
     var success=document.getElementById('erfolge');
     var mandates=document.getElementById('mandate');
+    var mandateActions=document.getElementById('mandate-actions');
     var testimonials=document.getElementById('stimmen');
+    var stats=document.getElementById('kennzahlen');
     var conviction=document.getElementById('ueberzeugung');
     var digitalGrowth=document.getElementById('digitale-wachstumsarbeit');
-    var brand=document.getElementById('markenfuehrung');
     var clarityQuote=document.getElementById('klarheit-konsequenz');
     var services=document.getElementById('leistungen');
     var when=document.getElementById('einsatz');
@@ -1206,26 +1217,32 @@
     mandates.parentNode.insertBefore(success,mandates);
     if(proofTicker){
       insertAfter(success,proofTicker);
-      insertAfter(proofTicker,conviction);
-      insertAfter(conviction,when);
+      insertAfter(proofTicker,clarityQuote);
+      insertAfter(clarityQuote,when);
     }else{
       insertAfter(success,when);
     }
-    insertAfter(when,mandates);
+    if(mandateActions){
+      insertAfter(when,mandateActions);
+      insertAfter(mandateActions,mandates);
+    }else{
+      insertAfter(when,mandates);
+    }
     insertAfter(mandates,callReasons);
     insertAfter(callReasons,cta);
     insertAfter(cta,testimonials);
-    insertAfter(testimonials,press);
-    brand.parentNode.insertBefore(services,brand);
-    insertAfter(services,awards);
+    insertAfter(testimonials,services);
+    insertAfter(services,stats);
+    insertAfter(stats,press);
+    insertAfter(press,awards);
     var mobileQuoteOrder=window.matchMedia('(max-width: 760px)');
     function syncQuoteOrder(){
       if(mobileQuoteOrder.matches){
-        insertAfter(awards,clarityQuote);
-        insertAfter(clarityQuote,digitalGrowth);
+        insertAfter(awards,conviction);
+        insertAfter(conviction,digitalGrowth);
       }else{
         insertAfter(awards,digitalGrowth);
-        insertAfter(digitalGrowth,clarityQuote);
+        insertAfter(digitalGrowth,conviction);
       }
     }
     syncQuoteOrder();
