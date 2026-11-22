@@ -374,12 +374,11 @@
   .mandate-panel--right img{margin-left:-100%}
   .mandate-logos img{width:200%;max-width:none;height:auto;display:block;mix-blend-mode:multiply}
   .mandate-label{position:absolute;left:var(--x);top:var(--y);width:89%;height:2.1%;display:flex;align-items:center;background:#fff;font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
+  .mandate-spotlight{display:none}
   @media(min-width:641px) and (prefers-reduced-motion:no-preference){
-    .mandate-panel::after{content:"";position:absolute;z-index:1;left:5%;right:5%;top:var(--scan-y,0%);height:2px;background:linear-gradient(90deg,transparent,var(--accent) 12%,var(--accent) 88%,transparent);opacity:0;transform:translateY(-1px);transition:opacity .2s;pointer-events:none}
-    .mandate-logos.is-scanning .mandate-panel::after{opacity:.72}
-    .mandate-label{z-index:2;transition:transform .32s ease,box-shadow .32s ease,color .32s ease}
-    .mandate-panel--left .mandate-label.is-active{transform:translateX(7px);box-shadow:inset 3px 0 0 var(--accent);color:var(--blue-deep)}
-    .mandate-panel--right .mandate-label.is-active{transform:translateX(-7px);box-shadow:inset -3px 0 0 var(--accent);color:var(--blue-deep)}
+    .mandate-logos{overflow:hidden}
+    .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;top:var(--spot-top,0%);height:var(--spot-height,0%);opacity:0;box-shadow:0 0 42px 9999px rgba(13,27,42,.16);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1),opacity .24s ease}
+    .mandate-logos.is-spotlight-active .mandate-spotlight{opacity:1}
   }
   .mandate-panel--mobile{display:none}
   @media(max-width:640px){
@@ -654,6 +653,7 @@
         <span class="mandate-label" style="--x:6.797%;--y:86.669%">Kultur &amp; Entertainment</span>
         <span class="mandate-label" style="--x:6.863%;--y:93.087%">Öffentlicher Sektor &amp; Verbände</span>
       </div>
+      <span class="mandate-spotlight" aria-hidden="true"></span>
     </div>
   </div>
 </section>
@@ -1253,37 +1253,42 @@
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 
-  /* ---------- MANDATE SCAN (DESKTOP) ---------- */
+  /* ---------- MANDATE SPOTLIGHT (DESKTOP) ---------- */
   (function(){
     var grid=document.querySelector('#mandate .mandate-logos');
-    if(!grid||!window.IntersectionObserver)return;
-    var labels=Array.prototype.slice.call(grid.querySelectorAll('.mandate-panel--left .mandate-label,.mandate-panel--right .mandate-label'));
+    var spotlight=grid&&grid.querySelector('.mandate-spotlight');
+    if(!grid||!spotlight||!window.IntersectionObserver)return;
     var motion=window.matchMedia('(min-width: 641px) and (prefers-reduced-motion: no-preference)');
-    var visible=false,raf=0;
+    var zones=[
+      {top:0,bottom:22},
+      {top:22,bottom:55.1},
+      {top:55.1,bottom:66.5},
+      {top:66.5,bottom:82.05},
+      {top:82.05,bottom:100}
+    ];
+    var visible=false,activeZone=-1,raf=0;
     function clear(){
-      grid.classList.remove('is-scanning');
-      grid.style.removeProperty('--scan-y');
-      labels.forEach(function(label){label.classList.remove('is-active')});
+      grid.classList.remove('is-spotlight-active');
+      grid.style.removeProperty('--spot-top');
+      grid.style.removeProperty('--spot-height');
+      activeZone=-1;
+    }
+    function setZone(index){
+      if(index===activeZone)return;
+      var zone=zones[index];
+      grid.style.setProperty('--spot-top',zone.top+'%');
+      grid.style.setProperty('--spot-height',(zone.bottom-zone.top)+'%');
+      grid.classList.add('is-spotlight-active');
+      activeZone=index;
     }
     function update(){
       raf=0;
       if(!visible||!motion.matches)return;
       var rect=grid.getBoundingClientRect();
-      var scanY=window.innerHeight*.56;
-      var progress=(scanY-rect.top)/rect.height;
-      var scan=Math.max(4,Math.min(96,progress*100));
-      var nearest=Infinity;
-      labels.forEach(function(label){
-        var labelRect=label.getBoundingClientRect();
-        nearest=Math.min(nearest,Math.abs(labelRect.top+labelRect.height/2-scanY));
-      });
-      grid.style.setProperty('--scan-y',scan+'%');
-      grid.classList.add('is-scanning');
-      labels.forEach(function(label){
-        var labelRect=label.getBoundingClientRect();
-        var distance=Math.abs(labelRect.top+labelRect.height/2-scanY);
-        label.classList.toggle('is-active',distance-nearest<12);
-      });
+      var focus=window.innerHeight*.56;
+      var progress=Math.max(0,Math.min(99.999,(focus-rect.top)/rect.height*100));
+      var index=zones.findIndex(function(zone){return progress<zone.bottom});
+      setZone(index<0?zones.length-1:index);
     }
     function requestUpdate(){if(!raf)raf=requestAnimationFrame(update)}
     var observer=new IntersectionObserver(function(entries){
