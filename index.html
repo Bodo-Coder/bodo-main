@@ -379,8 +379,9 @@
     .mandate-panel--left .mandate-label,.mandate-panel--right .mandate-label{transition:color .32s ease}
     .mandate-label.is-spotlight-label{color:var(--accent)}
     .mandate-logos{overflow:hidden}
-    .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;top:var(--spot-top,0%);height:var(--spot-height,0%);opacity:0;box-shadow:0 0 42px 9999px rgba(13,27,42,.16);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1),opacity .24s ease}
+    .mandate-spotlight{display:block;position:absolute;z-index:3;left:0;right:0;top:var(--spot-top,0%);height:var(--spot-height,0%);opacity:0;box-shadow:0 0 42px 9999px rgba(13,27,42,.16);pointer-events:none;transition:top .55s cubic-bezier(.4,0,.2,1),height .55s cubic-bezier(.4,0,.2,1),opacity .24s ease,background .24s ease,box-shadow .24s ease}
     .mandate-logos.is-spotlight-active .mandate-spotlight{opacity:1}
+    .mandate-logos.is-spotlight-idle .mandate-spotlight{opacity:1;background:rgba(13,27,42,.16);box-shadow:none}
   }
   .mandate-panel--mobile{display:none}
   @media(max-width:640px){
@@ -1270,17 +1271,27 @@
     ];
     var visible=false,activeZone=-1,raf=0;
     function clear(){
-      grid.classList.remove('is-spotlight-active');
+      grid.classList.remove('is-spotlight-active','is-spotlight-idle');
       grid.style.removeProperty('--spot-top');
       grid.style.removeProperty('--spot-height');
       labels.forEach(function(label){label.classList.remove('is-spotlight-label')});
       activeZone=-1;
+    }
+    function dim(){
+      if(activeZone===-2)return;
+      grid.style.setProperty('--spot-top','0%');
+      grid.style.setProperty('--spot-height','100%');
+      grid.classList.remove('is-spotlight-active');
+      grid.classList.add('is-spotlight-idle');
+      labels.forEach(function(label){label.classList.remove('is-spotlight-label')});
+      activeZone=-2;
     }
     function setZone(index){
       if(index===activeZone)return;
       var zone=zones[index];
       grid.style.setProperty('--spot-top',zone.top+'%');
       grid.style.setProperty('--spot-height',(zone.bottom-zone.top)+'%');
+      grid.classList.remove('is-spotlight-idle');
       grid.classList.add('is-spotlight-active');
       labels.forEach(function(label){label.classList.toggle('is-spotlight-label',Number(label.getAttribute('data-spot-zone'))===index)});
       activeZone=index;
@@ -1290,6 +1301,7 @@
       if(!visible||!motion.matches)return;
       var rect=grid.getBoundingClientRect();
       var focus=window.innerHeight*.56;
+      if(focus<rect.top||focus>rect.bottom){dim();return}
       var progress=Math.max(0,Math.min(99.999,(focus-rect.top)/rect.height*100));
       var index=zones.findIndex(function(zone){return progress<zone.bottom});
       setZone(index<0?zones.length-1:index);

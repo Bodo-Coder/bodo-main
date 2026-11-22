@@ -166,7 +166,7 @@ Bildbeschreibung rechts: Logos ausgewählter Mandate: Konsumgüter · Food, Kons
 
 Mobile Bildbeschreibung: Logos ausgewählter Mandate aus elf Branchen.
 
-Desktop-Interaktion: Beim Scrollen wird jeweils einer von vier festen Branchenbereichen als breiter, weich auslaufender Spot hervorgehoben. Der übrige Logoteppich wird dezent abgedunkelt. Auf Mobilgeräten und bei reduzierter Bewegung bleibt die Darstellung statisch.
+Desktop-Interaktion: Solange die feste Scrollmarke ober- oder unterhalb des sichtbaren Logoteppichs liegt, bleibt dieser vollständig dezent abgedunkelt und die Branchenüberschriften bleiben blau. Innerhalb des Teppichs wird jeweils einer von vier festen Branchenbereichen als breiter, weich auslaufender Spot hervorgehoben; dessen Überschriften wechseln zu Gold. Auf Mobilgeräten und bei reduzierter Bewegung bleibt die Darstellung statisch.
 
 Desktop-Gestaltung: Wenn einer der festen Bereiche als Spot hervorgehoben wird, wechseln die zugehörigen Branchenüberschriften zu Gold. Außerhalb des aktiven Spotbereichs bleiben sie blau. Die Mobilansicht bleibt vorerst unverändert.
 
