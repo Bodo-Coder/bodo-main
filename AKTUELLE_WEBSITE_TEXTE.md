@@ -646,10 +646,10 @@ Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ### Navigation
 
-1. Leistungen
-2. Vorgehen
-3. Über mich
-4. Erfolge
+1. Erfolge
+2. Angebote
+3. Case
+4. Über mich
 5. Presse
 6. Fun Fact
 
@@ -671,9 +671,9 @@ Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 **Meta-Beschreibung:** Die Geschichte, wie eine BoxaGrippal-Werbefigur erst aussah wie Bodo Schiefer und später auch noch Bodo hieß.
 
-## Header und Navigation der Unterseiten Fun Fact und Presse
+## Header und Navigation der Unterseiten
 
-Fun Fact und Presse verwenden dieselbe Navigation wie die Hauptseite:
+Fun Fact, Presse, Impressum und Datenschutz verwenden dieselbe Navigation wie die Hauptseite:
 
 1. Erfolge
 2. Angebote
@@ -1005,10 +1005,10 @@ Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 ### Navigation
 
-1. Leistungen
-2. Vorgehen
-3. Über mich
-4. Erfolge
+1. Erfolge
+2. Angebote
+3. Case
+4. Über mich
 5. Presse
 6. Fun Fact
 
