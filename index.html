@@ -224,7 +224,8 @@
   .call-reason{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto 1fr auto;grid-template-areas:"num" "heading" "body" "topic";gap:16px;align-content:stretch;height:100%;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:40px 38px;transition:transform .25s,box-shadow .25s}
   .call-reason:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(13,27,42,.25)}
   .call-reason .num{grid-area:num;padding-top:0;color:var(--accent);font-family:var(--sans);font-size:1.3rem;font-weight:700;font-style:normal;letter-spacing:0;line-height:1.2}
-  .call-reason-topic{grid-area:topic;align-self:end;justify-self:start;margin:0;color:var(--accent);font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.075em;line-height:1.25;text-align:left;text-transform:uppercase}
+  .call-reason-topic{grid-area:topic;align-self:end;justify-self:start;margin:0;color:var(--blue);font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.075em;line-height:1.25;text-align:left;text-transform:uppercase;transition:color .25s ease}
+  @media(hover:hover) and (pointer:fine){.call-reason:hover .call-reason-topic{color:var(--accent)}}
   .call-reason h3{grid-area:heading;min-width:0;font-family:var(--serif);font-size:clamp(1.32rem,2.05vw,1.68rem);font-weight:500;line-height:1.18;letter-spacing:-.012em;color:var(--blue)}
   .call-reason-toggle{display:none}
   .call-reason-body{grid-area:body;min-width:0;max-width:62ch}
