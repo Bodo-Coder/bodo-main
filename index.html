@@ -374,6 +374,13 @@
   .mandate-panel--right img{margin-left:-100%}
   .mandate-logos img{width:200%;max-width:none;height:auto;display:block;mix-blend-mode:multiply}
   .mandate-label{position:absolute;left:var(--x);top:var(--y);width:89%;height:2.1%;display:flex;align-items:center;background:#fff;font-family:var(--sans);font-size:1.61cqw;font-weight:700;line-height:1.2;color:var(--blue);text-align:left;white-space:nowrap}
+  @media(min-width:641px) and (prefers-reduced-motion:no-preference){
+    .mandate-panel::after{content:"";position:absolute;z-index:1;left:5%;right:5%;top:var(--scan-y,0%);height:2px;background:linear-gradient(90deg,transparent,var(--accent) 12%,var(--accent) 88%,transparent);opacity:0;transform:translateY(-1px);transition:opacity .2s;pointer-events:none}
+    .mandate-logos.is-scanning .mandate-panel::after{opacity:.72}
+    .mandate-label{z-index:2;transition:transform .32s ease,box-shadow .32s ease,color .32s ease}
+    .mandate-panel--left .mandate-label.is-active{transform:translateX(7px);box-shadow:inset 3px 0 0 var(--accent);color:var(--blue-deep)}
+    .mandate-panel--right .mandate-label.is-active{transform:translateX(-7px);box-shadow:inset -3px 0 0 var(--accent);color:var(--blue-deep)}
+  }
   .mandate-panel--mobile{display:none}
   @media(max-width:640px){
     .mandate-logos{grid-template-columns:minmax(0,1fr)}
@@ -1245,6 +1252,50 @@
   /* reveal */
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  /* ---------- MANDATE SCAN (DESKTOP) ---------- */
+  (function(){
+    var grid=document.querySelector('#mandate .mandate-logos');
+    if(!grid||!window.IntersectionObserver)return;
+    var labels=Array.prototype.slice.call(grid.querySelectorAll('.mandate-panel--left .mandate-label,.mandate-panel--right .mandate-label'));
+    var motion=window.matchMedia('(min-width: 641px) and (prefers-reduced-motion: no-preference)');
+    var visible=false,raf=0;
+    function clear(){
+      grid.classList.remove('is-scanning');
+      grid.style.removeProperty('--scan-y');
+      labels.forEach(function(label){label.classList.remove('is-active')});
+    }
+    function update(){
+      raf=0;
+      if(!visible||!motion.matches)return;
+      var rect=grid.getBoundingClientRect();
+      var scanY=window.innerHeight*.56;
+      var progress=(scanY-rect.top)/rect.height;
+      var scan=Math.max(4,Math.min(96,progress*100));
+      var nearest=Infinity;
+      labels.forEach(function(label){
+        var labelRect=label.getBoundingClientRect();
+        nearest=Math.min(nearest,Math.abs(labelRect.top+labelRect.height/2-scanY));
+      });
+      grid.style.setProperty('--scan-y',scan+'%');
+      grid.classList.add('is-scanning');
+      labels.forEach(function(label){
+        var labelRect=label.getBoundingClientRect();
+        var distance=Math.abs(labelRect.top+labelRect.height/2-scanY);
+        label.classList.toggle('is-active',distance-nearest<12);
+      });
+    }
+    function requestUpdate(){if(!raf)raf=requestAnimationFrame(update)}
+    var observer=new IntersectionObserver(function(entries){
+      visible=entries[0].isIntersecting;
+      if(visible&&motion.matches)requestUpdate();else clear();
+    },{threshold:0});
+    observer.observe(grid);
+    window.addEventListener('scroll',requestUpdate,{passive:true});
+    window.addEventListener('resize',requestUpdate);
+    function syncMotion(){if(motion.matches&&visible)requestUpdate();else clear()}
+    if(motion.addEventListener)motion.addEventListener('change',syncMotion);else motion.addListener(syncMotion);
+  })();
 
   /* ---------- ANGEBOTS-ACCORDION ---------- */
   (function(){
