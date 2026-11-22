@@ -671,17 +671,17 @@ Für Geschäftsführungen, Marketingverantwortliche und Gründerteams.
 
 **Meta-Beschreibung:** Die Geschichte, wie eine BoxaGrippal-Werbefigur erst aussah wie Bodo Schiefer und später auch noch Bodo hieß.
 
-## Header und Navigation der Unterseiten
+## Header und Navigation der Unterseiten Fun Fact und Presse
 
-Die Unterseiten Fun Fact, Presse, Impressum und Datenschutz verwenden im aktuellen Quellstand dieselbe Navigation:
+Fun Fact und Presse verwenden dieselbe Navigation wie die Hauptseite:
 
-1. Leistungen
-2. Ergebnis
-3. Erfolge
-4. Presse
-5. Über mich
+1. Erfolge
+2. Angebote
+3. Case
+4. Über mich
+5. Presse
 6. Fun Fact
-7. Jetzt Kontakt aufnehmen
+7. Kontakt aufnehmen
 8. ☰ (Menü öffnen)
 
 **Case aus der Praxis**
